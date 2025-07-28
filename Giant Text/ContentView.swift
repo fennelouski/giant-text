@@ -552,41 +552,7 @@ struct OptionsMenuSheet: View {
             ScrollView {
                 VStack(spacing: 20) {
                 
-                // Display settings section
-                VStack(alignment: .leading, spacing: 12) {
-                    HStack {
-                        Text(LocalizationManager.display)
-                            .font(.headline)
-                            .foregroundColor(colorScheme == .dark ? .white : .black)
-                        Spacer()
-                    }
-                    
-
-                    
-                    // Font selection toggle
-                    HStack {
-                        Toggle("Serif Font", isOn: $useSerifFont)
-                            .foregroundColor(colorScheme == .dark ? .white : .black)
-                    }
-                    .padding()
-                    .background(
-                        RoundedRectangle(cornerRadius: 8)
-                            .fill(backgroundColor)
-                    )
-                    
-                    // Clipping toggle
-                    HStack {
-                        Toggle("Clip Letters", isOn: $isClippingEnabled)
-                            .foregroundColor(colorScheme == .dark ? .white : .black)
-                    }
-                    .padding()
-                    .background(
-                        RoundedRectangle(cornerRadius: 8)
-                            .fill(backgroundColor)
-                    )
-                }
-                
-                // Animation section
+                // Animation section (moved to top)
                 VStack(alignment: .leading, spacing: 12) {
                     Text(LocalizationManager.animation)
                         .font(.headline)
@@ -627,6 +593,40 @@ struct OptionsMenuSheet: View {
                         }
                         .padding(.top, 8)
                     }
+                }
+                
+                // Display settings section
+                VStack(alignment: .leading, spacing: 12) {
+                    HStack {
+                        Text(LocalizationManager.display)
+                            .font(.headline)
+                            .foregroundColor(colorScheme == .dark ? .white : .black)
+                        Spacer()
+                    }
+                    
+
+                    
+                    // Font selection toggle
+                    HStack {
+                        Toggle("Serif Font", isOn: $useSerifFont)
+                            .foregroundColor(colorScheme == .dark ? .white : .black)
+                    }
+                    .padding()
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(backgroundColor)
+                    )
+                    
+                    // Clipping toggle
+                    HStack {
+                        Toggle("Clip Letters", isOn: $isClippingEnabled)
+                            .foregroundColor(colorScheme == .dark ? .white : .black)
+                    }
+                    .padding()
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(backgroundColor)
+                    )
                 }
                 
                 // Actions section
@@ -1128,7 +1128,7 @@ struct AnimatedTextDisplay: View {
     }
     
     private func startIndividualJitterAnimation() {
-        let jitterDuration: ()->TimeInterval = { .random(in: 0.05...0.1) / intensity }
+        let jitterDuration: ()->TimeInterval = { .random(in: 0.025...0.05) / intensity }
         let coolOffDuration = 2.0
         let totalCycleDuration = 3.0 + coolOffDuration // 3 seconds of jittering + 2 seconds cool-off
         
@@ -1183,7 +1183,7 @@ struct AnimatedTextDisplay: View {
                         
                         // Ease out phase
                         let easeOutTimer = Timer.scheduledTimer(
-                            withTimeInterval: 0.05,
+                            withTimeInterval: 0.005,
                             repeats: true
                         ) { easeOutTimer in
                             guard isAnimationActive else {
