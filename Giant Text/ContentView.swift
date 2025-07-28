@@ -1030,22 +1030,38 @@ struct AnimatedTextDisplay: View {
         .clipped(antialiased: isClippingEnabled)
         .allowsHitTesting(false)
         .onAppear { setupCharacterAnimations() }
-        .onChange(of: animation) { _, _ in setupCharacterAnimations() }
-        .onChange(of: intensity) { _, _ in setupCharacterAnimations() }
+        .onChange(of: animation) { _, _ in 
+            // Immediately reset and restart animation
+            DispatchQueue.main.async {
+                setupCharacterAnimations()
+            }
+        }
+        .onChange(of: intensity) { _, _ in 
+            // Immediately reset and restart animation with new intensity
+            DispatchQueue.main.async {
+                setupCharacterAnimations()
+            }
+        }
         .onChange(of: attributedText) { _, _ in setupCharacterAnimations() }
         .onChange(of: useSerifFont) { _, _ in setupCharacterAnimations() }
         .onDisappear { animationTimer?.invalidate(); animationTimer = nil }
     }
     
     private func setupCharacterAnimations() {
-        // Stop any existing animations
+        // Immediately stop any existing animations and reset state
         animationTimer?.invalidate()
         animationTimer = nil
         isAnimationActive = false
         
-        // Create character animations for ALL animation types, including .none
+        // Immediately reset all character animations to default state
+        for i in characterAnimations.indices {
+            characterAnimations[i] = CharacterAnimation()
+        }
+        
+        // Create fresh character animations array
         characterAnimations = Array(repeating: CharacterAnimation(), count: attributedText.string.count)
         
+        // Start new animation based on current settings
         switch animation {
         case .none:
             // No animation timers needed - characters remain at default state (scale: 1.0, offset: .zero, rotation: 0)
