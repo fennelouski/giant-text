@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "RUBUTU MAI GIRMA";
+"done" = "An kammala";
+"close" = "Rufe";
+"cancel" = "Soke";
+"ok" = "Lafiya";
+
+// MARK: - Options Menu
+"options" = "Zaɓuɓɓuka";
+"display" = "Nuni";
+"animation" = "Motsi";
+"actions" = "Ayyuka";
+"intensity" = "Ƙarfi";
+
+// MARK: - Marquee
+"marquee_mode" = "Yanayin Marquee";
+"marquee_mode_title" = "Yanayin Marquee";
+"marquee_mode_description" = "Yana nuna rubutu a matsayin layi ɗaya mai motsi wanda ke tafiya a kan allo, yana amfani da cikakken tsayin nuni.";
+"marquee_mode_perfect_for" = "Cikakke don nuna dogon rubutu ko ƙirƙirar tasirin alamar motsi.";
+
+// MARK: - Actions
+"edit_text" = "Gyara Rubutu";
+"clear_text" = "Share Rubutu";
+"undo" = "Mayar da baya";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Yanayin Tsaye Ya Bukata";
+"portrait_mode_description" = "Juya na'urarka zuwa yanayin tsaye don gyara rubutu.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Nuni na rubutu mai girma";
+"marquee_text_display" = "Nuni na rubutu marquee";
+"text_animation" = "Motsi na Rubutu";
+"bold" = "Mai ƙarfi";
+"italic" = "Mai karkata";
+"clear_text_accessibility" = "Share rubutu";
+"edit_text_accessibility" = "Gyara rubutu";
+"done_editing_accessibility" = "Gyaran ya kammala";
+
+// MARK: - Animation Types
+"none" = "Babu";
+"bloom" = "Fure";
+"jitter" = "Girgiza";
+"explode" = "Fashe"; 

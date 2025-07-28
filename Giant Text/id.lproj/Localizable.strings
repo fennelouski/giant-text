@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "TEKS RAKSASA";
+"done" = "Selesai";
+"close" = "Tutup";
+"cancel" = "Batal";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Opsi";
+"display" = "Tampilan";
+"animation" = "Animasi";
+"actions" = "Tindakan";
+"intensity" = "Intensitas";
+
+// MARK: - Marquee
+"marquee_mode" = "Mode Marquee";
+"marquee_mode_title" = "Mode Marquee";
+"marquee_mode_description" = "Menampilkan teks sebagai satu baris bergulir yang bergerak melintasi layar, memanfaatkan tinggi layar secara penuh.";
+"marquee_mode_perfect_for" = "Sempurna untuk menampilkan teks panjang atau membuat efek papan tanda dinamis.";
+
+// MARK: - Actions
+"edit_text" = "Edit Teks";
+"clear_text" = "Hapus Teks";
+"undo" = "Batal";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Mode Potret Diperlukan";
+"portrait_mode_description" = "Putar perangkat Anda ke mode potret untuk mengedit teks.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Tampilan teks raksasa";
+"marquee_text_display" = "Tampilan teks marquee";
+"text_animation" = "Animasi Teks";
+"bold" = "Tebal";
+"italic" = "Miring";
+"clear_text_accessibility" = "Hapus teks";
+"edit_text_accessibility" = "Edit teks";
+"done_editing_accessibility" = "Selesai mengedit";
+
+// MARK: - Animation Types
+"none" = "Tidak ada";
+"bloom" = "Mekar";
+"jitter" = "Gemetar";
+"explode" = "Meledak"; 

@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "REUSE TEKS";
+"done" = "Klaar";
+"close" = "Sluit";
+"cancel" = "Kanselleer";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Opsies";
+"display" = "Vertoning";
+"animation" = "Animasie";
+"actions" = "Aksies";
+"intensity" = "Intensiteit";
+
+// MARK: - Marquee
+"marquee_mode" = "Marquee Modus";
+"marquee_mode_title" = "Marquee Modus";
+"marquee_mode_description" = "Wys teks as 'n enkele skuiflyn wat oor die skerm beweeg, wat die volle hoogte van die skerm benut.";
+"marquee_mode_perfect_for" = "Perfek vir die vertoon van lang teks of die skep van dinamiese tekenbord effekte.";
+
+// MARK: - Actions
+"edit_text" = "Redigeer Teks";
+"clear_text" = "Maak Teks Skoon";
+"undo" = "Ontdoen";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Portret Modus Benodig";
+"portrait_mode_description" = "Draai jou toestel na portret modus om teks te redigeer.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Reuse teks vertoning";
+"marquee_text_display" = "Marquee teks vertoning";
+"text_animation" = "Teks Animasie";
+"bold" = "Vet";
+"italic" = "Skuins";
+"clear_text_accessibility" = "Maak teks skoon";
+"edit_text_accessibility" = "Redigeer teks";
+"done_editing_accessibility" = "Redigering voltooi";
+
+// MARK: - Animation Types
+"none" = "Geen";
+"bloom" = "Blom";
+"jitter" = "Bewing";
+"explode" = "Ontplof"; 

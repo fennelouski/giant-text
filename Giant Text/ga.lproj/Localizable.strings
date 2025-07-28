@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "TÉACS GÉAR";
+"done" = "Déanta";
+"close" = "Dún";
+"cancel" = "Cealaigh";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Roghanna";
+"display" = "Taispeáint";
+"animation" = "Beochan";
+"actions" = "Gníomhartha";
+"intensity" = "Déine";
+
+// MARK: - Marquee
+"marquee_mode" = "Mód Marquee";
+"marquee_mode_title" = "Mód Marquee";
+"marquee_mode_description" = "Taispeánann téacs mar líne amháin scrolláilte a ghluaiseann trasna an scáileáin, ag baint úsáide as airde iomlán an taispeántais.";
+"marquee_mode_perfect_for" = "Foirfe chun téacs fada a thaispeáint nó chun éifeachtaí comharthaíochta dinimiciúla a chruthú.";
+
+// MARK: - Actions
+"edit_text" = "Cuir Téacs in Eagar";
+"clear_text" = "Glan Téacs";
+"undo" = "Cealaigh";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Mód Portráid Riachtanach";
+"portrait_mode_description" = "Cuir do ghléas i mód portráid chun téacs a chur in eagar.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Taispeáint téacs géar";
+"marquee_text_display" = "Taispeáint téacs marquee";
+"text_animation" = "Beochan Téacs";
+"bold" = "Trom";
+"italic" = "Iodálach";
+"clear_text_accessibility" = "Glan téacs";
+"edit_text_accessibility" = "Cuir téacs in eagar";
+"done_editing_accessibility" = "Críochnaigh eagrú";
+
+// MARK: - Animation Types
+"none" = "Aon cheann";
+"bloom" = "Bláth";
+"jitter" = "Creathadh";
+"explode" = "Pléasc"; 

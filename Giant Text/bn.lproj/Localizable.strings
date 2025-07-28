@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "বিশাল টেক্সট";
+"done" = "সম্পন্ন";
+"close" = "বন্ধ করুন";
+"cancel" = "বাতিল করুন";
+"ok" = "ঠিক আছে";
+
+// MARK: - Options Menu
+"options" = "বিকল্পগুলি";
+"display" = "প্রদর্শন";
+"animation" = "অ্যানিমেশন";
+"actions" = "কর্ম";
+"intensity" = "তীব্রতা";
+
+// MARK: - Marquee
+"marquee_mode" = "মার্কি মোড";
+"marquee_mode_title" = "মার্কি মোড";
+"marquee_mode_description" = "টেক্সটকে একটি একক স্ক্রোলিং লাইন হিসাবে প্রদর্শন করে যা স্ক্রিন জুড়ে চলাচল করে, ডিসপ্লের সম্পূর্ণ উচ্চতা ব্যবহার করে।";
+"marquee_mode_perfect_for" = "দীর্ঘ টেক্সট প্রদর্শন বা গতিশীল সাইনবোর্ড ইফেক্ট তৈরি করার জন্য নিখুঁত।";
+
+// MARK: - Actions
+"edit_text" = "টেক্সট সম্পাদনা করুন";
+"clear_text" = "টেক্সট মুছুন";
+"undo" = "পূর্বাবস্থায় ফিরুন";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "পোর্ট্রেট মোড প্রয়োজন";
+"portrait_mode_description" = "টেক্সট সম্পাদনা করার জন্য আপনার ডিভাইসটি পোর্ট্রেট মোডে ঘোরান।";
+
+// MARK: - Accessibility
+"giant_text_display" = "বিশাল টেক্সট প্রদর্শন";
+"marquee_text_display" = "মার্কি টেক্সট প্রদর্শন";
+"text_animation" = "টেক্সট অ্যানিমেশন";
+"bold" = "গাঢ়";
+"italic" = "তির্যক";
+"clear_text_accessibility" = "টেক্সট মুছুন";
+"edit_text_accessibility" = "টেক্সট সম্পাদনা করুন";
+"done_editing_accessibility" = "সম্পাদনা সম্পন্ন";
+
+// MARK: - Animation Types
+"none" = "কোনটি নয়";
+"bloom" = "ফুল";
+"jitter" = "কাঁপুনি";
+"explode" = "বিস্ফোরণ"; 

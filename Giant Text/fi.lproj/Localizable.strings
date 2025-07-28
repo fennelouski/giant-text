@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "JÄTTITEKSTI";
+"done" = "Valmis";
+"close" = "Sulje";
+"cancel" = "Peruuta";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Asetukset";
+"display" = "Näyttö";
+"animation" = "Animaatio";
+"actions" = "Toiminnot";
+"intensity" = "Voimakkuus";
+
+// MARK: - Marquee
+"marquee_mode" = "Marquee-tila";
+"marquee_mode_title" = "Marquee-tila";
+"marquee_mode_description" = "Näyttää tekstin yhtenäisenä vierivänä rivinä, joka liikkuu ruudun poikki hyödyntäen koko näytön korkeutta.";
+"marquee_mode_perfect_for" = "Täydellinen pitkän tekstin näyttämiseen tai dynaamisten kylttiefektien luomiseen.";
+
+// MARK: - Actions
+"edit_text" = "Muokkaa Tekstiä";
+"clear_text" = "Tyhjennä Teksti";
+"undo" = "Kumoa";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Pystyasento Vaaditaan";
+"portrait_mode_description" = "Käännä laitteesi pystyasentoon tekstin muokkaamista varten.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Jättitekstinäyttö";
+"marquee_text_display" = "Marquee-tekstinäyttö";
+"text_animation" = "Tekstianimaatio";
+"bold" = "Lihavoitu";
+"italic" = "Kursiivi";
+"clear_text_accessibility" = "Tyhjennä teksti";
+"edit_text_accessibility" = "Muokkaa tekstiä";
+"done_editing_accessibility" = "Muokkaus valmis";
+
+// MARK: - Animation Types
+"none" = "Ei mitään";
+"bloom" = "Kukkia";
+"jitter" = "Tärinä";
+"explode" = "Räjähdys"; 

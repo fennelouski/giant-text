@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "TESTU ERRALDOIA";
+"done" = "Egina";
+"close" = "Itxi";
+"cancel" = "Ezeztatu";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Aukerak";
+"display" = "Bistaratzea";
+"animation" = "Animazioa";
+"actions" = "Ekintzak";
+"intensity" = "Intentsitatea";
+
+// MARK: - Marquee
+"marquee_mode" = "Marquee Modua";
+"marquee_mode_title" = "Marquee Modua";
+"marquee_mode_description" = "Testua lerro bakar batean erakusten du pantailan zehar mugitzen dena, pantailaren altuera osoa aprobetxatuz.";
+"marquee_mode_perfect_for" = "Testu luzea erakusteko edo seinalizazio efektu dinamikoak sortzeko perfektua.";
+
+// MARK: - Actions
+"edit_text" = "Testua Editatu";
+"clear_text" = "Testua Garbitu";
+"undo" = "Desegin";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Portrait Modua Beharrezkoa";
+"portrait_mode_description" = "Biratu zure gailua portrait modura testua editatzeko.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Testu erraldoiaren bistaratzea";
+"marquee_text_display" = "Marquee testuaren bistaratzea";
+"text_animation" = "Testu Animazioa";
+"bold" = "Lodia";
+"italic" = "Etzana";
+"clear_text_accessibility" = "Testua garbitu";
+"edit_text_accessibility" = "Testua editatu";
+"done_editing_accessibility" = "Editaketa amaitua";
+
+// MARK: - Animation Types
+"none" = "Bat ere ez";
+"bloom" = "Loreak";
+"jitter" = "Dardara";
+"explode" = "Leherketa"; 

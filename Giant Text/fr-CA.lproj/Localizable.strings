@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "TEXTE GÉANT";
+"done" = "Terminé";
+"close" = "Fermer";
+"cancel" = "Annuler";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Options";
+"display" = "Affichage";
+"animation" = "Animation";
+"actions" = "Actions";
+"intensity" = "Intensité";
+
+// MARK: - Marquee
+"marquee_mode" = "Mode Défilement";
+"marquee_mode_title" = "Mode Défilement";
+"marquee_mode_description" = "Affiche le texte sous forme d'une seule ligne défilante qui se déplace à travers l'écran, utilisant pleinement la hauteur de l'affichage.";
+"marquee_mode_perfect_for" = "Parfait pour afficher du texte long ou créer des effets d'affichage dynamiques.";
+
+// MARK: - Actions
+"edit_text" = "Modifier le Texte";
+"clear_text" = "Effacer le Texte";
+"undo" = "Annuler";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Mode Portrait Requis";
+"portrait_mode_description" = "Veuillez faire pivoter votre appareil en mode portrait pour modifier le texte.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Affichage de texte géant";
+"marquee_text_display" = "Affichage de texte défilant";
+"text_animation" = "Animation de Texte";
+"bold" = "Gras";
+"italic" = "Italique";
+"clear_text_accessibility" = "Effacer le texte";
+"edit_text_accessibility" = "Modifier le texte";
+"done_editing_accessibility" = "Terminer la modification";
+
+// MARK: - Animation Types
+"none" = "Aucune";
+"bloom" = "Éclosion";
+"jitter" = "Tremblement";
+"explode" = "Explosion"; 

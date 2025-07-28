@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "TEXT URIAȘ";
+"done" = "Gata";
+"close" = "Închide";
+"cancel" = "Anulează";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Opțiuni";
+"display" = "Afișare";
+"animation" = "Animație";
+"actions" = "Acțiuni";
+"intensity" = "Intensitate";
+
+// MARK: - Marquee
+"marquee_mode" = "Mod Marquee";
+"marquee_mode_title" = "Mod Marquee";
+"marquee_mode_description" = "Afișează textul ca o singură linie derulantă care se mișcă pe ecran, folosind în întregime înălțimea afișajului.";
+"marquee_mode_perfect_for" = "Perfect pentru afișarea textului lung sau crearea efectelor dinamice de semnalizare.";
+
+// MARK: - Actions
+"edit_text" = "Editează Textul";
+"clear_text" = "Șterge Textul";
+"undo" = "Anulează";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Mod Portret Necesar";
+"portrait_mode_description" = "Rotește dispozitivul în mod portret pentru a edita textul.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Afișare text uriaș";
+"marquee_text_display" = "Afișare text marquee";
+"text_animation" = "Animație Text";
+"bold" = "Îngroșat";
+"italic" = "Cursiv";
+"clear_text_accessibility" = "Șterge text";
+"edit_text_accessibility" = "Editează text";
+"done_editing_accessibility" = "Editare completă";
+
+// MARK: - Animation Types
+"none" = "Niciunul";
+"bloom" = "Înflorire";
+"jitter" = "Tremur";
+"explode" = "Explozie"; 

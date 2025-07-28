@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "ГІГАНЦКІ ТЭКСТ";
+"done" = "Гатова";
+"close" = "Закрыць";
+"cancel" = "Адмяніць";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Параметры";
+"display" = "Адлюстраванне";
+"animation" = "Анімацыя";
+"actions" = "Дзеянні";
+"intensity" = "Інтэнсіўнасць";
+
+// MARK: - Marquee
+"marquee_mode" = "Рэжым Бягучага Радка";
+"marquee_mode_title" = "Рэжым Бягучага Радка";
+"marquee_mode_description" = "Адлюстроўвае тэкст як адзін пракручвальны радок, які рухаецца па экране, выкарыстоўваючы ўсю вышыню дысплея.";
+"marquee_mode_perfect_for" = "Ідэальна для адлюстравання доўгага тэксту або стварэння дынамічных эфектаў вывесак.";
+
+// MARK: - Actions
+"edit_text" = "Рэдагаваць Тэкст";
+"clear_text" = "Ачысціць Тэкст";
+"undo" = "Адмяніць";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Патрабуецца Партрэтны Рэжым";
+"portrait_mode_description" = "Павярніце прыладу ў партрэтны рэжым для рэдагавання тэксту.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Адлюстраванне гіганцкага тэксту";
+"marquee_text_display" = "Адлюстраванне тэксту бягучага радка";
+"text_animation" = "Анімацыя Тэксту";
+"bold" = "Тоўсты";
+"italic" = "Курсіў";
+"clear_text_accessibility" = "Ачысціць тэкст";
+"edit_text_accessibility" = "Рэдагаваць тэкст";
+"done_editing_accessibility" = "Рэдагаванне завершана";
+
+// MARK: - Animation Types
+"none" = "Няма";
+"bloom" = "Цвіценне";
+"jitter" = "Дрыжанне";
+"explode" = "Выбух"; 

@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "بڑا ٹیکسٹ";
+"done" = "مکمل";
+"close" = "بند کریں";
+"cancel" = "منسوخ کریں";
+"ok" = "ٹھیک ہے";
+
+// MARK: - Options Menu
+"options" = "اختیارات";
+"display" = "ڈسپلے";
+"animation" = "اینیمیشن";
+"actions" = "اعمال";
+"intensity" = "شدت";
+
+// MARK: - Marquee
+"marquee_mode" = "مارکی موڈ";
+"marquee_mode_title" = "مارکی موڈ";
+"marquee_mode_description" = "ٹیکسٹ کو ایک واحد اسکرولنگ لائن کے طور پر دکھاتا ہے جو سکرین کے پار حرکت کرتا ہے، ڈسپلے کی مکمل اونچائی کا استعمال کرتا ہے۔";
+"marquee_mode_perfect_for" = "لمبے ٹیکسٹ دکھانے یا متحرک سائن بورڈ افیکٹس بنانے کے لیے بہترین۔";
+
+// MARK: - Actions
+"edit_text" = "ٹیکسٹ میں ترمیم کریں";
+"clear_text" = "ٹیکسٹ صاف کریں";
+"undo" = "واپس";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "پورٹریٹ موڈ درکار";
+"portrait_mode_description" = "ٹیکسٹ میں ترمیم کرنے کے لیے اپنے ڈیوائس کو پورٹریٹ موڈ میں گھمائیں۔";
+
+// MARK: - Accessibility
+"giant_text_display" = "بڑا ٹیکسٹ ڈسپلے";
+"marquee_text_display" = "مارکی ٹیکسٹ ڈسپلے";
+"text_animation" = "ٹیکسٹ اینیمیشن";
+"bold" = "موٹا";
+"italic" = "ترچھا";
+"clear_text_accessibility" = "ٹیکسٹ صاف کریں";
+"edit_text_accessibility" = "ٹیکسٹ میں ترمیم کریں";
+"done_editing_accessibility" = "ترمیم مکمل";
+
+// MARK: - Animation Types
+"none" = "کوئی نہیں";
+"bloom" = "کھلنا";
+"jitter" = "کانپنا";
+"explode" = "پھٹنا"; 

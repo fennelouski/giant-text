@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "JÄTTETEXT";
+"done" = "Klar";
+"close" = "Stäng";
+"cancel" = "Avbryt";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Alternativ";
+"display" = "Visning";
+"animation" = "Animation";
+"actions" = "Åtgärder";
+"intensity" = "Intensitet";
+
+// MARK: - Marquee
+"marquee_mode" = "Marquee-läge";
+"marquee_mode_title" = "Marquee-läge";
+"marquee_mode_description" = "Visar text som en enda rullande rad som rör sig över skärmen och utnyttjar hela skärmhöjden.";
+"marquee_mode_perfect_for" = "Perfekt för att visa lång text eller skapa dynamiska skylteffekter.";
+
+// MARK: - Actions
+"edit_text" = "Redigera Text";
+"clear_text" = "Rensa Text";
+"undo" = "Ångra";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Stående Läge Krävs";
+"portrait_mode_description" = "Rotera din enhet till stående läge för att redigera text.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Jättetextvisning";
+"marquee_text_display" = "Marquee-textvisning";
+"text_animation" = "Textanimation";
+"bold" = "Fet";
+"italic" = "Kursiv";
+"clear_text_accessibility" = "Rensa text";
+"edit_text_accessibility" = "Redigera text";
+"done_editing_accessibility" = "Redigering klar";
+
+// MARK: - Animation Types
+"none" = "Ingen";
+"bloom" = "Blomma";
+"jitter" = "Skaka";
+"explode" = "Explodera"; 

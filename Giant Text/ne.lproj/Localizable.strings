@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "विशाल पाठ";
+"done" = "सम्पन्न";
+"close" = "बन्द गर्नुहोस्";
+"cancel" = "रद्द गर्नुहोस्";
+"ok" = "ठीक छ";
+
+// MARK: - Options Menu
+"options" = "विकल्पहरू";
+"display" = "प्रदर्शन";
+"animation" = "एनिमेसन";
+"actions" = "कार्यहरू";
+"intensity" = "तीव्रता";
+
+// MARK: - Marquee
+"marquee_mode" = "मार्की मोड";
+"marquee_mode_title" = "मार्की मोड";
+"marquee_mode_description" = "पाठलाई एकल स्क्रोलिङ लाइनको रूपमा देखाउँछ जुन स्क्रिनमा हिँड्छ, प्रदर्शनको पूर्ण उचाई प्रयोग गर्दै।";
+"marquee_mode_perfect_for" = "लामो पाठ देखाउन वा गतिशील साइनबोर्ड प्रभावहरू सिर्जना गर्न उत्तम।";
+
+// MARK: - Actions
+"edit_text" = "पाठ सम्पादन गर्नुहोस्";
+"clear_text" = "पाठ सफा गर्नुहोस्";
+"undo" = "पछाडि";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "पोर्ट्रेट मोड आवश्यक";
+"portrait_mode_description" = "पाठ सम्पादन गर्न तपाईंको डिभाइसलाई पोर्ट्रेट मोडमा घुमाउनुहोस्।";
+
+// MARK: - Accessibility
+"giant_text_display" = "विशाल पाठ प्रदर्शन";
+"marquee_text_display" = "मार्की पाठ प्रदर्शन";
+"text_animation" = "पाठ एनिमेसन";
+"bold" = "मोटो";
+"italic" = "तिर्छा";
+"clear_text_accessibility" = "पाठ सफा गर्नुहोस्";
+"edit_text_accessibility" = "पाठ सम्पादन गर्नुहोस्";
+"done_editing_accessibility" = "सम्पादन सम्पन्न";
+
+// MARK: - Animation Types
+"none" = "कुनै पनि होइन";
+"bloom" = "फूल";
+"jitter" = "कम्पन";
+"explode" = "विस्फोट"; 

@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "巨型文字";
+"done" = "完成";
+"close" = "關閉";
+"cancel" = "取消";
+"ok" = "確定";
+
+// MARK: - Options Menu
+"options" = "選項";
+"display" = "顯示";
+"animation" = "動畫";
+"actions" = "操作";
+"intensity" = "強度";
+
+// MARK: - Marquee
+"marquee_mode" = "跑馬燈模式";
+"marquee_mode_title" = "跑馬燈模式";
+"marquee_mode_description" = "將文字顯示為單行滾動，在螢幕上移動，充分利用顯示高度。";
+"marquee_mode_perfect_for" = "非常適合顯示長文字或創建動態標牌效果。";
+
+// MARK: - Actions
+"edit_text" = "編輯文字";
+"clear_text" = "清除文字";
+"undo" = "撤銷";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "需要豎屏模式";
+"portrait_mode_description" = "請將設備旋轉到豎屏模式以編輯文字。";
+
+// MARK: - Accessibility
+"giant_text_display" = "巨型文字顯示";
+"marquee_text_display" = "跑馬燈文字顯示";
+"text_animation" = "文字動畫";
+"bold" = "粗體";
+"italic" = "斜體";
+"clear_text_accessibility" = "清除文字";
+"edit_text_accessibility" = "編輯文字";
+"done_editing_accessibility" = "完成編輯";
+
+// MARK: - Animation Types
+"none" = "無";
+"bloom" = "綻放";
+"jitter" = "抖動";
+"explode" = "爆炸"; 

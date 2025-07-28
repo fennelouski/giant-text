@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "ULUG' MATN";
+"done" = "Tayyor";
+"close" = "Yopish";
+"cancel" = "Bekor qilish";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Parametrlar";
+"display" = "Ko'rsatish";
+"animation" = "Animatsiya";
+"actions" = "Amallar";
+"intensity" = "Kuchlilik";
+
+// MARK: - Marquee
+"marquee_mode" = "Marquee Rejimi";
+"marquee_mode_title" = "Marquee Rejimi";
+"marquee_mode_description" = "Matnni ekran bo'ylab harakatlanadigan bitta aylanuvchi qator sifatida ko'rsatadi, displeyning to'liq balandligidan foydalanadi.";
+"marquee_mode_perfect_for" = "Uzoq matnni ko'rsatish yoki dinamik belgilar effektlarini yaratish uchun mukammal.";
+
+// MARK: - Actions
+"edit_text" = "Matnni Tahrirlash";
+"clear_text" = "Matnni Tozalash";
+"undo" = "Bekor qilish";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Portret Rejimi Talab qilinadi";
+"portrait_mode_description" = "Matnni tahrirlash uchun qurilmangizni portret rejimiga aylantiring.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Ulug' matn ko'rsatish";
+"marquee_text_display" = "Marquee matn ko'rsatish";
+"text_animation" = "Matn Animatsiyasi";
+"bold" = "Qalin";
+"italic" = "Qiyshiq";
+"clear_text_accessibility" = "Matnni tozalash";
+"edit_text_accessibility" = "Matnni tahrirlash";
+"done_editing_accessibility" = "Tahrirlash tugallandi";
+
+// MARK: - Animation Types
+"none" = "Yo'q";
+"bloom" = "Gullash";
+"jitter" = "Silkinish";
+"explode" = "Portlash"; 

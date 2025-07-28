@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "OBROVSKÝ TEXT";
+"done" = "Hotovo";
+"close" = "Zavřít";
+"cancel" = "Zrušit";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Možnosti";
+"display" = "Zobrazení";
+"animation" = "Animace";
+"actions" = "Akce";
+"intensity" = "Intenzita";
+
+// MARK: - Marquee
+"marquee_mode" = "Režim Marquee";
+"marquee_mode_title" = "Režim Marquee";
+"marquee_mode_description" = "Zobrazuje text jako jednu posuvnou řádku, která se pohybuje po obrazovce a využívá plnou výšku displeje.";
+"marquee_mode_perfect_for" = "Perfektní pro zobrazování dlouhého textu nebo vytváření dynamických efektů značek.";
+
+// MARK: - Actions
+"edit_text" = "Upravit Text";
+"clear_text" = "Vymazat Text";
+"undo" = "Zpět";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Požadován Svislý Režim";
+"portrait_mode_description" = "Otočte zařízení do svislého režimu pro úpravu textu.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Zobrazení obrovského textu";
+"marquee_text_display" = "Zobrazení textu marquee";
+"text_animation" = "Animace Textu";
+"bold" = "Tučné";
+"italic" = "Kurzíva";
+"clear_text_accessibility" = "Vymazat text";
+"edit_text_accessibility" = "Upravit text";
+"done_editing_accessibility" = "Úprava dokončena";
+
+// MARK: - Animation Types
+"none" = "Žádná";
+"bloom" = "Rozkvět";
+"jitter" = "Chvění";
+"explode" = "Výbuch"; 

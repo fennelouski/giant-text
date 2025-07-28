@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "نص عملاق";
+"done" = "تم";
+"close" = "إغلاق";
+"cancel" = "إلغاء";
+"ok" = "موافق";
+
+// MARK: - Options Menu
+"options" = "الخيارات";
+"display" = "العرض";
+"animation" = "الرسوم المتحركة";
+"actions" = "الإجراءات";
+"intensity" = "الشدة";
+
+// MARK: - Marquee
+"marquee_mode" = "وضع الشريط المتحرك";
+"marquee_mode_title" = "وضع الشريط المتحرك";
+"marquee_mode_description" = "يعرض النص كسطر واحد متحرك يتحرك عبر الشاشة، مستغلاً كامل ارتفاع العرض.";
+"marquee_mode_perfect_for" = "مثالي لعرض النصوص الطويلة أو إنشاء تأثيرات العرض الديناميكية.";
+
+// MARK: - Actions
+"edit_text" = "تحرير النص";
+"clear_text" = "مسح النص";
+"undo" = "تراجع";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "مطلوب الوضع العمودي";
+"portrait_mode_description" = "يرجى تدوير جهازك إلى الوضع العمودي لتحرير النص.";
+
+// MARK: - Accessibility
+"giant_text_display" = "عرض النص العملاق";
+"marquee_text_display" = "عرض النص المتحرك";
+"text_animation" = "رسوم النص المتحركة";
+"bold" = "عريض";
+"italic" = "مائل";
+"clear_text_accessibility" = "مسح النص";
+"edit_text_accessibility" = "تحرير النص";
+"done_editing_accessibility" = "إنهاء التحرير";
+
+// MARK: - Animation Types
+"none" = "لا شيء";
+"bloom" = "تفتح";
+"jitter" = "اهتزاز";
+"explode" = "انفجار"; 

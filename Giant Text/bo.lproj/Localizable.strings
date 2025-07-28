@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "ཆེ་བའི་ཡིག་ཆ";
+"done" = "རྫོགས་སོ";
+"close" = "ཁ་རྒྱག";
+"cancel" = "ཆ་མེད་བྱེད";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "གདམ་ཆོག";
+"display" = "སྟོན་པ";
+"animation" = "གཡོ་བ";
+"actions" = "བྱེད་པ";
+"intensity" = "ཤུགས";
+
+// MARK: - Marquee
+"marquee_mode" = "Marquee ཐབས་ཤེས";
+"marquee_mode_title" = "Marquee ཐབས་ཤེས";
+"marquee_mode_description" = "ཡིག་ཆ་ཆུང་ངུ་ཞིག་ལ་བརྩེགས་ཏེ་ཤོག་ངོས་ནས་འགྲོ་བར་སྟོན་པ་དང་། སྟོན་ཆས་ཀྱི་མཐོ་ཚད་ཆ་ཚང་བེད་སྤྱོད་བྱེད་པ།";
+"marquee_mode_perfect_for" = "ཡིག་ཆ་རིང་པོ་སྟོན་པ་དང་། གཡོ་བའི་རྟགས་ཆ་ཆེད་བསྐྲུན་པར་ཆེས་མཛེས།";
+
+// MARK: - Actions
+"edit_text" = "ཡིག་ཆ་རྩོམ་སྒྲིག";
+"clear_text" = "ཡིག་ཆ་སེལ་བ";
+"undo" = "ཕྱིར་ལེན";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "ཐུག་པོའི་ཐབས་ཤེས་དགོས་པ";
+"portrait_mode_description" = "ཡིག་ཆ་རྩོམ་སྒྲིག་བྱེད་པར་ཆས་ཆུང་ཁྱོད་ཐུག་པོའི་ཐབས་ཤེས་སུ་སྐོར་རོགས།";
+
+// MARK: - Accessibility
+"giant_text_display" = "ཆེ་བའི་ཡིག་ཆ་སྟོན་པ";
+"marquee_text_display" = "Marquee ཡིག་ཆ་སྟོན་པ";
+"text_animation" = "ཡིག་ཆ་གཡོ་བ";
+"bold" = "མཐུག་པོ";
+"italic" = "ཆག་པོ";
+"clear_text_accessibility" = "ཡིག་ཆ་སེལ་བ";
+"edit_text_accessibility" = "ཡིག་ཆ་རྩོམ་སྒྲིག";
+"done_editing_accessibility" = "རྩོམ་སྒྲིག་རྫོགས་སོ";
+
+// MARK: - Animation Types
+"none" = "མེད་པ";
+"bloom" = "མེ་ཏོག";
+"jitter" = "འཇིག་འཇིག";
+"explode" = "འཕྲོག་པ"; 

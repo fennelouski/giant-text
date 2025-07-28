@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "טקסט ענק";
+"done" = "הושלם";
+"close" = "סגור";
+"cancel" = "ביטול";
+"ok" = "אישור";
+
+// MARK: - Options Menu
+"options" = "אפשרויות";
+"display" = "תצוגה";
+"animation" = "אנימציה";
+"actions" = "פעולות";
+"intensity" = "עוצמה";
+
+// MARK: - Marquee
+"marquee_mode" = "מצב כרזה";
+"marquee_mode_title" = "מצב כרזה";
+"marquee_mode_description" = "מציג טקסט כשורה אחת נגללת שנעה על פני המסך, מנצלת במלואה את גובה התצוגה.";
+"marquee_mode_perfect_for" = "מושלם להצגת טקסט ארוך או יצירת אפקטי תצוגה דינמיים.";
+
+// MARK: - Actions
+"edit_text" = "ערוך טקסט";
+"clear_text" = "נקה טקסט";
+"undo" = "בטל";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "נדרש מצב אנכי";
+"portrait_mode_description" = "אנא סובב את המכשיר למצב אנכי כדי לערוך טקסט.";
+
+// MARK: - Accessibility
+"giant_text_display" = "תצוגת טקסט ענק";
+"marquee_text_display" = "תצוגת טקסט כרזה";
+"text_animation" = "אנימציית טקסט";
+"bold" = "מודגש";
+"italic" = "נטוי";
+"clear_text_accessibility" = "נקה טקסט";
+"edit_text_accessibility" = "ערוך טקסט";
+"done_editing_accessibility" = "סיים עריכה";
+
+// MARK: - Animation Types
+"none" = "ללא";
+"bloom" = "פריחה";
+"jitter" = "רעד";
+"explode" = "פיצוץ"; 

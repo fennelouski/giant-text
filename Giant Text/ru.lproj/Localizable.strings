@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "ГИГАНТСКИЙ ТЕКСТ";
+"done" = "Готово";
+"close" = "Закрыть";
+"cancel" = "Отмена";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Параметры";
+"display" = "Отображение";
+"animation" = "Анимация";
+"actions" = "Действия";
+"intensity" = "Интенсивность";
+
+// MARK: - Marquee
+"marquee_mode" = "Режим Бегущей Строки";
+"marquee_mode_title" = "Режим Бегущей Строки";
+"marquee_mode_description" = "Отображает текст как одну прокручиваемую строку, которая движется по экрану, используя всю высоту дисплея.";
+"marquee_mode_perfect_for" = "Идеально для отображения длинного текста или создания динамических эффектов вывесок.";
+
+// MARK: - Actions
+"edit_text" = "Редактировать Текст";
+"clear_text" = "Очистить Текст";
+"undo" = "Отменить";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Требуется Портретный Режим";
+"portrait_mode_description" = "Поверните устройство в портретный режим для редактирования текста.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Отображение гигантского текста";
+"marquee_text_display" = "Отображение текста бегущей строки";
+"text_animation" = "Анимация Текста";
+"bold" = "Жирный";
+"italic" = "Курсив";
+"clear_text_accessibility" = "Очистить текст";
+"edit_text_accessibility" = "Редактировать текст";
+"done_editing_accessibility" = "Редактирование завершено";
+
+// MARK: - Animation Types
+"none" = "Нет";
+"bloom" = "Цветение";
+"jitter" = "Дрожание";
+"explode" = "Взрыв"; 

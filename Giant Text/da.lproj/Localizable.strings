@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "KÆMPETEKST";
+"done" = "Færdig";
+"close" = "Luk";
+"cancel" = "Annuller";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Indstillinger";
+"display" = "Visning";
+"animation" = "Animation";
+"actions" = "Handlinger";
+"intensity" = "Intensitet";
+
+// MARK: - Marquee
+"marquee_mode" = "Marquee-tilstand";
+"marquee_mode_title" = "Marquee-tilstand";
+"marquee_mode_description" = "Viser tekst som en enkelt rullende linje, der bevæger sig hen over skærmen og udnytter hele skærmhøjden.";
+"marquee_mode_perfect_for" = "Perfekt til at vise lang tekst eller skabe dynamiske skilteeffekter.";
+
+// MARK: - Actions
+"edit_text" = "Rediger Tekst";
+"clear_text" = "Ryd Tekst";
+"undo" = "Fortryd";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Portrættilstand Påkrævet";
+"portrait_mode_description" = "Roter din enhed til portrættilstand for at redigere tekst.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Kæmpetekstvisning";
+"marquee_text_display" = "Marquee-tekstvisning";
+"text_animation" = "Tekstanimation";
+"bold" = "Fed";
+"italic" = "Kursiv";
+"clear_text_accessibility" = "Ryd tekst";
+"edit_text_accessibility" = "Rediger tekst";
+"done_editing_accessibility" = "Redigering færdig";
+
+// MARK: - Animation Types
+"none" = "Ingen";
+"bloom" = "Blomst";
+"jitter" = "Rystelse";
+"explode" = "Eksplosion"; 

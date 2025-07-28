@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "OLBRZYMI TEKST";
+"done" = "Gotowe";
+"close" = "Zamknij";
+"cancel" = "Anuluj";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Opcje";
+"display" = "Wyświetlanie";
+"animation" = "Animacja";
+"actions" = "Akcje";
+"intensity" = "Intensywność";
+
+// MARK: - Marquee
+"marquee_mode" = "Tryb Marquee";
+"marquee_mode_title" = "Tryb Marquee";
+"marquee_mode_description" = "Wyświetla tekst jako pojedynczą przewijającą się linię, która przesuwa się po ekranie, wykorzystując pełną wysokość wyświetlacza.";
+"marquee_mode_perfect_for" = "Idealne do wyświetlania długiego tekstu lub tworzenia dynamicznych efektów znaków.";
+
+// MARK: - Actions
+"edit_text" = "Edytuj Tekst";
+"clear_text" = "Wyczyść Tekst";
+"undo" = "Cofnij";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Tryb Pionowy Wymagany";
+"portrait_mode_description" = "Obróć urządzenie do trybu pionowego, aby edytować tekst.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Wyświetlanie olbrzymiego tekstu";
+"marquee_text_display" = "Wyświetlanie tekstu marquee";
+"text_animation" = "Animacja Tekstu";
+"bold" = "Pogrubiony";
+"italic" = "Kursywa";
+"clear_text_accessibility" = "Wyczyść tekst";
+"edit_text_accessibility" = "Edytuj tekst";
+"done_editing_accessibility" = "Edycja zakończona";
+
+// MARK: - Animation Types
+"none" = "Brak";
+"bloom" = "Kwitnienie";
+"jitter" = "Drżenie";
+"explode" = "Eksplozja"; 

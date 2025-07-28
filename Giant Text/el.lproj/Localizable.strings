@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "ΤΕΡΑΣΤΙΟ ΚΕΙΜΕΝΟ";
+"done" = "Έγινε";
+"close" = "Κλείσιμο";
+"cancel" = "Ακύρωση";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Επιλογές";
+"display" = "Εμφάνιση";
+"animation" = "Κίνηση";
+"actions" = "Ενέργειες";
+"intensity" = "Ένταση";
+
+// MARK: - Marquee
+"marquee_mode" = "Λειτουργία Marquee";
+"marquee_mode_title" = "Λειτουργία Marquee";
+"marquee_mode_description" = "Εμφανίζει το κείμενο ως μία μόνο κυλιόμενη γραμμή που κινείται κατά μήκος της οθόνης, αξιοποιώντας πλήρως το ύψος της οθόνης.";
+"marquee_mode_perfect_for" = "Ιδανικό για την εμφάνιση μεγάλου κειμένου ή τη δημιουργία δυναμικών εφέ σήμανσης.";
+
+// MARK: - Actions
+"edit_text" = "Επεξεργασία Κειμένου";
+"clear_text" = "Καθαρισμός Κειμένου";
+"undo" = "Αναίρεση";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Απαιτείται Κατακόρυφη Λειτουργία";
+"portrait_mode_description" = "Περιστρέψτε τη συσκευή σας σε κατακόρυφη λειτουργία για να επεξεργαστείτε κείμενο.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Εμφάνιση τεράστιου κειμένου";
+"marquee_text_display" = "Εμφάνιση κειμένου marquee";
+"text_animation" = "Κίνηση Κειμένου";
+"bold" = "Έντονο";
+"italic" = "Πλάγιο";
+"clear_text_accessibility" = "Καθαρισμός κειμένου";
+"edit_text_accessibility" = "Επεξεργασία κειμένου";
+"done_editing_accessibility" = "Η επεξεργασία ολοκληρώθηκε";
+
+// MARK: - Animation Types
+"none" = "Καμία";
+"bloom" = "Άνθιση";
+"jitter" = "Τρόμος";
+"explode" = "Έκρηξη"; 

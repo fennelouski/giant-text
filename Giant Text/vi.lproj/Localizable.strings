@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "VĂN BẢN KHỔNG LỒ";
+"done" = "Xong";
+"close" = "Đóng";
+"cancel" = "Hủy";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Tùy chọn";
+"display" = "Hiển thị";
+"animation" = "Hoạt ảnh";
+"actions" = "Hành động";
+"intensity" = "Cường độ";
+
+// MARK: - Marquee
+"marquee_mode" = "Chế độ Marquee";
+"marquee_mode_title" = "Chế độ Marquee";
+"marquee_mode_description" = "Hiển thị văn bản như một dòng cuộn duy nhất di chuyển qua màn hình, tận dụng toàn bộ chiều cao màn hình.";
+"marquee_mode_perfect_for" = "Hoàn hảo để hiển thị văn bản dài hoặc tạo hiệu ứng bảng hiệu động.";
+
+// MARK: - Actions
+"edit_text" = "Chỉnh sửa Văn bản";
+"clear_text" = "Xóa Văn bản";
+"undo" = "Hoàn tác";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Yêu cầu Chế độ Dọc";
+"portrait_mode_description" = "Xoay thiết bị của bạn sang chế độ dọc để chỉnh sửa văn bản.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Hiển thị văn bản khổng lồ";
+"marquee_text_display" = "Hiển thị văn bản marquee";
+"text_animation" = "Hoạt ảnh Văn bản";
+"bold" = "Đậm";
+"italic" = "Nghiêng";
+"clear_text_accessibility" = "Xóa văn bản";
+"edit_text_accessibility" = "Chỉnh sửa văn bản";
+"done_editing_accessibility" = "Hoàn thành chỉnh sửa";
+
+// MARK: - Animation Types
+"none" = "Không có";
+"bloom" = "Nở hoa";
+"jitter" = "Rung";
+"explode" = "Nổ"; 

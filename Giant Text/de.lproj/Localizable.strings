@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "RIESENTEXT";
+"done" = "Fertig";
+"close" = "Schließen";
+"cancel" = "Abbrechen";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Optionen";
+"display" = "Anzeige";
+"animation" = "Animation";
+"actions" = "Aktionen";
+"intensity" = "Intensität";
+
+// MARK: - Marquee
+"marquee_mode" = "Laufschrift-Modus";
+"marquee_mode_title" = "Laufschrift-Modus";
+"marquee_mode_description" = "Zeigt Text als eine einzelne scrollende Zeile an, die sich über den Bildschirm bewegt und die volle Höhe des Displays nutzt.";
+"marquee_mode_perfect_for" = "Perfekt für die Anzeige langer Texte oder zum Erstellen dynamischer Beschilderungseffekte.";
+
+// MARK: - Actions
+"edit_text" = "Text Bearbeiten";
+"clear_text" = "Text Löschen";
+"undo" = "Rückgängig";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Hochformat-Modus Erforderlich";
+"portrait_mode_description" = "Bitte drehen Sie Ihr Gerät in den Hochformat-Modus, um Text zu bearbeiten.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Riesentext-Anzeige";
+"marquee_text_display" = "Laufschrift-Textanzeige";
+"text_animation" = "Text-Animation";
+"bold" = "Fett";
+"italic" = "Kursiv";
+"clear_text_accessibility" = "Text löschen";
+"edit_text_accessibility" = "Text bearbeiten";
+"done_editing_accessibility" = "Bearbeitung beenden";
+
+// MARK: - Animation Types
+"none" = "Keine";
+"bloom" = "Blühen";
+"jitter" = "Zittern";
+"explode" = "Explodieren"; 

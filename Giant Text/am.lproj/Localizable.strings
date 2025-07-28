@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "ትልቅ ጽሑፍ";
+"done" = "የተጠናቀቀ";
+"close" = "ዝጋ";
+"cancel" = "ሰርዝ";
+"ok" = "እሺ";
+
+// MARK: - Options Menu
+"options" = "አማራጮች";
+"display" = "ማሳያ";
+"animation" = "እንቅስቃሴ";
+"actions" = "ድርጊቶች";
+"intensity" = "ኃይል";
+
+// MARK: - Marquee
+"marquee_mode" = "ማርኪ ሁኔታ";
+"marquee_mode_title" = "ማርኪ ሁኔታ";
+"marquee_mode_description" = "ጽሑፉን እንደ አንድ የሚንቀሳቀስ መስመር ያሳያል እሱም በስክሪኑ ላይ ይንቀሳቀሳል፣ የማሳያውን ሙሉ ቁመት ይጠቀማል።";
+"marquee_mode_perfect_for" = "ረጅም ጽሑፍ ለማሳየት ወይም ተለዋዋጭ ምልክት ውጤቶችን ለመፍጠር ፍጹም።";
+
+// MARK: - Actions
+"edit_text" = "ጽሑፍ አርትዕ";
+"clear_text" = "ጽሑፍ አጽዳ";
+"undo" = "ይመልስ";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "የቁጥጥር ሁኔታ ያስፈልጋል";
+"portrait_mode_description" = "ጽሑፍ ለመስተካከል መሣሪያዎን ወደ የቁጥጥር ሁኔታ ያ поверните።";
+
+// MARK: - Accessibility
+"giant_text_display" = "ትልቅ ጽሑፍ ማሳያ";
+"marquee_text_display" = "ማርኪ ጽሑፍ ማሳያ";
+"text_animation" = "ጽሑፍ እንቅስቃሴ";
+"bold" = "ደፋር";
+"italic" = "ዘንበል";
+"clear_text_accessibility" = "ጽሑፍ አጽዳ";
+"edit_text_accessibility" = "ጽሑፍ አርትዕ";
+"done_editing_accessibility" = "አርትዕ ተጠናቅቋል";
+
+// MARK: - Animation Types
+"none" = "ምንም";
+"bloom" = "አበባ";
+"jitter" = "መንቀጥቀጥ";
+"explode" = "ፍንዳታ"; 

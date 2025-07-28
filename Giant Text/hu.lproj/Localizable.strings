@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "ÓRIÁSI SZÖVEG";
+"done" = "Kész";
+"close" = "Bezárás";
+"cancel" = "Mégse";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Beállítások";
+"display" = "Megjelenítés";
+"animation" = "Animáció";
+"actions" = "Műveletek";
+"intensity" = "Intenzitás";
+
+// MARK: - Marquee
+"marquee_mode" = "Marquee Mód";
+"marquee_mode_title" = "Marquee Mód";
+"marquee_mode_description" = "Szöveget egyetlen görgetett sorban jelenít meg, amely a képernyőn keresztül mozog, kihasználva a kijelző teljes magasságát.";
+"marquee_mode_perfect_for" = "Tökéletes hosszú szöveg megjelenítéséhez vagy dinamikus jelzőtábla effektek létrehozásához.";
+
+// MARK: - Actions
+"edit_text" = "Szöveg Szerkesztése";
+"clear_text" = "Szöveg Törlése";
+"undo" = "Visszavonás";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Álló Mód Szükséges";
+"portrait_mode_description" = "Forgassa el a készüléket álló módba a szöveg szerkesztéséhez.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Óriási szöveg megjelenítés";
+"marquee_text_display" = "Marquee szöveg megjelenítés";
+"text_animation" = "Szöveg Animáció";
+"bold" = "Félkövér";
+"italic" = "Dőlt";
+"clear_text_accessibility" = "Szöveg törlése";
+"edit_text_accessibility" = "Szöveg szerkesztése";
+"done_editing_accessibility" = "Szerkesztés kész";
+
+// MARK: - Animation Types
+"none" = "Nincs";
+"bloom" = "Virágzás";
+"jitter" = "Remegés";
+"explode" = "Robbanás"; 

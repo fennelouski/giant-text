@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "विशाल पाठ";
+"done" = "हो गया";
+"close" = "बंद करें";
+"cancel" = "रद्द करें";
+"ok" = "ठीक है";
+
+// MARK: - Options Menu
+"options" = "विकल्प";
+"display" = "प्रदर्शन";
+"animation" = "एनीमेशन";
+"actions" = "कार्य";
+"intensity" = "तीव्रता";
+
+// MARK: - Marquee
+"marquee_mode" = "मार्की मोड";
+"marquee_mode_title" = "मार्की मोड";
+"marquee_mode_description" = "पाठ को एक पंक्ति के रूप में प्रदर्शित करता है जो स्क्रीन पर स्लाइड होता है, डिस्प्ले की पूरी ऊंचाई का लाभ उठाता है।";
+"marquee_mode_perfect_for" = "लंबे पाठ प्रदर्शित करने या गतिशील साइनबोर्ड प्रभाव बनाने के लिए बिल्कुल उपयुक्त।";
+
+// MARK: - Actions
+"edit_text" = "पाठ संपादित करें";
+"clear_text" = "पाठ साफ़ करें";
+"undo" = "पूर्ववत करें";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "पोर्ट्रेट मोड आवश्यक";
+"portrait_mode_description" = "कृपया पाठ संपादित करने के लिए अपने डिवाइस को पोर्ट्रेट मोड में घुमाएं।";
+
+// MARK: - Accessibility
+"giant_text_display" = "विशाल पाठ प्रदर्शन";
+"marquee_text_display" = "मार्की पाठ प्रदर्शन";
+"text_animation" = "पाठ एनीमेशन";
+"bold" = "मोटा";
+"italic" = "तिरछा";
+"clear_text_accessibility" = "पाठ साफ़ करें";
+"edit_text_accessibility" = "पाठ संपादित करें";
+"done_editing_accessibility" = "संपादन पूरा";
+
+// MARK: - Animation Types
+"none" = "कोई नहीं";
+"bloom" = "खिलना";
+"jitter" = "कंपन";
+"explode" = "विस्फोट"; 

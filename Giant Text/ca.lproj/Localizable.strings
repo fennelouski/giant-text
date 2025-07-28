@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "TEXT GEGANT";
+"done" = "Fet";
+"close" = "Tancar";
+"cancel" = "Cancel·lar";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Opcions";
+"display" = "Visualització";
+"animation" = "Animació";
+"actions" = "Accions";
+"intensity" = "Intensitat";
+
+// MARK: - Marquee
+"marquee_mode" = "Mode Marquee";
+"marquee_mode_title" = "Mode Marquee";
+"marquee_mode_description" = "Mostra el text com una sola línia desplaçable que es mou per la pantalla, aprofitant completament l'alçada de la pantalla.";
+"marquee_mode_perfect_for" = "Perfecte per mostrar text llarg o crear efectes de senyalització dinàmica.";
+
+// MARK: - Actions
+"edit_text" = "Editar Text";
+"clear_text" = "Netejar Text";
+"undo" = "Desfer";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Mode Retrat Requerit";
+"portrait_mode_description" = "Gireu el vostre dispositiu al mode retrat per editar text.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Visualització de text gegant";
+"marquee_text_display" = "Visualització de text marquee";
+"text_animation" = "Animació de Text";
+"bold" = "Negreta";
+"italic" = "Cursiva";
+"clear_text_accessibility" = "Netejar text";
+"edit_text_accessibility" = "Editar text";
+"done_editing_accessibility" = "Edició completada";
+
+// MARK: - Animation Types
+"none" = "Cap";
+"bloom" = "Florir";
+"jitter" = "Tremolor";
+"explode" = "Explosió"; 

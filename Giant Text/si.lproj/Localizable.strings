@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "විශාල පාඨය";
+"done" = "සම්පූර්ණයි";
+"close" = "වසන්න";
+"cancel" = "අවලංගු කරන්න";
+"ok" = "හරි";
+
+// MARK: - Options Menu
+"options" = "විකල්ප";
+"display" = "පෙන්වීම";
+"animation" = "සජීවිකරණය";
+"actions" = "ක්‍රියා";
+"intensity" = "තීව්‍රතාව";
+
+// MARK: - Marquee
+"marquee_mode" = "Marquee ප්‍රකාරය";
+"marquee_mode_title" = "Marquee ප්‍රකාරය";
+"marquee_mode_description" = "පාඨය එක් රෝල් කරන රේඛාවක් ලෙස පෙන්වයි එය තිරය හරහා ගමන් කරයි, පෙන්වුම් උපකරණයේ සම්පූර්ණ උස භාවිතා කරයි.";
+"marquee_mode_perfect_for" = "දිගු පාඨ පෙන්වීමට හෝ ගතික සංඥා පුවරු බලපෑම් සෑදීමට පරිපූර්ණයි.";
+
+// MARK: - Actions
+"edit_text" = "පාඨය සංස්කරණය කරන්න";
+"clear_text" = "පාඨය මකන්න";
+"undo" = "ආපසු";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Portrait ප්‍රකාරය අවශ්‍යයි";
+"portrait_mode_description" = "පාඨය සංස්කරණය කිරීමට ඔබේ උපාංගය portrait ප්‍රකාරයට කරකවන්න.";
+
+// MARK: - Accessibility
+"giant_text_display" = "විශාල පාඨ පෙන්වීම";
+"marquee_text_display" = "Marquee පාඨ පෙන්වීම";
+"text_animation" = "පාඨ සජීවිකරණය";
+"bold" = "තද";
+"italic" = "ඇලකළ";
+"clear_text_accessibility" = "පාඨය මකන්න";
+"edit_text_accessibility" = "පාඨය සංස්කරණය කරන්න";
+"done_editing_accessibility" = "සංස්කරණය සම්පූර්ණයි";
+
+// MARK: - Animation Types
+"none" = "කිසිවක් නැත";
+"bloom" = "මල්";
+"jitter" = "සොලවීම";
+"explode" = "පුපුරා යාම"; 

@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "పెద్ద టెక్స్ట్";
+"done" = "పూర్తయింది";
+"close" = "మూసివేయి";
+"cancel" = "రద్దు";
+"ok" = "సరే";
+
+// MARK: - Options Menu
+"options" = "ఎంపికలు";
+"display" = "ప్రదర్శన";
+"animation" = "యానిమేషన్";
+"actions" = "చర్యలు";
+"intensity" = "తీవ్రత";
+
+// MARK: - Marquee
+"marquee_mode" = "మార్కీ మోడ్";
+"marquee_mode_title" = "మార్కీ మోడ్";
+"marquee_mode_description" = "టెక్స్ట్‌ని ఒకే స్క్రోలింగ్ లైన్‌గా చూపిస్తుంది, స్క్రీన్‌లో కదులుతుంది, డిస్ప్లే యొక్క పూర్తి ఎత్తును ఉపయోగిస్తుంది.";
+"marquee_mode_perfect_for" = "పొడవైన టెక్స్ట్‌ని చూపించడానికి లేదా డైనమిక్ సైన్‌బోర్డ్ ఎఫెక్ట్‌లను సృష్టించడానికి ఖచ్చితమైనది.";
+
+// MARK: - Actions
+"edit_text" = "టెక్స్ట్‌ని సవరించండి";
+"clear_text" = "టెక్స్ట్‌ని క్లియర్ చేయండి";
+"undo" = "వెనుకకు";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "పోర్ట్రెట్ మోడ్ అవసరం";
+"portrait_mode_description" = "టెక్స్ట్‌ని సవరించడానికి మీ పరికరాన్ని పోర్ట్రెట్ మోడ్‌కు తిప్పండి.";
+
+// MARK: - Accessibility
+"giant_text_display" = "పెద్ద టెక్స్ట్ ప్రదర్శన";
+"marquee_text_display" = "మార్కీ టెక్స్ట్ ప్రదర్శన";
+"text_animation" = "టెక్స్ట్ యానిమేషన్";
+"bold" = "బోల్డ్";
+"italic" = "ఇటాలిక్";
+"clear_text_accessibility" = "టెక్స్ట్‌ని క్లియర్ చేయండి";
+"edit_text_accessibility" = "టెక్స్ట్‌ని సవరించండి";
+"done_editing_accessibility" = "సవరణ పూర్తయింది";
+
+// MARK: - Animation Types
+"none" = "ఏదీ లేదు";
+"bloom" = "పుష్పించు";
+"jitter" = "వణుకు";
+"explode" = "పేలు"; 

@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "巨大テキスト";
+"done" = "完了";
+"close" = "閉じる";
+"cancel" = "キャンセル";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "オプション";
+"display" = "表示";
+"animation" = "アニメーション";
+"actions" = "アクション";
+"intensity" = "強度";
+
+// MARK: - Marquee
+"marquee_mode" = "マーキーモード";
+"marquee_mode_title" = "マーキーモード";
+"marquee_mode_description" = "テキストを単一行のスクロールとして表示し、画面を横切って移動し、ディスプレイの高さを最大限に活用します。";
+"marquee_mode_perfect_for" = "長いテキストの表示や動的なサイン効果の作成に最適です。";
+
+// MARK: - Actions
+"edit_text" = "テキスト編集";
+"clear_text" = "テキストクリア";
+"undo" = "元に戻す";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "縦向きモードが必要";
+"portrait_mode_description" = "テキストを編集するには、デバイスを縦向きモードに回転してください。";
+
+// MARK: - Accessibility
+"giant_text_display" = "巨大テキスト表示";
+"marquee_text_display" = "マーキーテキスト表示";
+"text_animation" = "テキストアニメーション";
+"bold" = "太字";
+"italic" = "斜体";
+"clear_text_accessibility" = "テキストをクリア";
+"edit_text_accessibility" = "テキストを編集";
+"done_editing_accessibility" = "編集完了";
+
+// MARK: - Animation Types
+"none" = "なし";
+"bloom" = "開花";
+"jitter" = "震え";
+"explode" = "爆発"; 

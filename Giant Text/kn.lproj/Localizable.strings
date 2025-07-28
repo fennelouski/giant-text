@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "ದೈತ್ಯ ಪಠ್ಯ";
+"done" = "ಮುಗಿದಿದೆ";
+"close" = "ಮುಚ್ಚಿ";
+"cancel" = "ರದ್ದುಮಾಡಿ";
+"ok" = "ಸರಿ";
+
+// MARK: - Options Menu
+"options" = "ಆಯ್ಕೆಗಳು";
+"display" = "ಪ್ರದರ್ಶನ";
+"animation" = "ಅನಿಮೇಷನ್";
+"actions" = "ಕ್ರಿಯೆಗಳು";
+"intensity" = "ತೀವ್ರತೆ";
+
+// MARK: - Marquee
+"marquee_mode" = "ಮಾರ್ಕಿ ಮೋಡ್";
+"marquee_mode_title" = "ಮಾರ್ಕಿ ಮೋಡ್";
+"marquee_mode_description" = "ಪಠ್ಯವನ್ನು ಒಂದೇ ಸ್ಕ್ರೋಲಿಂಗ್ ಸಾಲಿನಾಗಿ ತೋರಿಸುತ್ತದೆ, ತೆರೆಯಲ್ಲಿ ಚಲಿಸುತ್ತದೆ, ಪ್ರದರ್ಶನದ ಸಂಪೂರ್ಣ ಎತ್ತರವನ್ನು ಬಳಸುತ್ತದೆ.";
+"marquee_mode_perfect_for" = "ದೀರ್ಘ ಪಠ್ಯವನ್ನು ತೋರಿಸಲು ಅಥವಾ ಡೈನಾಮಿಕ್ ಸೈನ್‌ಬೋರ್ಡ್ ಪರಿಣಾಮಗಳನ್ನು ರಚಿಸಲು ಪರಿಪೂರ್ಣ.";
+
+// MARK: - Actions
+"edit_text" = "ಪಠ್ಯವನ್ನು ಸಂಪಾದಿಸಿ";
+"clear_text" = "ಪಠ್ಯವನ್ನು ತೆರವುಗೊಳಿಸಿ";
+"undo" = "ರದ್ದುಮಾಡಿ";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "ಪೋರ್ಟ್ರೆಟ್ ಮೋಡ್ ಅಗತ್ಯವಿದೆ";
+"portrait_mode_description" = "ಪಠ್ಯವನ್ನು ಸಂಪಾದಿಸಲು ನಿಮ್ಮ ಸಾಧನವನ್ನು ಪೋರ್ಟ್ರೆಟ್ ಮೋಡ್‌ಗೆ ತಿರುಗಿಸಿ.";
+
+// MARK: - Accessibility
+"giant_text_display" = "ದೈತ್ಯ ಪಠ್ಯ ಪ್ರದರ್ಶನ";
+"marquee_text_display" = "ಮಾರ್ಕಿ ಪಠ್ಯ ಪ್ರದರ್ಶನ";
+"text_animation" = "ಪಠ್ಯ ಅನಿಮೇಷನ್";
+"bold" = "ದಪ್ಪ";
+"italic" = "ಓರೆ";
+"clear_text_accessibility" = "ಪಠ್ಯವನ್ನು ತೆರವುಗೊಳಿಸಿ";
+"edit_text_accessibility" = "ಪಠ್ಯವನ್ನು ಸಂಪಾದಿಸಿ";
+"done_editing_accessibility" = "ಸಂಪಾದನೆ ಮುಗಿದಿದೆ";
+
+// MARK: - Animation Types
+"none" = "ಯಾವುದೂ ಇಲ್ಲ";
+"bloom" = "ಹೂವು";
+"jitter" = "ನಡುಕ";
+"explode" = "ಸ್ಫೋಟ"; 

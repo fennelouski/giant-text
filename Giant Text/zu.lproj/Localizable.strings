@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "UMBALO OMKHULU";
+"done" = "Kwenziwe";
+"close" = "Vala";
+"cancel" = "Khansela";
+"ok" = "Kulungile";
+
+// MARK: - Options Menu
+"options" = "Izinketho";
+"display" = "Ukubonisa";
+"animation" = "Ukunyakaza";
+"actions" = "Izenzo";
+"intensity" = "Amandla";
+
+// MARK: - Marquee
+"marquee_mode" = "Isimo se-Marquee";
+"marquee_mode_title" = "Isimo se-Marquee";
+"marquee_mode_description" = "Ibonisa umbalo njengomugqa owodwa oshintshayo ohamba phezu kwesikrini, usebenzisa ubude obuphelele bokubonisa.";
+"marquee_mode_perfect_for" = "Kwenziwe kahle ukubonisa umbalo omude noma ukudala imiphumela yezibonakaliso ezinamandla.";
+
+// MARK: - Actions
+"edit_text" = "Hlela Umbalo";
+"clear_text" = "Sula Umbalo";
+"undo" = "Buyisela emuva";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Isimo se-Portrait Siyadingeka";
+"portrait_mode_description" = "Jikelezisa idivayisi yakho esimweni se-portrait ukuze uhlele umbalo.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Ukubonisa umbalo omkhulu";
+"marquee_text_display" = "Ukubonisa umbalo we-marquee";
+"text_animation" = "Ukunyakaza kwe-Umbalo";
+"bold" = "Okunqunu";
+"italic" = "Okunqenqemeni";
+"clear_text_accessibility" = "Sula umbalo";
+"edit_text_accessibility" = "Hlela umbalo";
+"done_editing_accessibility" = "Ukuhlela kwenziwe";
+
+// MARK: - Animation Types
+"none" = "Akukho";
+"bloom" = "Iqabunga";
+"jitter" = "Ukuzamazama";
+"explode" = "Ukuqhuma"; 

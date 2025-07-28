@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "ข้อความยักษ์";
+"done" = "เสร็จแล้ว";
+"close" = "ปิด";
+"cancel" = "ยกเลิก";
+"ok" = "ตกลง";
+
+// MARK: - Options Menu
+"options" = "ตัวเลือก";
+"display" = "การแสดงผล";
+"animation" = "แอนิเมชัน";
+"actions" = "การดำเนินการ";
+"intensity" = "ความเข้ม";
+
+// MARK: - Marquee
+"marquee_mode" = "โหมด Marquee";
+"marquee_mode_title" = "โหมด Marquee";
+"marquee_mode_description" = "แสดงข้อความเป็นบรรทัดเดียวที่เลื่อนไปตามหน้าจอ ใช้ประโยชน์จากความสูงของหน้าจออย่างเต็มที่";
+"marquee_mode_perfect_for" = "เหมาะสำหรับการแสดงข้อความยาวหรือสร้างเอฟเฟกต์ป้ายไดนามิก";
+
+// MARK: - Actions
+"edit_text" = "แก้ไขข้อความ";
+"clear_text" = "ล้างข้อความ";
+"undo" = "ยกเลิก";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "ต้องการโหมดแนวตั้ง";
+"portrait_mode_description" = "หมุนอุปกรณ์ของคุณเป็นโหมดแนวตั้งเพื่อแก้ไขข้อความ";
+
+// MARK: - Accessibility
+"giant_text_display" = "การแสดงผลข้อความยักษ์";
+"marquee_text_display" = "การแสดงผลข้อความ marquee";
+"text_animation" = "แอนิเมชันข้อความ";
+"bold" = "ตัวหนา";
+"italic" = "ตัวเอียง";
+"clear_text_accessibility" = "ล้างข้อความ";
+"edit_text_accessibility" = "แก้ไขข้อความ";
+"done_editing_accessibility" = "แก้ไขเสร็จแล้ว";
+
+// MARK: - Animation Types
+"none" = "ไม่มี";
+"bloom" = "เบ่งบาน";
+"jitter" = "สั่น";
+"explode" = "ระเบิด"; 

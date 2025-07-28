@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "TEKS GIGANTIK";
+"done" = "Selesai";
+"close" = "Tutup";
+"cancel" = "Batal";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Pilihan";
+"display" = "Paparan";
+"animation" = "Animasi";
+"actions" = "Tindakan";
+"intensity" = "Keamatan";
+
+// MARK: - Marquee
+"marquee_mode" = "Mod Marquee";
+"marquee_mode_title" = "Mod Marquee";
+"marquee_mode_description" = "Memaparkan teks sebagai satu baris tatal yang bergerak merentasi skrin, memanfaatkan ketinggian paparan sepenuhnya.";
+"marquee_mode_perfect_for" = "Sempurna untuk memaparkan teks panjang atau mencipta kesan papan tanda dinamik.";
+
+// MARK: - Actions
+"edit_text" = "Edit Teks";
+"clear_text" = "Padam Teks";
+"undo" = "Buat Asal";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Mod Potret Diperlukan";
+"portrait_mode_description" = "Putar peranti anda ke mod potret untuk mengedit teks.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Paparan teks gigantik";
+"marquee_text_display" = "Paparan teks marquee";
+"text_animation" = "Animasi Teks";
+"bold" = "Tebal";
+"italic" = "Condong";
+"clear_text_accessibility" = "Padam teks";
+"edit_text_accessibility" = "Edit teks";
+"done_editing_accessibility" = "Selesai mengedit";
+
+// MARK: - Animation Types
+"none" = "Tiada";
+"bloom" = "Mekar";
+"jitter" = "Menggeletar";
+"explode" = "Meletup"; 

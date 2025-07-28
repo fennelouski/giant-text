@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "பெரிய உரை";
+"done" = "முடிந்தது";
+"close" = "மூடு";
+"cancel" = "ரத்து";
+"ok" = "சரி";
+
+// MARK: - Options Menu
+"options" = "விருப்பங்கள்";
+"display" = "காட்சி";
+"animation" = "அனிமேஷன்";
+"actions" = "செயல்கள்";
+"intensity" = "தீவிரம்";
+
+// MARK: - Marquee
+"marquee_mode" = "மார்க்கி பயன்முறை";
+"marquee_mode_title" = "மார்க்கி பயன்முறை";
+"marquee_mode_description" = "உரையை ஒரு சுருட்டும் வரியாக காட்டுகிறது, திரையில் நகர்ந்து, காட்சியின் முழு உயரத்தையும் பயன்படுத்துகிறது.";
+"marquee_mode_perfect_for" = "நீண்ட உரையை காட்ட அல்லது மாறும் அடையாள விளைவுகளை உருவாக்க சிறந்தது.";
+
+// MARK: - Actions
+"edit_text" = "உரையைத் திருத்து";
+"clear_text" = "உரையை அழி";
+"undo" = "செயல்தவிர்";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "படச்சட்ட பயன்முறை தேவை";
+"portrait_mode_description" = "உரையைத் திருத்த உங்கள் சாதனத்தை படச்சட்ட பயன்முறைக்கு சுழற்றவும்.";
+
+// MARK: - Accessibility
+"giant_text_display" = "பெரிய உரை காட்சி";
+"marquee_text_display" = "மார்க்கி உரை காட்சி";
+"text_animation" = "உரை அனிமேஷன்";
+"bold" = "தடித்த";
+"italic" = "சாய்வு";
+"clear_text_accessibility" = "உரையை அழி";
+"edit_text_accessibility" = "உரையைத் திருத்து";
+"done_editing_accessibility" = "திருத்தம் முடிந்தது";
+
+// MARK: - Animation Types
+"none" = "ஒன்றும் இல்லை";
+"bloom" = "மலர்";
+"jitter" = "நடுக்கம்";
+"explode" = "வெடிப்பு"; 

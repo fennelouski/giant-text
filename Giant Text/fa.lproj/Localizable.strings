@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "متن غول‌پیکر";
+"done" = "تمام";
+"close" = "بستن";
+"cancel" = "لغو";
+"ok" = "تأیید";
+
+// MARK: - Options Menu
+"options" = "گزینه‌ها";
+"display" = "نمایش";
+"animation" = "انیمیشن";
+"actions" = "عملیات";
+"intensity" = "شدت";
+
+// MARK: - Marquee
+"marquee_mode" = "حالت مارکی";
+"marquee_mode_title" = "حالت مارکی";
+"marquee_mode_description" = "متن را به صورت یک خط اسکرول واحد نمایش می‌دهد که در صفحه حرکت می‌کند و از تمام ارتفاع نمایش استفاده می‌کند.";
+"marquee_mode_perfect_for" = "عالی برای نمایش متن طولانی یا ایجاد جلوه‌های تابلوهای پویا.";
+
+// MARK: - Actions
+"edit_text" = "ویرایش متن";
+"clear_text" = "پاک کردن متن";
+"undo" = "بازگشت";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "حالت عمودی مورد نیاز";
+"portrait_mode_description" = "دستگاه خود را برای ویرایش متن به حالت عمودی بچرخانید.";
+
+// MARK: - Accessibility
+"giant_text_display" = "نمایش متن غول‌پیکر";
+"marquee_text_display" = "نمایش متن مارکی";
+"text_animation" = "انیمیشن متن";
+"bold" = "ضخیم";
+"italic" = "مایل";
+"clear_text_accessibility" = "پاک کردن متن";
+"edit_text_accessibility" = "ویرایش متن";
+"done_editing_accessibility" = "ویرایش تمام شد";
+
+// MARK: - Animation Types
+"none" = "هیچ";
+"bloom" = "شکوفایی";
+"jitter" = "لرزش";
+"explode" = "انفجار"; 

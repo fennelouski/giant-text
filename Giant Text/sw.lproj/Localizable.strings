@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "MAKUBWA YA MAKUBWA";
+"done" = "Imekamilika";
+"close" = "Funga";
+"cancel" = "Ghairi";
+"ok" = "Sawa";
+
+// MARK: - Options Menu
+"options" = "Chaguo";
+"display" = "Onyesho";
+"animation" = "Uhuishaji";
+"actions" = "Vitendo";
+"intensity" = "Ukali";
+
+// MARK: - Marquee
+"marquee_mode" = "Hali ya Marquee";
+"marquee_mode_title" = "Hali ya Marquee";
+"marquee_mode_description" = "Inaonyesha maandishi kama mstari mmoja unaosonga unaoenda kote kwenye skrini, ukifanya matumizi kamili ya urefu wa onyesho.";
+"marquee_mode_perfect_for" = "Kamili kwa kuonyesha maandishi marefu au kuunda athari za ishara za mabadiliko.";
+
+// MARK: - Actions
+"edit_text" = "Hariri Maandishi";
+"clear_text" = "Futa Maandishi";
+"undo" = "Rudisha";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Hali ya Wima Inahitajika";
+"portrait_mode_description" = "Zungusha kifaa chako kwenye hali ya wima ili kuhariri maandishi.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Onyesho la maandishi makubwa";
+"marquee_text_display" = "Onyesho la maandishi ya marquee";
+"text_animation" = "Uhuishaji wa Maandishi";
+"bold" = "Nene";
+"italic" = "Mweupe";
+"clear_text_accessibility" = "Futa maandishi";
+"edit_text_accessibility" = "Hariri maandishi";
+"done_editing_accessibility" = "Uhariri umekamilika";
+
+// MARK: - Animation Types
+"none" = "Hakuna";
+"bloom" = "Maua";
+"jitter" = "Kutetemeka";
+"explode" = "Kulipuka"; 

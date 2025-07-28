@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "MALAKING TEKSTO";
+"done" = "Tapos na";
+"close" = "Isara";
+"cancel" = "Kanselahin";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Mga Opsyon";
+"display" = "Display";
+"animation" = "Animasyon";
+"actions" = "Mga Aksyon";
+"intensity" = "Intensidad";
+
+// MARK: - Marquee
+"marquee_mode" = "Marquee Mode";
+"marquee_mode_title" = "Marquee Mode";
+"marquee_mode_description" = "Nagpapakita ng teksto bilang isang linya na gumugulong na gumagalaw sa buong screen, ginagamit ang buong taas ng display.";
+"marquee_mode_perfect_for" = "Perpekto para sa pagpapakita ng mahabang teksto o paggawa ng dynamic na signage effects.";
+
+// MARK: - Actions
+"edit_text" = "I-edit ang Teksto";
+"clear_text" = "I-clear ang Teksto";
+"undo" = "I-undo";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Portrait Mode Kailangan";
+"portrait_mode_description" = "I-rotate ang iyong device sa portrait mode para mag-edit ng teksto.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Display ng malaking teksto";
+"marquee_text_display" = "Display ng marquee teksto";
+"text_animation" = "Animasyon ng Teksto";
+"bold" = "Bold";
+"italic" = "Italic";
+"clear_text_accessibility" = "I-clear ang teksto";
+"edit_text_accessibility" = "I-edit ang teksto";
+"done_editing_accessibility" = "Tapos na ang pag-edit";
+
+// MARK: - Animation Types
+"none" = "Wala";
+"bloom" = "Mamulaklak";
+"jitter" = "Manginig";
+"explode" = "Sumabog"; 

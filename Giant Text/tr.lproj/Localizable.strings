@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "DEV METİN";
+"done" = "Tamam";
+"close" = "Kapat";
+"cancel" = "İptal";
+"ok" = "Tamam";
+
+// MARK: - Options Menu
+"options" = "Seçenekler";
+"display" = "Görüntüleme";
+"animation" = "Animasyon";
+"actions" = "Eylemler";
+"intensity" = "Yoğunluk";
+
+// MARK: - Marquee
+"marquee_mode" = "Marquee Modu";
+"marquee_mode_title" = "Marquee Modu";
+"marquee_mode_description" = "Metni ekran boyunca hareket eden tek bir kaydırma satırı olarak gösterir, ekranın tam yüksekliğini kullanır.";
+"marquee_mode_perfect_for" = "Uzun metin göstermek veya dinamik tabela efektleri oluşturmak için mükemmel.";
+
+// MARK: - Actions
+"edit_text" = "Metni Düzenle";
+"clear_text" = "Metni Temizle";
+"undo" = "Geri Al";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Dikey Mod Gerekli";
+"portrait_mode_description" = "Metin düzenlemek için cihazınızı dikey moda çevirin.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Dev metin görüntüleme";
+"marquee_text_display" = "Marquee metin görüntüleme";
+"text_animation" = "Metin Animasyonu";
+"bold" = "Kalın";
+"italic" = "İtalik";
+"clear_text_accessibility" = "Metni temizle";
+"edit_text_accessibility" = "Metni düzenle";
+"done_editing_accessibility" = "Düzenleme tamamlandı";
+
+// MARK: - Animation Types
+"none" = "Yok";
+"bloom" = "Çiçek Açma";
+"jitter" = "Titreme";
+"explode" = "Patlama"; 

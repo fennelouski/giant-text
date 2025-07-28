@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "거대 텍스트";
+"done" = "완료";
+"close" = "닫기";
+"cancel" = "취소";
+"ok" = "확인";
+
+// MARK: - Options Menu
+"options" = "옵션";
+"display" = "표시";
+"animation" = "애니메이션";
+"actions" = "작업";
+"intensity" = "강도";
+
+// MARK: - Marquee
+"marquee_mode" = "마키 모드";
+"marquee_mode_title" = "마키 모드";
+"marquee_mode_description" = "텍스트를 화면을 가로질러 움직이는 단일 스크롤 라인으로 표시하여 디스플레이의 전체 높이를 활용합니다.";
+"marquee_mode_perfect_for" = "긴 텍스트 표시나 동적 표지판 효과를 만드는 데 완벽합니다.";
+
+// MARK: - Actions
+"edit_text" = "텍스트 편집";
+"clear_text" = "텍스트 지우기";
+"undo" = "실행 취소";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "세로 모드 필요";
+"portrait_mode_description" = "텍스트를 편집하려면 기기를 세로 모드로 회전하세요.";
+
+// MARK: - Accessibility
+"giant_text_display" = "거대 텍스트 표시";
+"marquee_text_display" = "마키 텍스트 표시";
+"text_animation" = "텍스트 애니메이션";
+"bold" = "굵게";
+"italic" = "기울임꼴";
+"clear_text_accessibility" = "텍스트 지우기";
+"edit_text_accessibility" = "텍스트 편집";
+"done_editing_accessibility" = "편집 완료";
+
+// MARK: - Animation Types
+"none" = "없음";
+"bloom" = "피어남";
+"jitter" = "떨림";
+"explode" = "폭발"; 

@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "ТОМ ТЕКСТ";
+"done" = "Дууссан";
+"close" = "Хаах";
+"cancel" = "Цуцлах";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Сонголтууд";
+"display" = "Харагдац";
+"animation" = "Хөдөлгөөн";
+"actions" = "Үйл ажиллагаа";
+"intensity" = "Хүч";
+
+// MARK: - Marquee
+"marquee_mode" = "Marquee горим";
+"marquee_mode_title" = "Marquee горим";
+"marquee_mode_description" = "Текстийг дэлгэц дээр хөдөлж буй нэг эргэлтийн мөрөөр харуулж, дэлгэцийн бүрэн өндрийг ашигладаг.";
+"marquee_mode_perfect_for" = "Урт текст харуулах эсвэл динамик тэмдэглэгээний эффект үүсгэхэд төгс.";
+
+// MARK: - Actions
+"edit_text" = "Текст Засах";
+"clear_text" = "Текст Цэвэрлэх";
+"undo" = "Буцаах";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Босоо горим шаардлагатай";
+"portrait_mode_description" = "Текст засахын тулд төхөөрөмжөө босоо горимд эргүүлнэ үү.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Том текст харуулах";
+"marquee_text_display" = "Marquee текст харуулах";
+"text_animation" = "Текст Хөдөлгөөн";
+"bold" = "Тод";
+"italic" = "Налуу";
+"clear_text_accessibility" = "Текст цэвэрлэх";
+"edit_text_accessibility" = "Текст засах";
+"done_editing_accessibility" = "Засалт дууссан";
+
+// MARK: - Animation Types
+"none" = "Байхгүй";
+"bloom" = "Цэцэглэх";
+"jitter" = "Чийрэг";
+"explode" = "Дэлбэрэлт"; 

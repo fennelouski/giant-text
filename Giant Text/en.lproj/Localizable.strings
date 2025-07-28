@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  Giant Text
+  
+  Created by Nathan Fennel on 7/27/25.
+*/
+
+// MARK: - Common
+"giant_text" = "GIANT TEXT";
+"done" = "Done";
+"close" = "Close";
+"cancel" = "Cancel";
+"ok" = "OK";
+
+// MARK: - Options Menu
+"options" = "Options";
+"display" = "Display";
+"animation" = "Animation";
+"actions" = "Actions";
+"intensity" = "Intensity";
+
+// MARK: - Marquee
+"marquee_mode" = "Marquee Mode";
+"marquee_mode_title" = "Marquee Mode";
+"marquee_mode_description" = "Displays text as a single scrolling line that moves across the screen, taking full advantage of the display height.";
+"marquee_mode_perfect_for" = "Perfect for displaying long text or creating dynamic signage effects.";
+
+// MARK: - Actions
+"edit_text" = "Edit Text";
+"clear_text" = "Clear Text";
+"undo" = "Undo";
+
+// MARK: - Portrait Mode
+"portrait_mode_required" = "Portrait Mode Required";
+"portrait_mode_description" = "Please rotate your device to portrait mode to edit text.";
+
+// MARK: - Accessibility
+"giant_text_display" = "Giant text display";
+"marquee_text_display" = "Marquee text display";
+"text_animation" = "Text Animation";
+"bold" = "Bold";
+"italic" = "Italic";
+"clear_text_accessibility" = "Clear text";
+"edit_text_accessibility" = "Edit text";
+"done_editing_accessibility" = "Done editing";
+
+// MARK: - Animation Types
+"none" = "None";
+"bloom" = "Bloom";
+"jitter" = "Jitter";
+"explode" = "Explode"; 
