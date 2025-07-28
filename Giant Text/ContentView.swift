@@ -85,7 +85,7 @@ struct ContentView: View {
     @State private var textHistory: [NSAttributedString] = []
     @State private var currentHistoryIndex: Int = -1
     @State private var selectedAnimation: TextAnimation = .none
-    @State private var animationIntensity: Double = 0.5
+    @State private var animationIntensity: Double = 0.9
     @State private var showingOptionsMenu: Bool = false
     #if os(iOS)
     @State private var deviceOrientation: UIDeviceOrientation = .portrait
