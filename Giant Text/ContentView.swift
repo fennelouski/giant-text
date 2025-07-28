@@ -84,8 +84,8 @@ struct ContentView: View {
     @State private var isEditing: Bool = true
     @State private var textHistory: [NSAttributedString] = []
     @State private var currentHistoryIndex: Int = -1
-    @State private var selectedAnimation: TextAnimation = .none
-    @State private var animationIntensity: Double = 0.9
+    @State private var selectedAnimation: TextAnimation = UserDefaults.standard.string(forKey: "selectedAnimation").flatMap { TextAnimation(rawValue: $0) } ?? .none
+    @State private var animationIntensity: Double = UserDefaults.standard.double(forKey: "animationIntensity") > 0 ? UserDefaults.standard.double(forKey: "animationIntensity") : 0.9
     @State private var showingOptionsMenu: Bool = false
     #if os(iOS)
     @State private var deviceOrientation: UIDeviceOrientation = .portrait
@@ -93,8 +93,8 @@ struct ContentView: View {
 
     @State private var showingMarqueeTooltip: Bool = false
     @State private var showingWelcomeView: Bool = false
-    @State private var isClippingEnabled: Bool = false
-    @State private var useSerifFont: Bool = true // Default to serif font
+    @State private var isClippingEnabled: Bool = UserDefaults.standard.bool(forKey: "isClippingEnabled")
+    @State private var useSerifFont: Bool = UserDefaults.standard.object(forKey: "useSerifFont") == nil ? true : UserDefaults.standard.bool(forKey: "useSerifFont") // Default to serif font
     @State private var forceRecalculation: Bool = false
     
     var body: some View {
@@ -232,6 +232,18 @@ struct ContentView: View {
             .onAppear {
                 loadDocument()
                 setupOrientationObserver()
+            }
+            .onChange(of: selectedAnimation) { _, newValue in
+                UserDefaults.standard.set(newValue.rawValue, forKey: "selectedAnimation")
+            }
+            .onChange(of: animationIntensity) { _, newValue in
+                UserDefaults.standard.set(newValue, forKey: "animationIntensity")
+            }
+            .onChange(of: isClippingEnabled) { _, newValue in
+                UserDefaults.standard.set(newValue, forKey: "isClippingEnabled")
+            }
+            .onChange(of: useSerifFont) { _, newValue in
+                UserDefaults.standard.set(newValue, forKey: "useSerifFont")
             }
             #if os(iOS)
             .onChange(of: deviceOrientation) { oldOrientation, newOrientation in
@@ -1217,11 +1229,10 @@ struct AnimatedTextDisplay: View {
     
     private func startIndividualRippleAnimation() {
         let jumpUpDuration: TimeInterval = 0.6
-        let holdDuration: TimeInterval = 0.035
         let jumpDownDuration: TimeInterval = 0.5
         let stagger: TimeInterval = 0.05
         let totalLetters = characterAnimations.count
-        let totalCycleDuration = (stagger * Double(max(0, totalLetters-1))) + jumpUpDuration + holdDuration + jumpDownDuration + 0.5
+        let totalCycleDuration = (stagger * Double(max(0, totalLetters-1))) + jumpUpDuration + jumpDownDuration + 1.0
         isAnimationActive = true
         
         func animateCycle() {
@@ -1231,16 +1242,16 @@ struct AnimatedTextDisplay: View {
                 DispatchQueue.main.asyncAfter(deadline: .now() + startDelay) {
                     guard isAnimationActive else { return }
                     // Jump up
-                    withAnimation(.easeInOut(duration: jumpUpDuration)) {
+                    withAnimation(.easeOut(duration: jumpUpDuration)) {
                         characterAnimations[i].offset = CGSize(width: 0, height: -intensity * 20)
                     }
                     // Hold
                     DispatchQueue.main.asyncAfter(deadline: .now() + jumpUpDuration) {
                         guard isAnimationActive else { return }
                         // Hold for holdDuration, then jump down
-                        DispatchQueue.main.asyncAfter(deadline: .now() + holdDuration) {
+                        DispatchQueue.main.asyncAfter(deadline: .now()) {
                             guard isAnimationActive else { return }
-                            withAnimation(.easeInOut(duration: jumpDownDuration)) {
+                            withAnimation(.easeIn(duration: jumpDownDuration)) {
                                 characterAnimations[i].offset = .zero
                             }
                         }
