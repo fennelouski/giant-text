@@ -1020,7 +1020,7 @@ struct AnimatedTextDisplay: View {
     
     var body: some View {
         // Use consistent character-based rendering for ALL animations, including .none
-        HStack(spacing: 0) {
+        HStack(spacing: -fontSize * 0.1) { // Allow letters to overlap by 10% of font size
             ForEach(Array(attributedText.string.enumerated()), id: \.offset) { index, character in
                 CharacterView(
                     character: character,
@@ -1036,7 +1036,6 @@ struct AnimatedTextDisplay: View {
                 )
             }
         }
-        .tracking(-2)
         .multilineTextAlignment(.center)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .clipped(antialiased: isClippingEnabled)
@@ -1340,7 +1339,7 @@ struct CharacterView: View {
             #else
             .foregroundColor(colorScheme == .dark ? .white : .black)
             #endif
-            .tracking(-2)
+            .opacity(0.9) // Set opacity to 90%
             .scaleEffect(characterAnimation.scale)
             .offset(characterAnimation.offset)
             .rotationEffect(.degrees(characterAnimation.rotation))
@@ -1441,6 +1440,9 @@ struct RichTextEditor: UIViewRepresentable {
         textView.backgroundColor = .clear
         textView.textColor = colorScheme == .dark ? .white : .black
         
+        // Disable autoresizing mask to prevent constraint conflicts
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        
         // Large, plain font for editing
         let largeFont = useSerifFont ? 
             UIFont(descriptor: UIFontDescriptor.preferredFontDescriptor(withTextStyle: .largeTitle).withFamily("Times New Roman"), size: 48) :
@@ -1536,58 +1538,108 @@ struct RichTextEditor: UIViewRepresentable {
         }
         
         func createInputAccessoryView() -> UIView {
-            let toolbar = UIToolbar()
-            toolbar.sizeToFit()
+            // Create a custom container view instead of using UIToolbar
+            let containerView = UIView()
+            containerView.backgroundColor = parent.colorScheme == .dark ? UIColor.systemGray6 : UIColor.systemGray5
+            containerView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44)
             
-            let animationButton = UIBarButtonItem(
-                image: UIImage(systemName: parent.selectedAnimation.icon),
-                style: .plain,
-                target: self,
-                action: #selector(showAnimationMenu)
+            // Create a horizontal stack view for the buttons
+            let stackView = UIStackView()
+            stackView.axis = .horizontal
+            stackView.distribution = .fill
+            stackView.alignment = .center
+            stackView.spacing = 16
+            stackView.translatesAutoresizingMaskIntoConstraints = false
+            
+            // Create buttons
+            let animationButton = createButton(
+                imageName: parent.selectedAnimation.icon,
+                action: #selector(showAnimationMenu),
+                tintColor: parent.colorScheme == .dark ? UIColor.white : UIColor.black
             )
             
-            let boldButton = UIBarButtonItem(
-                image: UIImage(systemName: "bold"),
-                style: .plain,
-                target: self,
-                action: #selector(toggleBold)
+            let boldButton = createButton(
+                imageName: "bold",
+                action: #selector(toggleBold),
+                tintColor: parent.colorScheme == .dark ? UIColor.white : UIColor.black
             )
             
-            let italicButton = UIBarButtonItem(
-                image: UIImage(systemName: "italic"),
-                style: .plain,
-                target: self,
-                action: #selector(toggleItalic)
+            let italicButton = createButton(
+                imageName: "italic",
+                action: #selector(toggleItalic),
+                tintColor: parent.colorScheme == .dark ? UIColor.white : UIColor.black
             )
             
-            let clearButton = UIBarButtonItem(
-                image: UIImage(systemName: "trash"),
-                style: .plain,
-                target: self,
-                action: #selector(clearText)
+            let clearButton = createButton(
+                imageName: "trash",
+                action: #selector(clearText),
+                tintColor: UIColor.red
             )
             
-            let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-            
-            let doneButton = UIBarButtonItem(
+            let doneButton = createButton(
                 title: NSLocalizedString("done", comment: "Done button"),
-                style: .done,
-                target: self,
-                action: #selector(doneEditing)
+                action: #selector(doneEditing),
+                tintColor: UIColor.systemBlue
             )
             
-            toolbar.items = [animationButton, boldButton, italicButton, flexSpace, clearButton, flexSpace, doneButton]
+            // Add buttons to stack view
+            stackView.addArrangedSubview(animationButton)
+            stackView.addArrangedSubview(boldButton)
+            stackView.addArrangedSubview(italicButton)
+            stackView.addArrangedSubview(UIView()) // Flexible space
+            stackView.addArrangedSubview(clearButton)
+            stackView.addArrangedSubview(UIView()) // Flexible space
+            stackView.addArrangedSubview(doneButton)
             
-            // Set tint colors
-            let tintColor = parent.colorScheme == .dark ? UIColor.white : UIColor.black
-            toolbar.tintColor = tintColor
-            toolbar.backgroundColor = parent.colorScheme == .dark ? UIColor.systemGray6 : UIColor.systemGray5
+            // Add stack view to container
+            containerView.addSubview(stackView)
             
-            return toolbar
+            // Set up constraints
+            NSLayoutConstraint.activate([
+                stackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 16),
+                stackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -16),
+                stackView.topAnchor.constraint(equalTo: containerView.topAnchor),
+                stackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
+            ])
+            
+            return containerView
+        }
+        
+        private func createButton(imageName: String, action: Selector, tintColor: UIColor) -> UIButton {
+            let button = UIButton(type: .system)
+            button.setImage(UIImage(systemName: imageName), for: .normal)
+            button.tintColor = tintColor
+            button.addTarget(self, action: action, for: .touchUpInside)
+            button.translatesAutoresizingMaskIntoConstraints = false
+            
+            // Set fixed size for consistent layout
+            NSLayoutConstraint.activate([
+                button.widthAnchor.constraint(equalToConstant: 44),
+                button.heightAnchor.constraint(equalToConstant: 44)
+            ])
+            
+            return button
+        }
+        
+        private func createButton(title: String, action: Selector, tintColor: UIColor) -> UIButton {
+            let button = UIButton(type: .system)
+            button.setTitle(title, for: .normal)
+            button.tintColor = tintColor
+            button.addTarget(self, action: action, for: .touchUpInside)
+            button.translatesAutoresizingMaskIntoConstraints = false
+            
+            // Set minimum size for text button
+            NSLayoutConstraint.activate([
+                button.heightAnchor.constraint(equalToConstant: 44),
+                button.widthAnchor.constraint(greaterThanOrEqualToConstant: 60)
+            ])
+            
+            return button
         }
         
         func updateInputAccessoryView() {
-            // Implementation for updating the toolbar
+            // Recreate the input accessory view when needed
+            // This will be called when the text view updates
         }
         
         @objc func showAnimationMenu() {
