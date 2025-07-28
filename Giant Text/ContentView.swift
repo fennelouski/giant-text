@@ -265,7 +265,7 @@ struct ContentView: View {
         .onAppear {
             ensureDocumentExists()
         }
-        .ignoresSafeArea()
+        // Removed .ignoresSafeArea() to ensure text stays within safe area
         #if os(iOS)
         .onReceive(NotificationCenter.default.publisher(for: .deviceDidShakeNotification)) { _ in
             undoLastChange()
@@ -924,12 +924,12 @@ struct GiantTextView: View {
         
         let testString = attributedText.string.isEmpty ? "GIANT TEXT" : attributedText.string
         
-        // Conservative margins to ensure no truncation
+        // Conservative margins to ensure no truncation and respect safe area
         let animationScaleFactor: CGFloat = selectedAnimation != .none ? 1.4 : 1.0 // Increased scale factor for safety
-        let safetyMarginWidth: CGFloat = selectedAnimation != .none ? 0.15 : 0.05 // Extra margin for animations
-        let safetyMarginHeight: CGFloat = selectedAnimation != .none ? 0.15 : 0.05 // Extra margin for animations
+        let safetyMarginWidth: CGFloat = selectedAnimation != .none ? 0.20 : 0.10 // Increased margin for safe area
+        let safetyMarginHeight: CGFloat = selectedAnimation != .none ? 0.20 : 0.10 // Increased margin for safe area
         
-        // More conservative available space calculation
+        // More conservative available space calculation with safe area consideration
         let safeAvailableWidth = availableSize.width * (1.0 - safetyMarginWidth)
         let safeAvailableHeight = availableSize.height * (1.0 - safetyMarginHeight)
         
@@ -989,8 +989,8 @@ struct GiantTextView: View {
             }
         }
         
-        // Apply final safety check - reduce by additional 5% to prevent edge cases
-        optimalFontSize *= 0.95
+        // Apply final safety check - reduce by additional 10% to ensure safe area compliance
+        optimalFontSize *= 0.90
         
         // Ensure we don't go below a minimum readable size
         let minimumReadableSize: CGFloat = 12.0
