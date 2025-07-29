@@ -35,5 +35,15 @@ struct Giant_TextApp: App {
                 }
         }
         .modelContainer(sharedModelContainer)
+        
+        // AirPlay/External Display Window
+        WindowGroup("AirPlay Display", id: "airplay") {
+            AirPlayDisplayView()
+        }
+        .modelContainer(sharedModelContainer)
+        #if os(macOS)
+        .windowStyle(.hiddenTitleBar)
+        .windowResizability(.contentSize)
+        #endif
     }
 }
