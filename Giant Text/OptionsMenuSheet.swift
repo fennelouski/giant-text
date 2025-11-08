@@ -24,6 +24,7 @@ struct OptionsMenuSheet: View {
     let currentTheme: ColorTheme
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.dismiss) private var dismiss
+    @State private var isThemeSectionExpanded: Bool = false
     
     private var backgroundColor: Color {
         colorScheme == .dark ? Color.gray.opacity(0.3) : Color.gray.opacity(0.1)
@@ -161,82 +162,89 @@ struct OptionsMenuSheet: View {
                     }
                 }
 
-                // Theme section
-                VStack(alignment: .leading, spacing: 12) {
-                    Text("Theme")
-                        .font(.headline)
-                        .foregroundColor(colorScheme == .dark ? .white : .black)
+                // Theme section (collapsible)
+                DisclosureGroup(
+                    isExpanded: $isThemeSectionExpanded,
+                    content: {
+                        VStack(alignment: .leading, spacing: 12) {
+                            // Random theme toggle
+                            HStack {
+                                Toggle("Random Theme (Daily)", isOn: $useRandomTheme)
+                                    .foregroundColor(colorScheme == .dark ? .white : .black)
+                            }
+                            .padding()
+                            .background(
+                                RoundedRectangle(cornerRadius: 8)
+                                    .fill(backgroundColor)
+                            )
 
-                    // Random theme toggle
-                    HStack {
-                        Toggle("Random Theme (Daily)", isOn: $useRandomTheme)
+                            if !useRandomTheme {
+                                // Theme grid
+                                LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: 12) {
+                                    ForEach(ColorTheme.allThemes) { theme in
+                                        Button(action: {
+                                            selectedThemeId = theme.id
+                                        }) {
+                                            VStack(spacing: 4) {
+                                                // Preview colors
+                                                HStack(spacing: 2) {
+                                                    Rectangle()
+                                                        .fill(theme.backgroundColor(for: colorScheme))
+                                                        .frame(height: 30)
+                                                    Rectangle()
+                                                        .fill(theme.textColor(for: colorScheme))
+                                                        .frame(height: 30)
+                                                }
+                                                .cornerRadius(4)
+
+                                                Text(theme.name)
+                                                    .font(.caption)
+                                                    .foregroundColor(themeTextColor(for: theme))
+                                            }
+                                            .padding(8)
+                                            .frame(maxWidth: .infinity)
+                                            .background(
+                                                RoundedRectangle(cornerRadius: 8)
+                                                    .fill(themeBackgroundColor(for: theme))
+                                            )
+                                        }
+                                    }
+                                }
+                            } else {
+                                // Show current random theme
+                                VStack(alignment: .leading, spacing: 8) {
+                                    HStack {
+                                        Text("Current Theme:")
+                                            .foregroundColor(colorScheme == .dark ? .white : .black)
+                                        Spacer()
+                                        Text(currentTheme.name)
+                                            .foregroundColor(.blue)
+                                    }
+                                    HStack(spacing: 2) {
+                                        Rectangle()
+                                            .fill(currentTheme.backgroundColor(for: colorScheme))
+                                            .frame(height: 40)
+                                        Rectangle()
+                                            .fill(currentTheme.textColor(for: colorScheme))
+                                            .frame(height: 40)
+                                    }
+                                    .cornerRadius(4)
+                                }
+                                .padding()
+                                .background(
+                                    RoundedRectangle(cornerRadius: 8)
+                                        .fill(backgroundColor)
+                                )
+                            }
+                        }
+                        .padding(.top, 8)
+                    },
+                    label: {
+                        Text("Theme")
+                            .font(.headline)
                             .foregroundColor(colorScheme == .dark ? .white : .black)
                     }
-                    .padding()
-                    .background(
-                        RoundedRectangle(cornerRadius: 8)
-                            .fill(backgroundColor)
-                    )
-
-                    if !useRandomTheme {
-                        // Theme grid
-                        LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: 12) {
-                            ForEach(ColorTheme.allThemes) { theme in
-                                Button(action: {
-                                    selectedThemeId = theme.id
-                                }) {
-                                    VStack(spacing: 4) {
-                                        // Preview colors
-                                        HStack(spacing: 2) {
-                                            Rectangle()
-                                                .fill(theme.backgroundColor(for: colorScheme))
-                                                .frame(height: 30)
-                                            Rectangle()
-                                                .fill(theme.textColor(for: colorScheme))
-                                                .frame(height: 30)
-                                        }
-                                        .cornerRadius(4)
-
-                                        Text(theme.name)
-                                            .font(.caption)
-                                            .foregroundColor(themeTextColor(for: theme))
-                                    }
-                                    .padding(8)
-                                    .frame(maxWidth: .infinity)
-                                    .background(
-                                        RoundedRectangle(cornerRadius: 8)
-                                            .fill(themeBackgroundColor(for: theme))
-                                    )
-                                }
-                            }
-                        }
-                    } else {
-                        // Show current random theme
-                        VStack(alignment: .leading, spacing: 8) {
-                            HStack {
-                                Text("Current Theme:")
-                                    .foregroundColor(colorScheme == .dark ? .white : .black)
-                                Spacer()
-                                Text(currentTheme.name)
-                                    .foregroundColor(.blue)
-                            }
-                            HStack(spacing: 2) {
-                                Rectangle()
-                                    .fill(currentTheme.backgroundColor(for: colorScheme))
-                                    .frame(height: 40)
-                                Rectangle()
-                                    .fill(currentTheme.textColor(for: colorScheme))
-                                    .frame(height: 40)
-                            }
-                            .cornerRadius(4)
-                        }
-                        .padding()
-                        .background(
-                            RoundedRectangle(cornerRadius: 8)
-                                .fill(backgroundColor)
-                        )
-                    }
-                }
+                )
 
                 // Display settings section
                 VStack(alignment: .leading, spacing: 12) {

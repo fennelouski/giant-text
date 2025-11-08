@@ -11,24 +11,21 @@ import SwiftUI
 struct GiantTextWidgetEntry: TimelineEntry {
     let date: Date
     let attributedText: NSAttributedString?
-    let theme: ColorTheme
 }
 
 struct GiantTextWidgetEntryView: View {
     var entry: GiantTextWidgetEntry
     @Environment(\.widgetFamily) var family
-    @Environment(\.colorScheme) private var colorScheme
 
     var body: some View {
         if let attributedText = entry.attributedText, !attributedText.string.isEmpty {
             WidgetTextDisplay(
-                attributedText: attributedText,
-                theme: entry.theme
+                attributedText: attributedText
             )
         } else {
             Text("GIANT TEXT 5")
                 .font(.system(size: 16, weight: .bold))
-                .foregroundColor(entry.theme.textColor(for: colorScheme))
+                .foregroundColor(.secondary)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
     }
@@ -40,9 +37,7 @@ struct GiantTextWidget: Widget {
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: GiantTextWidgetProvider()) { entry in
             GiantTextWidgetEntryView(entry: entry)
-                .containerBackground(for: .widget) {
-                    Color(entry.theme.lightBackground.color)
-                }
+                .containerBackground(for: .widget) { }
         }
         .configurationDisplayName("GIANT TEXT")
         .description("Display your giant text on the home screen.")
@@ -56,16 +51,14 @@ struct GiantTextWidgetProvider: TimelineProvider {
     func placeholder(in context: Context) -> GiantTextWidgetEntry {
         GiantTextWidgetEntry(
             date: Date(),
-            attributedText: NSAttributedString(string: "Sample Text"),
-            theme: getStoredTheme()
+            attributedText: NSAttributedString(string: "Sample Text")
         )
     }
 
     func getSnapshot(in context: Context, completion: @escaping (GiantTextWidgetEntry) -> ()) {
         let entry = GiantTextWidgetEntry(
             date: Date(),
-            attributedText: getStoredText(),
-            theme: getStoredTheme()
+            attributedText: getStoredText()
         )
         completion(entry)
     }
@@ -73,28 +66,13 @@ struct GiantTextWidgetProvider: TimelineProvider {
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         let entry = GiantTextWidgetEntry(
             date: Date(),
-            attributedText: getStoredText(),
-            theme: getStoredTheme()
+            attributedText: getStoredText()
         )
 
         // Update every 5 minutes for more responsive widget updates
         let nextUpdate = Calendar.current.date(byAdding: .minute, value: 5, to: Date()) ?? Date()
         let timeline = Timeline(entries: [entry], policy: .after(nextUpdate))
         completion(timeline)
-    }
-
-    private func getStoredTheme() -> ColorTheme {
-        let sharedDefaults = UserDefaults(suiteName: "group.com.fennel.Giant-Text")
-
-        // Try to get theme from shared defaults
-        if let themeData = sharedDefaults?.data(forKey: "currentThemeData"),
-           let theme = try? JSONDecoder().decode(ColorTheme.self, from: themeData) {
-            print("Widget: Found theme: \(theme.name)")
-            return theme
-        }
-
-        print("Widget: No theme found, using default")
-        return ColorTheme.defaultTheme
     }
     
     private func getStoredText() -> NSAttributedString? {
@@ -124,8 +102,7 @@ struct GiantTextWidgetProvider: TimelineProvider {
 } timeline: {
     GiantTextWidgetEntry(
         date: Date(),
-        attributedText: NSAttributedString(string: "Hello World"),
-        theme: ColorTheme.defaultTheme
+        attributedText: NSAttributedString(string: "Hello World")
     )
 }
 
@@ -134,8 +111,7 @@ struct GiantTextWidgetProvider: TimelineProvider {
 } timeline: {
     GiantTextWidgetEntry(
         date: Date(),
-        attributedText: NSAttributedString(string: "Medium Widget Text"),
-        theme: ColorTheme.defaultTheme
+        attributedText: NSAttributedString(string: "Medium Widget Text")
     )
 }
 
@@ -144,7 +120,6 @@ struct GiantTextWidgetProvider: TimelineProvider {
 } timeline: {
     GiantTextWidgetEntry(
         date: Date(),
-        attributedText: NSAttributedString(string: "Large Widget Text"),
-        theme: ColorTheme.defaultTheme
+        attributedText: NSAttributedString(string: "Large Widget Text")
     )
 }

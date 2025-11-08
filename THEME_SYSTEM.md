@@ -40,10 +40,10 @@ Each theme has been carefully designed with distinct color palettes for both lig
 - Changes also occur when app is foregrounded after being backgrounded for 24+ hours
 - Always selects a different theme from the current one
 
-### Widget Support
-- Themes automatically sync to home screen widgets
-- Widget background and text colors match the app theme
-- Updates occur within 5 minutes of theme changes
+### Widget Display
+- Widgets use system default colors (not custom themes)
+- Widget text and background adapt to system light/dark mode
+- Widget appearance follows iOS system theme
 
 ## Implementation Details
 
@@ -88,7 +88,7 @@ Each theme has been carefully designed with distinct color palettes for both lig
 - **Widget Files**:
   - `GiantTextWidget.swift` - Widget entry and provider
   - `WidgetTextDisplay.swift` - Widget text rendering
-  - Both read theme from shared App Group storage
+  - Widgets use system colors (no custom themes applied)
 
 ### Data Flow
 
@@ -97,7 +97,6 @@ Each theme has been carefully designed with distinct color palettes for both lig
    User selects theme → ContentViewState.selectedThemeId updated
    → Theme saved to App Group UserDefaults
    → UI updates with new colors
-   → Widget receives update within 5 minutes
    ```
 
 2. **Random Theme**:
@@ -105,15 +104,7 @@ Each theme has been carefully designed with distinct color palettes for both lig
    App launch/foreground → checkAndUpdateThemeIfNeeded()
    → Check 24-hour elapsed → randomizeTheme()
    → Select new theme → Save to UserDefaults
-   → UI and widget update
-   ```
-
-3. **Widget Sync**:
-   ```
-   Theme change in app → saveThemeToAppGroup()
-   → Encode theme as JSON → Store in App Group
-   → Widget timeline refresh → Decode theme
-   → Apply colors to widget
+   → UI updates with new colors
    ```
 
 ### Storage
@@ -144,9 +135,10 @@ struct ColorTheme: Codable, Identifiable {
 - UI Elements: OptionsMenuSheet uses theme colors for previews
 
 #### Widget
-- Background: Applied via `containerBackground(for: .widget)`
-- Text: Applied in WidgetTextDisplay
-- Placeholder: Uses theme colors when no text available
+- Background: Uses system default background
+- Text: Uses system default text colors
+- Placeholder: Uses system secondary color
+- Automatically adapts to system light/dark mode
 
 ## User Guide
 
@@ -164,11 +156,11 @@ struct ColorTheme: Codable, Identifiable {
 4. Theme will change automatically every 24 hours
 5. Current theme is displayed below the toggle
 
-### Theme on Widgets
-1. Add Giant Text widget to home screen
-2. Widget automatically uses the same theme as the app
-3. Updates appear within 5 minutes of theme changes
-4. Works with both manual and random theme modes
+### Widget Appearance
+1. Widgets use iOS system default colors
+2. Widgets automatically adapt to light/dark mode
+3. Widget colors are independent of app theme selection
+4. This ensures consistent widget appearance across the system
 
 ## Technical Notes
 
@@ -198,12 +190,6 @@ Potential future additions:
 - Per-widget theme settings
 
 ## Troubleshooting
-
-### Theme not appearing in widget
-- Verify App Group is configured for both app and widget targets
-- Check that both use `group.com.fennel.Giant-Text`
-- Remove and re-add widget to home screen
-- Wait up to 5 minutes for update
 
 ### Random theme not changing
 - Check that "Random Theme (Daily)" is enabled

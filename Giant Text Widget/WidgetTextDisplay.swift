@@ -11,12 +11,9 @@ import SwiftUI
 // MARK: - Widget Text Display
 struct WidgetTextDisplay: View {
     let attributedText: NSAttributedString
-    let theme: ColorTheme
-    @Environment(\.colorScheme) private var colorScheme
 
     var body: some View {
         Text(AttributedString(attributedText))
-            .foregroundColor(theme.textColor(for: colorScheme))
             .minimumScaleFactor(0.1) // Allow text to scale down
             .lineLimit(nil) // Allow multiple lines if needed
             .frame(maxWidth: .infinity, maxHeight: .infinity) // Fill available space
@@ -25,8 +22,7 @@ struct WidgetTextDisplay: View {
 
 #Preview {
     WidgetTextDisplay(
-        attributedText: NSAttributedString(string: "Hello World"),
-        theme: ColorTheme.defaultTheme
+        attributedText: NSAttributedString(string: "Hello World")
     )
     .frame(width: 200, height: 200)
 }
