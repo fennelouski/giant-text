@@ -77,6 +77,7 @@ struct GiantTextView: View {
                         set: { isTextFieldFocused = $0 }
                     ),
                     colorScheme: colorScheme,
+                    theme: theme,
                     selectedAnimation: $selectedAnimation,
                     animationIntensity: $animationIntensity,
                     isBold: $isBold,

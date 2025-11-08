@@ -16,6 +16,7 @@ struct RichTextEditor: UIViewRepresentable {
     @Binding var selectedRange: NSRange
     @Binding var isFocused: Bool
     let colorScheme: ColorScheme
+    let theme: ColorTheme
     @Binding var selectedAnimation: TextAnimation
     @Binding var animationIntensity: Double
     @Binding var isBold: Bool
@@ -37,7 +38,7 @@ struct RichTextEditor: UIViewRepresentable {
                 }
             ))
             .font(useSerifFont ? .custom("Times New Roman", size: 48) : .system(size: 48, weight: .regular))
-            .foregroundColor(colorScheme == .dark ? .white : .black)
+            .foregroundColor(theme.textColor(for: colorScheme))
             .multilineTextAlignment(.center)
             .textFieldStyle(PlainTextFieldStyle())
             .focused($isFocused)
@@ -63,9 +64,9 @@ struct RichTextEditor: UIViewRepresentable {
                     isBold.toggle()
                 }) {
                     Image(systemName: "bold")
-                        .foregroundColor(isBold ? .blue : (colorScheme == .dark ? .white : .black))
+                        .foregroundColor(isBold ? .blue : theme.textColor(for: colorScheme))
                 }
-                
+
                 Button(action: {
                     // Toggle italic - simplified for tvOS
                     let mutableText = NSMutableAttributedString(attributedString: attributedText)
@@ -75,7 +76,7 @@ struct RichTextEditor: UIViewRepresentable {
                     isItalicized.toggle()
                 }) {
                     Image(systemName: "italic")
-                        .foregroundColor(isItalicized ? .blue : (colorScheme == .dark ? .white : .black))
+                        .foregroundColor(isItalicized ? .blue : theme.textColor(for: colorScheme))
                 }
                 
                 Button(action: onClear) {
@@ -102,7 +103,7 @@ struct RichTextEditor: UIViewRepresentable {
         let textView = UITextView()
         textView.delegate = context.coordinator
         textView.backgroundColor = .clear
-        textView.textColor = colorScheme == .dark ? .white : .black
+        textView.textColor = UIColor(theme.textColor(for: colorScheme))
         
         // Disable autoresizing mask to prevent constraint conflicts
         textView.translatesAutoresizingMaskIntoConstraints = false
@@ -188,6 +189,9 @@ struct RichTextEditor: UIViewRepresentable {
         let newFont = createFontForCurrentState()
         uiView.font = newFont
 
+        // Update text color to reflect theme and color scheme changes
+        uiView.textColor = UIColor(theme.textColor(for: colorScheme))
+
         if isFocused && !uiView.isFirstResponder {
             uiView.becomeFirstResponder()
             context.coordinator.startFormattingCheckTimer()
@@ -257,7 +261,7 @@ struct RichTextEditor: UIViewRepresentable {
                 string: plainText,
                 attributes: [
                     .font: font,
-                    .foregroundColor: parent.colorScheme == .dark ? UIColor.white : UIColor.black
+                    .foregroundColor: UIColor(parent.theme.textColor(for: parent.colorScheme))
                 ]
             )
 
@@ -274,7 +278,7 @@ struct RichTextEditor: UIViewRepresentable {
         func createInputAccessoryView() -> UIView {
             // Create a custom container view instead of using UIToolbar
             let containerView = UIView()
-            containerView.backgroundColor = parent.colorScheme == .dark ? UIColor.systemGray6 : UIColor.systemGray5
+            containerView.backgroundColor = UIColor(parent.theme.backgroundColor(for: parent.colorScheme)).withAlphaComponent(0.95)
             containerView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44)
             
             // Create a horizontal stack view for the buttons
@@ -289,20 +293,20 @@ struct RichTextEditor: UIViewRepresentable {
             let animationButton = createButton(
                 imageName: "play.circle.fill",
                 action: #selector(showAnimationMenu),
-                tintColor: parent.colorScheme == .dark ? UIColor.white : UIColor.black
+                tintColor: UIColor(parent.theme.textColor(for: parent.colorScheme))
             )
-            
+
             let boldButton = createButton(
                 imageName: "bold",
                 action: #selector(toggleBold),
-                tintColor: parent.isBold ? UIColor.systemBlue : (parent.colorScheme == .dark ? UIColor.white : UIColor.black),
+                tintColor: parent.isBold ? UIColor.systemBlue : UIColor(parent.theme.textColor(for: parent.colorScheme)),
                 isUnderlined: parent.isBold
             )
-            
+
             let italicButton = createButton(
                 imageName: "italic",
                 action: #selector(toggleItalic),
-                tintColor: parent.isItalicized ? UIColor.systemBlue : (parent.colorScheme == .dark ? UIColor.white : UIColor.black),
+                tintColor: parent.isItalicized ? UIColor.systemBlue : UIColor(parent.theme.textColor(for: parent.colorScheme)),
                 isUnderlined: parent.isItalicized
             )
             
@@ -468,7 +472,7 @@ struct RichTextEditor: UIViewRepresentable {
                         string: textView.text ?? "",
                         attributes: [
                             .font: newFont,
-                            .foregroundColor: self.parent.colorScheme == .dark ? UIColor.white : UIColor.black
+                            .foregroundColor: UIColor(self.parent.theme.textColor(for: self.parent.colorScheme))
                         ]
                     )
                     self.parent.attributedText = newText
@@ -496,7 +500,7 @@ struct RichTextEditor: UIViewRepresentable {
                         string: textView.text ?? "",
                         attributes: [
                             .font: newFont,
-                            .foregroundColor: self.parent.colorScheme == .dark ? UIColor.white : UIColor.black
+                            .foregroundColor: UIColor(self.parent.theme.textColor(for: self.parent.colorScheme))
                         ]
                     )
                     self.parent.attributedText = newText
