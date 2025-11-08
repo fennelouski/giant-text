@@ -15,10 +15,13 @@ struct OptionsMenuSheet: View {
     @Binding var useSerifFont: Bool
     @Binding var kerning: Double
     @Binding var maxLines: Int
+    @Binding var selectedThemeId: String
+    @Binding var useRandomTheme: Bool
     let onEdit: () -> Void
     let onClear: () -> Void
     let onUndo: () -> Void
     let canUndo: Bool
+    let currentTheme: ColorTheme
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.dismiss) private var dismiss
     
@@ -36,6 +39,22 @@ struct OptionsMenuSheet: View {
     
     private func textColor(for animation: TextAnimation) -> Color {
         if selectedAnimation == animation {
+            return .blue
+        } else {
+            return colorScheme == .dark ? .white : .black
+        }
+    }
+
+    private func themeBackgroundColor(for theme: ColorTheme) -> Color {
+        if selectedThemeId == theme.id {
+            return colorScheme == .dark ? Color.blue.opacity(0.3) : Color.blue.opacity(0.1)
+        } else {
+            return colorScheme == .dark ? Color.gray.opacity(0.3) : Color.gray.opacity(0.1)
+        }
+    }
+
+    private func themeTextColor(for theme: ColorTheme) -> Color {
+        if selectedThemeId == theme.id {
             return .blue
         } else {
             return colorScheme == .dark ? .white : .black
@@ -141,7 +160,84 @@ struct OptionsMenuSheet: View {
                         .padding(.top, 8)
                     }
                 }
-                
+
+                // Theme section
+                VStack(alignment: .leading, spacing: 12) {
+                    Text("Theme")
+                        .font(.headline)
+                        .foregroundColor(colorScheme == .dark ? .white : .black)
+
+                    // Random theme toggle
+                    HStack {
+                        Toggle("Random Theme (Daily)", isOn: $useRandomTheme)
+                            .foregroundColor(colorScheme == .dark ? .white : .black)
+                    }
+                    .padding()
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(backgroundColor)
+                    )
+
+                    if !useRandomTheme {
+                        // Theme grid
+                        LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: 12) {
+                            ForEach(ColorTheme.allThemes) { theme in
+                                Button(action: {
+                                    selectedThemeId = theme.id
+                                }) {
+                                    VStack(spacing: 4) {
+                                        // Preview colors
+                                        HStack(spacing: 2) {
+                                            Rectangle()
+                                                .fill(theme.backgroundColor(for: colorScheme))
+                                                .frame(height: 30)
+                                            Rectangle()
+                                                .fill(theme.textColor(for: colorScheme))
+                                                .frame(height: 30)
+                                        }
+                                        .cornerRadius(4)
+
+                                        Text(theme.name)
+                                            .font(.caption)
+                                            .foregroundColor(themeTextColor(for: theme))
+                                    }
+                                    .padding(8)
+                                    .frame(maxWidth: .infinity)
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 8)
+                                            .fill(themeBackgroundColor(for: theme))
+                                    )
+                                }
+                            }
+                        }
+                    } else {
+                        // Show current random theme
+                        VStack(alignment: .leading, spacing: 8) {
+                            HStack {
+                                Text("Current Theme:")
+                                    .foregroundColor(colorScheme == .dark ? .white : .black)
+                                Spacer()
+                                Text(currentTheme.name)
+                                    .foregroundColor(.blue)
+                            }
+                            HStack(spacing: 2) {
+                                Rectangle()
+                                    .fill(currentTheme.backgroundColor(for: colorScheme))
+                                    .frame(height: 40)
+                                Rectangle()
+                                    .fill(currentTheme.textColor(for: colorScheme))
+                                    .frame(height: 40)
+                            }
+                            .cornerRadius(4)
+                        }
+                        .padding()
+                        .background(
+                            RoundedRectangle(cornerRadius: 8)
+                                .fill(backgroundColor)
+                        )
+                    }
+                }
+
                 // Display settings section
                 VStack(alignment: .leading, spacing: 12) {
                     HStack {

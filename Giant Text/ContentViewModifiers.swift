@@ -83,10 +83,10 @@ extension View {
         return view2
     }
     
-    func contentViewBackgroundModifiers(colorScheme: ColorScheme) -> some View {
+    func contentViewBackgroundModifiers(theme: ColorTheme, colorScheme: ColorScheme) -> some View {
         self
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(colorScheme == .dark ? Color.black : Color.white)
+            .background(theme.backgroundColor(for: colorScheme))
     }
     
     func contentViewOverlayModifiers(

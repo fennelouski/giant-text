@@ -25,6 +25,7 @@ struct MainContentView: View {
     @Binding var isBold: Bool
     @Binding var isItalicized: Bool
     let maxLines: Int
+    let theme: ColorTheme
     let updateDocument: (NSAttributedString) -> Void
     let addToHistory: (NSAttributedString, NSAttributedString) -> Void
     
@@ -47,6 +48,7 @@ struct MainContentView: View {
                 isBold: $isBold,
                 isItalicized: $isItalicized,
                 maxLines: maxLines,
+                theme: theme,
                 updateDocument: updateDocument,
                 addToHistory: addToHistory
             )
@@ -68,6 +70,7 @@ struct MainContentView: View {
             isBold: $isBold,
             isItalicized: $isItalicized,
             maxLines: maxLines,
+            theme: theme,
             updateDocument: updateDocument,
             addToHistory: addToHistory
         )
@@ -95,6 +98,7 @@ struct MainContentView: View {
             isBold: $isBold,
             isItalicized: $isItalicized,
             maxLines: maxLines,
+            theme: theme,
             updateDocument: updateDocument,
             addToHistory: addToHistory
         )

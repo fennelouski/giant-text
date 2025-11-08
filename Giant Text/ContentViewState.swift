@@ -45,6 +45,27 @@ class ContentViewState {
         let stored = UserDefaults.standard.integer(forKey: "maxLines")
         return (stored >= 1 && stored <= 5) ? stored : 1
     }()
+
+    // MARK: - Theme Settings
+    var selectedThemeId: String = UserDefaults.appGroup.string(forKey: "selectedThemeId") ?? "classic" {
+        didSet {
+            UserDefaults.appGroup.set(selectedThemeId, forKey: "selectedThemeId")
+            saveThemeToAppGroup()
+        }
+    }
+    var useRandomTheme: Bool = UserDefaults.appGroup.bool(forKey: "useRandomTheme") {
+        didSet {
+            UserDefaults.appGroup.set(useRandomTheme, forKey: "useRandomTheme")
+        }
+    }
+    private var lastThemeChangeDate: Date? {
+        get {
+            UserDefaults.appGroup.object(forKey: "lastThemeChangeDate") as? Date
+        }
+        set {
+            UserDefaults.appGroup.set(newValue, forKey: "lastThemeChangeDate")
+        }
+    }
     
     // MARK: - Platform-specific State
     #if os(iOS)
@@ -54,5 +75,46 @@ class ContentViewState {
     // MARK: - Initialization
     init() {
         // Initialize with default values
+        checkAndUpdateThemeIfNeeded()
     }
-} 
+
+    // MARK: - Theme Management
+    func currentTheme() -> ColorTheme {
+        ColorTheme.theme(withId: selectedThemeId)
+    }
+
+    func checkAndUpdateThemeIfNeeded() {
+        guard useRandomTheme else { return }
+
+        let now = Date()
+        let shouldUpdate: Bool
+
+        if let lastChange = lastThemeChangeDate {
+            // Check if 24 hours (86400 seconds) have passed
+            shouldUpdate = now.timeIntervalSince(lastChange) >= 86400
+        } else {
+            // First launch or no previous date
+            shouldUpdate = true
+        }
+
+        if shouldUpdate {
+            randomizeTheme()
+        }
+    }
+
+    func randomizeTheme() {
+        // Get a random theme that's different from the current one
+        let availableThemes = ColorTheme.allThemes.filter { $0.id != selectedThemeId }
+        if let randomTheme = availableThemes.randomElement() {
+            selectedThemeId = randomTheme.id
+            lastThemeChangeDate = Date()
+        }
+    }
+
+    private func saveThemeToAppGroup() {
+        // Save theme data for widget access
+        if let encoded = try? JSONEncoder().encode(currentTheme()) {
+            UserDefaults.appGroup.set(encoded, forKey: "currentThemeData")
+        }
+    }
+}

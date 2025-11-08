@@ -11,6 +11,7 @@ struct AnimatedTextDisplay: View {
     let attributedText: NSAttributedString
     let fontSize: CGFloat
     let colorScheme: ColorScheme
+    let theme: ColorTheme
     let animation: TextAnimation
     let intensity: Double
     let isClippingEnabled: Bool
@@ -58,6 +59,7 @@ struct AnimatedTextDisplay: View {
                                     totalCharacters: attributedText.string.count,
                                     fontSize: fontSize,
                                     colorScheme: colorScheme,
+                                    theme: theme,
                                     animation: animation,
                                     intensity: intensity,
                                     characterAnimation: characterAnimations.indices.contains(globalIndex) ? characterAnimations[globalIndex] : CharacterAnimation(),

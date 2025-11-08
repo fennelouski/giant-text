@@ -20,14 +20,15 @@ struct AirPlayDisplayView: View {
             ZStack {
                 // Background
                 Rectangle()
-                    .fill(colorScheme == .dark ? Color.black : Color.white)
-                
+                    .fill(state.currentTheme().backgroundColor(for: colorScheme))
+
                 // Only show the animated text display for AirPlay
                 if !state.attributedText.string.isEmpty {
                     AnimatedTextDisplay(
                         attributedText: state.attributedText,
                         fontSize: state.fontSize,
                         colorScheme: colorScheme,
+                        theme: state.currentTheme(),
                         animation: state.selectedAnimation,
                         intensity: state.animationIntensity,
                         isClippingEnabled: state.isClippingEnabled,
@@ -42,7 +43,7 @@ struct AirPlayDisplayView: View {
                     // Show placeholder when no text
                     Text(LocalizationManager.giantText)
                         .font(.system(size: 72, weight: .bold, design: .default))
-                        .foregroundColor(colorScheme == .dark ? .white : .black)
+                        .foregroundColor(state.currentTheme().textColor(for: colorScheme))
                         .multilineTextAlignment(.center)
                         .opacity(0.3)
                 }

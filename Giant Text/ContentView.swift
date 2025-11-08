@@ -43,6 +43,7 @@ struct ContentView: View {
                     isBold: $state.isBold,
                     isItalicized: $state.isItalicized,
                     maxLines: state.maxLines,
+                    theme: state.currentTheme(),
                     updateDocument: { text in
                         actions?.updateDocument(attributedText: text)
                     },
@@ -66,6 +67,7 @@ struct ContentView: View {
                     isBold: $state.isBold,
                     isItalicized: $state.isItalicized,
                     maxLines: state.maxLines,
+                    theme: state.currentTheme(),
                     updateDocument: { text in
                         actions?.updateDocument(attributedText: text)
                     },
@@ -92,7 +94,7 @@ struct ContentView: View {
                 }
                 #endif
             }
-            .contentViewBackgroundModifiers(colorScheme: colorScheme)
+            .contentViewBackgroundModifiers(theme: state.currentTheme(), colorScheme: colorScheme)
             .contentViewOverlayModifiers(state: state, actions: actions ?? ContentViewActions(state: state, modelContext: modelContext, documents: documents))
             .contentViewModifiers(state: state, actions: actions ?? ContentViewActions(state: state, modelContext: modelContext, documents: documents))
         }
@@ -108,6 +110,8 @@ struct ContentView: View {
                 useSerifFont: $state.useSerifFont,
                 kerning: $state.kerning,
                 maxLines: $state.maxLines,
+                selectedThemeId: $state.selectedThemeId,
+                useRandomTheme: $state.useRandomTheme,
                 onEdit: {
                     state.showingOptionsMenu = false
                     actions?.handleTapToEdit()
@@ -118,7 +122,8 @@ struct ContentView: View {
                 onUndo: {
                     actions?.handleUndo()
                 },
-                canUndo: state.currentHistoryIndex > 0
+                canUndo: state.currentHistoryIndex > 0,
+                currentTheme: state.currentTheme()
             )
         }
         .onAppear {

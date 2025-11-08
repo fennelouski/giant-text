@@ -19,6 +19,7 @@ struct CharacterView: View {
     let totalCharacters: Int
     let fontSize: CGFloat
     let colorScheme: ColorScheme
+    let theme: ColorTheme
     let animation: TextAnimation
     let intensity: Double
     let characterAnimation: CharacterAnimation
@@ -41,7 +42,7 @@ struct CharacterView: View {
         #if os(watchOS)
         .foregroundColor(.white)
         #else
-        .foregroundColor(colorScheme == .dark ? .white : .black)
+        .foregroundColor(theme.textColor(for: colorScheme))
         #endif
         .opacity(0.8) // Set opacity to 80%
         .scaleEffect(characterAnimation.scale)
