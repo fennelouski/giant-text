@@ -152,28 +152,28 @@ struct RichTextEditor: UIViewRepresentable {
     
     private func createFontForCurrentState() -> UIFont {
         if useSerifFont {
-            // Use serif font (Times New Roman)
-            if isBold && isItalicized {
-                return UIFont(descriptor: UIFontDescriptor.preferredFontDescriptor(withTextStyle: .largeTitle).withFamily("Times New Roman"), size: 48).withTraits(.traitBold, added: true).withTraits(.traitItalic, added: true)
-            } else if isBold {
-                return UIFont(descriptor: UIFontDescriptor.preferredFontDescriptor(withTextStyle: .largeTitle).withFamily("Times New Roman"), size: 48).withTraits(.traitBold, added: true)
-            } else if isItalicized {
-                return UIFont(descriptor: UIFontDescriptor.preferredFontDescriptor(withTextStyle: .largeTitle).withFamily("Times New Roman"), size: 48).withTraits(.traitItalic, added: true)
-            } else {
-                return UIFont(descriptor: UIFontDescriptor.preferredFontDescriptor(withTextStyle: .largeTitle).withFamily("Times New Roman"), size: 48)
-            }
+            // Use system serif font to match the display font
+            let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .body)
+                .withDesign(.serif)?
+                .withSymbolicTraits(getSymbolicTraits()) ?? UIFontDescriptor.preferredFontDescriptor(withTextStyle: .body)
+            return UIFont(descriptor: descriptor, size: 48)
         } else {
             // Use system font
-            if isBold && isItalicized {
-                return UIFont.systemFont(ofSize: 48, weight: .bold).withTraits(.traitItalic, added: true)
-            } else if isBold {
-                return UIFont.systemFont(ofSize: 48, weight: .bold)
-            } else if isItalicized {
-                return UIFont.systemFont(ofSize: 48, weight: .regular).withTraits(.traitItalic, added: true)
-            } else {
-                return UIFont.systemFont(ofSize: 48, weight: .regular)
-            }
+            let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .body)
+                .withSymbolicTraits(getSymbolicTraits()) ?? UIFontDescriptor.preferredFontDescriptor(withTextStyle: .body)
+            return UIFont(descriptor: descriptor, size: 48)
         }
+    }
+
+    private func getSymbolicTraits() -> UIFontDescriptor.SymbolicTraits {
+        var traits: UIFontDescriptor.SymbolicTraits = []
+        if isBold {
+            traits.insert(.traitBold)
+        }
+        if isItalicized {
+            traits.insert(.traitItalic)
+        }
+        return traits
     }
     
     func updateUIView(_ uiView: UITextView, context: Context) {
@@ -183,20 +183,22 @@ struct RichTextEditor: UIViewRepresentable {
         if currentText != newText {
             uiView.text = newText
         }
-        
+
         // Always update font when useSerifFont changes or formatting state changes
         let newFont = createFontForCurrentState()
         uiView.font = newFont
-        
+
         if isFocused && !uiView.isFirstResponder {
             uiView.becomeFirstResponder()
+            context.coordinator.startFormattingCheckTimer()
         } else if !isFocused && uiView.isFirstResponder {
             uiView.resignFirstResponder()
+            context.coordinator.stopFormattingCheckTimer()
         }
-        
+
         // Update textView reference
         context.coordinator.textView = uiView
-        
+
         // Update input accessory view to reflect current formatting state
         context.coordinator.updateInputAccessoryView()
     }
@@ -217,24 +219,39 @@ struct RichTextEditor: UIViewRepresentable {
             self.previousIsBold = parent.isBold
             self.previousIsItalicized = parent.isItalicized
             super.init()
-            
-            // Start a timer to check for formatting state changes
+        }
+
+        deinit {
+            formattingCheckTimer?.invalidate()
+        }
+
+        func startFormattingCheckTimer() {
+            // Only start timer if not already running
+            guard formattingCheckTimer == nil else { return }
             formattingCheckTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] _ in
                 self?.checkFormattingStateChanges()
             }
         }
-        
-        deinit {
+
+        func stopFormattingCheckTimer() {
             formattingCheckTimer?.invalidate()
+            formattingCheckTimer = nil
         }
         
         func textViewDidChange(_ textView: UITextView) {
             // Get the new plain text
-            let plainText = textView.text ?? ""
-            
+            var plainText = textView.text ?? ""
+
+            // Enforce 500 character limit
+            let maxCharacters = 500
+            if plainText.count > maxCharacters {
+                plainText = String(plainText.prefix(maxCharacters))
+                textView.text = plainText
+            }
+
             // Create the appropriate font based on current formatting state and serif font setting
             let font = parent.createFontForCurrentState()
-            
+
             // Create attributed string with the appropriate font
             let attributedString = NSAttributedString(
                 string: plainText,
@@ -243,7 +260,7 @@ struct RichTextEditor: UIViewRepresentable {
                     .foregroundColor: parent.colorScheme == .dark ? UIColor.white : UIColor.black
                 ]
             )
-            
+
             // Use async to avoid modifying state during view update
             DispatchQueue.main.async {
                 self.parent.attributedText = attributedString
@@ -270,7 +287,7 @@ struct RichTextEditor: UIViewRepresentable {
             
             // Create buttons
             let animationButton = createButton(
-                imageName: parent.selectedAnimation.icon,
+                imageName: "play.circle.fill",
                 action: #selector(showAnimationMenu),
                 tintColor: parent.colorScheme == .dark ? UIColor.white : UIColor.black
             )
@@ -412,8 +429,9 @@ struct RichTextEditor: UIViewRepresentable {
                     title: NSLocalizedString(animation.rawValue, comment: "Animation type"),
                     style: .default
                 ) { _ in
-                    DispatchQueue.main.async {
-                        self.parent.selectedAnimation = animation
+                    DispatchQueue.main.async { [weak self] in
+                        guard let self else { return }
+                        parent.selectedAnimation = animation
                     }
                 }
                 alertController.addAction(action)
@@ -433,22 +451,58 @@ struct RichTextEditor: UIViewRepresentable {
         }
         
         @objc func toggleBold() {
+            // Save current state to history before toggling
+            let oldText = parent.attributedText
+
             // Simply toggle the bold state
             DispatchQueue.main.async {
                 self.parent.isBold.toggle()
                 // Save to UserDefaults
                 UserDefaults.standard.set(self.parent.isBold, forKey: "isBold")
                 self.updateInputAccessoryView()
+
+                // Update the attributed text with new formatting
+                if let textView = self.textView {
+                    let newFont = self.parent.createFontForCurrentState()
+                    let newText = NSAttributedString(
+                        string: textView.text ?? "",
+                        attributes: [
+                            .font: newFont,
+                            .foregroundColor: self.parent.colorScheme == .dark ? UIColor.white : UIColor.black
+                        ]
+                    )
+                    self.parent.attributedText = newText
+                    self.parent.addToHistory(oldText, newText)
+                    self.parent.updateDocument(newText)
+                }
             }
         }
-        
+
         @objc func toggleItalic() {
+            // Save current state to history before toggling
+            let oldText = parent.attributedText
+
             // Simply toggle the italic state
             DispatchQueue.main.async {
                 self.parent.isItalicized.toggle()
                 // Save to UserDefaults
                 UserDefaults.standard.set(self.parent.isItalicized, forKey: "isItalicized")
                 self.updateInputAccessoryView()
+
+                // Update the attributed text with new formatting
+                if let textView = self.textView {
+                    let newFont = self.parent.createFontForCurrentState()
+                    let newText = NSAttributedString(
+                        string: textView.text ?? "",
+                        attributes: [
+                            .font: newFont,
+                            .foregroundColor: self.parent.colorScheme == .dark ? UIColor.white : UIColor.black
+                        ]
+                    )
+                    self.parent.attributedText = newText
+                    self.parent.addToHistory(oldText, newText)
+                    self.parent.updateDocument(newText)
+                }
             }
         }
         

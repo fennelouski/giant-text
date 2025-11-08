@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		80FF475E2E38530800457F0B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FF3B3C2E384CA900457F0B /* WidgetKit.framework */; };
+		80FF475F2E38530800457F0B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FF3B3E2E384CA900457F0B /* SwiftUI.framework */; };
+		80FF476E2E38530A00457F0B /* Giant Text WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 80FF475D2E38530800457F0B /* Giant Text WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		8097C33C2E36B7B7005B8C82 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +27,48 @@
 			remoteGlobalIDString = 8097C32A2E36B7B6005B8C82;
 			remoteInfo = "Giant Text";
 		};
+		80FF476C2E38530A00457F0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8097C3232E36B7B6005B8C82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80FF475C2E38530800457F0B;
+			remoteInfo = "Giant Text WidgetExtension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		80FF476F2E38530A00457F0B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				80FF476E2E38530A00457F0B /* Giant Text WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		80532D842EA1F0680051DA76 /* Giant Text WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Giant Text WidgetExtension.entitlements"; sourceTree = "<group>"; };
 		8097C32B2E36B7B6005B8C82 /* Giant Text.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Giant Text.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8097C33B2E36B7B7005B8C82 /* Giant TextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Giant TextTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8097C3452E36B7B7005B8C82 /* Giant TextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Giant TextUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80FF3B3C2E384CA900457F0B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		80FF3B3E2E384CA900457F0B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		80FF475D2E38530800457F0B /* Giant Text WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Giant Text WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		80FF47722E38530A00457F0B /* Exceptions for "Giant Text Widget" folder in "Giant Text WidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 80FF475C2E38530800457F0B /* Giant Text WidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8097C32D2E36B7B6005B8C82 /* Giant Text */ = {
@@ -43,6 +84,14 @@
 		8097C3482E36B7B7005B8C82 /* Giant TextUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Giant TextUITests";
+			sourceTree = "<group>";
+		};
+		80FF47602E38530800457F0B /* Giant Text Widget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				80FF47722E38530A00457F0B /* Exceptions for "Giant Text Widget" folder in "Giant Text WidgetExtension" target */,
+			);
+			path = "Giant Text Widget";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,15 +118,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		80FF475A2E38530800457F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80FF475F2E38530800457F0B /* SwiftUI.framework in Frameworks */,
+				80FF475E2E38530800457F0B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		8097C3222E36B7B6005B8C82 = {
 			isa = PBXGroup;
 			children = (
+				80532D842EA1F0680051DA76 /* Giant Text WidgetExtension.entitlements */,
 				8097C32D2E36B7B6005B8C82 /* Giant Text */,
 				8097C33E2E36B7B7005B8C82 /* Giant TextTests */,
 				8097C3482E36B7B7005B8C82 /* Giant TextUITests */,
+				80FF47602E38530800457F0B /* Giant Text Widget */,
+				80FF3B3B2E384CA900457F0B /* Frameworks */,
 				8097C32C2E36B7B6005B8C82 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +149,18 @@
 				8097C32B2E36B7B6005B8C82 /* Giant Text.app */,
 				8097C33B2E36B7B7005B8C82 /* Giant TextTests.xctest */,
 				8097C3452E36B7B7005B8C82 /* Giant TextUITests.xctest */,
+				80FF475D2E38530800457F0B /* Giant Text WidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		80FF3B3B2E384CA900457F0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80FF3B3C2E384CA900457F0B /* WidgetKit.framework */,
+				80FF3B3E2E384CA900457F0B /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +173,12 @@
 				8097C3272E36B7B6005B8C82 /* Sources */,
 				8097C3282E36B7B6005B8C82 /* Frameworks */,
 				8097C3292E36B7B6005B8C82 /* Resources */,
+				80FF476F2E38530A00457F0B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				80FF476D2E38530A00457F0B /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				8097C32D2E36B7B6005B8C82 /* Giant Text */,
@@ -113,7 +186,7 @@
 			name = "Giant Text";
 			packageProductDependencies = (
 			);
-			productName = "Giant Text";
+			productName = GT;
 			productReference = 8097C32B2E36B7B6005B8C82 /* Giant Text.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -163,6 +236,28 @@
 			productReference = 8097C3452E36B7B7005B8C82 /* Giant TextUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		80FF475C2E38530800457F0B /* Giant Text WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80FF47732E38530A00457F0B /* Build configuration list for PBXNativeTarget "Giant Text WidgetExtension" */;
+			buildPhases = (
+				80FF47592E38530800457F0B /* Sources */,
+				80FF475A2E38530800457F0B /* Frameworks */,
+				80FF475B2E38530800457F0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				80FF47602E38530800457F0B /* Giant Text Widget */,
+			);
+			name = "Giant Text WidgetExtension";
+			packageProductDependencies = (
+			);
+			productName = "Giant Text WidgetExtension";
+			productReference = 80FF475D2E38530800457F0B /* Giant Text WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,6 +278,9 @@
 					8097C3442E36B7B7005B8C82 = {
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = 8097C32A2E36B7B6005B8C82;
+					};
+					80FF475C2E38530800457F0B = {
+						CreatedOnToolsVersion = 16.4;
 					};
 				};
 			};
@@ -257,6 +355,7 @@
 				8097C32A2E36B7B6005B8C82 /* Giant Text */,
 				8097C33A2E36B7B7005B8C82 /* Giant TextTests */,
 				8097C3442E36B7B7005B8C82 /* Giant TextUITests */,
+				80FF475C2E38530800457F0B /* Giant Text WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -277,6 +376,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8097C3432E36B7B7005B8C82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80FF475B2E38530800457F0B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -307,6 +413,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		80FF47592E38530800457F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -319,6 +432,11 @@
 			isa = PBXTargetDependency;
 			target = 8097C32A2E36B7B6005B8C82 /* Giant Text */;
 			targetProxy = 8097C3462E36B7B7005B8C82 /* PBXContainerItemProxy */;
+		};
+		80FF476D2E38530A00457F0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80FF475C2E38530800457F0B /* Giant Text WidgetExtension */;
+			targetProxy = 80FF476C2E38530A00457F0B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -451,7 +569,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Giant Text!";
+				INFOPLIST_KEY_CFBundleDisplayName = GT;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -491,7 +610,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Giant Text!";
+				INFOPLIST_KEY_CFBundleDisplayName = GT;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -609,6 +729,67 @@
 			};
 			name = Release;
 		};
+		80FF47702E38530A00457F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Giant Text WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EJLR2RPSV2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Giant Text Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Giant Text Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fennel.Giant-Text.Giant-Text-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80FF47712E38530A00457F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Giant Text WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EJLR2RPSV2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Giant Text Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Giant Text Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fennel.Giant-Text.Giant-Text-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -644,6 +825,15 @@
 			buildConfigurations = (
 				8097C3562E36B7B7005B8C82 /* Debug */,
 				8097C3572E36B7B7005B8C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80FF47732E38530A00457F0B /* Build configuration list for PBXNativeTarget "Giant Text WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80FF47702E38530A00457F0B /* Debug */,
+				80FF47712E38530A00457F0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

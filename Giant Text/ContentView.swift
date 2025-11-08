@@ -42,6 +42,7 @@ struct ContentView: View {
                     forceRecalculation: $state.forceRecalculation,
                     isBold: $state.isBold,
                     isItalicized: $state.isItalicized,
+                    maxLines: state.maxLines,
                     updateDocument: { text in
                         actions?.updateDocument(attributedText: text)
                     },
@@ -64,6 +65,7 @@ struct ContentView: View {
                     forceRecalculation: $state.forceRecalculation,
                     isBold: $state.isBold,
                     isItalicized: $state.isItalicized,
+                    maxLines: state.maxLines,
                     updateDocument: { text in
                         actions?.updateDocument(attributedText: text)
                     },
@@ -105,6 +107,7 @@ struct ContentView: View {
                 isClippingEnabled: $state.isClippingEnabled,
                 useSerifFont: $state.useSerifFont,
                 kerning: $state.kerning,
+                maxLines: $state.maxLines,
                 onEdit: {
                     state.showingOptionsMenu = false
                     actions?.handleTapToEdit()
@@ -119,7 +122,10 @@ struct ContentView: View {
             )
         }
         .onAppear {
-            actions = ContentViewActions(state: state, modelContext: modelContext, documents: documents)
+            let actions = ContentViewActions(state: state, modelContext: modelContext, documents: documents)
+            self.actions = actions
+            actions.ensureDocumentExists()
+            actions.loadDocument()
         }
     }
 }

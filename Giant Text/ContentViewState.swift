@@ -41,6 +41,10 @@ class ContentViewState {
     var isClippingEnabled: Bool = UserDefaults.standard.bool(forKey: "isClippingEnabled")
     var useSerifFont: Bool = UserDefaults.standard.object(forKey: "useSerifFont") == nil ? true : UserDefaults.standard.bool(forKey: "useSerifFont")
     var kerning: Double = UserDefaults.standard.double(forKey: "kerning") > 0 ? UserDefaults.standard.double(forKey: "kerning") : 0.0
+    var maxLines: Int = {
+        let stored = UserDefaults.standard.integer(forKey: "maxLines")
+        return (stored >= 1 && stored <= 5) ? stored : 1
+    }()
     
     // MARK: - Platform-specific State
     #if os(iOS)

@@ -14,6 +14,7 @@ struct OptionsMenuSheet: View {
     @Binding var isClippingEnabled: Bool
     @Binding var useSerifFont: Bool
     @Binding var kerning: Double
+    @Binding var maxLines: Int
     let onEdit: () -> Void
     let onClear: () -> Void
     let onUndo: () -> Void
@@ -174,6 +175,26 @@ struct OptionsMenuSheet: View {
                         }
                         Slider(value: $kerning, in: -10...30)
                             .accentColor(.blue)
+                    }
+                    .padding()
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(backgroundColor)
+                    )
+
+                    // Max lines picker
+                    VStack(alignment: .leading, spacing: 8) {
+                        HStack {
+                            Text("Max Lines")
+                                .foregroundColor(colorScheme == .dark ? .white : .black)
+                            Spacer()
+                            Picker("", selection: $maxLines) {
+                                ForEach(1...5, id: \.self) { lines in
+                                    Text("\(lines)").tag(lines)
+                                }
+                            }
+                            .pickerStyle(.menu)
+                        }
                     }
                     .padding()
                     .background(

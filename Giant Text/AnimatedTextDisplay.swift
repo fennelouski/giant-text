@@ -18,38 +18,66 @@ struct AnimatedTextDisplay: View {
     let kerning: Double
     let isBold: Bool
     let isItalicized: Bool
+    let maxLines: Int
 
     @State private var animationPhase: Double = 0
     @State private var characterAnimations: [CharacterAnimation] = []
     @State private var animationTimer: Timer?
+    @State private var jitterTimers: [Timer] = []
     @State private var isAnimationActive: Bool = false
     
     var body: some View {
         // Use consistent character-based rendering for ALL animations, including .none
-        ZStack {
-            HStack(spacing: kerning) { // Use kerning value for letter spacing
-                ForEach(Array(attributedText.string.enumerated()), id: \.offset) { index, character in
-                    CharacterView(
-                        character: character,
-                        index: index,
-                        totalCharacters: attributedText.string.count,
-                        fontSize: fontSize,
-                        colorScheme: colorScheme,
-                        animation: animation,
-                        intensity: intensity,
-                        characterAnimation: characterAnimations.indices.contains(index) ? characterAnimations[index] : CharacterAnimation(),
-                        isClippingEnabled: isClippingEnabled,
-                        useSerifFont: useSerifFont,
-                        isBold: isBold,
-                        isItalicized: isItalicized
-                    )
+        GeometryReader { geometry in
+            ZStack {
+                // Calculate line breaks based on available width
+                let lines = LineBreakCalculator.calculateLines(
+                    text: attributedText.string,
+                    fontSize: fontSize,
+                    useSerifFont: useSerifFont,
+                    isBold: isBold,
+                    availableWidth: geometry.size.width,
+                    maxLines: maxLines,
+                    kerning: kerning
+                )
+
+                // Calculate dynamic spacing based on available space
+                let totalTextHeight = CGFloat(lines.count) * fontSize
+                let remainingSpace = geometry.size.height - totalTextHeight
+                let lineSpacing: CGFloat = lines.count > 1 ? max(0, remainingSpace / CGFloat(lines.count + 1)) : 0
+
+                // Render lines in a VStack with spacing proportional to available space
+                VStack(spacing: lineSpacing) {
+                    ForEach(Array(lines.enumerated()), id: \.offset) { lineIndex, lineCharacters in
+                        HStack(spacing: kerning) {
+                            ForEach(Array(lineCharacters.enumerated()), id: \.offset) { charIndex, character in
+                                let globalIndex = calculateGlobalIndex(lineIndex: lineIndex, charIndex: charIndex, lines: lines)
+                                CharacterView(
+                                    character: character,
+                                    index: globalIndex,
+                                    totalCharacters: attributedText.string.count,
+                                    fontSize: fontSize,
+                                    colorScheme: colorScheme,
+                                    animation: animation,
+                                    intensity: intensity,
+                                    characterAnimation: characterAnimations.indices.contains(globalIndex) ? characterAnimations[globalIndex] : CharacterAnimation(),
+                                    isClippingEnabled: isClippingEnabled,
+                                    useSerifFont: useSerifFont,
+                                    isBold: isBold,
+                                    isItalicized: isItalicized
+                                )
+                            }
+                        }
+                        .frame(maxWidth: .infinity)
+                    }
                 }
+                .padding(.vertical, lineSpacing)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
-            .multilineTextAlignment(.center)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .clipped(antialiased: isClippingEnabled)
+            .allowsHitTesting(false)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .clipped(antialiased: isClippingEnabled)
-        .allowsHitTesting(false)
         .onAppear { setupCharacterAnimations() }
         .onChange(of: animation) { _, _ in 
             // Immediately reset and restart animation
@@ -65,26 +93,50 @@ struct AnimatedTextDisplay: View {
         }
         .onChange(of: attributedText) { _, _ in setupCharacterAnimations() }
         .onChange(of: useSerifFont) { _, _ in setupCharacterAnimations() }
-        .onChange(of: kerning) { _, _ in 
+        .onChange(of: kerning) { _, _ in
             // Kerning changes don't require animation reset, just view update
         }
-        .onDisappear { animationTimer?.invalidate(); animationTimer = nil }
+        .onDisappear {
+            animationTimer?.invalidate()
+            animationTimer = nil
+            for timer in jitterTimers {
+                timer.invalidate()
+            }
+            jitterTimers.removeAll()
+            isAnimationActive = false
+        }
     }
     
+    private func calculateGlobalIndex(lineIndex: Int, charIndex: Int, lines: [[Character]]) -> Int {
+        var globalIndex = 0
+        for i in 0..<lineIndex {
+            globalIndex += lines[i].count
+        }
+        globalIndex += charIndex
+        return globalIndex
+    }
+
     private func setupCharacterAnimations() {
         // Immediately stop any existing animations and reset state
         animationTimer?.invalidate()
         animationTimer = nil
+
+        // Invalidate all jitter timers
+        for timer in jitterTimers {
+            timer.invalidate()
+        }
+        jitterTimers.removeAll()
+
         isAnimationActive = false
-        
+
         // Immediately reset all character animations to default state
         for i in characterAnimations.indices {
             characterAnimations[i] = CharacterAnimation()
         }
-        
+
         // Create fresh character animations array
         characterAnimations = Array(repeating: CharacterAnimation(), count: attributedText.string.count)
-        
+
         // Start new animation based on current settings
         switch animation {
         case .none:
@@ -146,29 +198,29 @@ struct AnimatedTextDisplay: View {
         let jitterDuration: ()->TimeInterval = { .random(in: 0.025...0.05) / intensity }
         let coolOffDuration = 2.0
         let totalCycleDuration = 3.0 + coolOffDuration // 3 seconds of jittering + 2 seconds cool-off
-        
+
         isAnimationActive = true
-        
+
         func startIndividualJitterCycle() {
             guard isAnimationActive else { return }
-            
+
             // Start with current intensity and ease in
             var currentIntensity: Double = 0.0
             let fullJitterDuration = 2.0
             let easeOutDuration = 0.5
-            
+
             // Ease in phase
-            Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { timer in
+            let easeInTimer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { timer in
                 guard isAnimationActive else {
                     timer.invalidate()
                     return
                 }
-                
+
                 currentIntensity += 0.1
                 if currentIntensity >= intensity {
                     currentIntensity = intensity
                     timer.invalidate()
-                    
+
                     // Full jitter phase - animate each character individually
                     let fullJitterTimer = Timer.scheduledTimer(
                         withTimeInterval: jitterDuration(),
@@ -178,9 +230,9 @@ struct AnimatedTextDisplay: View {
                             jitterTimer.invalidate()
                             return
                         }
-                        
+
                         let currentMaxOffset = CGFloat(currentIntensity * 8)
-                        
+
                         // Update each character's animation individually
                         for index in characterAnimations.indices {
                             withAnimation(.easeInOut(duration: jitterDuration())) {
@@ -192,11 +244,13 @@ struct AnimatedTextDisplay: View {
                             }
                         }
                     }
-                    
+                    jitterTimers.append(fullJitterTimer)
+
                     // Stop full jitter after duration
                     DispatchQueue.main.asyncAfter(deadline: .now() + fullJitterDuration) {
+                        guard isAnimationActive else { return }
                         fullJitterTimer.invalidate()
-                        
+
                         // Ease out phase
                         let easeOutTimer = Timer.scheduledTimer(
                             withTimeInterval: 0.005,
@@ -206,12 +260,12 @@ struct AnimatedTextDisplay: View {
                                 easeOutTimer.invalidate()
                                 return
                             }
-                            
+
                             currentIntensity -= 0.1
                             if currentIntensity <= 0 {
                                 currentIntensity = 0
                                 easeOutTimer.invalidate()
-                                
+
                                 // Reset all characters to normal position
                                 withAnimation(.easeInOut(duration: 0.1)) {
                                     for index in characterAnimations.indices {
@@ -221,17 +275,20 @@ struct AnimatedTextDisplay: View {
                                 }
                             }
                         }
-                        
+                        jitterTimers.append(easeOutTimer)
+
                         // Stop ease out after duration
                         DispatchQueue.main.asyncAfter(
                             deadline: .now() + easeOutDuration
                         ) {
+                            guard isAnimationActive else { return }
                             easeOutTimer.invalidate()
                         }
                     }
                 }
             }
-            
+            jitterTimers.append(easeInTimer)
+
             // Schedule next cycle after cool-off period
             animationTimer = Timer.scheduledTimer(withTimeInterval: totalCycleDuration, repeats: false) { _ in
                 if isAnimationActive {
@@ -239,7 +296,7 @@ struct AnimatedTextDisplay: View {
                 }
             }
         }
-        
+
         startIndividualJitterCycle()
     }
     

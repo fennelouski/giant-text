@@ -28,17 +28,25 @@ struct CharacterView: View {
     let isItalicized: Bool
     
     var body: some View {
-        Text(String(character))
+        let text = Text(String(character))
             .font(createFont())
-            #if os(watchOS)
-            .foregroundColor(.white)
-            #else
-            .foregroundColor(colorScheme == .dark ? .white : .black)
-            #endif
-            .opacity(0.8) // Set opacity to 80%
-            .scaleEffect(characterAnimation.scale)
-            .offset(characterAnimation.offset)
-            .rotationEffect(.degrees(characterAnimation.rotation))
+
+        Group {
+            if isItalicized {
+                text.italic()
+            } else {
+                text
+            }
+        }
+        #if os(watchOS)
+        .foregroundColor(.white)
+        #else
+        .foregroundColor(colorScheme == .dark ? .white : .black)
+        #endif
+        .opacity(0.8) // Set opacity to 80%
+        .scaleEffect(characterAnimation.scale)
+        .offset(characterAnimation.offset)
+        .rotationEffect(.degrees(characterAnimation.rotation))
     }
     
     private func createFont() -> Font {

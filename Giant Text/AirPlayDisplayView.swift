@@ -34,7 +34,8 @@ struct AirPlayDisplayView: View {
                         useSerifFont: state.useSerifFont,
                         kerning: state.kerning,
                         isBold: state.isBold,
-                        isItalicized: state.isItalicized
+                        isItalicized: state.isItalicized,
+                        maxLines: state.maxLines
                     )
                     .accessibilityLabel(LocalizationManager.giantTextDisplay)
                 } else {

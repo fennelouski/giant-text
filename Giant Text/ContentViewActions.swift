@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftData
 #if os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
 import UIKit
+import WidgetKit
 #endif
 
 class ContentViewActions {
@@ -28,6 +29,9 @@ class ContentViewActions {
             let newDocument = TextDocument()
             modelContext.insert(newDocument)
             try? modelContext.save()
+            
+            // Save initial text for widget
+            saveTextForWidget(attributedText: NSAttributedString(string: newDocument.text))
         }
     }
     
@@ -41,6 +45,9 @@ class ContentViewActions {
         // Initialize history with current text
         state.textHistory = [state.attributedText]
         state.currentHistoryIndex = 0
+        
+        // Save text for widget
+        saveTextForWidget(attributedText: state.attributedText)
     }
     
     func updateDocument(attributedText: NSAttributedString) {
@@ -49,22 +56,25 @@ class ContentViewActions {
         document.richTextData = try? attributedText.data(from: NSRange(location: 0, length: attributedText.length), documentAttributes: [.documentType: NSAttributedString.DocumentType.rtf])
         document.lastModified = Date()
         try? modelContext.save()
+        
+        // Save text for widget
+        saveTextForWidget(attributedText: attributedText)
     }
     
     // MARK: - History Management
     func addToHistory(oldValue: NSAttributedString, newValue: NSAttributedString) {
-        // Don't add to history if it's the same value
-        guard oldValue.string != newValue.string else { return }
-        
+        // Don't add to history if it's the same value (compare both text and attributes)
+        guard !oldValue.isEqual(to: newValue) else { return }
+
         // Remove any history after current index (for redo functionality)
         if state.currentHistoryIndex < state.textHistory.count - 1 {
             state.textHistory.removeSubrange((state.currentHistoryIndex + 1)...)
         }
-        
+
         // Add the old value to history
         state.textHistory.append(oldValue)
         state.currentHistoryIndex = state.textHistory.count - 1
-        
+
         // Limit history size to prevent memory issues
         if state.textHistory.count > 50 {
             state.textHistory.removeFirst()
@@ -74,21 +84,33 @@ class ContentViewActions {
     
     func undoLastChange() {
         guard state.currentHistoryIndex > 0 else { return }
-        
+
         state.currentHistoryIndex -= 1
         let previousText = state.textHistory[state.currentHistoryIndex]
         state.attributedText = previousText
+
+        // Extract formatting state from attributed string
+        #if os(iOS) || os(tvOS) || os(visionOS)
+        if previousText.length > 0 {
+            let attributes = previousText.attributes(at: 0, effectiveRange: nil)
+            if let font = attributes[.font] as? UIFont {
+                let traits = font.fontDescriptor.symbolicTraits
+                state.isBold = traits.contains(.traitBold)
+                state.isItalicized = traits.contains(.traitItalic)
+
+                // Save to UserDefaults
+                UserDefaults.standard.set(state.isBold, forKey: "isBold")
+                UserDefaults.standard.set(state.isItalicized, forKey: "isItalicized")
+            }
+        }
+        #endif
+
         updateDocument(attributedText: previousText)
     }
     
     // MARK: - UI Actions
     func handleTapToEdit() {
-        #if os(iOS)
         state.isEditing.toggle()
-        #else
-        // On other platforms, allow editing in any orientation
-        state.isEditing.toggle()
-        #endif
     }
     
     func handleEscapeKey() {
@@ -103,6 +125,9 @@ class ContentViewActions {
         updateDocument(attributedText: state.attributedText)
         addToHistory(oldValue: oldText, newValue: state.attributedText)
         state.showingOptionsMenu = false
+
+        // Enter editing mode immediately after clearing so user can start typing
+        state.isEditing = true
     }
     
     func handleUndo() {
@@ -142,7 +167,9 @@ class ContentViewActions {
             object: nil,
             queue: .main
         ) { _ in
-            self.state.deviceOrientation = UIDevice.current.orientation
+            Task { @MainActor in
+                self.state.deviceOrientation = UIDevice.current.orientation
+            }
         }
         #endif
     }
@@ -155,7 +182,9 @@ class ContentViewActions {
         if meaningfulOrientations.contains(oldOrientation) && meaningfulOrientations.contains(newOrientation) {
             // Use a delay to ensure all UI updates have completed after rotation
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-                self.state.forceRecalculation = true
+                Task { @MainActor in
+                    self.state.forceRecalculation = true
+                }
             }
         }
         #endif
@@ -170,6 +199,7 @@ class ContentViewActions {
         UserDefaults.standard.set(state.kerning, forKey: "kerning")
         UserDefaults.standard.set(state.isBold, forKey: "isBold")
         UserDefaults.standard.set(state.isItalicized, forKey: "isItalicized")
+        UserDefaults.standard.set(state.maxLines, forKey: "maxLines")
     }
     
     func saveFormattingState() {
@@ -186,5 +216,37 @@ class ContentViewActions {
         state.showingWelcomeView = false
         state.isEditing = true
         UserDefaults.standard.set(true, forKey: "hasPressedGetStarted")
+    }
+    
+    // MARK: - Widget Support
+    func saveTextForWidget(attributedText: NSAttributedString) {
+        // Use shared UserDefaults for widget communication
+        let sharedDefaults = UserDefaults(suiteName: "group.com.fennel.Giant-Text")
+        
+        print("App: Saving text for widget: \(attributedText.string)")
+        
+        // Save as attributed string data for rich text support
+        if let textData = try? NSKeyedArchiver.archivedData(withRootObject: attributedText, requiringSecureCoding: false) {
+            sharedDefaults?.set(textData, forKey: "currentTextData")
+            print("App: Saved rich text data")
+        }
+        
+        // Also save as plain text as fallback
+        sharedDefaults?.set(attributedText.string, forKey: "currentText")
+        print("App: Saved plain text")
+        
+        // Save font size for widget
+        sharedDefaults?.set(state.fontSize, forKey: "fontSize")
+        print("App: Saved font size: \(state.fontSize)")
+        
+        // Save formatting preferences
+        sharedDefaults?.set(state.useSerifFont, forKey: "useSerifFont")
+        sharedDefaults?.set(state.isBold, forKey: "isBold")
+        sharedDefaults?.set(state.isItalicized, forKey: "isItalicized")
+        
+        // Trigger widget update
+        WidgetCenter.shared.reloadAllTimelines()
+        sharedDefaults?.synchronize()
+        print("App: Triggered widget update")
     }
 } 

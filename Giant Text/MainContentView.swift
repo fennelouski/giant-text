@@ -24,6 +24,7 @@ struct MainContentView: View {
     @Binding var forceRecalculation: Bool
     @Binding var isBold: Bool
     @Binding var isItalicized: Bool
+    let maxLines: Int
     let updateDocument: (NSAttributedString) -> Void
     let addToHistory: (NSAttributedString, NSAttributedString) -> Void
     
@@ -45,6 +46,7 @@ struct MainContentView: View {
                 forceRecalculation: $forceRecalculation,
                 isBold: $isBold,
                 isItalicized: $isItalicized,
+                maxLines: maxLines,
                 updateDocument: updateDocument,
                 addToHistory: addToHistory
             )
@@ -65,6 +67,7 @@ struct MainContentView: View {
             forceRecalculation: $forceRecalculation,
             isBold: $isBold,
             isItalicized: $isItalicized,
+            maxLines: maxLines,
             updateDocument: updateDocument,
             addToHistory: addToHistory
         )
@@ -91,6 +94,7 @@ struct MainContentView: View {
             forceRecalculation: $forceRecalculation,
             isBold: $isBold,
             isItalicized: $isItalicized,
+            maxLines: maxLines,
             updateDocument: updateDocument,
             addToHistory: addToHistory
         )

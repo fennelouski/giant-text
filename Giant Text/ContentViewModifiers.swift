@@ -35,14 +35,19 @@ extension View {
             .onChange(of: state.isClippingEnabled) { _, newValue in
                 UserDefaults.standard.set(newValue, forKey: "isClippingEnabled")
             }
+
+        let view2b = view2
             .onChange(of: state.useSerifFont) { _, newValue in
                 UserDefaults.standard.set(newValue, forKey: "useSerifFont")
             }
             .onChange(of: state.kerning) { _, newValue in
                 UserDefaults.standard.set(newValue, forKey: "kerning")
             }
+            .onChange(of: state.maxLines) { _, newValue in
+                UserDefaults.standard.set(newValue, forKey: "maxLines")
+            }
         
-        let view3 = view2
+        let view3 = view2b
             #if os(iOS)
             .onChange(of: state.deviceOrientation) { oldOrientation, newOrientation in
                 actions.handleOrientationChange(oldOrientation: oldOrientation, newOrientation: newOrientation)
@@ -51,7 +56,7 @@ extension View {
             .task {
                 actions.checkFirstLaunch()
             }
-        
+
         return view3
     }
     
