@@ -400,6 +400,7 @@ struct RichTextEditor: UIViewRepresentable {
             // Recreate the input accessory view to reflect the new state
             if let textView = textView {
                 textView.inputAccessoryView = createInputAccessoryView()
+                textView.reloadInputViews()
             }
         }
         
