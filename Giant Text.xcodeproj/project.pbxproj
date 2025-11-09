@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		80FF475E2E38530800457F0B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FF3B3C2E384CA900457F0B /* WidgetKit.framework */; };
 		80FF475F2E38530800457F0B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FF3B3E2E384CA900457F0B /* SwiftUI.framework */; };
-		80FF476E2E38530A00457F0B /* Giant Text WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 80FF475D2E38530800457F0B /* Giant Text WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		80FF476E2E38530A00457F0B /* Giant Text WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 80FF475D2E38530800457F0B /* Giant Text WidgetExtension.appex */; platformFilters = (ios, ); settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -435,6 +435,9 @@
 		};
 		80FF476D2E38530A00457F0B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilters = (
+				ios,
+			);
 			target = 80FF475C2E38530800457F0B /* Giant Text WidgetExtension */;
 			targetProxy = 80FF476C2E38530A00457F0B /* PBXContainerItemProxy */;
 		};

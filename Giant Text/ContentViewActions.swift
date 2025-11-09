@@ -173,12 +173,12 @@ class ContentViewActions {
         }
         #endif
     }
-    
+
+    #if os(iOS)
     func handleOrientationChange(oldOrientation: UIDeviceOrientation, newOrientation: UIDeviceOrientation) {
-        #if os(iOS)
         // Only trigger recalculation for meaningful orientation changes
         let meaningfulOrientations: [UIDeviceOrientation] = [.portrait, .portraitUpsideDown, .landscapeLeft, .landscapeRight]
-        
+
         if meaningfulOrientations.contains(oldOrientation) && meaningfulOrientations.contains(newOrientation) {
             // Use a delay to ensure all UI updates have completed after rotation
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
@@ -187,8 +187,8 @@ class ContentViewActions {
                 }
             }
         }
-        #endif
     }
+    #endif
     
     // MARK: - UserDefaults Management
     func saveUserDefaults() {
@@ -243,10 +243,12 @@ class ContentViewActions {
         sharedDefaults?.set(state.useSerifFont, forKey: "useSerifFont")
         sharedDefaults?.set(state.isBold, forKey: "isBold")
         sharedDefaults?.set(state.isItalicized, forKey: "isItalicized")
-        
+
         // Trigger widget update
+        #if os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
         WidgetCenter.shared.reloadAllTimelines()
-        sharedDefaults?.synchronize()
         print("App: Triggered widget update")
+        #endif
+        sharedDefaults?.synchronize()
     }
 } 

@@ -13,13 +13,20 @@ import UIKit
 struct iPhoneLandscapeWrapper<Content: View>: View {
     let content: Content
     let isEditing: Bool
+    #if os(iOS)
     let deviceOrientation: UIDeviceOrientation
-    
+
     init(isEditing: Bool, deviceOrientation: UIDeviceOrientation, @ViewBuilder content: () -> Content) {
         self.content = content()
         self.isEditing = isEditing
         self.deviceOrientation = deviceOrientation
     }
+    #else
+    init(isEditing: Bool, deviceOrientation: Any = 0, @ViewBuilder content: () -> Content) {
+        self.content = content()
+        self.isEditing = isEditing
+    }
+    #endif
     
     var body: some View {
         #if os(iOS)

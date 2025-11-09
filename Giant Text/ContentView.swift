@@ -99,8 +99,10 @@ struct ContentView: View {
             .contentViewModifiers(state: state, actions: actions ?? ContentViewActions(state: state, modelContext: modelContext, documents: documents))
         }
         .contentViewPlatformModifiers(state: state, actions: actions ?? ContentViewActions(state: state, modelContext: modelContext, documents: documents))
+        #if os(iOS)
         .statusBarHidden(!state.isEditing)
         .modifier(HomeIndicatorModifier(isEditing: state.isEditing))
+        #endif
         .sheet(isPresented: $state.showingOptionsMenu) {
             OptionsMenuSheet(
                 selectedAnimation: $state.selectedAnimation,

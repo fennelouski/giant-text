@@ -152,4 +152,68 @@ final class Giant_TextUITests: XCTestCase {
             XCUIApplication().launch()
         }
     }
+
+    @MainActor
+    func testGenerateAppStoreScreenshots() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting"]
+        app.launch()
+
+        // Dismiss welcome screen if it appears
+        let getStartedButton = app.buttons["Get Started"]
+        if getStartedButton.waitForExistence(timeout: 2) {
+            getStartedButton.tap()
+        }
+
+        // Wait a moment for the welcome screen to disappear
+        sleep(1)
+
+        // Tap to enter editing mode
+        app.tap()
+        sleep(1)
+
+        // Enter placeholder text
+        let placeholderTexts = [
+            "HELLO",
+            "SALE\n50% OFF",
+            "OPEN",
+            "WELCOME",
+            "NEW\nARRIVALS"
+        ]
+
+        for (index, text) in placeholderTexts.enumerated() {
+            // Type the text
+            app.typeText(text)
+            sleep(1)
+
+            // Tap "Done" button to exit editing mode
+            let doneButton = app.buttons["Done"]
+            if doneButton.exists {
+                doneButton.tap()
+            }
+            sleep(1)
+
+            // Take screenshot
+            let screenshot = app.screenshot()
+            let attachment = XCTAttachment(screenshot: screenshot)
+            attachment.name = "screenshot-\(index + 1)"
+            attachment.lifetime = .keepAlways
+            add(attachment)
+
+            sleep(1)
+
+            // If not the last item, tap to edit again and clear
+            if index < placeholderTexts.count - 1 {
+                app.tap()
+                sleep(1)
+
+                // Select all and delete
+                let clearButton = app.buttons["Clear"]
+                if clearButton.exists {
+                    clearButton.tap()
+                }
+                sleep(1)
+            }
+        }
+    }
 }
