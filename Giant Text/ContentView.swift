@@ -44,6 +44,7 @@ struct ContentView: View {
                     isItalicized: $state.isItalicized,
                     maxLines: state.maxLines,
                     theme: state.currentTheme(),
+                    textRotation: state.textRotation,
                     updateDocument: { text in
                         actions?.updateDocument(attributedText: text)
                     },
@@ -68,6 +69,7 @@ struct ContentView: View {
                     isItalicized: $state.isItalicized,
                     maxLines: state.maxLines,
                     theme: state.currentTheme(),
+                    textRotation: state.textRotation,
                     updateDocument: { text in
                         actions?.updateDocument(attributedText: text)
                     },
@@ -114,6 +116,8 @@ struct ContentView: View {
                 maxLines: $state.maxLines,
                 selectedThemeId: $state.selectedThemeId,
                 useRandomTheme: $state.useRandomTheme,
+                appearanceMode: $state.appearanceMode,
+                textRotation: $state.textRotation,
                 onEdit: {
                     state.showingOptionsMenu = false
                     actions?.handleTapToEdit()
@@ -128,6 +132,7 @@ struct ContentView: View {
                 currentTheme: state.currentTheme()
             )
         }
+        .preferredColorScheme(state.appearanceMode.colorScheme)
         .onAppear {
             let actions = ContentViewActions(state: state, modelContext: modelContext, documents: documents)
             self.actions = actions

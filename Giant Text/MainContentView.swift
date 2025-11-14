@@ -26,12 +26,13 @@ struct MainContentView: View {
     @Binding var isItalicized: Bool
     let maxLines: Int
     let theme: ColorTheme
+    let textRotation: TextRotation
     let updateDocument: (NSAttributedString) -> Void
     let addToHistory: (NSAttributedString, NSAttributedString) -> Void
     
     var body: some View {
         #if os(iOS)
-        iPhoneLandscapeWrapper(isEditing: isEditing, deviceOrientation: deviceOrientation) {
+        iPhoneLandscapeWrapper(isEditing: isEditing, deviceOrientation: deviceOrientation, rotation: textRotation) {
             GiantTextView(
                 attributedText: $attributedText,
                 fontSize: $fontSize,

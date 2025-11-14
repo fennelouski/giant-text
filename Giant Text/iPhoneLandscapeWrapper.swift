@@ -13,18 +13,21 @@ import UIKit
 struct iPhoneLandscapeWrapper<Content: View>: View {
     let content: Content
     let isEditing: Bool
+    let rotation: TextRotation
     #if os(iOS)
     let deviceOrientation: UIDeviceOrientation
 
-    init(isEditing: Bool, deviceOrientation: UIDeviceOrientation, @ViewBuilder content: () -> Content) {
+    init(isEditing: Bool, deviceOrientation: UIDeviceOrientation, rotation: TextRotation = .left, @ViewBuilder content: () -> Content) {
         self.content = content()
         self.isEditing = isEditing
         self.deviceOrientation = deviceOrientation
+        self.rotation = rotation
     }
     #else
-    init(isEditing: Bool, deviceOrientation: Any = 0, @ViewBuilder content: () -> Content) {
+    init(isEditing: Bool, deviceOrientation: Any = 0, rotation: TextRotation = .left, @ViewBuilder content: () -> Content) {
         self.content = content()
         self.isEditing = isEditing
+        self.rotation = rotation
     }
     #endif
     
@@ -42,13 +45,13 @@ struct iPhoneLandscapeWrapper<Content: View>: View {
                         // Background to fill the entire space
                         Color.clear
                         
-                        // Rotated content - always rotate 90 degrees for landscape display
+                        // Rotated content - rotate based on user setting
                         content
                             .frame(
                                 width: geometry.size.height,
                                 height: geometry.size.width
                             )
-                            .rotationEffect(.degrees(90))
+                            .rotationEffect(.degrees(rotation.degrees))
                             .position(
                                 x: geometry.size.width / 2,
                                 y: geometry.size.height / 2

@@ -11,6 +11,57 @@ import SwiftData
 import UIKit
 #endif
 
+enum AppearanceMode: String, CaseIterable {
+    case system = "system"
+    case light = "light"
+    case dark = "dark"
+
+    var localizedName: String {
+        switch self {
+        case .system:
+            return "System"
+        case .light:
+            return "Light"
+        case .dark:
+            return "Dark"
+        }
+    }
+
+    var colorScheme: ColorScheme? {
+        switch self {
+        case .system:
+            return nil
+        case .light:
+            return .light
+        case .dark:
+            return .dark
+        }
+    }
+}
+
+enum TextRotation: String, CaseIterable {
+    case left = "left"
+    case right = "right"
+
+    var localizedName: String {
+        switch self {
+        case .left:
+            return "Left"
+        case .right:
+            return "Right"
+        }
+    }
+
+    var degrees: Double {
+        switch self {
+        case .left:
+            return 90
+        case .right:
+            return -90
+        }
+    }
+}
+
 @Observable
 class ContentViewState {
     // MARK: - Text and Display State
@@ -45,6 +96,28 @@ class ContentViewState {
         let stored = UserDefaults.standard.integer(forKey: "maxLines")
         return (stored >= 1 && stored <= 5) ? stored : 1
     }()
+    var appearanceMode: AppearanceMode = {
+        if let rawValue = UserDefaults.standard.string(forKey: "appearanceMode"),
+           let mode = AppearanceMode(rawValue: rawValue) {
+            return mode
+        }
+        return .system
+    }() {
+        didSet {
+            UserDefaults.standard.set(appearanceMode.rawValue, forKey: "appearanceMode")
+        }
+    }
+    var textRotation: TextRotation = {
+        if let rawValue = UserDefaults.standard.string(forKey: "textRotation"),
+           let rotation = TextRotation(rawValue: rawValue) {
+            return rotation
+        }
+        return .left
+    }() {
+        didSet {
+            UserDefaults.standard.set(textRotation.rawValue, forKey: "textRotation")
+        }
+    }
 
     // MARK: - Theme Settings
     var selectedThemeId: String = UserDefaults.appGroup.string(forKey: "selectedThemeId") ?? "classic" {

@@ -17,6 +17,8 @@ struct OptionsMenuSheet: View {
     @Binding var maxLines: Int
     @Binding var selectedThemeId: String
     @Binding var useRandomTheme: Bool
+    @Binding var appearanceMode: AppearanceMode
+    @Binding var textRotation: TextRotation
     let onEdit: () -> Void
     let onClear: () -> Void
     let onUndo: () -> Void
@@ -254,9 +256,47 @@ struct OptionsMenuSheet: View {
                             .foregroundColor(colorScheme == .dark ? .white : .black)
                         Spacer()
                     }
-                    
 
-                    
+                    // Appearance mode picker
+                    VStack(alignment: .leading, spacing: 8) {
+                        HStack {
+                            Text("Appearance")
+                                .foregroundColor(colorScheme == .dark ? .white : .black)
+                            Spacer()
+                            Picker("", selection: $appearanceMode) {
+                                ForEach(AppearanceMode.allCases, id: \.self) { mode in
+                                    Text(mode.localizedName).tag(mode)
+                                }
+                            }
+                            .pickerStyle(.menu)
+                        }
+                    }
+                    .padding()
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(backgroundColor)
+                    )
+
+                    // Text rotation picker
+                    VStack(alignment: .leading, spacing: 8) {
+                        HStack {
+                            Text("Text Rotation")
+                                .foregroundColor(colorScheme == .dark ? .white : .black)
+                            Spacer()
+                            Picker("", selection: $textRotation) {
+                                ForEach(TextRotation.allCases, id: \.self) { rotation in
+                                    Text(rotation.localizedName).tag(rotation)
+                                }
+                            }
+                            .pickerStyle(.menu)
+                        }
+                    }
+                    .padding()
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(backgroundColor)
+                    )
+
                     // Font selection toggle
                     HStack {
                         Toggle("Serif Font", isOn: $useSerifFont)
