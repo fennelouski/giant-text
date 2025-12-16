@@ -81,6 +81,47 @@ struct WelcomeView: View {
     
     private var quickTips: some View {
         VStack(spacing: 8) {
+            #if os(macOS)
+            HStack(spacing: 8) {
+                Image(systemName: "cursorhand.click")
+                    .foregroundColor(.blue)
+                    .frame(width: 16, height: 16)
+                Text("Click to edit text")
+                    .font(.caption)
+                    .foregroundColor(colorScheme == .dark ? .white.opacity(0.7) : .black.opacity(0.7))
+            }
+            .frame(maxWidth: .infinity, alignment: .center)
+
+            HStack(spacing: 8) {
+                Image(systemName: "cursorhand.click.2")
+                    .foregroundColor(.blue)
+                    .frame(width: 16, height: 16)
+                Text("Right-click for options")
+                    .font(.caption)
+                    .foregroundColor(colorScheme == .dark ? .white.opacity(0.7) : .black.opacity(0.7))
+            }
+            .frame(maxWidth: .infinity, alignment: .center)
+            #elseif os(tvOS)
+            HStack(spacing: 8) {
+                Image(systemName: "playpause")
+                    .foregroundColor(.blue)
+                    .frame(width: 16, height: 16)
+                Text("Play/Pause button to edit text")
+                    .font(.caption)
+                    .foregroundColor(colorScheme == .dark ? .white.opacity(0.7) : .black.opacity(0.7))
+            }
+            .frame(maxWidth: .infinity, alignment: .center)
+
+            HStack(spacing: 8) {
+                Image(systemName: "menubutton.horizontal")
+                    .foregroundColor(.blue)
+                    .frame(width: 16, height: 16)
+                Text("Menu button for options")
+                    .font(.caption)
+                    .foregroundColor(colorScheme == .dark ? .white.opacity(0.7) : .black.opacity(0.7))
+            }
+            .frame(maxWidth: .infinity, alignment: .center)
+            #else
             HStack(spacing: 8) {
                 Image(systemName: "hand.tap")
                     .foregroundColor(.blue)
@@ -90,7 +131,7 @@ struct WelcomeView: View {
                     .foregroundColor(colorScheme == .dark ? .white.opacity(0.7) : .black.opacity(0.7))
             }
             .frame(maxWidth: .infinity, alignment: .center)
-            
+
             HStack(spacing: 8) {
                 Image(systemName: "hand.tap.fill")
                     .foregroundColor(.blue)
@@ -100,7 +141,8 @@ struct WelcomeView: View {
                     .foregroundColor(colorScheme == .dark ? .white.opacity(0.7) : .black.opacity(0.7))
             }
             .frame(maxWidth: .infinity, alignment: .center)
-            
+            #endif
+
             HStack(spacing: 8) {
                 Image(systemName: "escape")
                     .foregroundColor(.blue)
@@ -131,10 +173,20 @@ struct WelcomeView: View {
                 } else {
                     FeatureRow(icon: "iphone", title: "Cross-Platform", description: "Works on iPhone, iPad, Mac, and more")
                 }
+                #elseif os(macOS)
+                FeatureRow(icon: "laptopcomputer", title: "Cross-Platform", description: "Works on iPhone, iPad, Mac, and more")
+                #elseif os(tvOS)
+                FeatureRow(icon: "appletv", title: "Cross-Platform", description: "Works on iPhone, iPad, Mac, and more")
                 #else
                 FeatureRow(icon: "iphone", title: "Cross-Platform", description: "Works on iPhone, iPad, Mac, and more")
                 #endif
+                #if os(macOS)
+                FeatureRow(icon: "cursorhand.click", title: "Easy Editing", description: "Click to edit, right-click for options")
+                #elseif os(tvOS)
+                FeatureRow(icon: "appletvremote.gen1", title: "Easy Editing", description: "Use remote to edit and access options")
+                #else
                 FeatureRow(icon: "hand.tap", title: "Easy Editing", description: "Tap to edit, two-finger tap for options")
+                #endif
             }
             .frame(maxWidth: .infinity, alignment: .center)
         }
@@ -146,6 +198,7 @@ struct WelcomeView: View {
             print("🟢 Get Started button tapped")
             onGetStarted()
         }
+        .buttonStyle(.plain)
         .font(.headline)
         .foregroundColor(.white)
         .padding(.horizontal, 32)
@@ -163,11 +216,50 @@ struct WelcomeView: View {
         GeometryReader { geometry in
             ZStack {
                 backgroundOverlay
-                
+
+                #if os(macOS)
+                // macOS-optimized layout with horizontal space utilization
+                VStack(spacing: 0) {
+                    VStack(spacing: 0) {
+                        ScrollView {
+                            VStack(spacing: 24) {
+                                appIcon
+                                title
+                                description
+
+                                // Arrange quickTips and features side by side on macOS
+                                HStack(alignment: .top, spacing: 40) {
+                                    quickTips
+                                        .frame(maxWidth: .infinity)
+
+                                    features
+                                        .frame(maxWidth: .infinity)
+                                }
+                            }
+                            .padding(40)
+                        }
+                        .scrollIndicators(.hidden)
+
+                        getStartedButton
+                    }
+                    .background(
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(colorScheme == .dark ? Color.black : Color.white)
+                            .shadow(radius: 30)
+                    )
+                    .frame(maxWidth: 900)
+                    .padding(.horizontal, 60)
+                    .padding(.vertical, 40)
+                    .contentShape(Rectangle())
+                    .accessibilityIdentifier("WelcomeView")
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                #else
+                // iOS/tvOS layout (original vertical layout)
                 VStack(spacing: 0) {
                     Color.clear
                         .frame(height: geometry.safeAreaInsets.top)
-                    
+
                     VStack(spacing: 0) {
                         ScrollView {
                             VStack(spacing: 24) {
@@ -181,7 +273,7 @@ struct WelcomeView: View {
                         }
                         .frame(maxHeight: (geometry.size.height - geometry.safeAreaInsets.top - geometry.safeAreaInsets.bottom) * 0.6)
                         .scrollIndicators(.hidden)
-                        
+
                         getStartedButton
                     }
                     .background(
@@ -194,10 +286,11 @@ struct WelcomeView: View {
                     .padding(.bottom, geometry.safeAreaInsets.bottom + 20)
                     .contentShape(Rectangle())
                     .accessibilityIdentifier("WelcomeView")
-                    
+
                     Color.clear
                         .frame(height: geometry.safeAreaInsets.bottom)
                 }
+                #endif
             }
         }
         .transition(.opacity.combined(with: .scale))

@@ -9,6 +9,8 @@ import SwiftUI
 import SwiftData
 #if os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
 import UIKit
+#endif
+#if os(iOS) || os(watchOS) || os(visionOS)
 import WidgetKit
 #endif
 
@@ -245,7 +247,7 @@ class ContentViewActions {
         sharedDefaults?.set(state.isItalicized, forKey: "isItalicized")
 
         // Trigger widget update
-        #if os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
+        #if os(iOS) || os(watchOS) || os(visionOS)
         WidgetCenter.shared.reloadAllTimelines()
         print("App: Triggered widget update")
         #endif

@@ -66,8 +66,47 @@ struct OptionsMenuSheet: View {
     
     var body: some View {
         NavigationView {
-            
-            #if os(watchOS)
+
+            #if os(tvOS)
+            // Simplified menu for tvOS
+            ScrollView {
+                VStack(spacing: 12) {
+                    // Animation picker
+                    Picker(LocalizationManager.animation, selection: $selectedAnimation) {
+                        ForEach(TextAnimation.allCases, id: \.self) { animation in
+                            Text(animation.localizedName).tag(animation)
+                        }
+                    }
+                    .pickerStyle(.menu)
+
+                    // Actions
+                    Button(action: onEdit) {
+                        Text(LocalizationManager.editText)
+                            .foregroundColor(.blue)
+                    }
+
+                    Button(action: onClear) {
+                        Text(LocalizationManager.clearText)
+                            .foregroundColor(.red)
+                    }
+
+                    if canUndo {
+                        Button(action: onUndo) {
+                            Text(LocalizationManager.undo)
+                        }
+                    }
+                }
+                .padding()
+            }
+            .navigationTitle(LocalizationManager.options)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(LocalizationManager.close) {
+                        dismiss()
+                    }
+                }
+            }
+            #elseif os(watchOS)
             // Simplified menu for watchOS
             ScrollView {
                 VStack(spacing: 12) {
@@ -145,6 +184,7 @@ struct OptionsMenuSheet: View {
                                         .fill(animationBackgroundColor(for: animation))
                                 )
                             }
+                            .buttonStyle(.plain)
                         }
                     }
                     
@@ -210,6 +250,7 @@ struct OptionsMenuSheet: View {
                                                     .fill(themeBackgroundColor(for: theme))
                                             )
                                         }
+                                        .buttonStyle(.plain)
                                     }
                                 }
                             } else {
@@ -277,7 +318,8 @@ struct OptionsMenuSheet: View {
                             .fill(backgroundColor)
                     )
 
-                    // Text rotation picker
+                    #if !os(tvOS)
+                    // Text rotation picker (not available on tvOS)
                     VStack(alignment: .leading, spacing: 8) {
                         HStack {
                             Text("Text Rotation")
@@ -296,6 +338,7 @@ struct OptionsMenuSheet: View {
                         RoundedRectangle(cornerRadius: 8)
                             .fill(backgroundColor)
                     )
+                    #endif
 
                     // Font selection toggle
                     HStack {
@@ -368,7 +411,8 @@ struct OptionsMenuSheet: View {
                                     .fill(backgroundColor)
                             )
                         }
-                        
+                        .buttonStyle(.plain)
+
                         Button(action: onClear) {
                             HStack {
                                 Image(systemName: "trash")
@@ -383,7 +427,8 @@ struct OptionsMenuSheet: View {
                                     .fill(colorScheme == .dark ? Color.red.opacity(0.3) : Color.red.opacity(0.1))
                             )
                         }
-                        
+                        .buttonStyle(.plain)
+
                         Button(action: onUndo) {
                             HStack {
                                 Image(systemName: "arrow.uturn.backward")
@@ -398,6 +443,7 @@ struct OptionsMenuSheet: View {
                                     .fill(canUndo ? backgroundColor : (colorScheme == .dark ? Color.gray.opacity(0.1) : Color.gray.opacity(0.05)))
                             )
                         }
+                        .buttonStyle(.plain)
                         .disabled(!canUndo)
                     }
                 }

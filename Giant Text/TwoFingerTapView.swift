@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-#if os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
+#if os(iOS) || os(watchOS) || os(visionOS)
 import UIKit
 #endif
 
 // MARK: - Two Finger Tap View
-#if os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
+#if os(iOS) || os(watchOS) || os(visionOS)
 struct TwoFingerTapView: UIViewRepresentable {
     let onTwoFingerTap: () -> Void
     let onOneFingerTap: () -> Void

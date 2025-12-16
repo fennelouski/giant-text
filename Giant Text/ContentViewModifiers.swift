@@ -68,18 +68,26 @@ extension View {
             .onAppear {
                 actions.ensureDocumentExists()
             }
-        
+
         let view2 = view1
             #if os(iOS)
             .onReceive(NotificationCenter.default.publisher(for: .deviceDidShakeNotification)) { _ in
                 actions.undoLastChange()
             }
             #endif
-            .onKeyPress(.escape) { 
+            #if os(tvOS)
+            .onPlayPauseCommand {
+                state.isEditing.toggle()
+            }
+            .onExitCommand {
+                state.showingOptionsMenu = true
+            }
+            #endif
+            .onKeyPress(.escape) {
                 actions.handleEscapeKey()
                 return .handled
             }
-        
+
         return view2
     }
     
@@ -97,6 +105,31 @@ extension View {
             #if os(macOS)
             .overlay(
                 Color.clear
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        state.isEditing.toggle()
+                    }
+                    .onTapGesture(count: 1, perform: {})
+                    .highPriorityGesture(
+                        TapGesture(count: 1)
+                            .modifiers(.control)
+                            .onEnded { _ in
+                                state.showingOptionsMenu = true
+                            }
+                    )
+                    .contextMenu {
+                        Button("Options") {
+                            state.showingOptionsMenu = true
+                        }
+                        Button("Edit Text") {
+                            state.isEditing = true
+                        }
+                    }
+                    .allowsHitTesting(!state.showingWelcomeView)
+            )
+            #elseif os(tvOS)
+            .overlay(
+                Color.clear
             )
             #else
             .overlay(
@@ -108,7 +141,7 @@ extension View {
                 .allowsHitTesting(!state.showingWelcomeView)
             )
             #endif
-        
+
         return view1
     }
 } 

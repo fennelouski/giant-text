@@ -10,8 +10,8 @@ import SwiftUI
 import UIKit
 #endif
 
-#if os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
-struct RichTextEditor: UIViewRepresentable {
+#if os(tvOS)
+struct RichTextEditor: View {
     @Binding var attributedText: NSAttributedString
     @Binding var selectedRange: NSRange
     @Binding var isFocused: Bool
@@ -26,8 +26,7 @@ struct RichTextEditor: UIViewRepresentable {
     let onDone: () -> Void
     let updateDocument: (NSAttributedString) -> Void
     let addToHistory: (NSAttributedString, NSAttributedString) -> Void
-    
-    #if os(tvOS)
+
     var body: some View {
         VStack {
             // tvOS-compatible text editor
@@ -41,7 +40,6 @@ struct RichTextEditor: UIViewRepresentable {
             .foregroundColor(theme.textColor(for: colorScheme))
             .multilineTextAlignment(.center)
             .textFieldStyle(PlainTextFieldStyle())
-            .focused($isFocused)
             .onSubmit {
                 onDone()
             }
@@ -98,7 +96,24 @@ struct RichTextEditor: UIViewRepresentable {
             )
         }
     }
-    #else
+}
+#elseif os(iOS) || os(watchOS) || os(visionOS)
+struct RichTextEditor: UIViewRepresentable {
+    @Binding var attributedText: NSAttributedString
+    @Binding var selectedRange: NSRange
+    @Binding var isFocused: Bool
+    let colorScheme: ColorScheme
+    let theme: ColorTheme
+    @Binding var selectedAnimation: TextAnimation
+    @Binding var animationIntensity: Double
+    @Binding var isBold: Bool
+    @Binding var isItalicized: Bool
+    let useSerifFont: Bool
+    let onClear: () -> Void
+    let onDone: () -> Void
+    let updateDocument: (NSAttributedString) -> Void
+    let addToHistory: (NSAttributedString, NSAttributedString) -> Void
+
     func makeUIView(context: Context) -> UITextView {
         let textView = UITextView()
         textView.delegate = context.coordinator
@@ -519,6 +534,5 @@ struct RichTextEditor: UIViewRepresentable {
             parent.onDone()
         }
     }
-    #endif
 }
 #endif 
