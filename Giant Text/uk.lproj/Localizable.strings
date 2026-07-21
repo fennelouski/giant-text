@@ -49,3 +49,48 @@
 "bloom" = "Цвітіння";
 "jitter" = "Тремтіння";
 "ripple" = "Хвиля";
+
+// MARK: - Theme & Display
+"theme_section" = "Тема";
+"random_theme_daily" = "Випадкова тема (щодня)";
+"current_theme" = "Поточна тема:";
+"appearance" = "Оформлення";
+"text_rotation" = "Обертання тексту";
+"serif_font" = "Шрифт із засічками";
+"letter_spacing" = "Міжлітерний інтервал";
+"max_lines" = "Макс. кількість рядків";
+"system" = "Системна";
+"light" = "Світла";
+"dark" = "Темна";
+"left" = "Ліворуч";
+"right" = "Праворуч";
+
+// MARK: - Welcome View
+"welcome_title" = "Ласкаво просимо до Giant Text!";
+"welcome_subtitle" = "Створюйте вражаючі анімовані текстові екрани";
+"bullet_type_message" = "Введіть своє повідомлення";
+"bullet_landscape_orientation" = "Текст відображається в альбомній орієнтації";
+"bullet_portrait_mode" = "Пристрій залишається в книжковій орієнтації";
+"bullet_animation_effects" = "Виберіть один із багатьох ефектів анімації";
+"bullet_share_quickly" = "Ідеально підходить для швидкого обміну короткими текстами";
+"bullet_cross_platform" = "Працює на всіх ваших пристроях Apple";
+"tip_click_edit" = "Клацніть, щоб редагувати текст";
+"tip_right_click_options" = "Клацніть правою кнопкою миші для параметрів";
+"tip_playpause_edit" = "Кнопка відтворення/паузи для редагування тексту";
+"tip_menu_button_options" = "Кнопка меню для параметрів";
+"tip_tap_edit" = "Одне натискання для редагування тексту";
+"tip_two_finger_tap_options" = "Натисніть двома пальцями для параметрів";
+"tip_esc_close" = "Натисніть ESC, щоб закрити меню";
+"features_header" = "Можливості:";
+"feature_giant_text_title" = "Гігантський текстовий екран";
+"feature_giant_text_desc" = "Створюйте текст, що заповнює весь екран";
+"feature_animations_title" = "Анімації";
+"feature_landscape_title" = "Альбомний екран";
+"feature_portrait_title" = "Книжковий режим";
+"feature_cross_platform_title" = "Кросплатформність";
+"feature_cross_platform_desc" = "Працює на iPhone, iPad, Mac та інших пристроях";
+"feature_easy_editing_title" = "Просте редагування";
+"feature_easy_editing_desc_macos" = "Клацніть, щоб редагувати, клацніть правою кнопкою для параметрів";
+"feature_easy_editing_desc_tvos" = "Використовуйте пульт для редагування та доступу до параметрів";
+"feature_easy_editing_desc_other" = "Торкніться, щоб редагувати, торкніться двома пальцями для параметрів";
+"get_started_button" = "Почати";

@@ -49,3 +49,48 @@
 "bloom" = "Maua";
 "jitter" = "Kutetemeka";
 "ripple" = "Mawimbi";
+
+// MARK: - Theme & Display
+"theme_section" = "Mandhari";
+"random_theme_daily" = "Mandhari ya Nasibu (Kila Siku)";
+"current_theme" = "Mandhari ya Sasa:";
+"appearance" = "Mwonekano";
+"text_rotation" = "Mzunguko wa Maandishi";
+"serif_font" = "Fonti ya Serif";
+"letter_spacing" = "Nafasi ya Herufi";
+"max_lines" = "Mistari ya Juu Zaidi";
+"system" = "Mfumo";
+"light" = "Nyepesi";
+"dark" = "Giza";
+"left" = "Kushoto";
+"right" = "Kulia";
+
+// MARK: - Welcome View
+"welcome_title" = "Karibu kwenye Giant Text!";
+"welcome_subtitle" = "Tengeneza maonyesho ya maandishi yenye mwendo, ya kuvutia";
+"bullet_type_message" = "Andika ujumbe wako";
+"bullet_landscape_orientation" = "Maandishi yanaonyeshwa kwa mlalo";
+"bullet_portrait_mode" = "Kifaa kinabaki katika hali ya wima";
+"bullet_animation_effects" = "Chagua kati ya athari nyingi za mwendo";
+"bullet_share_quickly" = "Bora kwa kushiriki maandishi mafupi haraka";
+"bullet_cross_platform" = "Inafanya kazi kwenye vifaa vyako vyote vya Apple";
+"tip_click_edit" = "Bofya ili kuhariri maandishi";
+"tip_right_click_options" = "Bofya kulia kwa chaguo";
+"tip_playpause_edit" = "Kitufe cha Cheza/Simamisha ili kuhariri maandishi";
+"tip_menu_button_options" = "Kitufe cha menyu kwa chaguo";
+"tip_tap_edit" = "Gusa mara moja ili kuhariri maandishi";
+"tip_two_finger_tap_options" = "Gusa kwa vidole viwili kwa chaguo";
+"tip_esc_close" = "Bonyeza ESC kufunga menyu";
+"features_header" = "Vipengele:";
+"feature_giant_text_title" = "Onyesho la Maandishi Makubwa";
+"feature_giant_text_desc" = "Tengeneza maandishi yanayojaza skrini yako";
+"feature_animations_title" = "Michoro ya Mwendo";
+"feature_landscape_title" = "Onyesho la Mlalo";
+"feature_portrait_title" = "Hali ya Wima";
+"feature_cross_platform_title" = "Vifaa Mbalimbali";
+"feature_cross_platform_desc" = "Inafanya kazi kwenye iPhone, iPad, Mac, na zaidi";
+"feature_easy_editing_title" = "Uhariri Rahisi";
+"feature_easy_editing_desc_macos" = "Bofya kuhariri, bofya kulia kwa chaguo";
+"feature_easy_editing_desc_tvos" = "Tumia rimoti kuhariri na kufikia chaguo";
+"feature_easy_editing_desc_other" = "Gusa kuhariri, gusa kwa vidole viwili kwa chaguo";
+"get_started_button" = "Anza";

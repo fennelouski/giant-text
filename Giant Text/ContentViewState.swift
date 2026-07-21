@@ -16,15 +16,8 @@ enum AppearanceMode: String, CaseIterable {
     case light = "light"
     case dark = "dark"
 
-    var localizedName: String {
-        switch self {
-        case .system:
-            return "System"
-        case .light:
-            return "Light"
-        case .dark:
-            return "Dark"
-        }
+    var localizedName: LocalizedStringKey {
+        LocalizedStringKey(self.rawValue)
     }
 
     var colorScheme: ColorScheme? {
@@ -43,13 +36,8 @@ enum TextRotation: String, CaseIterable {
     case left = "left"
     case right = "right"
 
-    var localizedName: String {
-        switch self {
-        case .left:
-            return "Left"
-        case .right:
-            return "Right"
-        }
+    var localizedName: LocalizedStringKey {
+        LocalizedStringKey(self.rawValue)
     }
 
     var degrees: Double {

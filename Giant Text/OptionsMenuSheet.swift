@@ -256,7 +256,7 @@ struct OptionsMenuSheet: View {
                         VStack(alignment: .leading, spacing: 12) {
                             // Random theme toggle
                             HStack {
-                                Toggle("Random Theme (Daily)", isOn: $useRandomTheme)
+                                Toggle(LocalizationManager.randomThemeDaily, isOn: $useRandomTheme)
                                     .foregroundColor(colorScheme == .dark ? .white : .black)
                             }
                             .padding()
@@ -303,7 +303,7 @@ struct OptionsMenuSheet: View {
                                 // Show current random theme
                                 VStack(alignment: .leading, spacing: 8) {
                                     HStack {
-                                        Text("Current Theme:")
+                                        Text(LocalizationManager.currentTheme)
                                             .foregroundColor(colorScheme == .dark ? .white : .black)
                                         Spacer()
                                         Text(currentTheme.name)
@@ -321,7 +321,7 @@ struct OptionsMenuSheet: View {
                         .padding(.top, 8)
                     },
                     label: {
-                        Text("Theme")
+                        Text(LocalizationManager.themeSection)
                             .font(.headline)
                             .foregroundColor(colorScheme == .dark ? .white : .black)
                     }
@@ -339,7 +339,7 @@ struct OptionsMenuSheet: View {
                     // Appearance mode picker
                     VStack(alignment: .leading, spacing: 8) {
                         HStack {
-                            Text("Appearance")
+                            Text(LocalizationManager.appearance)
                                 .foregroundColor(colorScheme == .dark ? .white : .black)
                             Spacer()
                             Picker("", selection: $appearanceMode) {
@@ -360,7 +360,7 @@ struct OptionsMenuSheet: View {
                     // Text rotation picker (not available on tvOS)
                     VStack(alignment: .leading, spacing: 8) {
                         HStack {
-                            Text("Text Rotation")
+                            Text(LocalizationManager.textRotation)
                                 .foregroundColor(colorScheme == .dark ? .white : .black)
                             Spacer()
                             Picker("", selection: $textRotation) {
@@ -380,7 +380,7 @@ struct OptionsMenuSheet: View {
 
                     // Font selection toggle
                     HStack {
-                        Toggle("Serif Font", isOn: $useSerifFont)
+                        Toggle(LocalizationManager.serifFont, isOn: $useSerifFont)
                             .foregroundColor(colorScheme == .dark ? .white : .black)
                     }
                     .padding()
@@ -392,7 +392,7 @@ struct OptionsMenuSheet: View {
                     // Kerning slider
                     VStack(alignment: .leading, spacing: 8) {
                         HStack {
-                            Text("Letter Spacing")
+                            Text(LocalizationManager.letterSpacing)
                                 .foregroundColor(colorScheme == .dark ? .white : .black)
                             Spacer()
                             Text("\(Int(kerning))")
@@ -410,7 +410,7 @@ struct OptionsMenuSheet: View {
                     // Max lines picker
                     VStack(alignment: .leading, spacing: 8) {
                         HStack {
-                            Text("Max Lines")
+                            Text(LocalizationManager.maxLines)
                                 .foregroundColor(colorScheme == .dark ? .white : .black)
                             Spacer()
                             Picker("", selection: $maxLines) {

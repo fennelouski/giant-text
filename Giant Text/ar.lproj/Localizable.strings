@@ -49,3 +49,48 @@
 "bloom" = "تفتح";
 "jitter" = "اهتزاز";
 "ripple" = "تموج";
+
+// MARK: - Theme & Display
+"theme_section" = "المظهر";
+"random_theme_daily" = "مظهر عشوائي (يوميًا)";
+"current_theme" = "المظهر الحالي:";
+"appearance" = "الشكل";
+"text_rotation" = "دوران النص";
+"serif_font" = "خط Serif";
+"letter_spacing" = "تباعد الأحرف";
+"max_lines" = "الحد الأقصى للأسطر";
+"system" = "النظام";
+"light" = "فاتح";
+"dark" = "داكن";
+"left" = "يسار";
+"right" = "يمين";
+
+// MARK: - Welcome View
+"welcome_title" = "مرحبًا بك في Giant Text!";
+"welcome_subtitle" = "أنشئ عروض نصية متحركة ومذهلة";
+"bullet_type_message" = "اكتب رسالتك";
+"bullet_landscape_orientation" = "يظهر النص بالاتجاه الأفقي";
+"bullet_portrait_mode" = "يبقى الجهاز في الوضع الرأسي";
+"bullet_animation_effects" = "اختر من بين تأثيرات حركة متعددة";
+"bullet_share_quickly" = "مثالي لمشاركة نص قصير بسرعة";
+"bullet_cross_platform" = "يعمل على جميع أجهزة Apple الخاصة بك";
+"tip_click_edit" = "انقر لتحرير النص";
+"tip_right_click_options" = "انقر بزر الفأرة الأيمن للخيارات";
+"tip_playpause_edit" = "زر التشغيل/الإيقاف المؤقت لتحرير النص";
+"tip_menu_button_options" = "زر القائمة للخيارات";
+"tip_tap_edit" = "اضغط مرة واحدة لتحرير النص";
+"tip_two_finger_tap_options" = "اضغط بإصبعين للخيارات";
+"tip_esc_close" = "اضغط ESC لإغلاق القوائم";
+"features_header" = "الميزات:";
+"feature_giant_text_title" = "عرض نص عملاق";
+"feature_giant_text_desc" = "أنشئ نصًا يملأ شاشتك";
+"feature_animations_title" = "الرسوم المتحركة";
+"feature_landscape_title" = "عرض أفقي";
+"feature_portrait_title" = "الوضع الرأسي";
+"feature_cross_platform_title" = "متعدد المنصات";
+"feature_cross_platform_desc" = "يعمل على iPhone وiPad وMac والمزيد";
+"feature_easy_editing_title" = "تحرير سهل";
+"feature_easy_editing_desc_macos" = "انقر للتحرير، وانقر بزر الفأرة الأيمن للخيارات";
+"feature_easy_editing_desc_tvos" = "استخدم جهاز التحكم عن بُعد للتحرير والوصول إلى الخيارات";
+"feature_easy_editing_desc_other" = "اضغط للتحرير، واضغط بإصبعين للخيارات";
+"get_started_button" = "ابدأ";

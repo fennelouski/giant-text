@@ -49,3 +49,48 @@
 "bloom" = "Fure";
 "jitter" = "Girgiza";
 "ripple" = "Kaɗawa";
+
+// MARK: - Theme & Display
+"theme_section" = "Jigo";
+"random_theme_daily" = "Jigo Bazuwar (Kullum yini)";
+"current_theme" = "Jigon Yanzu:";
+"appearance" = "Kamanni";
+"text_rotation" = "Jujjuyawar Rubutu";
+"serif_font" = "Fam Serif";
+"letter_spacing" = "Nisan Haruffa";
+"max_lines" = "Iyakar Layuka";
+"system" = "Tsari";
+"light" = "Haske";
+"dark" = "Duhu";
+"left" = "Hagu";
+"right" = "Dama";
+
+// MARK: - Welcome View
+"welcome_title" = "Barka da zuwa Giant Text!";
+"welcome_subtitle" = "Ƙirƙiri kyawawan rubutu masu motsi";
+"bullet_type_message" = "Rubuta saƙonka";
+"bullet_landscape_orientation" = "Rubutu yana bayyana a shimfiɗe (landscape)";
+"bullet_portrait_mode" = "Na'urar tana zama a tsaye (portrait)";
+"bullet_animation_effects" = "Zaɓi daga cikin nau'ikan motsi daban-daban";
+"bullet_share_quickly" = "Ya dace da raba gajeren rubutu cikin sauri";
+"bullet_cross_platform" = "Yana aiki a duk na'urorin Apple naka";
+"tip_click_edit" = "Danna don gyara rubutu";
+"tip_right_click_options" = "Danna dama don zaɓuɓɓuka";
+"tip_playpause_edit" = "Maɓallin Play/Pause don gyara rubutu";
+"tip_menu_button_options" = "Maɓallin menu don zaɓuɓɓuka";
+"tip_tap_edit" = "Taɓa sau ɗaya don gyara rubutu";
+"tip_two_finger_tap_options" = "Taɓa da yatsu biyu don zaɓuɓɓuka";
+"tip_esc_close" = "Danna ESC don rufe menu";
+"features_header" = "Fasaloli:";
+"feature_giant_text_title" = "Babban Nunin Rubutu";
+"feature_giant_text_desc" = "Ƙirƙiri rubutu da zai cika allonka";
+"feature_animations_title" = "Motsi (Animations)";
+"feature_landscape_title" = "Nunin Shimfiɗe";
+"feature_portrait_title" = "Yanayin Tsaye";
+"feature_cross_platform_title" = "Ko-ina-Aiki";
+"feature_cross_platform_desc" = "Yana aiki akan iPhone, iPad, Mac, da sauransu";
+"feature_easy_editing_title" = "Sauƙin Gyarawa";
+"feature_easy_editing_desc_macos" = "Danna don gyarawa, danna dama don zaɓuɓɓuka";
+"feature_easy_editing_desc_tvos" = "Yi amfani da rimoti don gyarawa da samun zaɓuɓɓuka";
+"feature_easy_editing_desc_other" = "Taɓa don gyarawa, taɓa da yatsu biyu don zaɓuɓɓuka";
+"get_started_button" = "Fara";

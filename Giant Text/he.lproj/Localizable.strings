@@ -49,3 +49,48 @@
 "bloom" = "פריחה";
 "jitter" = "רעד";
 "ripple" = "אדווה";
+
+// MARK: - Theme & Display
+"theme_section" = "ערכת נושא";
+"random_theme_daily" = "ערכת נושא אקראית (יומי)";
+"current_theme" = "ערכת נושא נוכחית:";
+"appearance" = "מראה";
+"text_rotation" = "סיבוב טקסט";
+"serif_font" = "גופן סריף";
+"letter_spacing" = "מרווח בין אותיות";
+"max_lines" = "מספר שורות מרבי";
+"system" = "מערכת";
+"light" = "בהיר";
+"dark" = "כהה";
+"left" = "שמאל";
+"right" = "ימין";
+
+// MARK: - Welcome View
+"welcome_title" = "ברוכים הבאים ל-Giant Text!";
+"welcome_subtitle" = "צרו תצוגות טקסט מרהיבות ומונפשות";
+"bullet_type_message" = "הקלידו את ההודעה שלכם";
+"bullet_landscape_orientation" = "הטקסט מוצג לרוחב";
+"bullet_portrait_mode" = "המכשיר נשאר במצב לאורך";
+"bullet_animation_effects" = "בחרו מבין מגוון אפקטים מונפשים";
+"bullet_share_quickly" = "מושלם לשיתוף מהיר של טקסט קצר";
+"bullet_cross_platform" = "פועל בכל מכשירי ה-Apple שלכם";
+"tip_click_edit" = "לחצו לעריכת הטקסט";
+"tip_right_click_options" = "לחיצה ימנית לאפשרויות";
+"tip_playpause_edit" = "כפתור ניגון/השהיה לעריכת הטקסט";
+"tip_menu_button_options" = "כפתור התפריט לאפשרויות";
+"tip_tap_edit" = "הקשה אחת לעריכת הטקסט";
+"tip_two_finger_tap_options" = "הקשה בשתי אצבעות לאפשרויות";
+"tip_esc_close" = "הקישו ESC לסגירת התפריטים";
+"features_header" = "תכונות:";
+"feature_giant_text_title" = "תצוגת טקסט ענקית";
+"feature_giant_text_desc" = "צרו טקסט שממלא את המסך שלכם";
+"feature_animations_title" = "אנימציות";
+"feature_landscape_title" = "תצוגה לרוחב";
+"feature_portrait_title" = "מצב לאורך";
+"feature_cross_platform_title" = "רב-פלטפורמי";
+"feature_cross_platform_desc" = "פועל ב-iPhone, iPad, Mac ועוד";
+"feature_easy_editing_title" = "עריכה קלה";
+"feature_easy_editing_desc_macos" = "לחצו לעריכה, לחיצה ימנית לאפשרויות";
+"feature_easy_editing_desc_tvos" = "השתמשו בשלט כדי לערוך ולגשת לאפשרויות";
+"feature_easy_editing_desc_other" = "הקישו לעריכה, הקשה בשתי אצבעות לאפשרויות";
+"get_started_button" = "בואו נתחיל";

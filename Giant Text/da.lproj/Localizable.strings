@@ -49,3 +49,48 @@
 "bloom" = "Blomst";
 "jitter" = "Rystelse";
 "ripple" = "Krusning";
+
+// MARK: - Theme & Display
+"theme_section" = "Tema";
+"random_theme_daily" = "Tilfældigt tema (dagligt)";
+"current_theme" = "Nuværende tema:";
+"appearance" = "Udseende";
+"text_rotation" = "Tekstrotation";
+"serif_font" = "Serif-skrifttype";
+"letter_spacing" = "Bogstavmellemrum";
+"max_lines" = "Maks. antal linjer";
+"system" = "System";
+"light" = "Lys";
+"dark" = "Mørk";
+"left" = "Venstre";
+"right" = "Højre";
+
+// MARK: - Welcome View
+"welcome_title" = "Velkommen til Giant Text!";
+"welcome_subtitle" = "Skab flotte, animerede tekstvisninger";
+"bullet_type_message" = "Skriv din besked";
+"bullet_landscape_orientation" = "Teksten vises i liggende retning";
+"bullet_portrait_mode" = "Enheden forbliver i stående tilstand";
+"bullet_animation_effects" = "Vælg mellem flere animationseffekter";
+"bullet_share_quickly" = "Perfekt til hurtig deling af kort tekst";
+"bullet_cross_platform" = "Fungerer på alle dine Apple-enheder";
+"tip_click_edit" = "Klik for at redigere teksten";
+"tip_right_click_options" = "Højreklik for indstillinger";
+"tip_playpause_edit" = "Afspil/pause-knap til at redigere tekst";
+"tip_menu_button_options" = "Menuknap for indstillinger";
+"tip_tap_edit" = "Tryk én gang for at redigere teksten";
+"tip_two_finger_tap_options" = "Tryk med to fingre for indstillinger";
+"tip_esc_close" = "Tryk på ESC for at lukke menuer";
+"features_header" = "Funktioner:";
+"feature_giant_text_title" = "Gigantisk tekstvisning";
+"feature_giant_text_desc" = "Skab tekst, der fylder hele skærmen";
+"feature_animations_title" = "Animationer";
+"feature_landscape_title" = "Liggende visning";
+"feature_portrait_title" = "Stående tilstand";
+"feature_cross_platform_title" = "Tværplatform";
+"feature_cross_platform_desc" = "Fungerer på iPhone, iPad, Mac og mere";
+"feature_easy_editing_title" = "Nem redigering";
+"feature_easy_editing_desc_macos" = "Klik for at redigere, højreklik for indstillinger";
+"feature_easy_editing_desc_tvos" = "Brug fjernbetjeningen til at redigere og tilgå indstillinger";
+"feature_easy_editing_desc_other" = "Tryk for at redigere, tryk med to fingre for indstillinger";
+"get_started_button" = "Kom i gang";

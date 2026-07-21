@@ -49,3 +49,48 @@
 "bloom" = "کھلنا";
 "jitter" = "کانپنا";
 "ripple" = "لہر";
+
+// MARK: - Theme & Display
+"theme_section" = "تھیم";
+"random_theme_daily" = "بے ترتیب تھیم (روزانہ)";
+"current_theme" = "موجودہ تھیم:";
+"appearance" = "ظاہری شکل";
+"text_rotation" = "متن کی گردش";
+"serif_font" = "سیرف فونٹ";
+"letter_spacing" = "حروف کے درمیان فاصلہ";
+"max_lines" = "زیادہ سے زیادہ سطریں";
+"system" = "سسٹم";
+"light" = "ہلکا";
+"dark" = "گہرا";
+"left" = "بائیں";
+"right" = "دائیں";
+
+// MARK: - Welcome View
+"welcome_title" = "Giant Text میں خوش آمدید!";
+"welcome_subtitle" = "شاندار، متحرک متنی ڈسپلے بنائیں";
+"bullet_type_message" = "اپنا پیغام ٹائپ کریں";
+"bullet_landscape_orientation" = "متن لینڈ اسکیپ رخ میں دکھایا جاتا ہے";
+"bullet_portrait_mode" = "ڈیوائس پورٹریٹ موڈ میں رہتی ہے";
+"bullet_animation_effects" = "متعدد اینیمیشن ایفیکٹس میں سے انتخاب کریں";
+"bullet_share_quickly" = "مختصر متن جلدی شیئر کرنے کے لیے بہترین";
+"bullet_cross_platform" = "آپ کے تمام Apple ڈیوائسز پر کام کرتا ہے";
+"tip_click_edit" = "متن میں ترمیم کے لیے کلک کریں";
+"tip_right_click_options" = "اختیارات کے لیے رائٹ کلک کریں";
+"tip_playpause_edit" = "متن میں ترمیم کے لیے پلے/پاز بٹن";
+"tip_menu_button_options" = "اختیارات کے لیے مینو بٹن";
+"tip_tap_edit" = "متن میں ترمیم کے لیے ایک بار تھپتھپائیں";
+"tip_two_finger_tap_options" = "اختیارات کے لیے دو انگلیوں سے تھپتھپائیں";
+"tip_esc_close" = "مینو بند کرنے کے لیے ESC دبائیں";
+"features_header" = "خصوصیات:";
+"feature_giant_text_title" = "بڑا متن ڈسپلے";
+"feature_giant_text_desc" = "ایسا متن بنائیں جو آپ کی اسکرین کو بھر دے";
+"feature_animations_title" = "اینیمیشنز";
+"feature_landscape_title" = "لینڈ اسکیپ ڈسپلے";
+"feature_portrait_title" = "پورٹریٹ موڈ";
+"feature_cross_platform_title" = "کراس پلیٹ فارم";
+"feature_cross_platform_desc" = "iPhone، iPad، Mac اور دیگر پر کام کرتا ہے";
+"feature_easy_editing_title" = "آسان ترمیم";
+"feature_easy_editing_desc_macos" = "ترمیم کے لیے کلک کریں، اختیارات کے لیے رائٹ کلک کریں";
+"feature_easy_editing_desc_tvos" = "ترمیم کرنے اور اختیارات تک رسائی کے لیے ریموٹ استعمال کریں";
+"feature_easy_editing_desc_other" = "ترمیم کے لیے تھپتھپائیں، اختیارات کے لیے دو انگلیوں سے تھپتھپائیں";
+"get_started_button" = "شروع کریں";

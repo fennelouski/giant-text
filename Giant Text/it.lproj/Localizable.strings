@@ -49,3 +49,48 @@
 "bloom" = "Fioritura";
 "jitter" = "Tremolio";
 "ripple" = "Increspatura";
+
+// MARK: - Theme & Display
+"theme_section" = "Tema";
+"random_theme_daily" = "Tema casuale (giornaliero)";
+"current_theme" = "Tema attuale:";
+"appearance" = "Aspetto";
+"text_rotation" = "Rotazione testo";
+"serif_font" = "Font Serif";
+"letter_spacing" = "Spaziatura lettere";
+"max_lines" = "Righe massime";
+"system" = "Sistema";
+"light" = "Chiaro";
+"dark" = "Scuro";
+"left" = "Sinistra";
+"right" = "Destra";
+
+// MARK: - Welcome View
+"welcome_title" = "Benvenuto in Giant Text!";
+"welcome_subtitle" = "Crea splendidi display di testo animati";
+"bullet_type_message" = "Digita il tuo messaggio";
+"bullet_landscape_orientation" = "Il testo viene visualizzato in orientamento orizzontale";
+"bullet_portrait_mode" = "Il dispositivo rimane in modalità verticale";
+"bullet_animation_effects" = "Scegli tra diversi effetti di animazione";
+"bullet_share_quickly" = "Perfetto per condividere rapidamente testi brevi";
+"bullet_cross_platform" = "Funziona su tutti i tuoi dispositivi Apple";
+"tip_click_edit" = "Clicca per modificare il testo";
+"tip_right_click_options" = "Clic destro per le opzioni";
+"tip_playpause_edit" = "Pulsante Play/Pausa per modificare il testo";
+"tip_menu_button_options" = "Pulsante menu per le opzioni";
+"tip_tap_edit" = "Un tocco per modificare il testo";
+"tip_two_finger_tap_options" = "Tocco con due dita per le opzioni";
+"tip_esc_close" = "Premi ESC per chiudere i menu";
+"features_header" = "Funzionalità:";
+"feature_giant_text_title" = "Display di testo gigante";
+"feature_giant_text_desc" = "Crea testo che riempie lo schermo";
+"feature_animations_title" = "Animazioni";
+"feature_landscape_title" = "Display orizzontale";
+"feature_portrait_title" = "Modalità verticale";
+"feature_cross_platform_title" = "Multipiattaforma";
+"feature_cross_platform_desc" = "Funziona su iPhone, iPad, Mac e altro ancora";
+"feature_easy_editing_title" = "Modifica semplice";
+"feature_easy_editing_desc_macos" = "Clicca per modificare, clic destro per le opzioni";
+"feature_easy_editing_desc_tvos" = "Usa il telecomando per modificare e accedere alle opzioni";
+"feature_easy_editing_desc_other" = "Tocca per modificare, tocco con due dita per le opzioni";
+"get_started_button" = "Inizia";

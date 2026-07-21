@@ -49,3 +49,48 @@
 "bloom" = "Bláth";
 "jitter" = "Creathadh";
 "ripple" = "Tonnú";
+
+// MARK: - Theme & Display
+"theme_section" = "Téama";
+"random_theme_daily" = "Téama Randamach (Laethúil)";
+"current_theme" = "Téama Reatha:";
+"appearance" = "Cuma";
+"text_rotation" = "Rothlú Téacs";
+"serif_font" = "Cló Serif";
+"letter_spacing" = "Spásáil Litreacha";
+"max_lines" = "Uaslíon Línte";
+"system" = "Córas";
+"light" = "Solas";
+"dark" = "Dorcha";
+"left" = "Ar Chlé";
+"right" = "Ar Dheis";
+
+// MARK: - Welcome View
+"welcome_title" = "Fáilte go Giant Text!";
+"welcome_subtitle" = "Cruthaigh taispeántais téacs iontacha, beoite";
+"bullet_type_message" = "Clóscríobh do theachtaireacht";
+"bullet_landscape_orientation" = "Taispeánann an téacs i dtreoshuíomh tírdhreacha";
+"bullet_portrait_mode" = "Fanann an gléas i mód portráide";
+"bullet_animation_effects" = "Roghnaigh as éagsúlacht maisíochtaí beochana";
+"bullet_share_quickly" = "Foirfe le haghaidh téacs gairid a roinnt go tapa";
+"bullet_cross_platform" = "Oibríonn sé ar fud do ghléasanna Apple go léir";
+"tip_click_edit" = "Cliceáil chun an téacs a chur in eagar";
+"tip_right_click_options" = "Deaschliceáil le haghaidh roghanna";
+"tip_playpause_edit" = "Cnaipe Seinn/Sos chun an téacs a chur in eagar";
+"tip_menu_button_options" = "Cnaipe an roghchláir le haghaidh roghanna";
+"tip_tap_edit" = "Tapáil amháin chun an téacs a chur in eagar";
+"tip_two_finger_tap_options" = "Tapáil le dhá mhéar le haghaidh roghanna";
+"tip_esc_close" = "Brúigh ESC chun na roghchláir a dhúnadh";
+"features_header" = "Gnéithe:";
+"feature_giant_text_title" = "Taispeáint Téacs Ollmhór";
+"feature_giant_text_desc" = "Cruthaigh téacs a líonann do scáileán";
+"feature_animations_title" = "Beochan";
+"feature_landscape_title" = "Taispeáint Tírdhreacha";
+"feature_portrait_title" = "Mód Portráide";
+"feature_cross_platform_title" = "Traschléasach";
+"feature_cross_platform_desc" = "Oibríonn ar iPhone, iPad, Mac, agus níos mó";
+"feature_easy_editing_title" = "Eagarthóireacht Éasca";
+"feature_easy_editing_desc_macos" = "Cliceáil chun eagar a chur air, deaschliceáil le haghaidh roghanna";
+"feature_easy_editing_desc_tvos" = "Úsáid an cianrialtán chun eagar a chur air agus rochtain a fháil ar roghanna";
+"feature_easy_editing_desc_other" = "Tapáil chun eagar a chur air, tapáil le dhá mhéar le haghaidh roghanna";
+"get_started_button" = "Tosaigh";

@@ -49,3 +49,48 @@
 "bloom" = "Bloom";
 "jitter" = "Jitter";
 "ripple" = "Ripple";
+
+// MARK: - Theme & Display
+"theme_section" = "Theme";
+"random_theme_daily" = "Random Theme (Daily)";
+"current_theme" = "Current Theme:";
+"appearance" = "Appearance";
+"text_rotation" = "Text Rotation";
+"serif_font" = "Serif Font";
+"letter_spacing" = "Letter Spacing";
+"max_lines" = "Max Lines";
+"system" = "System";
+"light" = "Light";
+"dark" = "Dark";
+"left" = "Left";
+"right" = "Right";
+
+// MARK: - Welcome View
+"welcome_title" = "Welcome to Giant Text!";
+"welcome_subtitle" = "Create stunning, animated text displays";
+"bullet_type_message" = "Type your message";
+"bullet_landscape_orientation" = "Text displays in landscape orientation";
+"bullet_portrait_mode" = "Device stays in portrait mode";
+"bullet_animation_effects" = "Choose from multiple animation effects";
+"bullet_share_quickly" = "Perfect for sharing short text quickly";
+"bullet_cross_platform" = "Works across all your Apple devices";
+"tip_click_edit" = "Click to edit text";
+"tip_right_click_options" = "Right-click for options";
+"tip_playpause_edit" = "Play/Pause button to edit text";
+"tip_menu_button_options" = "Menu button for options";
+"tip_tap_edit" = "Single tap to edit text";
+"tip_two_finger_tap_options" = "Two-finger tap for options";
+"tip_esc_close" = "Press ESC to close menus";
+"features_header" = "Features:";
+"feature_giant_text_title" = "Giant Text Display";
+"feature_giant_text_desc" = "Create text that fills your screen";
+"feature_animations_title" = "Animations";
+"feature_landscape_title" = "Landscape Display";
+"feature_portrait_title" = "Portrait Mode";
+"feature_cross_platform_title" = "Cross-Platform";
+"feature_cross_platform_desc" = "Works on iPhone, iPad, Mac, and more";
+"feature_easy_editing_title" = "Easy Editing";
+"feature_easy_editing_desc_macos" = "Click to edit, right-click for options";
+"feature_easy_editing_desc_tvos" = "Use remote to edit and access options";
+"feature_easy_editing_desc_other" = "Tap to edit, two-finger tap for options";
+"get_started_button" = "Get Started";

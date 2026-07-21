@@ -49,3 +49,48 @@
 "bloom" = "Éclosion";
 "jitter" = "Tremblement";
 "ripple" = "Ondulation";
+
+// MARK: - Theme & Display
+"theme_section" = "Thème";
+"random_theme_daily" = "Thème aléatoire (quotidien)";
+"current_theme" = "Thème actuel :";
+"appearance" = "Apparence";
+"text_rotation" = "Rotation du texte";
+"serif_font" = "Police à empattements";
+"letter_spacing" = "Espacement des lettres";
+"max_lines" = "Lignes max.";
+"system" = "Système";
+"light" = "Clair";
+"dark" = "Sombre";
+"left" = "Gauche";
+"right" = "Droite";
+
+// MARK: - Welcome View
+"welcome_title" = "Bienvenue dans Giant Text !";
+"welcome_subtitle" = "Créez de superbes affichages de texte animés";
+"bullet_type_message" = "Saisissez votre message";
+"bullet_landscape_orientation" = "Le texte s'affiche en mode paysage";
+"bullet_portrait_mode" = "L'appareil reste en mode portrait";
+"bullet_animation_effects" = "Choisissez parmi plusieurs effets d'animation";
+"bullet_share_quickly" = "Idéal pour partager rapidement de courts textes";
+"bullet_cross_platform" = "Fonctionne sur tous vos appareils Apple";
+"tip_click_edit" = "Cliquez pour modifier le texte";
+"tip_right_click_options" = "Clic droit pour afficher les options";
+"tip_playpause_edit" = "Bouton lecture/pause pour modifier le texte";
+"tip_menu_button_options" = "Bouton menu pour les options";
+"tip_tap_edit" = "Appuyez une fois pour modifier le texte";
+"tip_two_finger_tap_options" = "Appuyez avec deux doigts pour afficher les options";
+"tip_esc_close" = "Appuyez sur ÉCHAP pour fermer les menus";
+"features_header" = "Fonctionnalités :";
+"feature_giant_text_title" = "Affichage de texte géant";
+"feature_giant_text_desc" = "Créez du texte qui remplit votre écran";
+"feature_animations_title" = "Animations";
+"feature_landscape_title" = "Affichage paysage";
+"feature_portrait_title" = "Mode portrait";
+"feature_cross_platform_title" = "Multiplateforme";
+"feature_cross_platform_desc" = "Fonctionne sur iPhone, iPad, Mac et plus encore";
+"feature_easy_editing_title" = "Modification simple";
+"feature_easy_editing_desc_macos" = "Cliquez pour modifier, clic droit pour les options";
+"feature_easy_editing_desc_tvos" = "Utilisez la télécommande pour modifier et accéder aux options";
+"feature_easy_editing_desc_other" = "Appuyez pour modifier, appuyez avec deux doigts pour les options";
+"get_started_button" = "Commencer";

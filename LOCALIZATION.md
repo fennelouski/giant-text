@@ -99,23 +99,102 @@ All 55 files carried an `"explode"` entry left over from an animation type that
 no longer exists — `TextAnimation` is now `none` / `bloom` / `jitter` / `ripple`.
 Removed from every file.
 
-## Known gap: hardcoded English in the UI
+## The Theme/Display and Welcome-screen strings
 
-Separate from the above, and still outstanding. Some user-facing strings are
-English literals in Swift rather than `LocalizationManager` lookups, so they stay
-English in all 54 non-English locales:
+Closed. 41 keys that were English literals in `OptionsMenuSheet.swift`,
+`ContentViewState.swift` (`AppearanceMode.localizedName` /
+`TextRotation.localizedName`), and `WelcomeView.swift` are now
+`LocalizedStringKey` lookups with entries in all 55 `Localizable.strings` files
+(72 keys total per file, all matching `en.lproj`).
 
-- `OptionsMenuSheet.swift` — the Theme and Display sections: **Theme**,
-  **Random Theme (Daily)**, **Current Theme:**, **Appearance**, **Text Rotation**,
-  **Serif Font**, **Letter Spacing**, **Max Lines**
-  (`Text("Aa")` is a font sample, not a translatable string.)
-- `WelcomeView.swift` — essentially the whole first-run screen, including the
-  title, feature list, and the Get Started button.
+This was the mismatch described below in the original "known gap" writeup: a
+Spanish user saw "Ondular" and "Temblar" (translated Animation section) directly
+above an English "Theme" and "Random Theme (Daily)" (hardcoded Display section).
+Verified at runtime in the iOS Simulator with `-AppleLanguages "(es)"` — both the
+options sheet (**Tema**, **Tema aleatorio (diario)**, **Apariencia**, **Rotación
+del texto**, **Fuente serif**, **Espaciado entre letras**, **Líneas máx.**) and
+the welcome screen (**¡Bienvenido a Giant Text!**, bullet points, **Comenzar**
+button) now render fully in Spanish.
 
-The Animation and Actions sections *are* localized, which is why the mismatch is
-visible: a Spanish user sees "Ondular" and "Temblar" directly above an English
-"Theme" and "Random Theme (Daily)".
+`BulletPoint` and `FeatureRow` (in `WelcomeView.swift`) now take
+`LocalizedStringKey` instead of `String`, and the `#if os(...)` branches that had
+duplicated English copy across platforms (e.g. "Type your message" appearing in
+three branches) were deduped onto one shared key each — 28 unique strings, not
+41, for that file specifically.
 
-Closing this means adding roughly 18 keys across 55 files (~990 strings), so it is
-worth doing as its own pass rather than folding into a bug fix.
+### Confidence
+
+Machine-translated without a native-speaker review, same disclaimer as the
+`ripple` pass above. Graded per language, not per string — a language's tier
+here reflects general confidence in that language's whole batch, illustrated
+with the `get_started_button` string ("Get Started").
+
+#### Needs a native speaker (5)
+
+| Lang | `get_started_button` | Note |
+|---|---|---|
+| `am` | ጀምር | same caution as the `ripple` grading — Ethiopic script, no native check |
+| `bo` | འགོ་འཛུགས། | Tibetan; UI register for a whole 41-string batch is a bigger surface than one word |
+| `ha` | Fara | Hausa; verify diacritics (ƙ/ɗ/ʼ) rendered correctly throughout |
+| `si` | ආරම්භ කරන්න | Sinhala; long compound strings (bullet points) are riskier than single words |
+| `zu` | Qala | Zulu; noun-class agreement across 28 Welcome-screen strings not verified |
+
+#### Correct sense, confirm register (15)
+
+| Lang | `get_started_button` | Note |
+|---|---|---|
+| `be` | Пачаць | Belarusian |
+| `bn` | শুরু করুন | Bengali |
+| `eu` | Hasi | Basque |
+| `fil` | Simulan | Filipino |
+| `ga` | Tosaigh | Irish |
+| `gu` | શરૂ કરો | Gujarati |
+| `kn` | ಪ್ರಾರಂಭಿಸಿ | Kannada |
+| `mn` | Эхлэх | Mongolian |
+| `ne` | सुरु गरौं | Nepali |
+| `pa` | ਸ਼ੁਰੂ ਕਰੋ | Punjabi |
+| `sw` | Anza | Swahili |
+| `ta` | தொடங்குங்கள் | Tamil |
+| `te` | ప్రారంభించండి | Telugu |
+| `th` | เริ่มต้นใช้งาน | Thai |
+| `uz` | Boshlash | Uzbek |
+
+#### Confident (34)
+
+| Lang | `get_started_button` | Note |
+|---|---|---|
+| `af` | Begin | |
+| `ar` | ابدأ | |
+| `ca` | Comença | |
+| `cs` | Začít | |
+| `da` | Kom i gang | |
+| `de` | Los geht's | |
+| `el` | Ξεκινήστε | |
+| `es` | Comenzar | verified live at runtime |
+| `fa` | شروع کنید | |
+| `fi` | Aloita | |
+| `fr` | Commencer | |
+| `fr-CA` | Commencer | same as fr where Quebec usage doesn't diverge |
+| `he` | בואו נתחיל | |
+| `hi` | शुरू करें | |
+| `hu` | Kezdés | |
+| `id` | Mulai | |
+| `it` | Inizia | |
+| `ja` | はじめる | |
+| `ko` | 시작하기 | |
+| `ms` | Mula | |
+| `nl` | Aan de slag | |
+| `pl` | Rozpocznij | |
+| `pt` | Começar | |
+| `pt-BR` | Começar | |
+| `ro` | Începe | |
+| `ru` | Начать | |
+| `sk` | Začať | |
+| `sv` | Kom igång | |
+| `tr` | Başlayın | |
+| `uk` | Почати | |
+| `ur` | شروع کریں | |
+| `vi` | Bắt đầu | |
+| `zh-Hans` | 开始使用 | |
+| `zh-Hant` | 開始使用 | |
 

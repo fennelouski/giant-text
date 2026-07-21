@@ -49,3 +49,48 @@
 "bloom" = "Loreak";
 "jitter" = "Dardara";
 "ripple" = "Uhindura";
+
+// MARK: - Theme & Display
+"theme_section" = "Gaia";
+"random_theme_daily" = "Ausazko gaia (egunero)";
+"current_theme" = "Uneko gaia:";
+"appearance" = "Itxura";
+"text_rotation" = "Testuaren biraketa";
+"serif_font" = "Serif letra-tipoa";
+"letter_spacing" = "Letra-tartea";
+"max_lines" = "Gehieneko lerroak";
+"system" = "Sistema";
+"light" = "Argia";
+"dark" = "Iluna";
+"left" = "Ezkerrera";
+"right" = "Eskuinera";
+
+// MARK: - Welcome View
+"welcome_title" = "Ongi etorri Giant Text-era!";
+"welcome_subtitle" = "Sortu testu-pantaila animatu ikusgarriak";
+"bullet_type_message" = "Idatzi zure mezua";
+"bullet_landscape_orientation" = "Testua horizontalki bistaratzen da";
+"bullet_portrait_mode" = "Gailua bertikalki mantentzen da";
+"bullet_animation_effects" = "Aukeratu animazio-efektu ugarien artean";
+"bullet_share_quickly" = "Ezin hobea testu laburrak azkar partekatzeko";
+"bullet_cross_platform" = "Zure Apple gailu guztietan funtzionatzen du";
+"tip_click_edit" = "Egin klik testua editatzeko";
+"tip_right_click_options" = "Eskuineko klika aukerak ikusteko";
+"tip_playpause_edit" = "Erreproduzitu/Pausatu botoia testua editatzeko";
+"tip_menu_button_options" = "Menu botoia aukerak ikusteko";
+"tip_tap_edit" = "Sakatu behin testua editatzeko";
+"tip_two_finger_tap_options" = "Sakatu bi hatzekin aukerak ikusteko";
+"tip_esc_close" = "Sakatu ESC menuak ixteko";
+"features_header" = "Funtzioak:";
+"feature_giant_text_title" = "Testu erraldoiaren bistaratzea";
+"feature_giant_text_desc" = "Sortu pantaila betetzen duen testua";
+"feature_animations_title" = "Animazioak";
+"feature_landscape_title" = "Bistaratze horizontala";
+"feature_portrait_title" = "Modu bertikala";
+"feature_cross_platform_title" = "Plataforma anitzekoa";
+"feature_cross_platform_desc" = "iPhone, iPad, Mac eta gehiagorekin funtzionatzen du";
+"feature_easy_editing_title" = "Edizio erraza";
+"feature_easy_editing_desc_macos" = "Klik egin editatzeko, eskuineko klika aukerak ikusteko";
+"feature_easy_editing_desc_tvos" = "Erabili urrutiko agintea editatzeko eta aukerak ikusteko";
+"feature_easy_editing_desc_other" = "Sakatu editatzeko, bi hatzekin sakatu aukerak ikusteko";
+"get_started_button" = "Hasi";

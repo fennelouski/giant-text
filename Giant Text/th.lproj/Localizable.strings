@@ -49,3 +49,48 @@
 "bloom" = "เบ่งบาน";
 "jitter" = "สั่น";
 "ripple" = "ระลอกคลื่น";
+
+// MARK: - Theme & Display
+"theme_section" = "ธีม";
+"random_theme_daily" = "ธีมสุ่ม (รายวัน)";
+"current_theme" = "ธีมปัจจุบัน:";
+"appearance" = "รูปลักษณ์";
+"text_rotation" = "การหมุนข้อความ";
+"serif_font" = "ฟอนต์เซอริฟ";
+"letter_spacing" = "ระยะห่างตัวอักษร";
+"max_lines" = "จำนวนบรรทัดสูงสุด";
+"system" = "ระบบ";
+"light" = "สว่าง";
+"dark" = "มืด";
+"left" = "ซ้าย";
+"right" = "ขวา";
+
+// MARK: - Welcome View
+"welcome_title" = "ยินดีต้อนรับสู่ Giant Text!";
+"welcome_subtitle" = "สร้างข้อความขนาดใหญ่แบบเคลื่อนไหวที่สวยงาม";
+"bullet_type_message" = "พิมพ์ข้อความของคุณ";
+"bullet_landscape_orientation" = "แสดงข้อความในแนวนอน";
+"bullet_portrait_mode" = "อุปกรณ์อยู่ในแนวตั้งตลอด";
+"bullet_animation_effects" = "เลือกจากเอฟเฟกต์แอนิเมชันหลากหลาย";
+"bullet_share_quickly" = "เหมาะสำหรับแชร์ข้อความสั้น ๆ อย่างรวดเร็ว";
+"bullet_cross_platform" = "ใช้งานได้กับอุปกรณ์ Apple ทุกเครื่องของคุณ";
+"tip_click_edit" = "คลิกเพื่อแก้ไขข้อความ";
+"tip_right_click_options" = "คลิกขวาเพื่อดูตัวเลือก";
+"tip_playpause_edit" = "ปุ่มเล่น/หยุดชั่วคราวเพื่อแก้ไขข้อความ";
+"tip_menu_button_options" = "ปุ่มเมนูสำหรับตัวเลือก";
+"tip_tap_edit" = "แตะครั้งเดียวเพื่อแก้ไขข้อความ";
+"tip_two_finger_tap_options" = "แตะสองนิ้วเพื่อดูตัวเลือก";
+"tip_esc_close" = "กด ESC เพื่อปิดเมนู";
+"features_header" = "ฟีเจอร์:";
+"feature_giant_text_title" = "การแสดงข้อความขนาดยักษ์";
+"feature_giant_text_desc" = "สร้างข้อความที่เต็มหน้าจอของคุณ";
+"feature_animations_title" = "แอนิเมชัน";
+"feature_landscape_title" = "การแสดงผลแนวนอน";
+"feature_portrait_title" = "โหมดแนวตั้ง";
+"feature_cross_platform_title" = "ใช้งานข้ามแพลตฟอร์ม";
+"feature_cross_platform_desc" = "ใช้งานได้บน iPhone, iPad, Mac และอื่น ๆ";
+"feature_easy_editing_title" = "แก้ไขง่าย";
+"feature_easy_editing_desc_macos" = "คลิกเพื่อแก้ไข คลิกขวาเพื่อดูตัวเลือก";
+"feature_easy_editing_desc_tvos" = "ใช้รีโมทเพื่อแก้ไขและเข้าถึงตัวเลือก";
+"feature_easy_editing_desc_other" = "แตะเพื่อแก้ไข แตะสองนิ้วเพื่อดูตัวเลือก";
+"get_started_button" = "เริ่มต้นใช้งาน";

@@ -49,3 +49,48 @@
 "bloom" = "फूल";
 "jitter" = "कम्पन";
 "ripple" = "लहर";
+
+// MARK: - Theme & Display
+"theme_section" = "थिम";
+"random_theme_daily" = "अनियमित थिम (दैनिक)";
+"current_theme" = "हालको थिम:";
+"appearance" = "देखावट";
+"text_rotation" = "पाठ घुमाउने";
+"serif_font" = "सेरिफ फन्ट";
+"letter_spacing" = "अक्षर स्पेसिङ";
+"max_lines" = "अधिकतम लाइनहरू";
+"system" = "प्रणाली";
+"light" = "उज्यालो";
+"dark" = "अँध्यारो";
+"left" = "बायाँ";
+"right" = "दायाँ";
+
+// MARK: - Welcome View
+"welcome_title" = "Giant Text मा स्वागत छ!";
+"welcome_subtitle" = "आकर्षक, एनिमेटेड पाठ डिस्प्ले सिर्जना गर्नुहोस्";
+"bullet_type_message" = "आफ्नो सन्देश टाइप गर्नुहोस्";
+"bullet_landscape_orientation" = "पाठ ल्यान्डस्केप अभिमुखीकरणमा देखिन्छ";
+"bullet_portrait_mode" = "उपकरण पोर्ट्रेट मोडमा रहन्छ";
+"bullet_animation_effects" = "धेरै एनिमेसन प्रभावहरूमध्ये छनौट गर्नुहोस्";
+"bullet_share_quickly" = "छोटो पाठ छिटो सेयर गर्नका लागि उपयुक्त";
+"bullet_cross_platform" = "तपाईंका सबै Apple उपकरणहरूमा काम गर्छ";
+"tip_click_edit" = "पाठ सम्पादन गर्न क्लिक गर्नुहोस्";
+"tip_right_click_options" = "विकल्पहरूका लागि दायाँ-क्लिक गर्नुहोस्";
+"tip_playpause_edit" = "पाठ सम्पादन गर्न प्ले/पज बटन";
+"tip_menu_button_options" = "विकल्पहरूका लागि मेनु बटन";
+"tip_tap_edit" = "पाठ सम्पादन गर्न एक पटक ट्याप गर्नुहोस्";
+"tip_two_finger_tap_options" = "विकल्पहरूका लागि दुई-औंलाले ट्याप गर्नुहोस्";
+"tip_esc_close" = "मेनुहरू बन्द गर्न ESC थिच्नुहोस्";
+"features_header" = "सुविधाहरू:";
+"feature_giant_text_title" = "विशाल पाठ डिस्प्ले";
+"feature_giant_text_desc" = "तपाईंको स्क्रिन भर्ने पाठ सिर्जना गर्नुहोस्";
+"feature_animations_title" = "एनिमेसनहरू";
+"feature_landscape_title" = "ल्यान्डस्केप डिस्प्ले";
+"feature_portrait_title" = "पोर्ट्रेट मोड";
+"feature_cross_platform_title" = "क्रस-प्लेटफर्म";
+"feature_cross_platform_desc" = "iPhone, iPad, Mac र थप उपकरणहरूमा काम गर्छ";
+"feature_easy_editing_title" = "सजिलो सम्पादन";
+"feature_easy_editing_desc_macos" = "सम्पादन गर्न क्लिक गर्नुहोस्, विकल्पहरूका लागि दायाँ-क्लिक गर्नुहोस्";
+"feature_easy_editing_desc_tvos" = "सम्पादन गर्न र विकल्पहरू पहुँच गर्न रिमोट प्रयोग गर्नुहोस्";
+"feature_easy_editing_desc_other" = "सम्पादन गर्न ट्याप गर्नुहोस्, विकल्पहरूका लागि दुई-औंलाले ट्याप गर्नुहोस्";
+"get_started_button" = "सुरु गरौं";

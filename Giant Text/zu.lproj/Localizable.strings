@@ -49,3 +49,48 @@
 "bloom" = "Iqabunga";
 "jitter" = "Ukuzamazama";
 "ripple" = "Amagagasi";
+
+// MARK: - Theme & Display
+"theme_section" = "Itimu";
+"random_theme_daily" = "Itimu Engahleliwe (Nsuku zonke)";
+"current_theme" = "Itimu Yamanje:";
+"appearance" = "Ukubukeka";
+"text_rotation" = "Ukujikeleza Kombhalo";
+"serif_font" = "Ifonti ye-Serif";
+"letter_spacing" = "Isikhala Phakathi Kwezinhlamvu";
+"max_lines" = "Umkhawulo Wemigqa";
+"system" = "Isistimu";
+"light" = "Okukhanyayo";
+"dark" = "Okumnyama";
+"left" = "Kwesobunxele";
+"right" = "Kwesokudla";
+
+// MARK: - Welcome View
+"welcome_title" = "Wamukelekile ku-Giant Text!";
+"welcome_subtitle" = "Dala imibonisombhalo emangalisayo, ehambayo";
+"bullet_type_message" = "Thayipha umlayezo wakho";
+"bullet_landscape_orientation" = "Umbhalo uboniswa ngokuvundlile";
+"bullet_portrait_mode" = "Idivayisi ihlala imile";
+"bullet_animation_effects" = "Khetha kwimiphumela eminingi yokuhamba";
+"bullet_share_quickly" = "Kufanelekile ukwabelana ngokushesha ngombhalo omfushane";
+"bullet_cross_platform" = "Isebenza kuwo wonke amadivayisi akho e-Apple";
+"tip_click_edit" = "Chofoza ukuze uhlele umbhalo";
+"tip_right_click_options" = "Chofoza ngakwesokudla ukuze uthole izinketho";
+"tip_playpause_edit" = "Inkinobho yoku-Dlala/Misa ukuze uhlele umbhalo";
+"tip_menu_button_options" = "Inkinobho yemenyu yezinketho";
+"tip_tap_edit" = "Thepha kanye ukuze uhlele umbhalo";
+"tip_two_finger_tap_options" = "Thepha ngeminwe emibili ukuze uthole izinketho";
+"tip_esc_close" = "Cindezela u-ESC ukuze uvale amamenyu";
+"features_header" = "Izici:";
+"feature_giant_text_title" = "Umboniso Wombhalo Omkhulu";
+"feature_giant_text_desc" = "Dala umbhalo ogcwalisa isikrini sakho";
+"feature_animations_title" = "Ukuhamba Kwezithombe";
+"feature_landscape_title" = "Umboniso Ovundlile";
+"feature_portrait_title" = "Imodi Emile";
+"feature_cross_platform_title" = "Ezinkundleni Eziningi";
+"feature_cross_platform_desc" = "Isebenza ku-iPhone, i-iPad, i-Mac, nakwezinye";
+"feature_easy_editing_title" = "Ukuhlela Okulula";
+"feature_easy_editing_desc_macos" = "Chofoza ukuze uhlele, chofoza ngakwesokudla ukuze uthole izinketho";
+"feature_easy_editing_desc_tvos" = "Sebenzisa ikhontroli ukuze uhlele futhi ufinyelele izinketho";
+"feature_easy_editing_desc_other" = "Thepha ukuze uhlele, thepha ngeminwe emibili ukuze uthole izinketho";
+"get_started_button" = "Qala";

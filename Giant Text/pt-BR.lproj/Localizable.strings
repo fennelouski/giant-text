@@ -49,3 +49,48 @@
 "bloom" = "Florescer";
 "jitter" = "Tremor";
 "ripple" = "Ondulação";
+
+// MARK: - Theme & Display
+"theme_section" = "Tema";
+"random_theme_daily" = "Tema Aleatório (Diário)";
+"current_theme" = "Tema Atual:";
+"appearance" = "Aparência";
+"text_rotation" = "Rotação do Texto";
+"serif_font" = "Fonte Serifada";
+"letter_spacing" = "Espaçamento entre Letras";
+"max_lines" = "Máximo de Linhas";
+"system" = "Sistema";
+"light" = "Claro";
+"dark" = "Escuro";
+"left" = "Esquerda";
+"right" = "Direita";
+
+// MARK: - Welcome View
+"welcome_title" = "Bem-vindo ao Giant Text!";
+"welcome_subtitle" = "Crie exibições de texto animadas e impressionantes";
+"bullet_type_message" = "Digite sua mensagem";
+"bullet_landscape_orientation" = "O texto é exibido na orientação paisagem";
+"bullet_portrait_mode" = "O dispositivo permanece no modo retrato";
+"bullet_animation_effects" = "Escolha entre vários efeitos de animação";
+"bullet_share_quickly" = "Perfeito para compartilhar textos curtos rapidamente";
+"bullet_cross_platform" = "Funciona em todos os seus dispositivos Apple";
+"tip_click_edit" = "Clique para editar o texto";
+"tip_right_click_options" = "Clique com o botão direito para opções";
+"tip_playpause_edit" = "Botão Reproduzir/Pausar para editar o texto";
+"tip_menu_button_options" = "Botão de menu para opções";
+"tip_tap_edit" = "Toque uma vez para editar o texto";
+"tip_two_finger_tap_options" = "Toque com dois dedos para opções";
+"tip_esc_close" = "Pressione ESC para fechar os menus";
+"features_header" = "Recursos:";
+"feature_giant_text_title" = "Exibição de Texto Gigante";
+"feature_giant_text_desc" = "Crie textos que preenchem sua tela";
+"feature_animations_title" = "Animações";
+"feature_landscape_title" = "Exibição em Paisagem";
+"feature_portrait_title" = "Modo Retrato";
+"feature_cross_platform_title" = "Multiplataforma";
+"feature_cross_platform_desc" = "Funciona em iPhone, iPad, Mac e mais";
+"feature_easy_editing_title" = "Edição Fácil";
+"feature_easy_editing_desc_macos" = "Clique para editar, clique com o botão direito para opções";
+"feature_easy_editing_desc_tvos" = "Use o controle remoto para editar e acessar opções";
+"feature_easy_editing_desc_other" = "Toque para editar, toque com dois dedos para opções";
+"get_started_button" = "Começar";

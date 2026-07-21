@@ -49,3 +49,48 @@
 "bloom" = "Цэцэглэх";
 "jitter" = "Чийрэг";
 "ripple" = "Долгион";
+
+// MARK: - Theme & Display
+"theme_section" = "Загвар";
+"random_theme_daily" = "Санамсаргүй загвар (өдөр бүр)";
+"current_theme" = "Одоогийн загвар:";
+"appearance" = "Харагдац";
+"text_rotation" = "Текстийн эргэлт";
+"serif_font" = "Сериф фонт";
+"letter_spacing" = "Үсгийн зай";
+"max_lines" = "Мөрийн дээд хэмжээ";
+"system" = "Систем";
+"light" = "Цайвар";
+"dark" = "Бараан";
+"left" = "Зүүн";
+"right" = "Баруун";
+
+// MARK: - Welcome View
+"welcome_title" = "Giant Text-д тавтай морил!";
+"welcome_subtitle" = "Гайхалтай, хөдөлгөөнт текст дэлгэц үүсгээрэй";
+"bullet_type_message" = "Мессежээ бичнэ үү";
+"bullet_landscape_orientation" = "Текст хэвтээ чиглэлд харагдана";
+"bullet_portrait_mode" = "Төхөөрөмж босоо горимд хэвээр байна";
+"bullet_animation_effects" = "Олон төрлийн хөдөлгөөний эффектээс сонгоно уу";
+"bullet_share_quickly" = "Богино текстийг хурдан хуваалцахад тохиромжтой";
+"bullet_cross_platform" = "Таны бүх Apple төхөөрөмж дээр ажиллана";
+"tip_click_edit" = "Текст засахын тулд товшино уу";
+"tip_right_click_options" = "Сонголтуудыг харахын тулд хулганы баруун товчийг дарна уу";
+"tip_playpause_edit" = "Текст засах Тоглуулах/Түр зогсоох товч";
+"tip_menu_button_options" = "Сонголтын цэсний товч";
+"tip_tap_edit" = "Текст засахын тулд нэг товшино уу";
+"tip_two_finger_tap_options" = "Сонголтуудыг харахын тулд хоёр хуруугаар товшино уу";
+"tip_esc_close" = "Цэсийг хаахын тулд ESC товчийг дарна уу";
+"features_header" = "Онцлогууд:";
+"feature_giant_text_title" = "Аварга текст дэлгэц";
+"feature_giant_text_desc" = "Дэлгэцээ дүүргэх текст үүсгэнэ үү";
+"feature_animations_title" = "Хөдөлгөөн";
+"feature_landscape_title" = "Хэвтээ дэлгэц";
+"feature_portrait_title" = "Босоо горим";
+"feature_cross_platform_title" = "Олон платформ";
+"feature_cross_platform_desc" = "iPhone, iPad, Mac болон бусад төхөөрөмж дээр ажиллана";
+"feature_easy_editing_title" = "Хялбар засварлалт";
+"feature_easy_editing_desc_macos" = "Засахын тулд товшиж, сонголтын хувьд баруун товчийг дарна уу";
+"feature_easy_editing_desc_tvos" = "Засах, сонголтод хандахын тулд удирдлагыг ашиглана уу";
+"feature_easy_editing_desc_other" = "Засахын тулд товшиж, сонголтын хувьд хоёр хуруугаар товшино уу";
+"get_started_button" = "Эхлэх";

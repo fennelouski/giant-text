@@ -49,3 +49,48 @@
 "bloom" = "खिलना";
 "jitter" = "कंपन";
 "ripple" = "लहर";
+
+// MARK: - Theme & Display
+"theme_section" = "थीम";
+"random_theme_daily" = "रैंडम थीम (रोज़ाना)";
+"current_theme" = "मौजूदा थीम:";
+"appearance" = "दिखावट";
+"text_rotation" = "टेक्स्ट रोटेशन";
+"serif_font" = "सेरिफ़ फ़ॉन्ट";
+"letter_spacing" = "अक्षर स्पेसिंग";
+"max_lines" = "अधिकतम लाइनें";
+"system" = "सिस्टम";
+"light" = "लाइट";
+"dark" = "डार्क";
+"left" = "बाएं";
+"right" = "दाएं";
+
+// MARK: - Welcome View
+"welcome_title" = "Giant Text में आपका स्वागत है!";
+"welcome_subtitle" = "शानदार, एनिमेटेड टेक्स्ट डिस्प्ले बनाएं";
+"bullet_type_message" = "अपना संदेश टाइप करें";
+"bullet_landscape_orientation" = "टेक्स्ट लैंडस्केप ओरिएंटेशन में दिखता है";
+"bullet_portrait_mode" = "डिवाइस पोर्ट्रेट मोड में रहता है";
+"bullet_animation_effects" = "कई एनिमेशन इफ़ेक्ट में से चुनें";
+"bullet_share_quickly" = "छोटा टेक्स्ट तुरंत शेयर करने के लिए एकदम सही";
+"bullet_cross_platform" = "आपके सभी Apple डिवाइस पर काम करता है";
+"tip_click_edit" = "टेक्स्ट एडिट करने के लिए क्लिक करें";
+"tip_right_click_options" = "विकल्पों के लिए राइट-क्लिक करें";
+"tip_playpause_edit" = "टेक्स्ट एडिट करने के लिए Play/Pause बटन";
+"tip_menu_button_options" = "विकल्पों के लिए मेनू बटन";
+"tip_tap_edit" = "टेक्स्ट एडिट करने के लिए एक बार टैप करें";
+"tip_two_finger_tap_options" = "विकल्पों के लिए दो उंगलियों से टैप करें";
+"tip_esc_close" = "मेनू बंद करने के लिए ESC दबाएं";
+"features_header" = "फ़ीचर्स:";
+"feature_giant_text_title" = "जायंट टेक्स्ट डिस्प्ले";
+"feature_giant_text_desc" = "ऐसा टेक्स्ट बनाएं जो आपकी स्क्रीन भर दे";
+"feature_animations_title" = "एनिमेशन";
+"feature_landscape_title" = "लैंडस्केप डिस्प्ले";
+"feature_portrait_title" = "पोर्ट्रेट मोड";
+"feature_cross_platform_title" = "क्रॉस-प्लेटफ़ॉर्म";
+"feature_cross_platform_desc" = "iPhone, iPad, Mac और अन्य पर काम करता है";
+"feature_easy_editing_title" = "आसान एडिटिंग";
+"feature_easy_editing_desc_macos" = "एडिट करने के लिए क्लिक करें, विकल्पों के लिए राइट-क्लिक करें";
+"feature_easy_editing_desc_tvos" = "एडिट करने और विकल्पों तक पहुंचने के लिए रिमोट का उपयोग करें";
+"feature_easy_editing_desc_other" = "एडिट करने के लिए टैप करें, विकल्पों के लिए दो उंगलियों से टैप करें";
+"get_started_button" = "शुरू करें";

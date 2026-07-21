@@ -49,3 +49,48 @@
 "bloom" = "Florir";
 "jitter" = "Tremolor";
 "ripple" = "Ondulació";
+
+// MARK: - Theme & Display
+"theme_section" = "Tema";
+"random_theme_daily" = "Tema aleatori (diari)";
+"current_theme" = "Tema actual:";
+"appearance" = "Aparença";
+"text_rotation" = "Rotació del text";
+"serif_font" = "Tipus de lletra serif";
+"letter_spacing" = "Espaiat entre lletres";
+"max_lines" = "Línies màximes";
+"system" = "Sistema";
+"light" = "Clar";
+"dark" = "Fosc";
+"left" = "Esquerra";
+"right" = "Dreta";
+
+// MARK: - Welcome View
+"welcome_title" = "Benvingut a Giant Text!";
+"welcome_subtitle" = "Crea pantalles de text animades i espectaculars";
+"bullet_type_message" = "Escriu el teu missatge";
+"bullet_landscape_orientation" = "El text es mostra en orientació horitzontal";
+"bullet_portrait_mode" = "El dispositiu es manté en mode vertical";
+"bullet_animation_effects" = "Tria entre múltiples efectes d'animació";
+"bullet_share_quickly" = "Perfecte per compartir textos curts ràpidament";
+"bullet_cross_platform" = "Funciona a tots els teus dispositius Apple";
+"tip_click_edit" = "Fes clic per editar el text";
+"tip_right_click_options" = "Fes clic dret per veure les opcions";
+"tip_playpause_edit" = "Botó de reproducció/pausa per editar el text";
+"tip_menu_button_options" = "Botó de menú per veure les opcions";
+"tip_tap_edit" = "Toca una vegada per editar el text";
+"tip_two_finger_tap_options" = "Toca amb dos dits per veure les opcions";
+"tip_esc_close" = "Prem ESC per tancar els menús";
+"features_header" = "Funcions:";
+"feature_giant_text_title" = "Pantalla de text gegant";
+"feature_giant_text_desc" = "Crea text que ompli la pantalla";
+"feature_animations_title" = "Animacions";
+"feature_landscape_title" = "Pantalla horitzontal";
+"feature_portrait_title" = "Mode vertical";
+"feature_cross_platform_title" = "Multiplataforma";
+"feature_cross_platform_desc" = "Funciona a iPhone, iPad, Mac i més";
+"feature_easy_editing_title" = "Edició fàcil";
+"feature_easy_editing_desc_macos" = "Fes clic per editar, clic dret per veure les opcions";
+"feature_easy_editing_desc_tvos" = "Utilitza el comandament per editar i accedir a les opcions";
+"feature_easy_editing_desc_other" = "Toca per editar, toca amb dos dits per veure les opcions";
+"get_started_button" = "Comença";

@@ -49,3 +49,48 @@
 "bloom" = "Gullash";
 "jitter" = "Silkinish";
 "ripple" = "To'lqin";
+
+// MARK: - Theme & Display
+"theme_section" = "Mavzu";
+"random_theme_daily" = "Tasodifiy mavzu (kunlik)";
+"current_theme" = "Joriy mavzu:";
+"appearance" = "Ko'rinish";
+"text_rotation" = "Matn aylanishi";
+"serif_font" = "Serif shrift";
+"letter_spacing" = "Harflar oralig'i";
+"max_lines" = "Maksimal qatorlar";
+"system" = "Tizim";
+"light" = "Yorug'";
+"dark" = "Qorong'i";
+"left" = "Chap";
+"right" = "O'ng";
+
+// MARK: - Welcome View
+"welcome_title" = "Giant Text-ga xush kelibsiz!";
+"welcome_subtitle" = "Ajoyib, animatsiyali matn displeylarini yarating";
+"bullet_type_message" = "Xabaringizni yozing";
+"bullet_landscape_orientation" = "Matn landshaft yo'nalishida ko'rsatiladi";
+"bullet_portrait_mode" = "Qurilma portret rejimida qoladi";
+"bullet_animation_effects" = "Bir nechta animatsiya effektlaridan birini tanlang";
+"bullet_share_quickly" = "Qisqa matnlarni tezda ulashish uchun ideal";
+"bullet_cross_platform" = "Barcha Apple qurilmalaringizda ishlaydi";
+"tip_click_edit" = "Matnni tahrirlash uchun bosing";
+"tip_right_click_options" = "Parametrlar uchun o'ng tugmani bosing";
+"tip_playpause_edit" = "Matnni tahrirlash uchun Ijro/Pauza tugmasi";
+"tip_menu_button_options" = "Parametrlar uchun menyu tugmasi";
+"tip_tap_edit" = "Matnni tahrirlash uchun bir marta bosing";
+"tip_two_finger_tap_options" = "Parametrlar uchun ikki barmoq bilan bosing";
+"tip_esc_close" = "Menyularni yopish uchun ESC tugmasini bosing";
+"features_header" = "Xususiyatlar:";
+"feature_giant_text_title" = "Gigant matn displeyi";
+"feature_giant_text_desc" = "Ekraningizni to'ldiradigan matn yarating";
+"feature_animations_title" = "Animatsiyalar";
+"feature_landscape_title" = "Landshaft displeyi";
+"feature_portrait_title" = "Portret rejimi";
+"feature_cross_platform_title" = "Platformalararo";
+"feature_cross_platform_desc" = "iPhone, iPad, Mac va boshqalarda ishlaydi";
+"feature_easy_editing_title" = "Oson tahrirlash";
+"feature_easy_editing_desc_macos" = "Tahrirlash uchun bosing, parametrlar uchun o'ng tugmani bosing";
+"feature_easy_editing_desc_tvos" = "Tahrirlash va parametrlarga kirish uchun pultdan foydalaning";
+"feature_easy_editing_desc_other" = "Tahrirlash uchun bosing, parametrlar uchun ikki barmoq bilan bosing";
+"get_started_button" = "Boshlash";

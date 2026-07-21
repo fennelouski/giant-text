@@ -49,3 +49,48 @@
 "bloom" = "Çiçek Açma";
 "jitter" = "Titreme";
 "ripple" = "Dalgalanma";
+
+// MARK: - Theme & Display
+"theme_section" = "Tema";
+"random_theme_daily" = "Rastgele Tema (Günlük)";
+"current_theme" = "Geçerli Tema:";
+"appearance" = "Görünüm";
+"text_rotation" = "Metin Döndürme";
+"serif_font" = "Serif Yazı Tipi";
+"letter_spacing" = "Harf Aralığı";
+"max_lines" = "Maksimum Satır";
+"system" = "Sistem";
+"light" = "Açık";
+"dark" = "Koyu";
+"left" = "Sol";
+"right" = "Sağ";
+
+// MARK: - Welcome View
+"welcome_title" = "Giant Text'e Hoş Geldiniz!";
+"welcome_subtitle" = "Etkileyici, animasyonlu metin ekranları oluşturun";
+"bullet_type_message" = "Mesajınızı yazın";
+"bullet_landscape_orientation" = "Metin yatay yönde görüntülenir";
+"bullet_portrait_mode" = "Cihaz dikey modda kalır";
+"bullet_animation_effects" = "Birçok animasyon efekti arasından seçim yapın";
+"bullet_share_quickly" = "Kısa metinleri hızlıca paylaşmak için ideal";
+"bullet_cross_platform" = "Tüm Apple cihazlarınızda çalışır";
+"tip_click_edit" = "Metni düzenlemek için tıklayın";
+"tip_right_click_options" = "Seçenekler için sağ tıklayın";
+"tip_playpause_edit" = "Metni düzenlemek için Oynat/Duraklat düğmesi";
+"tip_menu_button_options" = "Seçenekler için menü düğmesi";
+"tip_tap_edit" = "Metni düzenlemek için tek dokunun";
+"tip_two_finger_tap_options" = "Seçenekler için iki parmakla dokunun";
+"tip_esc_close" = "Menüleri kapatmak için ESC'ye basın";
+"features_header" = "Özellikler:";
+"feature_giant_text_title" = "Dev Metin Ekranı";
+"feature_giant_text_desc" = "Ekranınızı dolduran metinler oluşturun";
+"feature_animations_title" = "Animasyonlar";
+"feature_landscape_title" = "Yatay Ekran";
+"feature_portrait_title" = "Dikey Mod";
+"feature_cross_platform_title" = "Platformlar Arası";
+"feature_cross_platform_desc" = "iPhone, iPad, Mac ve daha fazlasında çalışır";
+"feature_easy_editing_title" = "Kolay Düzenleme";
+"feature_easy_editing_desc_macos" = "Düzenlemek için tıklayın, seçenekler için sağ tıklayın";
+"feature_easy_editing_desc_tvos" = "Düzenlemek ve seçeneklere erişmek için kumandayı kullanın";
+"feature_easy_editing_desc_other" = "Düzenlemek için dokunun, seçenekler için iki parmakla dokunun";
+"get_started_button" = "Başlayın";

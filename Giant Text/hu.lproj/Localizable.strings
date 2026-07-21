@@ -49,3 +49,48 @@
 "bloom" = "Virágzás";
 "jitter" = "Remegés";
 "ripple" = "Hullámzás";
+
+// MARK: - Theme & Display
+"theme_section" = "Téma";
+"random_theme_daily" = "Véletlenszerű téma (naponta)";
+"current_theme" = "Jelenlegi téma:";
+"appearance" = "Megjelenés";
+"text_rotation" = "Szöveg elforgatása";
+"serif_font" = "Talpas betűtípus";
+"letter_spacing" = "Betűköz";
+"max_lines" = "Sorok max. száma";
+"system" = "Rendszer";
+"light" = "Világos";
+"dark" = "Sötét";
+"left" = "Balra";
+"right" = "Jobbra";
+
+// MARK: - Welcome View
+"welcome_title" = "Üdvözlünk a Giant Textben!";
+"welcome_subtitle" = "Készíts lenyűgöző, animált szövegkijelzőket";
+"bullet_type_message" = "Írd be az üzeneted";
+"bullet_landscape_orientation" = "A szöveg fekvő tájolásban jelenik meg";
+"bullet_portrait_mode" = "A készülék álló módban marad";
+"bullet_animation_effects" = "Válassz több animációs effekt közül";
+"bullet_share_quickly" = "Tökéletes rövid szövegek gyors megosztásához";
+"bullet_cross_platform" = "Minden Apple-eszközödön működik";
+"tip_click_edit" = "Kattints a szöveg szerkesztéséhez";
+"tip_right_click_options" = "Jobb kattintás a beállításokhoz";
+"tip_playpause_edit" = "Lejátszás/Szünet gomb a szöveg szerkesztéséhez";
+"tip_menu_button_options" = "Menü gomb a beállításokhoz";
+"tip_tap_edit" = "Egyszeri koppintás a szöveg szerkesztéséhez";
+"tip_two_finger_tap_options" = "Kétujjas koppintás a beállításokhoz";
+"tip_esc_close" = "Nyomd meg az ESC-et a menük bezárásához";
+"features_header" = "Funkciók:";
+"feature_giant_text_title" = "Óriási szövegkijelzés";
+"feature_giant_text_desc" = "Készíts szöveget, amely kitölti a képernyőt";
+"feature_animations_title" = "Animációk";
+"feature_landscape_title" = "Fekvő kijelzés";
+"feature_portrait_title" = "Álló mód";
+"feature_cross_platform_title" = "Platformfüggetlen";
+"feature_cross_platform_desc" = "Működik iPhone-on, iPadon, Macen és más eszközökön";
+"feature_easy_editing_title" = "Egyszerű szerkesztés";
+"feature_easy_editing_desc_macos" = "Kattints a szerkesztéshez, jobb kattintás a beállításokhoz";
+"feature_easy_editing_desc_tvos" = "Használd a távirányítót a szerkesztéshez és a beállítások eléréséhez";
+"feature_easy_editing_desc_other" = "Koppints a szerkesztéshez, kétujjas koppintás a beállításokhoz";
+"get_started_button" = "Kezdés";

@@ -49,3 +49,48 @@
 "bloom" = "Mamulaklak";
 "jitter" = "Manginig";
 "ripple" = "Umalon";
+
+// MARK: - Theme & Display
+"theme_section" = "Tema";
+"random_theme_daily" = "Random na Tema (Araw-araw)";
+"current_theme" = "Kasalukuyang Tema:";
+"appearance" = "Hitsura";
+"text_rotation" = "Pag-ikot ng Teksto";
+"serif_font" = "Serif Font";
+"letter_spacing" = "Puwang ng Titik";
+"max_lines" = "Pinakamataas na Linya";
+"system" = "System";
+"light" = "Maliwanag";
+"dark" = "Madilim";
+"left" = "Kaliwa";
+"right" = "Kanan";
+
+// MARK: - Welcome View
+"welcome_title" = "Maligayang pagdating sa Giant Text!";
+"welcome_subtitle" = "Gumawa ng kahanga-hanga at animated na text display";
+"bullet_type_message" = "I-type ang iyong mensahe";
+"bullet_landscape_orientation" = "Nakadisplay ang teksto nang pahalang";
+"bullet_portrait_mode" = "Nananatiling patayo ang device";
+"bullet_animation_effects" = "Pumili sa maraming animation effect";
+"bullet_share_quickly" = "Perpekto para sa mabilisang pagbahagi ng maikling teksto";
+"bullet_cross_platform" = "Gumagana sa lahat ng iyong Apple device";
+"tip_click_edit" = "I-click para i-edit ang teksto";
+"tip_right_click_options" = "Right-click para sa mga opsyon";
+"tip_playpause_edit" = "Play/Pause button para i-edit ang teksto";
+"tip_menu_button_options" = "Menu button para sa mga opsyon";
+"tip_tap_edit" = "Mag-tap nang isang beses para i-edit ang teksto";
+"tip_two_finger_tap_options" = "Mag-tap gamit ang dalawang daliri para sa mga opsyon";
+"tip_esc_close" = "Pindutin ang ESC para isara ang mga menu";
+"features_header" = "Mga Feature:";
+"feature_giant_text_title" = "Giant Text Display";
+"feature_giant_text_desc" = "Gumawa ng tekstong pupuno sa iyong screen";
+"feature_animations_title" = "Mga Animation";
+"feature_landscape_title" = "Landscape Display";
+"feature_portrait_title" = "Portrait Mode";
+"feature_cross_platform_title" = "Cross-Platform";
+"feature_cross_platform_desc" = "Gumagana sa iPhone, iPad, Mac, at higit pa";
+"feature_easy_editing_title" = "Madaling I-edit";
+"feature_easy_editing_desc_macos" = "I-click para i-edit, right-click para sa mga opsyon";
+"feature_easy_editing_desc_tvos" = "Gamitin ang remote para mag-edit at makakuha ng access sa mga opsyon";
+"feature_easy_editing_desc_other" = "Mag-tap para mag-edit, mag-tap gamit ang dalawang daliri para sa mga opsyon";
+"get_started_button" = "Simulan";

@@ -49,3 +49,48 @@
 "bloom" = "Blom";
 "jitter" = "Bewing";
 "ripple" = "Rimpeling";
+
+// MARK: - Theme & Display
+"theme_section" = "Tema";
+"random_theme_daily" = "Ewekansige tema (daagliks)";
+"current_theme" = "Huidige tema:";
+"appearance" = "Voorkoms";
+"text_rotation" = "Teksrotasie";
+"serif_font" = "Serif-lettertipe";
+"letter_spacing" = "Letterspasiëring";
+"max_lines" = "Maks. reëls";
+"system" = "Stelsel";
+"light" = "Lig";
+"dark" = "Donker";
+"left" = "Links";
+"right" = "Regs";
+
+// MARK: - Welcome View
+"welcome_title" = "Welkom by Giant Text!";
+"welcome_subtitle" = "Skep verstommende, geanimeerde teksvertonings";
+"bullet_type_message" = "Tik jou boodskap";
+"bullet_landscape_orientation" = "Teks vertoon in landskaporiëntasie";
+"bullet_portrait_mode" = "Toestel bly in portretmodus";
+"bullet_animation_effects" = "Kies uit verskeie animasie-effekte";
+"bullet_share_quickly" = "Perfek om vinnig kort teks te deel";
+"bullet_cross_platform" = "Werk op al jou Apple-toestelle";
+"tip_click_edit" = "Klik om teks te wysig";
+"tip_right_click_options" = "Regsklik vir opsies";
+"tip_playpause_edit" = "Speel/pousknoppie om teks te wysig";
+"tip_menu_button_options" = "Kieslysknoppie vir opsies";
+"tip_tap_edit" = "Enkeltik om teks te wysig";
+"tip_two_finger_tap_options" = "Tik met twee vingers vir opsies";
+"tip_esc_close" = "Druk ESC om kieslyste te sluit";
+"features_header" = "Kenmerke:";
+"feature_giant_text_title" = "Reusagtige teksvertoning";
+"feature_giant_text_desc" = "Skep teks wat jou skerm vul";
+"feature_animations_title" = "Animasies";
+"feature_landscape_title" = "Landskapvertoning";
+"feature_portrait_title" = "Portretmodus";
+"feature_cross_platform_title" = "Kruisplatform";
+"feature_cross_platform_desc" = "Werk op iPhone, iPad, Mac en meer";
+"feature_easy_editing_title" = "Maklike redigering";
+"feature_easy_editing_desc_macos" = "Klik om te wysig, regsklik vir opsies";
+"feature_easy_editing_desc_tvos" = "Gebruik afstandbeheer om te wysig en toegang tot opsies te kry";
+"feature_easy_editing_desc_other" = "Tik om te wysig, tik met twee vingers vir opsies";
+"get_started_button" = "Begin";

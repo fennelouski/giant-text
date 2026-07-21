@@ -49,3 +49,48 @@
 "bloom" = "피어남";
 "jitter" = "떨림";
 "ripple" = "물결";
+
+// MARK: - Theme & Display
+"theme_section" = "테마";
+"random_theme_daily" = "랜덤 테마 (매일)";
+"current_theme" = "현재 테마:";
+"appearance" = "화면 모드";
+"text_rotation" = "텍스트 회전";
+"serif_font" = "세리프 글꼴";
+"letter_spacing" = "자간";
+"max_lines" = "최대 줄 수";
+"system" = "시스템";
+"light" = "라이트";
+"dark" = "다크";
+"left" = "왼쪽";
+"right" = "오른쪽";
+
+// MARK: - Welcome View
+"welcome_title" = "Giant Text에 오신 것을 환영합니다!";
+"welcome_subtitle" = "멋진 애니메이션 텍스트 디스플레이를 만들어보세요";
+"bullet_type_message" = "메시지를 입력하세요";
+"bullet_landscape_orientation" = "가로 방향으로 텍스트 표시";
+"bullet_portrait_mode" = "기기는 세로 모드 유지";
+"bullet_animation_effects" = "다양한 애니메이션 효과 중 선택";
+"bullet_share_quickly" = "짧은 텍스트를 빠르게 공유하기에 적합";
+"bullet_cross_platform" = "모든 Apple 기기에서 작동";
+"tip_click_edit" = "클릭하여 텍스트 편집";
+"tip_right_click_options" = "우클릭으로 옵션 보기";
+"tip_playpause_edit" = "재생/일시정지 버튼으로 텍스트 편집";
+"tip_menu_button_options" = "메뉴 버튼으로 옵션 보기";
+"tip_tap_edit" = "한 번 탭하여 텍스트 편집";
+"tip_two_finger_tap_options" = "두 손가락으로 탭하여 옵션 보기";
+"tip_esc_close" = "ESC 키를 눌러 메뉴 닫기";
+"features_header" = "기능:";
+"feature_giant_text_title" = "초대형 텍스트 디스플레이";
+"feature_giant_text_desc" = "화면을 가득 채우는 텍스트 만들기";
+"feature_animations_title" = "애니메이션";
+"feature_landscape_title" = "가로 디스플레이";
+"feature_portrait_title" = "세로 모드";
+"feature_cross_platform_title" = "크로스 플랫폼";
+"feature_cross_platform_desc" = "iPhone, iPad, Mac 등에서 작동";
+"feature_easy_editing_title" = "간편한 편집";
+"feature_easy_editing_desc_macos" = "클릭하여 편집, 우클릭으로 옵션 보기";
+"feature_easy_editing_desc_tvos" = "리모컨으로 편집 및 옵션 접근";
+"feature_easy_editing_desc_other" = "탭하여 편집, 두 손가락 탭으로 옵션 보기";
+"get_started_button" = "시작하기";

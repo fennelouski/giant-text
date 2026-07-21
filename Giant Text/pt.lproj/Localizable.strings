@@ -49,3 +49,48 @@
 "bloom" = "Florescer";
 "jitter" = "Tremor";
 "ripple" = "Ondulação";
+
+// MARK: - Theme & Display
+"theme_section" = "Tema";
+"random_theme_daily" = "Tema aleatório (diário)";
+"current_theme" = "Tema atual:";
+"appearance" = "Aparência";
+"text_rotation" = "Rotação do texto";
+"serif_font" = "Tipo de letra serifada";
+"letter_spacing" = "Espaçamento entre letras";
+"max_lines" = "Número máximo de linhas";
+"system" = "Sistema";
+"light" = "Claro";
+"dark" = "Escuro";
+"left" = "Esquerda";
+"right" = "Direita";
+
+// MARK: - Welcome View
+"welcome_title" = "Bem-vindo ao Giant Text!";
+"welcome_subtitle" = "Crie ecrãs de texto animados e deslumbrantes";
+"bullet_type_message" = "Escreva a sua mensagem";
+"bullet_landscape_orientation" = "O texto é apresentado na horizontal";
+"bullet_portrait_mode" = "O dispositivo mantém-se na vertical";
+"bullet_animation_effects" = "Escolha entre vários efeitos de animação";
+"bullet_share_quickly" = "Ideal para partilhar rapidamente textos curtos";
+"bullet_cross_platform" = "Funciona em todos os seus dispositivos Apple";
+"tip_click_edit" = "Clique para editar o texto";
+"tip_right_click_options" = "Clique com o botão direito para ver as opções";
+"tip_playpause_edit" = "Botão de reproduzir/pausar para editar o texto";
+"tip_menu_button_options" = "Botão de menu para aceder às opções";
+"tip_tap_edit" = "Toque uma vez para editar o texto";
+"tip_two_finger_tap_options" = "Toque com dois dedos para ver as opções";
+"tip_esc_close" = "Prima ESC para fechar os menus";
+"features_header" = "Funcionalidades:";
+"feature_giant_text_title" = "Texto gigante";
+"feature_giant_text_desc" = "Crie texto que preenche todo o ecrã";
+"feature_animations_title" = "Animações";
+"feature_landscape_title" = "Ecrã horizontal";
+"feature_portrait_title" = "Modo vertical";
+"feature_cross_platform_title" = "Multiplataforma";
+"feature_cross_platform_desc" = "Funciona em iPhone, iPad, Mac e muito mais";
+"feature_easy_editing_title" = "Edição fácil";
+"feature_easy_editing_desc_macos" = "Clique para editar, clique com o botão direito para ver as opções";
+"feature_easy_editing_desc_tvos" = "Utilize o comando para editar e aceder às opções";
+"feature_easy_editing_desc_other" = "Toque para editar, toque com dois dedos para ver as opções";
+"get_started_button" = "Começar";

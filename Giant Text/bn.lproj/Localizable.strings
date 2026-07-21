@@ -49,3 +49,48 @@
 "bloom" = "ফুল";
 "jitter" = "কাঁপুনি";
 "ripple" = "ঢেউ";
+
+// MARK: - Theme & Display
+"theme_section" = "থিম";
+"random_theme_daily" = "র‍্যান্ডম থিম (প্রতিদিন)";
+"current_theme" = "বর্তমান থিম:";
+"appearance" = "অ্যাপিয়ারেন্স";
+"text_rotation" = "টেক্সট রোটেশন";
+"serif_font" = "সেরিফ ফন্ট";
+"letter_spacing" = "অক্ষরের ব্যবধান";
+"max_lines" = "সর্বোচ্চ লাইন";
+"system" = "সিস্টেম";
+"light" = "লাইট";
+"dark" = "ডার্ক";
+"left" = "বাম";
+"right" = "ডান";
+
+// MARK: - Welcome View
+"welcome_title" = "Giant Text-এ স্বাগতম!";
+"welcome_subtitle" = "অসাধারণ, অ্যানিমেটেড টেক্সট ডিসপ্লে তৈরি করুন";
+"bullet_type_message" = "আপনার বার্তা টাইপ করুন";
+"bullet_landscape_orientation" = "টেক্সট ল্যান্ডস্কেপ ওরিয়েন্টেশনে প্রদর্শিত হয়";
+"bullet_portrait_mode" = "ডিভাইস পোর্ট্রেট মোডে থাকে";
+"bullet_animation_effects" = "একাধিক অ্যানিমেশন ইফেক্ট থেকে বেছে নিন";
+"bullet_share_quickly" = "দ্রুত ছোট টেক্সট শেয়ার করার জন্য উপযুক্ত";
+"bullet_cross_platform" = "আপনার সব Apple ডিভাইসে কাজ করে";
+"tip_click_edit" = "টেক্সট এডিট করতে ক্লিক করুন";
+"tip_right_click_options" = "অপশনের জন্য রাইট-ক্লিক করুন";
+"tip_playpause_edit" = "টেক্সট এডিট করতে প্লে/পজ বাটন";
+"tip_menu_button_options" = "অপশনের জন্য মেনু বাটন";
+"tip_tap_edit" = "টেক্সট এডিট করতে একবার ট্যাপ করুন";
+"tip_two_finger_tap_options" = "অপশনের জন্য দুই আঙুলে ট্যাপ করুন";
+"tip_esc_close" = "মেনু বন্ধ করতে ESC চাপুন";
+"features_header" = "বৈশিষ্ট্য:";
+"feature_giant_text_title" = "জায়ান্ট টেক্সট ডিসপ্লে";
+"feature_giant_text_desc" = "আপনার স্ক্রিন পূর্ণ করে এমন টেক্সট তৈরি করুন";
+"feature_animations_title" = "অ্যানিমেশন";
+"feature_landscape_title" = "ল্যান্ডস্কেপ ডিসপ্লে";
+"feature_portrait_title" = "পোর্ট্রেট মোড";
+"feature_cross_platform_title" = "ক্রস-প্ল্যাটফর্ম";
+"feature_cross_platform_desc" = "iPhone, iPad, Mac এবং আরও অনেক কিছুতে কাজ করে";
+"feature_easy_editing_title" = "সহজ এডিটিং";
+"feature_easy_editing_desc_macos" = "এডিট করতে ক্লিক করুন, অপশনের জন্য রাইট-ক্লিক করুন";
+"feature_easy_editing_desc_tvos" = "এডিট করতে এবং অপশন অ্যাক্সেস করতে রিমোট ব্যবহার করুন";
+"feature_easy_editing_desc_other" = "এডিট করতে ট্যাপ করুন, অপশনের জন্য দুই আঙুলে ট্যাপ করুন";
+"get_started_button" = "শুরু করুন";

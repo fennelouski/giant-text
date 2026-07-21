@@ -49,3 +49,48 @@
 "bloom" = "開花";
 "jitter" = "震え";
 "ripple" = "波紋";
+
+// MARK: - Theme & Display
+"theme_section" = "テーマ";
+"random_theme_daily" = "ランダムテーマ（毎日）";
+"current_theme" = "現在のテーマ:";
+"appearance" = "外観";
+"text_rotation" = "テキストの向き";
+"serif_font" = "セリフ体";
+"letter_spacing" = "文字間隔";
+"max_lines" = "最大行数";
+"system" = "システム";
+"light" = "ライト";
+"dark" = "ダーク";
+"left" = "左";
+"right" = "右";
+
+// MARK: - Welcome View
+"welcome_title" = "Giant Textへようこそ！";
+"welcome_subtitle" = "美しいアニメーションテキストを作成";
+"bullet_type_message" = "メッセージを入力";
+"bullet_landscape_orientation" = "横向きでテキストを表示";
+"bullet_portrait_mode" = "デバイスは縦向きのまま";
+"bullet_animation_effects" = "多彩なアニメーション効果から選択";
+"bullet_share_quickly" = "短いテキストをすばやく共有するのに最適";
+"bullet_cross_platform" = "すべてのApple製デバイスで利用可能";
+"tip_click_edit" = "クリックしてテキストを編集";
+"tip_right_click_options" = "右クリックでオプションを表示";
+"tip_playpause_edit" = "再生/一時停止ボタンでテキストを編集";
+"tip_menu_button_options" = "メニューボタンでオプションを表示";
+"tip_tap_edit" = "タップしてテキストを編集";
+"tip_two_finger_tap_options" = "2本指タップでオプションを表示";
+"tip_esc_close" = "ESCキーでメニューを閉じる";
+"features_header" = "機能:";
+"feature_giant_text_title" = "巨大テキスト表示";
+"feature_giant_text_desc" = "画面いっぱいのテキストを作成";
+"feature_animations_title" = "アニメーション";
+"feature_landscape_title" = "横向き表示";
+"feature_portrait_title" = "縦向きモード";
+"feature_cross_platform_title" = "クロスプラットフォーム";
+"feature_cross_platform_desc" = "iPhone、iPad、Macなどで利用可能";
+"feature_easy_editing_title" = "簡単な編集";
+"feature_easy_editing_desc_macos" = "クリックして編集、右クリックでオプション表示";
+"feature_easy_editing_desc_tvos" = "リモコンで編集・オプションにアクセス";
+"feature_easy_editing_desc_other" = "タップして編集、2本指タップでオプション表示";
+"get_started_button" = "はじめる";

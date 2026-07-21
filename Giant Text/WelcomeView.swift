@@ -32,17 +32,17 @@ struct WelcomeView: View {
     }
     
     private var title: some View {
-        Text("Welcome to Giant Text!")
+        Text(LocalizationManager.welcomeTitle)
             .font(.title)
             .fontWeight(.bold)
             .foregroundColor(colorScheme == .dark ? .white : .black)
             .multilineTextAlignment(.center)
             .accessibilityIdentifier("WelcomeTitle")
     }
-    
+
     private var description: some View {
         VStack(spacing: 16) {
-            Text("Create stunning, animated text displays")
+            Text(LocalizationManager.welcomeSubtitle)
                 .font(.headline)
                 .foregroundColor(colorScheme == .dark ? .white : .black)
                 .multilineTextAlignment(.center)
@@ -50,22 +50,22 @@ struct WelcomeView: View {
             VStack(spacing: 10) {
                 #if os(iOS)
                 if UIDevice.current.userInterfaceIdiom == .phone {
-                    BulletPoint(text: "Type your message")
-                    BulletPoint(text: "Text displays in landscape orientation")
-                    BulletPoint(text: "Device stays in portrait mode")
-                    BulletPoint(text: "Choose from multiple animation effects")
-                    BulletPoint(text: "Perfect for sharing short text quickly")
+                    BulletPoint(text: LocalizationManager.bulletTypeMessage)
+                    BulletPoint(text: LocalizationManager.bulletLandscapeOrientation)
+                    BulletPoint(text: LocalizationManager.bulletPortraitMode)
+                    BulletPoint(text: LocalizationManager.bulletAnimationEffects)
+                    BulletPoint(text: LocalizationManager.bulletShareQuickly)
                 } else {
-                    BulletPoint(text: "Type your message")
-                    BulletPoint(text: "Choose from multiple animation effects")
-                    BulletPoint(text: "Perfect for sharing short text quickly")
-                    BulletPoint(text: "Works across all your Apple devices")
+                    BulletPoint(text: LocalizationManager.bulletTypeMessage)
+                    BulletPoint(text: LocalizationManager.bulletAnimationEffects)
+                    BulletPoint(text: LocalizationManager.bulletShareQuickly)
+                    BulletPoint(text: LocalizationManager.bulletCrossPlatform)
                 }
                 #else
-                BulletPoint(text: "Type your message")
-                BulletPoint(text: "Choose from multiple animation effects")
-                BulletPoint(text: "Perfect for sharing short text quickly")
-                BulletPoint(text: "Works across all your Apple devices")
+                BulletPoint(text: LocalizationManager.bulletTypeMessage)
+                BulletPoint(text: LocalizationManager.bulletAnimationEffects)
+                BulletPoint(text: LocalizationManager.bulletShareQuickly)
+                BulletPoint(text: LocalizationManager.bulletCrossPlatform)
                 #endif
             }
             .frame(maxWidth: .infinity)
@@ -79,7 +79,7 @@ struct WelcomeView: View {
                 Image(systemName: "cursorhand.click")
                     .foregroundColor(.blue)
                     .frame(width: 16, height: 16)
-                Text("Click to edit text")
+                Text(LocalizationManager.tipClickEdit)
                     .font(.caption)
                     .foregroundColor(colorScheme == .dark ? .white.opacity(0.7) : .black.opacity(0.7))
             }
@@ -89,7 +89,7 @@ struct WelcomeView: View {
                 Image(systemName: "cursorhand.click.2")
                     .foregroundColor(.blue)
                     .frame(width: 16, height: 16)
-                Text("Right-click for options")
+                Text(LocalizationManager.tipRightClickOptions)
                     .font(.caption)
                     .foregroundColor(colorScheme == .dark ? .white.opacity(0.7) : .black.opacity(0.7))
             }
@@ -99,7 +99,7 @@ struct WelcomeView: View {
                 Image(systemName: "playpause")
                     .foregroundColor(.blue)
                     .frame(width: 16, height: 16)
-                Text("Play/Pause button to edit text")
+                Text(LocalizationManager.tipPlayPauseEdit)
                     .font(.caption)
                     .foregroundColor(colorScheme == .dark ? .white.opacity(0.7) : .black.opacity(0.7))
             }
@@ -109,7 +109,7 @@ struct WelcomeView: View {
                 Image(systemName: "menubutton.horizontal")
                     .foregroundColor(.blue)
                     .frame(width: 16, height: 16)
-                Text("Menu button for options")
+                Text(LocalizationManager.tipMenuButtonOptions)
                     .font(.caption)
                     .foregroundColor(colorScheme == .dark ? .white.opacity(0.7) : .black.opacity(0.7))
             }
@@ -119,7 +119,7 @@ struct WelcomeView: View {
                 Image(systemName: "hand.tap")
                     .foregroundColor(.blue)
                     .frame(width: 16, height: 16)
-                Text("Single tap to edit text")
+                Text(LocalizationManager.tipTapEdit)
                     .font(.caption)
                     .foregroundColor(colorScheme == .dark ? .white.opacity(0.7) : .black.opacity(0.7))
             }
@@ -129,7 +129,7 @@ struct WelcomeView: View {
                 Image(systemName: "hand.tap.fill")
                     .foregroundColor(.blue)
                     .frame(width: 16, height: 16)
-                Text("Two-finger tap for options")
+                Text(LocalizationManager.tipTwoFingerTapOptions)
                     .font(.caption)
                     .foregroundColor(colorScheme == .dark ? .white.opacity(0.7) : .black.opacity(0.7))
             }
@@ -140,7 +140,7 @@ struct WelcomeView: View {
                 Image(systemName: "escape")
                     .foregroundColor(.blue)
                     .frame(width: 16, height: 16)
-                Text("Press ESC to close menus")
+                Text(LocalizationManager.tipEscClose)
                     .font(.caption)
                     .foregroundColor(colorScheme == .dark ? .white.opacity(0.7) : .black.opacity(0.7))
             }
@@ -151,43 +151,43 @@ struct WelcomeView: View {
     
     private var features: some View {
         VStack(spacing: 16) {
-            Text("Features:")
+            Text(LocalizationManager.featuresHeader)
                 .font(.headline)
                 .foregroundColor(colorScheme == .dark ? .white : .black)
                 .frame(maxWidth: .infinity, alignment: .center)
-            
+
             VStack(spacing: 8) {
-                FeatureRow(icon: "textformat.size", title: "Giant Text Display", description: "Create text that fills your screen")
-                FeatureRow(icon: "sparkles", title: "Animations", description: "Choose from multiple animation effects")
+                FeatureRow(icon: "textformat.size", title: LocalizationManager.featureGiantTextTitle, description: LocalizationManager.featureGiantTextDesc)
+                FeatureRow(icon: "sparkles", title: LocalizationManager.featureAnimationsTitle, description: LocalizationManager.bulletAnimationEffects)
                 #if os(iOS)
                 if UIDevice.current.userInterfaceIdiom == .phone {
-                    FeatureRow(icon: "iphone.landscape", title: "Landscape Display", description: "Text displays in landscape orientation")
-                    FeatureRow(icon: "iphone.portrait", title: "Portrait Mode", description: "Device stays in portrait mode")
+                    FeatureRow(icon: "iphone.landscape", title: LocalizationManager.featureLandscapeTitle, description: LocalizationManager.bulletLandscapeOrientation)
+                    FeatureRow(icon: "iphone.portrait", title: LocalizationManager.featurePortraitTitle, description: LocalizationManager.bulletPortraitMode)
                 } else {
-                    FeatureRow(icon: "iphone", title: "Cross-Platform", description: "Works on iPhone, iPad, Mac, and more")
+                    FeatureRow(icon: "iphone", title: LocalizationManager.featureCrossPlatformTitle, description: LocalizationManager.featureCrossPlatformDesc)
                 }
                 #elseif os(macOS)
-                FeatureRow(icon: "laptopcomputer", title: "Cross-Platform", description: "Works on iPhone, iPad, Mac, and more")
+                FeatureRow(icon: "laptopcomputer", title: LocalizationManager.featureCrossPlatformTitle, description: LocalizationManager.featureCrossPlatformDesc)
                 #elseif os(tvOS)
-                FeatureRow(icon: "appletv", title: "Cross-Platform", description: "Works on iPhone, iPad, Mac, and more")
+                FeatureRow(icon: "appletv", title: LocalizationManager.featureCrossPlatformTitle, description: LocalizationManager.featureCrossPlatformDesc)
                 #else
-                FeatureRow(icon: "iphone", title: "Cross-Platform", description: "Works on iPhone, iPad, Mac, and more")
+                FeatureRow(icon: "iphone", title: LocalizationManager.featureCrossPlatformTitle, description: LocalizationManager.featureCrossPlatformDesc)
                 #endif
                 #if os(macOS)
-                FeatureRow(icon: "cursorhand.click", title: "Easy Editing", description: "Click to edit, right-click for options")
+                FeatureRow(icon: "cursorhand.click", title: LocalizationManager.featureEasyEditingTitle, description: LocalizationManager.featureEasyEditingDescMacos)
                 #elseif os(tvOS)
-                FeatureRow(icon: "appletvremote.gen1", title: "Easy Editing", description: "Use remote to edit and access options")
+                FeatureRow(icon: "appletvremote.gen1", title: LocalizationManager.featureEasyEditingTitle, description: LocalizationManager.featureEasyEditingDescTvos)
                 #else
-                FeatureRow(icon: "hand.tap", title: "Easy Editing", description: "Tap to edit, two-finger tap for options")
+                FeatureRow(icon: "hand.tap", title: LocalizationManager.featureEasyEditingTitle, description: LocalizationManager.featureEasyEditingDescOther)
                 #endif
             }
             .frame(maxWidth: .infinity, alignment: .center)
         }
         .padding(.top, 16)
     }
-    
+
     private var getStartedButton: some View {
-        Button("Get Started") {
+        Button(LocalizationManager.getStartedButton) {
             onGetStarted()
         }
         .buttonStyle(.plain)
@@ -291,7 +291,7 @@ struct WelcomeView: View {
 
 // MARK: - Bullet Point Component
 struct BulletPoint: View {
-    let text: String
+    let text: LocalizedStringKey
     @Environment(\.colorScheme) private var colorScheme
 
     var body: some View {
@@ -313,8 +313,8 @@ struct BulletPoint: View {
 // MARK: - Feature Row Component
 struct FeatureRow: View {
     let icon: String
-    let title: String
-    let description: String
+    let title: LocalizedStringKey
+    let description: LocalizedStringKey
     @Environment(\.colorScheme) private var colorScheme
     
     var body: some View {

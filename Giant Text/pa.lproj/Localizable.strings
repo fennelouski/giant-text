@@ -49,3 +49,48 @@
 "bloom" = "ਖਿੜਨਾ";
 "jitter" = "ਕੰਬਣਾ";
 "ripple" = "ਲਹਿਰ";
+
+// MARK: - Theme & Display
+"theme_section" = "ਥੀਮ";
+"random_theme_daily" = "ਬੇਤਰਤੀਬ ਥੀਮ (ਰੋਜ਼ਾਨਾ)";
+"current_theme" = "ਮੌਜੂਦਾ ਥੀਮ:";
+"appearance" = "ਦਿੱਖ";
+"text_rotation" = "ਟੈਕਸਟ ਰੋਟੇਸ਼ਨ";
+"serif_font" = "ਸੈਰਿਫ਼ ਫੌਂਟ";
+"letter_spacing" = "ਅੱਖਰ ਸਪੇਸਿੰਗ";
+"max_lines" = "ਵੱਧ ਤੋਂ ਵੱਧ ਲਾਈਨਾਂ";
+"system" = "ਸਿਸਟਮ";
+"light" = "ਹਲਕਾ";
+"dark" = "ਗੂੜ੍ਹਾ";
+"left" = "ਖੱਬੇ";
+"right" = "ਸੱਜੇ";
+
+// MARK: - Welcome View
+"welcome_title" = "Giant Text ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ!";
+"welcome_subtitle" = "ਸ਼ਾਨਦਾਰ, ਐਨੀਮੇਟਡ ਟੈਕਸਟ ਡਿਸਪਲੇ ਬਣਾਓ";
+"bullet_type_message" = "ਆਪਣਾ ਸੁਨੇਹਾ ਟਾਈਪ ਕਰੋ";
+"bullet_landscape_orientation" = "ਟੈਕਸਟ ਲੈਂਡਸਕੇਪ ਸਥਿਤੀ ਵਿੱਚ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ";
+"bullet_portrait_mode" = "ਡਿਵਾਈਸ ਪੋਰਟਰੇਟ ਮੋਡ ਵਿੱਚ ਰਹਿੰਦੀ ਹੈ";
+"bullet_animation_effects" = "ਕਈ ਐਨੀਮੇਸ਼ਨ ਪ੍ਰਭਾਵਾਂ ਵਿੱਚੋਂ ਚੁਣੋ";
+"bullet_share_quickly" = "ਛੋਟਾ ਟੈਕਸਟ ਤੇਜ਼ੀ ਨਾਲ ਸਾਂਝਾ ਕਰਨ ਲਈ ਸੰਪੂਰਨ";
+"bullet_cross_platform" = "ਤੁਹਾਡੀਆਂ ਸਾਰੀਆਂ Apple ਡਿਵਾਈਸਾਂ 'ਤੇ ਕੰਮ ਕਰਦਾ ਹੈ";
+"tip_click_edit" = "ਟੈਕਸਟ ਸੰਪਾਦਿਤ ਕਰਨ ਲਈ ਕਲਿੱਕ ਕਰੋ";
+"tip_right_click_options" = "ਵਿਕਲਪਾਂ ਲਈ ਸੱਜਾ-ਕਲਿੱਕ ਕਰੋ";
+"tip_playpause_edit" = "ਟੈਕਸਟ ਸੰਪਾਦਿਤ ਕਰਨ ਲਈ ਪਲੇ/ਪੌਜ਼ ਬਟਨ";
+"tip_menu_button_options" = "ਵਿਕਲਪਾਂ ਲਈ ਮੀਨੂ ਬਟਨ";
+"tip_tap_edit" = "ਟੈਕਸਟ ਸੰਪਾਦਿਤ ਕਰਨ ਲਈ ਇੱਕ ਵਾਰ ਟੈਪ ਕਰੋ";
+"tip_two_finger_tap_options" = "ਵਿਕਲਪਾਂ ਲਈ ਦੋ-ਉਂਗਲਾਂ ਨਾਲ ਟੈਪ ਕਰੋ";
+"tip_esc_close" = "ਮੀਨੂ ਬੰਦ ਕਰਨ ਲਈ ESC ਦਬਾਓ";
+"features_header" = "ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ:";
+"feature_giant_text_title" = "ਵਿਸ਼ਾਲ ਟੈਕਸਟ ਡਿਸਪਲੇ";
+"feature_giant_text_desc" = "ਟੈਕਸਟ ਬਣਾਓ ਜੋ ਤੁਹਾਡੀ ਸਕ੍ਰੀਨ ਭਰ ਦੇਵੇ";
+"feature_animations_title" = "ਐਨੀਮੇਸ਼ਨਾਂ";
+"feature_landscape_title" = "ਲੈਂਡਸਕੇਪ ਡਿਸਪਲੇ";
+"feature_portrait_title" = "ਪੋਰਟਰੇਟ ਮੋਡ";
+"feature_cross_platform_title" = "ਕਰਾਸ-ਪਲੇਟਫਾਰਮ";
+"feature_cross_platform_desc" = "iPhone, iPad, Mac ਅਤੇ ਹੋਰ 'ਤੇ ਕੰਮ ਕਰਦਾ ਹੈ";
+"feature_easy_editing_title" = "ਆਸਾਨ ਸੰਪਾਦਨ";
+"feature_easy_editing_desc_macos" = "ਸੰਪਾਦਿਤ ਕਰਨ ਲਈ ਕਲਿੱਕ ਕਰੋ, ਵਿਕਲਪਾਂ ਲਈ ਸੱਜਾ-ਕਲਿੱਕ ਕਰੋ";
+"feature_easy_editing_desc_tvos" = "ਸੰਪਾਦਿਤ ਕਰਨ ਅਤੇ ਵਿਕਲਪਾਂ ਤੱਕ ਪਹੁੰਚ ਲਈ ਰਿਮੋਟ ਵਰਤੋ";
+"feature_easy_editing_desc_other" = "ਸੰਪਾਦਿਤ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ, ਵਿਕਲਪਾਂ ਲਈ ਦੋ-ਉਂਗਲਾਂ ਨਾਲ ਟੈਪ ਕਰੋ";
+"get_started_button" = "ਸ਼ੁਰੂ ਕਰੋ";

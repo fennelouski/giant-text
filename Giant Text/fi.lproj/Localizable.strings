@@ -49,3 +49,48 @@
 "bloom" = "Kukkia";
 "jitter" = "Tärinä";
 "ripple" = "Aaltoilu";
+
+// MARK: - Theme & Display
+"theme_section" = "Teema";
+"random_theme_daily" = "Satunnainen teema (päivittäin)";
+"current_theme" = "Nykyinen teema:";
+"appearance" = "Ulkoasu";
+"text_rotation" = "Tekstin kierto";
+"serif_font" = "Serif-fontti";
+"letter_spacing" = "Kirjainväli";
+"max_lines" = "Rivejä enintään";
+"system" = "Järjestelmä";
+"light" = "Vaalea";
+"dark" = "Tumma";
+"left" = "Vasen";
+"right" = "Oikea";
+
+// MARK: - Welcome View
+"welcome_title" = "Tervetuloa Giant Textiin!";
+"welcome_subtitle" = "Luo upeita, animoituja tekstinäyttöjä";
+"bullet_type_message" = "Kirjoita viestisi";
+"bullet_landscape_orientation" = "Teksti näkyy vaakasuunnassa";
+"bullet_portrait_mode" = "Laite pysyy pystysuunnassa";
+"bullet_animation_effects" = "Valitse useista animaatiotehosteista";
+"bullet_share_quickly" = "Täydellinen lyhyiden tekstien nopeaan jakamiseen";
+"bullet_cross_platform" = "Toimii kaikilla Apple-laitteillasi";
+"tip_click_edit" = "Muokkaa tekstiä napsauttamalla";
+"tip_right_click_options" = "Napsauta hiiren kakkospainikkeella nähdäksesi asetukset";
+"tip_playpause_edit" = "Toisto/tauko-painike tekstin muokkaamiseen";
+"tip_menu_button_options" = "Valikkopainike asetuksia varten";
+"tip_tap_edit" = "Muokkaa tekstiä napauttamalla kerran";
+"tip_two_finger_tap_options" = "Napauta kahdella sormella nähdäksesi asetukset";
+"tip_esc_close" = "Sulje valikot painamalla ESC";
+"features_header" = "Ominaisuudet:";
+"feature_giant_text_title" = "Jättikokoinen tekstinäyttö";
+"feature_giant_text_desc" = "Luo tekstiä, joka täyttää koko näytön";
+"feature_animations_title" = "Animaatiot";
+"feature_landscape_title" = "Vaakanäyttö";
+"feature_portrait_title" = "Pystytila";
+"feature_cross_platform_title" = "Toimii eri laitteilla";
+"feature_cross_platform_desc" = "Toimii iPhonessa, iPadissa, Macissa ja muissa laitteissa";
+"feature_easy_editing_title" = "Helppo muokkaus";
+"feature_easy_editing_desc_macos" = "Muokkaa napsauttamalla, asetukset kakkospainikkeella";
+"feature_easy_editing_desc_tvos" = "Muokkaa ja avaa asetukset kaukosäätimellä";
+"feature_easy_editing_desc_other" = "Muokkaa napauttamalla, asetukset kahdella sormella napauttamalla";
+"get_started_button" = "Aloita";

@@ -49,3 +49,48 @@
 "bloom" = "ફૂલ";
 "jitter" = "ધ્રુજારી";
 "ripple" = "લહેર";
+
+// MARK: - Theme & Display
+"theme_section" = "થીમ";
+"random_theme_daily" = "રેન્ડમ થીમ (દૈનિક)";
+"current_theme" = "વર્તમાન થીમ:";
+"appearance" = "દેખાવ";
+"text_rotation" = "ટેક્સ્ટ રોટેશન";
+"serif_font" = "સેરિફ ફોન્ટ";
+"letter_spacing" = "અક્ષર અંતર";
+"max_lines" = "મહત્તમ લાઇનો";
+"system" = "સિસ્ટમ";
+"light" = "લાઇટ";
+"dark" = "ડાર્ક";
+"left" = "ડાબે";
+"right" = "જમણે";
+
+// MARK: - Welcome View
+"welcome_title" = "Giant Text માં આપનું સ્વાગત છે!";
+"welcome_subtitle" = "અદભુત, એનિમેટેડ ટેક્સ્ટ ડિસ્પ્લે બનાવો";
+"bullet_type_message" = "તમારો સંદેશ ટાઇપ કરો";
+"bullet_landscape_orientation" = "ટેક્સ્ટ લેન્ડસ્કેપ ઓરિએન્ટેશનમાં દેખાય છે";
+"bullet_portrait_mode" = "ડિવાઇસ પોર્ટ્રેટ મોડમાં રહે છે";
+"bullet_animation_effects" = "અનેક એનિમેશન ઇફેક્ટ્સમાંથી પસંદ કરો";
+"bullet_share_quickly" = "ટૂંકો ટેક્સ્ટ ઝડપથી શેર કરવા માટે એકદમ યોગ્ય";
+"bullet_cross_platform" = "તમારા બધા Apple ડિવાઇસ પર કામ કરે છે";
+"tip_click_edit" = "ટેક્સ્ટ એડિટ કરવા માટે ક્લિક કરો";
+"tip_right_click_options" = "વિકલ્પો માટે રાઇટ-ક્લિક કરો";
+"tip_playpause_edit" = "ટેક્સ્ટ એડિટ કરવા માટે Play/Pause બટન";
+"tip_menu_button_options" = "વિકલ્પો માટે મેનૂ બટન";
+"tip_tap_edit" = "ટેક્સ્ટ એડિટ કરવા માટે એક વાર ટેપ કરો";
+"tip_two_finger_tap_options" = "વિકલ્પો માટે બે આંગળીથી ટેપ કરો";
+"tip_esc_close" = "મેનૂ બંધ કરવા માટે ESC દબાવો";
+"features_header" = "વિશેષતાઓ:";
+"feature_giant_text_title" = "જાયન્ટ ટેક્સ્ટ ડિસ્પ્લે";
+"feature_giant_text_desc" = "તમારી સ્ક્રીન ભરી દે તેવો ટેક્સ્ટ બનાવો";
+"feature_animations_title" = "એનિમેશન";
+"feature_landscape_title" = "લેન્ડસ્કેપ ડિસ્પ્લે";
+"feature_portrait_title" = "પોર્ટ્રેટ મોડ";
+"feature_cross_platform_title" = "ક્રોસ-પ્લેટફોર્મ";
+"feature_cross_platform_desc" = "iPhone, iPad, Mac અને વધુ પર કામ કરે છે";
+"feature_easy_editing_title" = "સરળ એડિટિંગ";
+"feature_easy_editing_desc_macos" = "એડિટ કરવા ક્લિક કરો, વિકલ્પો માટે રાઇટ-ક્લિક કરો";
+"feature_easy_editing_desc_tvos" = "એડિટ કરવા અને વિકલ્પો ઍક્સેસ કરવા રિમોટનો ઉપયોગ કરો";
+"feature_easy_editing_desc_other" = "એડિટ કરવા ટેપ કરો, વિકલ્પો માટે બે આંગળીથી ટેપ કરો";
+"get_started_button" = "શરૂ કરો";

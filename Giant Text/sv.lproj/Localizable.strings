@@ -49,3 +49,48 @@
 "bloom" = "Blomma";
 "jitter" = "Skaka";
 "ripple" = "Krusning";
+
+// MARK: - Theme & Display
+"theme_section" = "Tema";
+"random_theme_daily" = "Slumpmässigt tema (dagligen)";
+"current_theme" = "Aktuellt tema:";
+"appearance" = "Utseende";
+"text_rotation" = "Textrotation";
+"serif_font" = "Serif-typsnitt";
+"letter_spacing" = "Bokstavsavstånd";
+"max_lines" = "Max antal rader";
+"system" = "System";
+"light" = "Ljust";
+"dark" = "Mörkt";
+"left" = "Vänster";
+"right" = "Höger";
+
+// MARK: - Welcome View
+"welcome_title" = "Välkommen till Giant Text!";
+"welcome_subtitle" = "Skapa fantastiska, animerade textvisningar";
+"bullet_type_message" = "Skriv ditt meddelande";
+"bullet_landscape_orientation" = "Texten visas i liggande läge";
+"bullet_portrait_mode" = "Enheten förblir i stående läge";
+"bullet_animation_effects" = "Välj bland flera animeringseffekter";
+"bullet_share_quickly" = "Perfekt för att snabbt dela korta texter";
+"bullet_cross_platform" = "Fungerar på alla dina Apple-enheter";
+"tip_click_edit" = "Klicka för att redigera text";
+"tip_right_click_options" = "Högerklicka för alternativ";
+"tip_playpause_edit" = "Play/paus-knappen för att redigera text";
+"tip_menu_button_options" = "Menyknapp för alternativ";
+"tip_tap_edit" = "Tryck en gång för att redigera text";
+"tip_two_finger_tap_options" = "Tryck med två fingrar för alternativ";
+"tip_esc_close" = "Tryck på ESC för att stänga menyer";
+"features_header" = "Funktioner:";
+"feature_giant_text_title" = "Jättetextvisning";
+"feature_giant_text_desc" = "Skapa text som fyller hela skärmen";
+"feature_animations_title" = "Animeringar";
+"feature_landscape_title" = "Liggande visning";
+"feature_portrait_title" = "Stående läge";
+"feature_cross_platform_title" = "Plattformsoberoende";
+"feature_cross_platform_desc" = "Fungerar på iPhone, iPad, Mac och mer";
+"feature_easy_editing_title" = "Enkel redigering";
+"feature_easy_editing_desc_macos" = "Klicka för att redigera, högerklicka för alternativ";
+"feature_easy_editing_desc_tvos" = "Använd fjärrkontrollen för att redigera och komma åt alternativ";
+"feature_easy_editing_desc_other" = "Tryck för att redigera, tryck med två fingrar för alternativ";
+"get_started_button" = "Kom igång";

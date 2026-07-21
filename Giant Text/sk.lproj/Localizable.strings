@@ -49,3 +49,48 @@
 "bloom" = "Rozkvit";
 "jitter" = "Chvenie";
 "ripple" = "Vlnenie";
+
+// MARK: - Theme & Display
+"theme_section" = "Téma";
+"random_theme_daily" = "Náhodná téma (denne)";
+"current_theme" = "Aktuálna téma:";
+"appearance" = "Vzhľad";
+"text_rotation" = "Otočenie textu";
+"serif_font" = "Pätkové písmo";
+"letter_spacing" = "Medzery medzi písmenami";
+"max_lines" = "Max. počet riadkov";
+"system" = "Systém";
+"light" = "Svetlý";
+"dark" = "Tmavý";
+"left" = "Vľavo";
+"right" = "Vpravo";
+
+// MARK: - Welcome View
+"welcome_title" = "Vitajte v aplikácii Giant Text!";
+"welcome_subtitle" = "Vytvárajte úžasné animované textové zobrazenia";
+"bullet_type_message" = "Napíšte svoju správu";
+"bullet_landscape_orientation" = "Text sa zobrazuje na šírku";
+"bullet_portrait_mode" = "Zariadenie zostáva v režime na výšku";
+"bullet_animation_effects" = "Vyberte si z viacerých animačných efektov";
+"bullet_share_quickly" = "Ideálne na rýchle zdieľanie krátkych textov";
+"bullet_cross_platform" = "Funguje na všetkých vašich zariadeniach Apple";
+"tip_click_edit" = "Kliknutím upravíte text";
+"tip_right_click_options" = "Kliknutím pravým tlačidlom zobrazíte možnosti";
+"tip_playpause_edit" = "Tlačidlo Prehrať/Pozastaviť na úpravu textu";
+"tip_menu_button_options" = "Tlačidlo ponuky pre možnosti";
+"tip_tap_edit" = "Jedným ťuknutím upravíte text";
+"tip_two_finger_tap_options" = "Ťuknutím dvomi prstami zobrazíte možnosti";
+"tip_esc_close" = "Stlačením ESC zatvoríte ponuky";
+"features_header" = "Funkcie:";
+"feature_giant_text_title" = "Obrovské zobrazenie textu";
+"feature_giant_text_desc" = "Vytvorte text, ktorý vyplní celú obrazovku";
+"feature_animations_title" = "Animácie";
+"feature_landscape_title" = "Zobrazenie na šírku";
+"feature_portrait_title" = "Režim na výšku";
+"feature_cross_platform_title" = "Viacplatformová podpora";
+"feature_cross_platform_desc" = "Funguje na iPhone, iPad, Mac a ďalších";
+"feature_easy_editing_title" = "Jednoduché úpravy";
+"feature_easy_editing_desc_macos" = "Kliknutím upravíte, pravým tlačidlom zobrazíte možnosti";
+"feature_easy_editing_desc_tvos" = "Na úpravu a prístup k možnostiam použite diaľkové ovládanie";
+"feature_easy_editing_desc_other" = "Ťuknutím upravíte, dvomi prstami zobrazíte možnosti";
+"get_started_button" = "Začať";

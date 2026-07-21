@@ -49,3 +49,48 @@
 "bloom" = "Blühen";
 "jitter" = "Zittern";
 "ripple" = "Kräuseln";
+
+// MARK: - Theme & Display
+"theme_section" = "Design";
+"random_theme_daily" = "Zufälliges Design (täglich)";
+"current_theme" = "Aktuelles Design:";
+"appearance" = "Erscheinungsbild";
+"text_rotation" = "Textausrichtung";
+"serif_font" = "Serifenschrift";
+"letter_spacing" = "Zeichenabstand";
+"max_lines" = "Max. Zeilen";
+"system" = "Systemeinstellung";
+"light" = "Hell";
+"dark" = "Dunkel";
+"left" = "Links";
+"right" = "Rechts";
+
+// MARK: - Welcome View
+"welcome_title" = "Willkommen bei Giant Text!";
+"welcome_subtitle" = "Erstelle beeindruckende, animierte Textanzeigen";
+"bullet_type_message" = "Gib deine Nachricht ein";
+"bullet_landscape_orientation" = "Text wird im Querformat angezeigt";
+"bullet_portrait_mode" = "Gerät bleibt im Hochformat";
+"bullet_animation_effects" = "Wähle aus mehreren Animationseffekten";
+"bullet_share_quickly" = "Perfekt, um kurze Texte schnell zu teilen";
+"bullet_cross_platform" = "Funktioniert auf allen deinen Apple-Geräten";
+"tip_click_edit" = "Klicken, um den Text zu bearbeiten";
+"tip_right_click_options" = "Rechtsklick für Optionen";
+"tip_playpause_edit" = "Wiedergabe/Pause-Taste zum Bearbeiten des Texts";
+"tip_menu_button_options" = "Menütaste für Optionen";
+"tip_tap_edit" = "Einmal tippen, um den Text zu bearbeiten";
+"tip_two_finger_tap_options" = "Mit zwei Fingern tippen für Optionen";
+"tip_esc_close" = "ESC drücken, um Menüs zu schließen";
+"features_header" = "Funktionen:";
+"feature_giant_text_title" = "Riesige Textanzeige";
+"feature_giant_text_desc" = "Erstelle Text, der deinen Bildschirm ausfüllt";
+"feature_animations_title" = "Animationen";
+"feature_landscape_title" = "Querformat-Anzeige";
+"feature_portrait_title" = "Hochformat-Modus";
+"feature_cross_platform_title" = "Geräteübergreifend";
+"feature_cross_platform_desc" = "Funktioniert auf iPhone, iPad, Mac und mehr";
+"feature_easy_editing_title" = "Einfaches Bearbeiten";
+"feature_easy_editing_desc_macos" = "Klicken zum Bearbeiten, Rechtsklick für Optionen";
+"feature_easy_editing_desc_tvos" = "Mit der Fernbedienung bearbeiten und auf Optionen zugreifen";
+"feature_easy_editing_desc_other" = "Tippen zum Bearbeiten, mit zwei Fingern tippen für Optionen";
+"get_started_button" = "Los geht's";

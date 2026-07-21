@@ -49,3 +49,48 @@
 "bloom" = "పుష్పించు";
 "jitter" = "వణుకు";
 "ripple" = "అల";
+
+// MARK: - Theme & Display
+"theme_section" = "థీమ్";
+"random_theme_daily" = "యాదృచ్ఛిక థీమ్ (ప్రతిరోజూ)";
+"current_theme" = "ప్రస్తుత థీమ్:";
+"appearance" = "రూపం";
+"text_rotation" = "టెక్స్ట్ భ్రమణం";
+"serif_font" = "సెరిఫ్ ఫాంట్";
+"letter_spacing" = "అక్షర అంతరం";
+"max_lines" = "గరిష్ట పంక్తులు";
+"system" = "సిస్టమ్";
+"light" = "లైట్";
+"dark" = "డార్క్";
+"left" = "ఎడమ";
+"right" = "కుడి";
+
+// MARK: - Welcome View
+"welcome_title" = "Giant Text కు స్వాగతం!";
+"welcome_subtitle" = "అద్భుతమైన, యానిమేటెడ్ టెక్స్ట్ డిస్‌ప్లేలను సృష్టించండి";
+"bullet_type_message" = "మీ సందేశాన్ని టైప్ చేయండి";
+"bullet_landscape_orientation" = "టెక్స్ట్ ల్యాండ్‌స్కేప్ ధోరణిలో ప్రదర్శించబడుతుంది";
+"bullet_portrait_mode" = "పరికరం పోర్ట్రెయిట్ మోడ్‌లో ఉంటుంది";
+"bullet_animation_effects" = "అనేక యానిమేషన్ ఎఫెక్ట్‌ల నుండి ఎంచుకోండి";
+"bullet_share_quickly" = "చిన్న టెక్స్ట్‌ను త్వరగా షేర్ చేయడానికి సరైనది";
+"bullet_cross_platform" = "మీ Apple పరికరాలన్నింటిలో పనిచేస్తుంది";
+"tip_click_edit" = "టెక్స్ట్‌ను ఎడిట్ చేయడానికి క్లిక్ చేయండి";
+"tip_right_click_options" = "ఎంపికల కోసం రైట్-క్లిక్ చేయండి";
+"tip_playpause_edit" = "టెక్స్ట్‌ను ఎడిట్ చేయడానికి Play/Pause బటన్";
+"tip_menu_button_options" = "ఎంపికల కోసం మెనూ బటన్";
+"tip_tap_edit" = "టెక్స్ట్‌ను ఎడిట్ చేయడానికి ఒకసారి ట్యాప్ చేయండి";
+"tip_two_finger_tap_options" = "ఎంపికల కోసం రెండు వేళ్లతో ట్యాప్ చేయండి";
+"tip_esc_close" = "మెనూలను మూసివేయడానికి ESC నొక్కండి";
+"features_header" = "ఫీచర్లు:";
+"feature_giant_text_title" = "భారీ టెక్స్ట్ డిస్‌ప్లే";
+"feature_giant_text_desc" = "మీ స్క్రీన్‌ను నింపే టెక్స్ట్‌ను సృష్టించండి";
+"feature_animations_title" = "యానిమేషన్‌లు";
+"feature_landscape_title" = "ల్యాండ్‌స్కేప్ డిస్‌ప్లే";
+"feature_portrait_title" = "పోర్ట్రెయిట్ మోడ్";
+"feature_cross_platform_title" = "క్రాస్-ప్లాట్‌ఫారమ్";
+"feature_cross_platform_desc" = "iPhone, iPad, Mac మరియు మరిన్నింటిలో పనిచేస్తుంది";
+"feature_easy_editing_title" = "సులభమైన ఎడిటింగ్";
+"feature_easy_editing_desc_macos" = "ఎడిట్ చేయడానికి క్లిక్ చేయండి, ఎంపికల కోసం రైట్-క్లిక్ చేయండి";
+"feature_easy_editing_desc_tvos" = "ఎడిట్ చేయడానికి మరియు ఎంపికలను యాక్సెస్ చేయడానికి రిమోట్‌ను ఉపయోగించండి";
+"feature_easy_editing_desc_other" = "ఎడిట్ చేయడానికి ట్యాప్ చేయండి, ఎంపికల కోసం రెండు వేళ్లతో ట్యాప్ చేయండి";
+"get_started_button" = "ప్రారంభించండి";

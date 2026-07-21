@@ -49,3 +49,48 @@
 "bloom" = "Înflorire";
 "jitter" = "Tremur";
 "ripple" = "Ondulare";
+
+// MARK: - Theme & Display
+"theme_section" = "Temă";
+"random_theme_daily" = "Temă aleatorie (zilnic)";
+"current_theme" = "Tema curentă:";
+"appearance" = "Aspect";
+"text_rotation" = "Rotația textului";
+"serif_font" = "Font serif";
+"letter_spacing" = "Spațiere între litere";
+"max_lines" = "Linii maxime";
+"system" = "Sistem";
+"light" = "Deschis";
+"dark" = "Închis";
+"left" = "Stânga";
+"right" = "Dreapta";
+
+// MARK: - Welcome View
+"welcome_title" = "Bine ai venit în Giant Text!";
+"welcome_subtitle" = "Creează afișaje de text animate spectaculoase";
+"bullet_type_message" = "Scrie-ți mesajul";
+"bullet_landscape_orientation" = "Textul se afișează în orientare peisaj";
+"bullet_portrait_mode" = "Dispozitivul rămâne în modul portret";
+"bullet_animation_effects" = "Alege dintre mai multe efecte de animație";
+"bullet_share_quickly" = "Perfect pentru a distribui rapid texte scurte";
+"bullet_cross_platform" = "Funcționează pe toate dispozitivele tale Apple";
+"tip_click_edit" = "Apasă pentru a edita textul";
+"tip_right_click_options" = "Clic dreapta pentru opțiuni";
+"tip_playpause_edit" = "Butonul Redare/Pauză pentru a edita textul";
+"tip_menu_button_options" = "Butonul de meniu pentru opțiuni";
+"tip_tap_edit" = "Atinge o dată pentru a edita textul";
+"tip_two_finger_tap_options" = "Atinge cu două degete pentru opțiuni";
+"tip_esc_close" = "Apasă ESC pentru a închide meniurile";
+"features_header" = "Funcții:";
+"feature_giant_text_title" = "Afișaj text uriaș";
+"feature_giant_text_desc" = "Creează text care umple ecranul";
+"feature_animations_title" = "Animații";
+"feature_landscape_title" = "Afișaj peisaj";
+"feature_portrait_title" = "Mod portret";
+"feature_cross_platform_title" = "Multi-platformă";
+"feature_cross_platform_desc" = "Funcționează pe iPhone, iPad, Mac și altele";
+"feature_easy_editing_title" = "Editare simplă";
+"feature_easy_editing_desc_macos" = "Clic pentru a edita, clic dreapta pentru opțiuni";
+"feature_easy_editing_desc_tvos" = "Folosește telecomanda pentru a edita și accesa opțiunile";
+"feature_easy_editing_desc_other" = "Atinge pentru a edita, atinge cu două degete pentru opțiuni";
+"get_started_button" = "Începe";

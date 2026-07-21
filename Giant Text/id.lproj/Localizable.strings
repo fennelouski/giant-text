@@ -49,3 +49,48 @@
 "bloom" = "Mekar";
 "jitter" = "Gemetar";
 "ripple" = "Beriak";
+
+// MARK: - Theme & Display
+"theme_section" = "Tema";
+"random_theme_daily" = "Tema Acak (Harian)";
+"current_theme" = "Tema Saat Ini:";
+"appearance" = "Tampilan";
+"text_rotation" = "Rotasi Teks";
+"serif_font" = "Font Serif";
+"letter_spacing" = "Spasi Huruf";
+"max_lines" = "Baris Maksimum";
+"system" = "Sistem";
+"light" = "Terang";
+"dark" = "Gelap";
+"left" = "Kiri";
+"right" = "Kanan";
+
+// MARK: - Welcome View
+"welcome_title" = "Selamat Datang di Giant Text!";
+"welcome_subtitle" = "Buat tampilan teks animasi yang memukau";
+"bullet_type_message" = "Ketik pesan Anda";
+"bullet_landscape_orientation" = "Teks ditampilkan dalam orientasi lanskap";
+"bullet_portrait_mode" = "Perangkat tetap dalam mode potret";
+"bullet_animation_effects" = "Pilih dari berbagai efek animasi";
+"bullet_share_quickly" = "Cocok untuk berbagi teks singkat dengan cepat";
+"bullet_cross_platform" = "Berfungsi di semua perangkat Apple Anda";
+"tip_click_edit" = "Klik untuk mengedit teks";
+"tip_right_click_options" = "Klik kanan untuk opsi";
+"tip_playpause_edit" = "Tombol Play/Pause untuk mengedit teks";
+"tip_menu_button_options" = "Tombol menu untuk opsi";
+"tip_tap_edit" = "Ketuk sekali untuk mengedit teks";
+"tip_two_finger_tap_options" = "Ketuk dengan dua jari untuk opsi";
+"tip_esc_close" = "Tekan ESC untuk menutup menu";
+"features_header" = "Fitur:";
+"feature_giant_text_title" = "Tampilan Teks Raksasa";
+"feature_giant_text_desc" = "Buat teks yang memenuhi layar Anda";
+"feature_animations_title" = "Animasi";
+"feature_landscape_title" = "Tampilan Lanskap";
+"feature_portrait_title" = "Mode Potret";
+"feature_cross_platform_title" = "Lintas Platform";
+"feature_cross_platform_desc" = "Berfungsi di iPhone, iPad, Mac, dan lainnya";
+"feature_easy_editing_title" = "Edit Mudah";
+"feature_easy_editing_desc_macos" = "Klik untuk mengedit, klik kanan untuk opsi";
+"feature_easy_editing_desc_tvos" = "Gunakan remote untuk mengedit dan mengakses opsi";
+"feature_easy_editing_desc_other" = "Ketuk untuk mengedit, ketuk dengan dua jari untuk opsi";
+"get_started_button" = "Mulai";

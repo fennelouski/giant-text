@@ -49,3 +49,48 @@
 "bloom" = "Rozkvět";
 "jitter" = "Chvění";
 "ripple" = "Vlnění";
+
+// MARK: - Theme & Display
+"theme_section" = "Motiv";
+"random_theme_daily" = "Náhodný motiv (denně)";
+"current_theme" = "Aktuální motiv:";
+"appearance" = "Vzhled";
+"text_rotation" = "Otočení textu";
+"serif_font" = "Patkové písmo";
+"letter_spacing" = "Rozestup písmen";
+"max_lines" = "Max. počet řádků";
+"system" = "Systém";
+"light" = "Světlý";
+"dark" = "Tmavý";
+"left" = "Vlevo";
+"right" = "Vpravo";
+
+// MARK: - Welcome View
+"welcome_title" = "Vítejte v Giant Text!";
+"welcome_subtitle" = "Vytvářejte úžasné animované textové displeje";
+"bullet_type_message" = "Napište zprávu";
+"bullet_landscape_orientation" = "Text se zobrazuje na šířku";
+"bullet_portrait_mode" = "Zařízení zůstává na výšku";
+"bullet_animation_effects" = "Vyberte si z řady animačních efektů";
+"bullet_share_quickly" = "Ideální pro rychlé sdílení krátkého textu";
+"bullet_cross_platform" = "Funguje na všech vašich zařízeních Apple";
+"tip_click_edit" = "Kliknutím upravíte text";
+"tip_right_click_options" = "Možnosti zobrazíte kliknutím pravým tlačítkem";
+"tip_playpause_edit" = "Text upravíte tlačítkem přehrát/pozastavit";
+"tip_menu_button_options" = "Možnosti zobrazíte tlačítkem nabídky";
+"tip_tap_edit" = "Klepnutím upravíte text";
+"tip_two_finger_tap_options" = "Možnosti zobrazíte klepnutím dvěma prsty";
+"tip_esc_close" = "Nabídky zavřete klávesou ESC";
+"features_header" = "Funkce:";
+"feature_giant_text_title" = "Obří textový displej";
+"feature_giant_text_desc" = "Vytvořte text, který vyplní celou obrazovku";
+"feature_animations_title" = "Animace";
+"feature_landscape_title" = "Zobrazení na šířku";
+"feature_portrait_title" = "Režim na výšku";
+"feature_cross_platform_title" = "Multiplatformní";
+"feature_cross_platform_desc" = "Funguje na iPhonu, iPadu, Macu a dalších zařízeních";
+"feature_easy_editing_title" = "Snadná úprava";
+"feature_easy_editing_desc_macos" = "Kliknutím upravíte, pravým tlačítkem zobrazíte možnosti";
+"feature_easy_editing_desc_tvos" = "K úpravě a přístupu k možnostem použijte ovladač";
+"feature_easy_editing_desc_other" = "Klepnutím upravíte, dvěma prsty zobrazíte možnosti";
+"get_started_button" = "Začít";

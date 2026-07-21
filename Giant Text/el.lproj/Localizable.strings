@@ -49,3 +49,48 @@
 "bloom" = "Άνθιση";
 "jitter" = "Τρόμος";
 "ripple" = "Κυματισμός";
+
+// MARK: - Theme & Display
+"theme_section" = "Θέμα";
+"random_theme_daily" = "Τυχαίο θέμα (καθημερινά)";
+"current_theme" = "Τρέχον θέμα:";
+"appearance" = "Εμφάνιση";
+"text_rotation" = "Περιστροφή κειμένου";
+"serif_font" = "Γραμματοσειρά serif";
+"letter_spacing" = "Απόσταση γραμμάτων";
+"max_lines" = "Μέγ. γραμμές";
+"system" = "Σύστημα";
+"light" = "Φωτεινό";
+"dark" = "Σκούρο";
+"left" = "Αριστερά";
+"right" = "Δεξιά";
+
+// MARK: - Welcome View
+"welcome_title" = "Καλώς ήρθατε στο Giant Text!";
+"welcome_subtitle" = "Δημιουργήστε εντυπωσιακές, κινούμενες εμφανίσεις κειμένου";
+"bullet_type_message" = "Πληκτρολογήστε το μήνυμά σας";
+"bullet_landscape_orientation" = "Το κείμενο εμφανίζεται σε οριζόντιο προσανατολισμό";
+"bullet_portrait_mode" = "Η συσκευή παραμένει σε κατακόρυφο προσανατολισμό";
+"bullet_animation_effects" = "Επιλέξτε ανάμεσα σε πολλά εφέ κίνησης";
+"bullet_share_quickly" = "Ιδανικό για γρήγορη κοινοποίηση σύντομου κειμένου";
+"bullet_cross_platform" = "Λειτουργεί σε όλες τις συσκευές σας Apple";
+"tip_click_edit" = "Κάντε κλικ για επεξεργασία κειμένου";
+"tip_right_click_options" = "Δεξί κλικ για επιλογές";
+"tip_playpause_edit" = "Κουμπί αναπαραγωγής/παύσης για επεξεργασία κειμένου";
+"tip_menu_button_options" = "Κουμπί μενού για επιλογές";
+"tip_tap_edit" = "Ένα άγγιγμα για επεξεργασία κειμένου";
+"tip_two_finger_tap_options" = "Άγγιγμα με δύο δάχτυλα για επιλογές";
+"tip_esc_close" = "Πατήστε ESC για να κλείσετε τα μενού";
+"features_header" = "Λειτουργίες:";
+"feature_giant_text_title" = "Γιγαντιαία εμφάνιση κειμένου";
+"feature_giant_text_desc" = "Δημιουργήστε κείμενο που γεμίζει την οθόνη σας";
+"feature_animations_title" = "Κινήσεις";
+"feature_landscape_title" = "Οριζόντια εμφάνιση";
+"feature_portrait_title" = "Κατακόρυφη λειτουργία";
+"feature_cross_platform_title" = "Πολυπλατφορμικό";
+"feature_cross_platform_desc" = "Λειτουργεί σε iPhone, iPad, Mac και άλλα";
+"feature_easy_editing_title" = "Εύκολη επεξεργασία";
+"feature_easy_editing_desc_macos" = "Κλικ για επεξεργασία, δεξί κλικ για επιλογές";
+"feature_easy_editing_desc_tvos" = "Χρησιμοποιήστε το τηλεχειριστήριο για επεξεργασία και πρόσβαση σε επιλογές";
+"feature_easy_editing_desc_other" = "Πατήστε για επεξεργασία, άγγιγμα με δύο δάχτυλα για επιλογές";
+"get_started_button" = "Ξεκινήστε";

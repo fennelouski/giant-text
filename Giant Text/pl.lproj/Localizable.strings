@@ -49,3 +49,48 @@
 "bloom" = "Kwitnienie";
 "jitter" = "Drżenie";
 "ripple" = "Falowanie";
+
+// MARK: - Theme & Display
+"theme_section" = "Motyw";
+"random_theme_daily" = "Losowy motyw (codziennie)";
+"current_theme" = "Bieżący motyw:";
+"appearance" = "Wygląd";
+"text_rotation" = "Obrót tekstu";
+"serif_font" = "Czcionka szeryfowa";
+"letter_spacing" = "Odstępy między literami";
+"max_lines" = "Maks. liczba wierszy";
+"system" = "System";
+"light" = "Jasny";
+"dark" = "Ciemny";
+"left" = "Lewo";
+"right" = "Prawo";
+
+// MARK: - Welcome View
+"welcome_title" = "Witamy w Giant Text!";
+"welcome_subtitle" = "Twórz efektowne, animowane wyświetlacze tekstu";
+"bullet_type_message" = "Wpisz swoją wiadomość";
+"bullet_landscape_orientation" = "Tekst wyświetlany poziomo";
+"bullet_portrait_mode" = "Urządzenie pozostaje w orientacji pionowej";
+"bullet_animation_effects" = "Wybierz spośród wielu efektów animacji";
+"bullet_share_quickly" = "Idealne do szybkiego udostępniania krótkich tekstów";
+"bullet_cross_platform" = "Działa na wszystkich Twoich urządzeniach Apple";
+"tip_click_edit" = "Kliknij, aby edytować tekst";
+"tip_right_click_options" = "Kliknij prawym przyciskiem, aby wyświetlić opcje";
+"tip_playpause_edit" = "Przycisk odtwarzania/pauzy służy do edycji tekstu";
+"tip_menu_button_options" = "Przycisk menu umożliwia dostęp do opcji";
+"tip_tap_edit" = "Stuknij raz, aby edytować tekst";
+"tip_two_finger_tap_options" = "Stuknij dwoma palcami, aby wyświetlić opcje";
+"tip_esc_close" = "Naciśnij ESC, aby zamknąć menu";
+"features_header" = "Funkcje:";
+"feature_giant_text_title" = "Ogromny wyświetlacz tekstu";
+"feature_giant_text_desc" = "Twórz tekst wypełniający cały ekran";
+"feature_animations_title" = "Animacje";
+"feature_landscape_title" = "Wyświetlanie poziome";
+"feature_portrait_title" = "Tryb pionowy";
+"feature_cross_platform_title" = "Wieloplatformowość";
+"feature_cross_platform_desc" = "Działa na iPhonie, iPadzie, Macu i innych urządzeniach";
+"feature_easy_editing_title" = "Łatwa edycja";
+"feature_easy_editing_desc_macos" = "Kliknij, aby edytować, kliknij prawym przyciskiem, aby wyświetlić opcje";
+"feature_easy_editing_desc_tvos" = "Użyj pilota, aby edytować i uzyskać dostęp do opcji";
+"feature_easy_editing_desc_other" = "Stuknij, aby edytować, stuknij dwoma palcami, aby wyświetlić opcje";
+"get_started_button" = "Rozpocznij";

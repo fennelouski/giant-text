@@ -49,3 +49,48 @@
 "bloom" = "አበባ";
 "jitter" = "መንቀጥቀጥ";
 "ripple" = "ማዕበል";
+
+// MARK: - Theme & Display
+"theme_section" = "ገጽታ";
+"random_theme_daily" = "የዘፈቀደ ገጽታ (በየቀኑ)";
+"current_theme" = "አሁን ያለው ገጽታ፦";
+"appearance" = "መልክ";
+"text_rotation" = "የጽሁፍ ማሽከርከሪያ";
+"serif_font" = "ሰሪፍ ፊደል";
+"letter_spacing" = "የፊደል ክፍተት";
+"max_lines" = "ከፍተኛ የመስመሮች ብዛት";
+"system" = "ስርዓት";
+"light" = "ብሩህ";
+"dark" = "ጨለማ";
+"left" = "ግራ";
+"right" = "ቀኝ";
+
+// MARK: - Welcome View
+"welcome_title" = "ወደ Giant Text እንኳን በደህና መጡ!";
+"welcome_subtitle" = "አስደናቂ፣ ተንቀሳቃሽ የጽሁፍ ማሳያዎችን ይፍጠሩ";
+"bullet_type_message" = "መልእክትዎን ይተይቡ";
+"bullet_landscape_orientation" = "ጽሁፍ በአግድም አቅጣጫ ይታያል";
+"bullet_portrait_mode" = "መሳሪያው በቋሚ ሁነታ ይቆያል";
+"bullet_animation_effects" = "ከበርካታ አኒሜሽን ውጤቶች ይምረጡ";
+"bullet_share_quickly" = "አጭር ጽሁፍን በፍጥነት ለማጋራት ተስማሚ";
+"bullet_cross_platform" = "በሁሉም የApple መሳሪያዎችዎ ላይ ይሰራል";
+"tip_click_edit" = "ጽሁፍን ለማርትዕ ጠቅ ያድርጉ";
+"tip_right_click_options" = "ለአማራጮች በቀኝ ጠቅ ያድርጉ";
+"tip_playpause_edit" = "ጽሁፍን ለማርትዕ የአጫውት/አቁም አዝራርን ይጠቀሙ";
+"tip_menu_button_options" = "ለአማራጮች የምናሌ አዝራር";
+"tip_tap_edit" = "ጽሁፍን ለማርትዕ አንድ ጊዜ መታ ያድርጉ";
+"tip_two_finger_tap_options" = "ለአማራጮች በሁለት ጣት መታ ያድርጉ";
+"tip_esc_close" = "ምናሌዎችን ለመዝጋት ESCን ይጫኑ";
+"features_header" = "ባህሪያት፦";
+"feature_giant_text_title" = "ግዙፍ የጽሁፍ ማሳያ";
+"feature_giant_text_desc" = "ማያ ገጽዎን የሚሞላ ጽሁፍ ይፍጠሩ";
+"feature_animations_title" = "አኒሜሽኖች";
+"feature_landscape_title" = "አግድም ማሳያ";
+"feature_portrait_title" = "ቋሚ ሁነታ";
+"feature_cross_platform_title" = "የተለያዩ መድረኮች";
+"feature_cross_platform_desc" = "በiPhone፣ iPad፣ Mac እና ሌሎችም ላይ ይሰራል";
+"feature_easy_editing_title" = "ቀላል አርትዖት";
+"feature_easy_editing_desc_macos" = "ለማርትዕ ጠቅ ያድርጉ፣ ለአማራጮች በቀኝ ጠቅ ያድርጉ";
+"feature_easy_editing_desc_tvos" = "ለማርትዕ እና አማራጮችን ለማግኘት መቆጣጠሪያውን ይጠቀሙ";
+"feature_easy_editing_desc_other" = "ለማርትዕ መታ ያድርጉ፣ ለአማራጮች በሁለት ጣት መታ ያድርጉ";
+"get_started_button" = "ጀምር";

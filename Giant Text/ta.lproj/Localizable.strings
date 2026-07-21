@@ -49,3 +49,48 @@
 "bloom" = "மலர்";
 "jitter" = "நடுக்கம்";
 "ripple" = "அலை";
+
+// MARK: - Theme & Display
+"theme_section" = "தீம்";
+"random_theme_daily" = "சீரற்ற தீம் (தினமும்)";
+"current_theme" = "தற்போதைய தீம்:";
+"appearance" = "தோற்றம்";
+"text_rotation" = "உரை சுழற்சி";
+"serif_font" = "செரிஃப் எழுத்துரு";
+"letter_spacing" = "எழுத்து இடைவெளி";
+"max_lines" = "அதிகபட்ச வரிகள்";
+"system" = "சிஸ்டம்";
+"light" = "வெளிர்";
+"dark" = "இருள்";
+"left" = "இடது";
+"right" = "வலது";
+
+// MARK: - Welcome View
+"welcome_title" = "Giant Text-க்கு வரவேற்கிறோம்!";
+"welcome_subtitle" = "அற்புதமான, அசைவூட்டப்பட்ட உரை காட்சிகளை உருவாக்குங்கள்";
+"bullet_type_message" = "உங்கள் செய்தியை தட்டச்சு செய்யுங்கள்";
+"bullet_landscape_orientation" = "உரை பட நிலையில் காட்டப்படும்";
+"bullet_portrait_mode" = "சாதனம் நிலைக்குத்து பயன்முறையில் இருக்கும்";
+"bullet_animation_effects" = "பல அசைவூட்ட விளைவுகளிலிருந்து தேர்வு செய்யுங்கள்";
+"bullet_share_quickly" = "குறுகிய உரையை விரைவாகப் பகிர சிறந்தது";
+"bullet_cross_platform" = "உங்கள் அனைத்து Apple சாதனங்களிலும் செயல்படும்";
+"tip_click_edit" = "உரையைத் திருத்த கிளிக் செய்யவும்";
+"tip_right_click_options" = "விருப்பங்களுக்கு வலது கிளிக் செய்யவும்";
+"tip_playpause_edit" = "உரையைத் திருத்த Play/Pause பொத்தான்";
+"tip_menu_button_options" = "விருப்பங்களுக்கான மெனு பொத்தான்";
+"tip_tap_edit" = "உரையைத் திருத்த ஒருமுறை தட்டவும்";
+"tip_two_finger_tap_options" = "விருப்பங்களுக்கு இரு விரல்களால் தட்டவும்";
+"tip_esc_close" = "மெனுக்களை மூட ESC ஐ அழுத்தவும்";
+"features_header" = "அம்சங்கள்:";
+"feature_giant_text_title" = "மாபெரும் உரை காட்சி";
+"feature_giant_text_desc" = "உங்கள் திரையை நிரப்பும் உரையை உருவாக்குங்கள்";
+"feature_animations_title" = "அசைவூட்டங்கள்";
+"feature_landscape_title" = "பட நிலைக் காட்சி";
+"feature_portrait_title" = "நிலைக்குத்து பயன்முறை";
+"feature_cross_platform_title" = "பல தளங்களில்";
+"feature_cross_platform_desc" = "iPhone, iPad, Mac மற்றும் பலவற்றில் செயல்படும்";
+"feature_easy_editing_title" = "எளிதான திருத்தம்";
+"feature_easy_editing_desc_macos" = "திருத்த கிளிக் செய்யவும், விருப்பங்களுக்கு வலது கிளிக் செய்யவும்";
+"feature_easy_editing_desc_tvos" = "திருத்தவும் விருப்பங்களை அணுகவும் ரிமோட்டைப் பயன்படுத்தவும்";
+"feature_easy_editing_desc_other" = "திருத்த தட்டவும், விருப்பங்களுக்கு இரு விரல்களால் தட்டவும்";
+"get_started_button" = "தொடங்குங்கள்";

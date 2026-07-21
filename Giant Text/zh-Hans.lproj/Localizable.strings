@@ -49,3 +49,48 @@
 "bloom" = "绽放";
 "jitter" = "抖动";
 "ripple" = "波纹";
+
+// MARK: - Theme & Display
+"theme_section" = "主题";
+"random_theme_daily" = "随机主题(每日)";
+"current_theme" = "当前主题:";
+"appearance" = "外观";
+"text_rotation" = "文字旋转";
+"serif_font" = "衬线字体";
+"letter_spacing" = "字母间距";
+"max_lines" = "最大行数";
+"system" = "系统";
+"light" = "浅色";
+"dark" = "深色";
+"left" = "左";
+"right" = "右";
+
+// MARK: - Welcome View
+"welcome_title" = "欢迎使用 Giant Text!";
+"welcome_subtitle" = "创建令人惊艳的动态大字显示";
+"bullet_type_message" = "输入你的信息";
+"bullet_landscape_orientation" = "文字以横屏方向显示";
+"bullet_portrait_mode" = "设备保持竖屏模式";
+"bullet_animation_effects" = "从多种动画效果中选择";
+"bullet_share_quickly" = "非常适合快速分享简短文字";
+"bullet_cross_platform" = "适用于你所有的 Apple 设备";
+"tip_click_edit" = "点击以编辑文字";
+"tip_right_click_options" = "右键点击查看选项";
+"tip_playpause_edit" = "点击播放/暂停按钮以编辑文字";
+"tip_menu_button_options" = "点击菜单按钮查看选项";
+"tip_tap_edit" = "单击以编辑文字";
+"tip_two_finger_tap_options" = "双指点按查看选项";
+"tip_esc_close" = "按 ESC 关闭菜单";
+"features_header" = "功能:";
+"feature_giant_text_title" = "巨型文字显示";
+"feature_giant_text_desc" = "创建充满整个屏幕的文字";
+"feature_animations_title" = "动画效果";
+"feature_landscape_title" = "横屏显示";
+"feature_portrait_title" = "竖屏模式";
+"feature_cross_platform_title" = "跨平台";
+"feature_cross_platform_desc" = "适用于 iPhone、iPad、Mac 等设备";
+"feature_easy_editing_title" = "轻松编辑";
+"feature_easy_editing_desc_macos" = "点击以编辑,右键点击查看选项";
+"feature_easy_editing_desc_tvos" = "使用遥控器进行编辑并访问选项";
+"feature_easy_editing_desc_other" = "点击以编辑,双指点按查看选项";
+"get_started_button" = "开始使用";

@@ -49,3 +49,48 @@
 "bloom" = "ಹೂವು";
 "jitter" = "ನಡುಕ";
 "ripple" = "ಅಲೆ";
+
+// MARK: - Theme & Display
+"theme_section" = "ಥೀಮ್";
+"random_theme_daily" = "ಯಾದೃಚ್ಛಿಕ ಥೀಮ್ (ದೈನಂದಿನ)";
+"current_theme" = "ಪ್ರಸ್ತುತ ಥೀಮ್:";
+"appearance" = "ಗೋಚರತೆ";
+"text_rotation" = "ಪಠ್ಯ ತಿರುಗುವಿಕೆ";
+"serif_font" = "ಸೆರಿಫ್ ಫಾಂಟ್";
+"letter_spacing" = "ಅಕ್ಷರ ಅಂತರ";
+"max_lines" = "ಗರಿಷ್ಠ ಸಾಲುಗಳು";
+"system" = "ಸಿಸ್ಟಂ";
+"light" = "ಬೆಳಕು";
+"dark" = "ಗಾಢ";
+"left" = "ಎಡ";
+"right" = "ಬಲ";
+
+// MARK: - Welcome View
+"welcome_title" = "Giant Text ಗೆ ಸ್ವಾಗತ!";
+"welcome_subtitle" = "ಅದ್ಭುತವಾದ, ಅನಿಮೇಟೆಡ್ ಪಠ್ಯ ಪ್ರದರ್ಶನಗಳನ್ನು ರಚಿಸಿ";
+"bullet_type_message" = "ನಿಮ್ಮ ಸಂದೇಶವನ್ನು ಟೈಪ್ ಮಾಡಿ";
+"bullet_landscape_orientation" = "ಪಠ್ಯವು ಲ್ಯಾಂಡ್‌ಸ್ಕೇಪ್ ಓರಿಯಂಟೇಶನ್‌ನಲ್ಲಿ ಪ್ರದರ್ಶನಗೊಳ್ಳುತ್ತದೆ";
+"bullet_portrait_mode" = "ಸಾಧನವು ಪೋರ್ಟ್ರೇಟ್ ಮೋಡ್‌ನಲ್ಲಿ ಇರುತ್ತದೆ";
+"bullet_animation_effects" = "ಹಲವು ಅನಿಮೇಶನ್ ಎಫೆಕ್ಟ್‌ಗಳಿಂದ ಆಯ್ಕೆಮಾಡಿ";
+"bullet_share_quickly" = "ಚಿಕ್ಕ ಪಠ್ಯವನ್ನು ತ್ವರಿತವಾಗಿ ಹಂಚಿಕೊಳ್ಳಲು ಸೂಕ್ತ";
+"bullet_cross_platform" = "ನಿಮ್ಮ ಎಲ್ಲಾ Apple ಸಾಧನಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ";
+"tip_click_edit" = "ಪಠ್ಯವನ್ನು ಸಂಪಾದಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ";
+"tip_right_click_options" = "ಆಯ್ಕೆಗಳಿಗಾಗಿ ಬಲ ಕ್ಲಿಕ್ ಮಾಡಿ";
+"tip_playpause_edit" = "ಪಠ್ಯ ಸಂಪಾದಿಸಲು ಪ್ಲೇ/ಪಾಸ್ ಬಟನ್";
+"tip_menu_button_options" = "ಆಯ್ಕೆಗಳಿಗಾಗಿ ಮೆನು ಬಟನ್";
+"tip_tap_edit" = "ಪಠ್ಯ ಸಂಪಾದಿಸಲು ಒಮ್ಮೆ ಟ್ಯಾಪ್ ಮಾಡಿ";
+"tip_two_finger_tap_options" = "ಆಯ್ಕೆಗಳಿಗಾಗಿ ಎರಡು ಬೆರಳುಗಳಿಂದ ಟ್ಯಾಪ್ ಮಾಡಿ";
+"tip_esc_close" = "ಮೆನುಗಳನ್ನು ಮುಚ್ಚಲು ESC ಒತ್ತಿ";
+"features_header" = "ವೈಶಿಷ್ಟ್ಯಗಳು:";
+"feature_giant_text_title" = "ಬೃಹತ್ ಪಠ್ಯ ಪ್ರದರ್ಶನ";
+"feature_giant_text_desc" = "ನಿಮ್ಮ ಪರದೆಯನ್ನು ತುಂಬುವ ಪಠ್ಯವನ್ನು ರಚಿಸಿ";
+"feature_animations_title" = "ಅನಿಮೇಶನ್‌ಗಳು";
+"feature_landscape_title" = "ಲ್ಯಾಂಡ್‌ಸ್ಕೇಪ್ ಪ್ರದರ್ಶನ";
+"feature_portrait_title" = "ಪೋರ್ಟ್ರೇಟ್ ಮೋಡ್";
+"feature_cross_platform_title" = "ಕ್ರಾಸ್-ಪ್ಲಾಟ್‌ಫಾರ್ಮ್";
+"feature_cross_platform_desc" = "iPhone, iPad, Mac ಮತ್ತು ಇನ್ನಷ್ಟರಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ";
+"feature_easy_editing_title" = "ಸುಲಭ ಸಂಪಾದನೆ";
+"feature_easy_editing_desc_macos" = "ಸಂಪಾದಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ, ಆಯ್ಕೆಗಳಿಗಾಗಿ ಬಲ ಕ್ಲಿಕ್ ಮಾಡಿ";
+"feature_easy_editing_desc_tvos" = "ಸಂಪಾದಿಸಲು ಮತ್ತು ಆಯ್ಕೆಗಳನ್ನು ಪ್ರವೇಶಿಸಲು ರಿಮೋಟ್ ಬಳಸಿ";
+"feature_easy_editing_desc_other" = "ಸಂಪಾದಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ, ಆಯ್ಕೆಗಳಿಗಾಗಿ ಎರಡು ಬೆರಳುಗಳಿಂದ ಟ್ಯಾಪ್ ಮಾಡಿ";
+"get_started_button" = "ಪ್ರಾರಂಭಿಸಿ";

@@ -49,3 +49,48 @@
 "bloom" = "Цвіценне";
 "jitter" = "Дрыжанне";
 "ripple" = "Хваля";
+
+// MARK: - Theme & Display
+"theme_section" = "Тэма";
+"random_theme_daily" = "Выпадковая тэма (штодня)";
+"current_theme" = "Бягучая тэма:";
+"appearance" = "Знешні выгляд";
+"text_rotation" = "Паварот тэксту";
+"serif_font" = "Шрыфт з зарэзкамі";
+"letter_spacing" = "Міжлітарны інтэрвал";
+"max_lines" = "Максімум радкоў";
+"system" = "Сістэма";
+"light" = "Светлая";
+"dark" = "Цёмная";
+"left" = "Улева";
+"right" = "Управа";
+
+// MARK: - Welcome View
+"welcome_title" = "Сардэчна запрашаем у Giant Text!";
+"welcome_subtitle" = "Стварайце дзівосныя анімаваныя тэкставыя дысплэі";
+"bullet_type_message" = "Увядзіце сваё паведамленне";
+"bullet_landscape_orientation" = "Тэкст паказваецца ў альбомнай арыентацыі";
+"bullet_portrait_mode" = "Прылада застаецца ў кніжным рэжыме";
+"bullet_animation_effects" = "Выберыце з некалькіх эфектаў анімацыі";
+"bullet_share_quickly" = "Ідэальна для хуткага абмену кароткім тэкстам";
+"bullet_cross_platform" = "Працуе на ўсіх вашых прыладах Apple";
+"tip_click_edit" = "Націсніце, каб рэдагаваць тэкст";
+"tip_right_click_options" = "Правы клік для параметраў";
+"tip_playpause_edit" = "Кнопка \"Прайграць/Паўза\" для рэдагавання тэксту";
+"tip_menu_button_options" = "Кнопка меню для параметраў";
+"tip_tap_edit" = "Адзінарны дотык, каб рэдагаваць тэкст";
+"tip_two_finger_tap_options" = "Дотык двума пальцамі для параметраў";
+"tip_esc_close" = "Націсніце ESC, каб закрыць меню";
+"features_header" = "Магчымасці:";
+"feature_giant_text_title" = "Гіганцкі тэкставы дысплэй";
+"feature_giant_text_desc" = "Стварайце тэкст, які запаўняе ваш экран";
+"feature_animations_title" = "Анімацыя";
+"feature_landscape_title" = "Альбомны дысплэй";
+"feature_portrait_title" = "Кніжны рэжым";
+"feature_cross_platform_title" = "Крос-платформеннасць";
+"feature_cross_platform_desc" = "Працуе на iPhone, iPad, Mac і іншых прыладах";
+"feature_easy_editing_title" = "Простае рэдагаванне";
+"feature_easy_editing_desc_macos" = "Клікніце, каб рэдагаваць, правы клік для параметраў";
+"feature_easy_editing_desc_tvos" = "Выкарыстоўвайце пульт для рэдагавання і доступу да параметраў";
+"feature_easy_editing_desc_other" = "Дакраніцеся, каб рэдагаваць, дотык двума пальцамі для параметраў";
+"get_started_button" = "Пачаць";

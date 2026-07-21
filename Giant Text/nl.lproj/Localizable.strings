@@ -49,3 +49,48 @@
 "bloom" = "Bloei";
 "jitter" = "Trilling";
 "ripple" = "Rimpeling";
+
+// MARK: - Theme & Display
+"theme_section" = "Thema";
+"random_theme_daily" = "Willekeurig thema (dagelijks)";
+"current_theme" = "Huidig thema:";
+"appearance" = "Weergave";
+"text_rotation" = "Tekstrotatie";
+"serif_font" = "Schreefletter";
+"letter_spacing" = "Letterafstand";
+"max_lines" = "Max. aantal regels";
+"system" = "Systeem";
+"light" = "Licht";
+"dark" = "Donker";
+"left" = "Links";
+"right" = "Rechts";
+
+// MARK: - Welcome View
+"welcome_title" = "Welkom bij Giant Text!";
+"welcome_subtitle" = "Maak prachtige, geanimeerde tekstweergaven";
+"bullet_type_message" = "Typ je bericht";
+"bullet_landscape_orientation" = "Tekst wordt liggend weergegeven";
+"bullet_portrait_mode" = "Apparaat blijft in staande stand";
+"bullet_animation_effects" = "Kies uit meerdere animatie-effecten";
+"bullet_share_quickly" = "Ideaal om snel korte tekst te delen";
+"bullet_cross_platform" = "Werkt op al je Apple-apparaten";
+"tip_click_edit" = "Klik om tekst te bewerken";
+"tip_right_click_options" = "Rechtsklik voor opties";
+"tip_playpause_edit" = "Afspelen/pauzeren-knop om tekst te bewerken";
+"tip_menu_button_options" = "Menuknop voor opties";
+"tip_tap_edit" = "Eén tik om tekst te bewerken";
+"tip_two_finger_tap_options" = "Tik met twee vingers voor opties";
+"tip_esc_close" = "Druk op ESC om menu's te sluiten";
+"features_header" = "Functies:";
+"feature_giant_text_title" = "Reuzegrote tekstweergave";
+"feature_giant_text_desc" = "Maak tekst die je scherm vult";
+"feature_animations_title" = "Animaties";
+"feature_landscape_title" = "Liggende weergave";
+"feature_portrait_title" = "Staande stand";
+"feature_cross_platform_title" = "Cross-platform";
+"feature_cross_platform_desc" = "Werkt op iPhone, iPad, Mac en meer";
+"feature_easy_editing_title" = "Eenvoudig bewerken";
+"feature_easy_editing_desc_macos" = "Klik om te bewerken, rechtsklik voor opties";
+"feature_easy_editing_desc_tvos" = "Gebruik de afstandsbediening om te bewerken en opties te openen";
+"feature_easy_editing_desc_other" = "Tik om te bewerken, tik met twee vingers voor opties";
+"get_started_button" = "Aan de slag";

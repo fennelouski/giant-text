@@ -49,3 +49,48 @@
 "bloom" = "මල්";
 "jitter" = "සොලවීම";
 "ripple" = "රැල්ල";
+
+// MARK: - Theme & Display
+"theme_section" = "තේමාව";
+"random_theme_daily" = "අහඹු තේමාව (දිනපතා)";
+"current_theme" = "වත්මන් තේමාව:";
+"appearance" = "පෙනුම";
+"text_rotation" = "පෙළ භ්‍රමණය";
+"serif_font" = "සෙරිෆ් අකුරු";
+"letter_spacing" = "අකුරු පරතරය";
+"max_lines" = "උපරිම පේළි";
+"system" = "පද්ධතිය";
+"light" = "ලා";
+"dark" = "අඳුරු";
+"left" = "වම";
+"right" = "දකුණ";
+
+// MARK: - Welcome View
+"welcome_title" = "Giant Text වෙත සාදරයෙන් පිළිගනිමු!";
+"welcome_subtitle" = "විස්මිත, සජීවී පෙළ දර්ශන සාදන්න";
+"bullet_type_message" = "ඔබේ පණිවිඩය ටයිප් කරන්න";
+"bullet_landscape_orientation" = "පෙළ තිරස් දිශානතියෙන් දිස් වේ";
+"bullet_portrait_mode" = "උපාංගය සිරස් ප්‍රකාරයේ පවතී";
+"bullet_animation_effects" = "බහුවිධ සජීවීකරණ ප්‍රයෝග අතරින් තෝරන්න";
+"bullet_share_quickly" = "කෙටි පෙළ ඉක්මනින් බෙදාගැනීමට පරිපූර්ණයි";
+"bullet_cross_platform" = "ඔබේ සියලුම Apple උපාංගවල ක්‍රියා කරයි";
+"tip_click_edit" = "පෙළ සංස්කරණය කිරීමට ක්ලික් කරන්න";
+"tip_right_click_options" = "විකල්ප සඳහා දකුණු-ක්ලික් කරන්න";
+"tip_playpause_edit" = "පෙළ සංස්කරණය කිරීමට Play/Pause බොත්තම";
+"tip_menu_button_options" = "විකල්ප සඳහා මෙනු බොත්තම";
+"tip_tap_edit" = "පෙළ සංස්කරණය කිරීමට එක් වරක් තට්ටු කරන්න";
+"tip_two_finger_tap_options" = "විකල්ප සඳහා ඇඟිලි දෙකකින් තට්ටු කරන්න";
+"tip_esc_close" = "මෙනු වසා දැමීමට ESC ඔබන්න";
+"features_header" = "විශේෂාංග:";
+"feature_giant_text_title" = "දැවැන්ත පෙළ දර්ශනය";
+"feature_giant_text_desc" = "ඔබේ තිරය පුරවන පෙළ සාදන්න";
+"feature_animations_title" = "සජීවීකරණ";
+"feature_landscape_title" = "තිරස් දර්ශනය";
+"feature_portrait_title" = "සිරස් ප්‍රකාරය";
+"feature_cross_platform_title" = "හරස් වේදිකා";
+"feature_cross_platform_desc" = "iPhone, iPad, Mac සහ තවත් උපාංගවල ක්‍රියා කරයි";
+"feature_easy_editing_title" = "පහසු සංස්කරණය";
+"feature_easy_editing_desc_macos" = "සංස්කරණයට ක්ලික් කරන්න, විකල්ප සඳහා දකුණු-ක්ලික් කරන්න";
+"feature_easy_editing_desc_tvos" = "සංස්කරණය කිරීමට සහ විකල්පවලට පිවිසීමට රිමෝට් පාවිච්චි කරන්න";
+"feature_easy_editing_desc_other" = "සංස්කරණයට තට්ටු කරන්න, විකල්ප සඳහා ඇඟිලි දෙකකින් තට්ටු කරන්න";
+"get_started_button" = "ආරම්භ කරන්න";

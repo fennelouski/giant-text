@@ -49,3 +49,48 @@
 "bloom" = "Nở hoa";
 "jitter" = "Rung";
 "ripple" = "Gợn sóng";
+
+// MARK: - Theme & Display
+"theme_section" = "Chủ đề";
+"random_theme_daily" = "Chủ đề ngẫu nhiên (Hằng ngày)";
+"current_theme" = "Chủ đề hiện tại:";
+"appearance" = "Giao diện";
+"text_rotation" = "Xoay văn bản";
+"serif_font" = "Phông chữ Serif";
+"letter_spacing" = "Khoảng cách chữ";
+"max_lines" = "Số dòng tối đa";
+"system" = "Hệ thống";
+"light" = "Sáng";
+"dark" = "Tối";
+"left" = "Trái";
+"right" = "Phải";
+
+// MARK: - Welcome View
+"welcome_title" = "Chào mừng đến với Giant Text!";
+"welcome_subtitle" = "Tạo màn hình văn bản động, ấn tượng";
+"bullet_type_message" = "Nhập tin nhắn của bạn";
+"bullet_landscape_orientation" = "Văn bản hiển thị theo chiều ngang";
+"bullet_portrait_mode" = "Thiết bị luôn ở chế độ dọc";
+"bullet_animation_effects" = "Chọn từ nhiều hiệu ứng chuyển động";
+"bullet_share_quickly" = "Hoàn hảo để chia sẻ văn bản ngắn nhanh chóng";
+"bullet_cross_platform" = "Hoạt động trên mọi thiết bị Apple của bạn";
+"tip_click_edit" = "Nhấp để chỉnh sửa văn bản";
+"tip_right_click_options" = "Nhấp chuột phải để xem tùy chọn";
+"tip_playpause_edit" = "Nút Phát/Tạm dừng để chỉnh sửa văn bản";
+"tip_menu_button_options" = "Nút menu cho các tùy chọn";
+"tip_tap_edit" = "Chạm một lần để chỉnh sửa văn bản";
+"tip_two_finger_tap_options" = "Chạm hai ngón tay để xem tùy chọn";
+"tip_esc_close" = "Nhấn ESC để đóng menu";
+"features_header" = "Tính năng:";
+"feature_giant_text_title" = "Hiển thị văn bản khổng lồ";
+"feature_giant_text_desc" = "Tạo văn bản lấp đầy màn hình của bạn";
+"feature_animations_title" = "Hiệu ứng chuyển động";
+"feature_landscape_title" = "Hiển thị ngang";
+"feature_portrait_title" = "Chế độ dọc";
+"feature_cross_platform_title" = "Đa nền tảng";
+"feature_cross_platform_desc" = "Hoạt động trên iPhone, iPad, Mac và nhiều thiết bị khác";
+"feature_easy_editing_title" = "Chỉnh sửa dễ dàng";
+"feature_easy_editing_desc_macos" = "Nhấp để chỉnh sửa, nhấp chuột phải để xem tùy chọn";
+"feature_easy_editing_desc_tvos" = "Dùng điều khiển từ xa để chỉnh sửa và truy cập tùy chọn";
+"feature_easy_editing_desc_other" = "Chạm để chỉnh sửa, chạm hai ngón tay để xem tùy chọn";
+"get_started_button" = "Bắt đầu";

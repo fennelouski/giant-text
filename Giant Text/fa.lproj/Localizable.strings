@@ -49,3 +49,48 @@
 "bloom" = "شکوفایی";
 "jitter" = "لرزش";
 "ripple" = "موج";
+
+// MARK: - Theme & Display
+"theme_section" = "پوسته";
+"random_theme_daily" = "پوسته تصادفی (روزانه)";
+"current_theme" = "پوسته فعلی:";
+"appearance" = "ظاهر";
+"text_rotation" = "چرخش متن";
+"serif_font" = "فونت سریف";
+"letter_spacing" = "فاصله حروف";
+"max_lines" = "حداکثر خطوط";
+"system" = "سیستم";
+"light" = "روشن";
+"dark" = "تیره";
+"left" = "چپ";
+"right" = "راست";
+
+// MARK: - Welcome View
+"welcome_title" = "به Giant Text خوش آمدید!";
+"welcome_subtitle" = "نمایش‌های متنی متحرک و خیره‌کننده بسازید";
+"bullet_type_message" = "پیام خود را تایپ کنید";
+"bullet_landscape_orientation" = "متن به صورت افقی نمایش داده می‌شود";
+"bullet_portrait_mode" = "دستگاه در حالت عمودی باقی می‌ماند";
+"bullet_animation_effects" = "از میان چندین جلوه انیمیشن انتخاب کنید";
+"bullet_share_quickly" = "مناسب برای اشتراک‌گذاری سریع متن‌های کوتاه";
+"bullet_cross_platform" = "روی همه دستگاه‌های اپل شما کار می‌کند";
+"tip_click_edit" = "برای ویرایش متن کلیک کنید";
+"tip_right_click_options" = "برای گزینه‌ها راست‌کلیک کنید";
+"tip_playpause_edit" = "دکمه پخش/توقف برای ویرایش متن";
+"tip_menu_button_options" = "دکمه منو برای گزینه‌ها";
+"tip_tap_edit" = "برای ویرایش متن یک‌بار ضربه بزنید";
+"tip_two_finger_tap_options" = "برای گزینه‌ها با دو انگشت ضربه بزنید";
+"tip_esc_close" = "برای بستن منوها ESC را فشار دهید";
+"features_header" = "ویژگی‌ها:";
+"feature_giant_text_title" = "نمایش متن غول‌پیکر";
+"feature_giant_text_desc" = "متنی بسازید که صفحه را پر می‌کند";
+"feature_animations_title" = "انیمیشن‌ها";
+"feature_landscape_title" = "نمایش افقی";
+"feature_portrait_title" = "حالت عمودی";
+"feature_cross_platform_title" = "چندسکویی";
+"feature_cross_platform_desc" = "روی آیفون، آیپد، مک و موارد دیگر کار می‌کند";
+"feature_easy_editing_title" = "ویرایش آسان";
+"feature_easy_editing_desc_macos" = "برای ویرایش کلیک کنید، برای گزینه‌ها راست‌کلیک کنید";
+"feature_easy_editing_desc_tvos" = "برای ویرایش و دسترسی به گزینه‌ها از ریموت استفاده کنید";
+"feature_easy_editing_desc_other" = "برای ویرایش ضربه بزنید، برای گزینه‌ها با دو انگشت ضربه بزنید";
+"get_started_button" = "شروع کنید";

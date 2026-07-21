@@ -49,3 +49,48 @@
 "bloom" = "མེ་ཏོག";
 "jitter" = "འཇིག་འཇིག";
 "ripple" = "རླབས";
+
+// MARK: - Theme & Display
+"theme_section" = "བརྗོད་གཞིའི་བཟོ་ལྟ།";
+"random_theme_daily" = "གདོན་མི་ཟ་བའི་བརྗོད་གཞི། (ཉིན་རེར།)";
+"current_theme" = "ད་ལྟའི་བརྗོད་གཞི།";
+"appearance" = "འཆར་ངོས་ཀྱི་བཟོ་ལྟ།";
+"text_rotation" = "ཡི་གེ་འཁོར་སྐོར།";
+"serif_font" = "Serif ཡིག་གཟུགས།";
+"letter_spacing" = "ཡིག་འབྲུའི་བར་ཐག";
+"max_lines" = "ཐིག་ཕྲེང་མང་ཤོས།";
+"system" = "མ་ལག";
+"light" = "སྣང་ཆ།";
+"dark" = "མུན་ནག";
+"left" = "གཡོན།";
+"right" = "གཡས།";
+
+// MARK: - Welcome View
+"welcome_title" = "Giant Text ལ་ཕེབས་པར་དགའ་བསུ་ཞུ།";
+"welcome_subtitle" = "ཡ་མཚན་ཆེ་བའི་གཡོ་བའི་ཡིག་ངོས་བཟོ་སྒྲིག་བྱོས།";
+"bullet_type_message" = "ཁྱེད་ཀྱི་འཕྲིན་ཡིག་འཇོག་རོགས།";
+"bullet_landscape_orientation" = "ཡིག་གེ་ཐད་ཀྱི་གཞུང་གིས་སྟོན།";
+"bullet_portrait_mode" = "ཆས་འཕྲུལ་སྟོད་གཞུང་གི་ནང་གནས།";
+"bullet_animation_effects" = "གཡོ་འགུལ་གྱི་རྣམ་པ་མང་པོ་ནང་ནས་འདེམས།";
+"bullet_share_quickly" = "ཡིག་ཐུང་མྱུར་དུ་མཉམ་སྤྱོད་བྱེད་པར་འོས་འཚམས།";
+"bullet_cross_platform" = "ཁྱེད་ཀྱི་Apple ཆས་འཕྲུལ་ཡོངས་ལ་ལག་བསྟར་བྱེད་ཐུབ།";
+"tip_click_edit" = "ཡིག་ཆ་ཞུ་དག་བྱེད་པར་མནན་རོགས།";
+"tip_right_click_options" = "གདམ་ཀ་ཆེད་གཡས་མནན་བྱོས།";
+"tip_playpause_edit" = "ཡིག་ཆ་ཞུ་དག་ཆེད་གཏོང་/མཚམས་འཇོག་ཨེབ་རྟགས།";
+"tip_menu_button_options" = "གདམ་ཀའི་ཆེད་དཀར་ཆག་ཨེབ་རྟགས།";
+"tip_tap_edit" = "ཡིག་ཆ་ཞུ་དག་ཆེད་ལན་གཅིག་མནན་རོགས།";
+"tip_two_finger_tap_options" = "གདམ་ཀའི་ཆེད་མཛུབ་མོ་གཉིས་ཀྱིས་མནན་རོགས།";
+"tip_esc_close" = "དཀར་ཆག་རྣམས་སྒོ་རྒྱག་ཆེད་ESC མནན་རོགས།";
+"features_header" = "ཁྱད་ཆོས།";
+"feature_giant_text_title" = "ཡིག་ཆེན་སྟོན་བྱེད།";
+"feature_giant_text_desc" = "ཁྱེད་ཀྱི་འཆར་ངོས་གང་བའི་ཡིག་གེ་བཟོ་སྒྲིག་བྱོས།";
+"feature_animations_title" = "གཡོ་འགུལ།";
+"feature_landscape_title" = "ཐད་གཞུང་སྟོན་བྱེད།";
+"feature_portrait_title" = "སྟོད་གཞུང་ཐབས་ལམ།";
+"feature_cross_platform_title" = "གཞི་རྟེན་སྣ་ཚོགས།";
+"feature_cross_platform_desc" = "iPhone, iPad, Mac སོགས་ལ་ལག་བསྟར་བྱེད་ཐུབ།";
+"feature_easy_editing_title" = "ཞུ་དག་སླ་བོ།";
+"feature_easy_editing_desc_macos" = "ཞུ་དག་ཆེད་མནན་རོགས། གདམ་ཀའི་ཆེད་གཡས་མནན་བྱོས།";
+"feature_easy_editing_desc_tvos" = "ཞུ་དག་དང་གདམ་ཀ་ཐོབ་ཆེད་ཐག་རིང་ཚད་འཛིན་བེད་སྤྱོད་གྱིས།";
+"feature_easy_editing_desc_other" = "ཞུ་དག་ཆེད་མནན་རོགས། གདམ་ཀའི་ཆེད་མཛུབ་མོ་གཉིས་ཀྱིས་མནན་རོགས།";
+"get_started_button" = "འགོ་འཛུགས།";
