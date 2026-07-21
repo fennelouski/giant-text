@@ -257,22 +257,28 @@ Ordered by how much they block submission.
    to `GT`, so that's what appears under the icon. "Giant Text" fits fine under
    an icon, so if `GT` wasn't deliberate, change
    `INFOPLIST_KEY_CFBundleDisplayName` in the project.
-3. **54 localizations show the English word "Ripple".** The `ripple` animation
-   had no localization entry in any of the 55 languages, so it rendered as the
-   raw lowercase key. Every file now has the key, but only `en` is genuinely
-   translated — the rest are English placeholders and need a translator.
-   `none`, `bloom`, and `jitter` are properly translated in all 55.
-4. **Test on real hardware.** Everything above was verified in simulators and on
+3. **Have a native speaker check 20 of the `ripple` translations.** The `ripple`
+   animation is now translated in all 55 languages (it previously rendered as the
+   raw lowercase key), but the translations have not been reviewed by native
+   speakers. `LOCALIZATION.md` grades every one: 34 confident, 15 worth
+   confirming for register, and 5 — Amharic, Tibetan, Hausa, Sinhala, Zulu —
+   that should not be considered final without a check.
+4. **Parts of the UI are hardcoded English and are not localized at all.** The
+   Theme and Display settings labels and the entire welcome screen are English
+   literals in Swift, so they stay English in all 54 non-English locales while
+   the Animation section around them is translated. Details and scope in
+   `LOCALIZATION.md`.
+5. **Test on real hardware.** Everything above was verified in simulators and on
    this Mac. In particular the iPhone rotate-while-portrait behavior, the
    two-finger-tap gesture, and the widget deserve a pass on a physical device.
-5. **Apple TV and Vision Pro** have never run on real hardware. They build clean
+6. **Apple TV and Vision Pro** have never run on real hardware. They build clean
    and behave correctly in the simulator, but if you'd rather not support them
    yet, drop `appletvos`/`xros` from `SUPPORTED_PLATFORMS` and remove `3`/`7`
    from `TARGETED_DEVICE_FAMILY` rather than shipping unverified.
 
 **Optional**
 
-6. An App Store promo video, if you want one.
-7. `Graphics/` holds unused watch/visionOS source art. watchOS isn't in
+7. An App Store promo video, if you want one.
+8. `Graphics/` holds unused watch/visionOS source art. watchOS isn't in
    `SUPPORTED_PLATFORMS` and has no target, though there is still `#if
    os(watchOS)` code in the source. Harmless, but it's dead weight.
