@@ -26,7 +26,12 @@ struct OptionsMenuSheet: View {
     let currentTheme: ColorTheme
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.dismiss) private var dismiss
+    #if DEBUG
+    @State private var isThemeSectionExpanded: Bool =
+        ProcessInfo.processInfo.arguments.contains("--ss-expand-theme")
+    #else
     @State private var isThemeSectionExpanded: Bool = false
+    #endif
     
     private var backgroundColor: Color {
         colorScheme == .dark ? Color.gray.opacity(0.3) : Color.gray.opacity(0.1)

@@ -33,6 +33,9 @@ xcuserdata/
 Pods/
 Carthage/Build/
 
+# App Store screenshots (generated locally, uploaded to App Store Connect — not versioned)
+AppStore/screenshots/
+
 # Backup / temp files
 *.bak
 *.orig
@@ -42,3 +45,6 @@ Carthage/Build/
 # Fastlane / provisioning
 *.mobileprovision
 *.provisionprofile
+
+# compiled helper for Tools/screenshots.sh
+Tools/.winid

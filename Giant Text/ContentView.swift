@@ -21,6 +21,16 @@ struct ContentView: View {
     
     @State private var state = ContentViewState()
     @State private var actions: ContentViewActions?
+
+    #if os(iOS) || os(visionOS)
+    private var optionsDetents: Set<PresentationDetent> {
+        #if DEBUG
+        // Screenshot staging: pin the sheet open so the full theme grid is visible.
+        if ProcessInfo.processInfo.arguments.contains("--ss-expand-theme") { return [.large] }
+        #endif
+        return [.medium, .large]
+    }
+    #endif
     
     var body: some View {
         GeometryReader { geometry in
@@ -136,7 +146,7 @@ struct ContentView: View {
                 currentTheme: state.currentTheme()
             )
             #if os(iOS) || os(visionOS)
-            .presentationDetents([.medium, .large])
+            .presentationDetents(optionsDetents)
             .presentationDragIndicator(.visible)
             #endif
         }
@@ -146,8 +156,46 @@ struct ContentView: View {
             self.actions = actions
             actions.ensureDocumentExists()
             actions.loadDocument()
+            #if DEBUG
+            applyScreenshotArgumentsIfNeeded()
+            #endif
         }
     }
+
+    #if DEBUG
+    /// Test-only hook used to stage deterministic App Store screenshots.
+    private func applyScreenshotArgumentsIfNeeded() {
+        let args = ProcessInfo.processInfo.arguments
+        func value(after flag: String) -> String? {
+            guard let i = args.firstIndex(of: flag), i + 1 < args.count else { return nil }
+            return args[i + 1]
+        }
+        guard args.contains(where: { $0.hasPrefix("--ss-") }) else { return }
+
+        // Stop checkFirstLaunch() from re-showing the welcome overlay after this runs.
+        UserDefaults.standard.set(true, forKey: "hasPressedGetStarted")
+        UserDefaults.standard.set(Date(), forKey: "lastLaunchDate")
+
+        state.showingWelcomeView = false
+        state.isEditing = false
+        if let text = value(after: "--ss-text") {
+            let attributed = NSAttributedString(string: text)
+            state.attributedText = attributed
+            // Persist it too, so a later loadDocument() doesn't overwrite it.
+            actions?.updateDocument(attributedText: attributed)
+        }
+        if let theme = value(after: "--ss-theme") {
+            state.selectedThemeId = theme
+        }
+        if let animation = value(after: "--ss-animation"),
+           let parsed = TextAnimation(rawValue: animation) {
+            state.selectedAnimation = parsed
+        }
+        if args.contains("--ss-options") {
+            state.showingOptionsMenu = true
+        }
+    }
+    #endif
 }
 
 #Preview {

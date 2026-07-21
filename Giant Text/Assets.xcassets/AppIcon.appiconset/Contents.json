@@ -1,104 +1,98 @@
 {
-  "images" : [
+  "images": [
     {
-      "filename" : "GiantTextLogo.png",
-      "idiom" : "universal",
-      "platform" : "ios",
-      "size" : "1024x1024"
+      "filename": "GiantTextLogo.png",
+      "idiom": "universal",
+      "platform": "ios",
+      "size": "1024x1024"
     },
     {
-      "appearances" : [
+      "appearances": [
         {
-          "appearance" : "luminosity",
-          "value" : "dark"
+          "appearance": "luminosity",
+          "value": "dark"
         }
       ],
-      "filename" : "GiantTextLogo 1 Dark.png",
-      "idiom" : "universal",
-      "platform" : "ios",
-      "size" : "1024x1024"
+      "filename": "GiantTextLogo 1 Dark.png",
+      "idiom": "universal",
+      "platform": "ios",
+      "size": "1024x1024"
     },
     {
-      "appearances" : [
+      "appearances": [
         {
-          "appearance" : "luminosity",
-          "value" : "tinted"
+          "appearance": "luminosity",
+          "value": "tinted"
         }
       ],
-      "filename" : "GiantTextLogo 2.png",
-      "idiom" : "universal",
-      "platform" : "ios",
-      "size" : "1024x1024"
+      "filename": "GiantTextLogo 2.png",
+      "idiom": "universal",
+      "platform": "ios",
+      "size": "1024x1024"
     },
     {
-      "filename" : "GiantTextLogoMac_16x16.png",
-      "idiom" : "mac",
-      "scale" : "1x",
-      "size" : "16x16"
+      "filename": "GiantTextLogoMac_16x16.png",
+      "idiom": "mac",
+      "scale": "1x",
+      "size": "16x16"
     },
     {
-      "filename" : "GiantTextLogoMac_32x32.png",
-      "idiom" : "mac",
-      "scale" : "2x",
-      "size" : "16x16"
+      "filename": "GiantTextLogoMac_32x32.png",
+      "idiom": "mac",
+      "scale": "2x",
+      "size": "16x16"
     },
     {
-      "filename" : "GiantTextLogoMac_32x32 1.png",
-      "idiom" : "mac",
-      "scale" : "1x",
-      "size" : "32x32"
+      "filename": "GiantTextLogoMac_32x32 1.png",
+      "idiom": "mac",
+      "scale": "1x",
+      "size": "32x32"
     },
     {
-      "filename" : "GiantTextLogoMac_64x64.png",
-      "idiom" : "mac",
-      "scale" : "2x",
-      "size" : "32x32"
+      "filename": "GiantTextLogoMac_64x64.png",
+      "idiom": "mac",
+      "scale": "2x",
+      "size": "32x32"
     },
     {
-      "filename" : "GiantTextLogoMac_128x128.png",
-      "idiom" : "mac",
-      "scale" : "1x",
-      "size" : "128x128"
+      "filename": "GiantTextLogoMac_128x128.png",
+      "idiom": "mac",
+      "scale": "1x",
+      "size": "128x128"
     },
     {
-      "filename" : "GiantTextLogoMac_256x256.png",
-      "idiom" : "mac",
-      "scale" : "2x",
-      "size" : "128x128"
+      "filename": "GiantTextLogoMac_256x256.png",
+      "idiom": "mac",
+      "scale": "2x",
+      "size": "128x128"
     },
     {
-      "filename" : "GiantTextLogoMac_256x256 1.png",
-      "idiom" : "mac",
-      "scale" : "1x",
-      "size" : "256x256"
+      "filename": "GiantTextLogoMac_256x256 1.png",
+      "idiom": "mac",
+      "scale": "1x",
+      "size": "256x256"
     },
     {
-      "filename" : "GiantTextLogoMac_512x512.png",
-      "idiom" : "mac",
-      "scale" : "2x",
-      "size" : "256x256"
+      "filename": "GiantTextLogoMac_512x512.png",
+      "idiom": "mac",
+      "scale": "2x",
+      "size": "256x256"
     },
     {
-      "filename" : "GiantTextLogoMac_512x512 1.png",
-      "idiom" : "mac",
-      "scale" : "1x",
-      "size" : "512x512"
+      "filename": "GiantTextLogoMac_512x512 1.png",
+      "idiom": "mac",
+      "scale": "1x",
+      "size": "512x512"
     },
     {
-      "filename" : "GiantTextLogoMac.png",
-      "idiom" : "mac",
-      "scale" : "2x",
-      "size" : "512x512"
-    },
-    {
-      "filename" : "GiantTextLogoWatch.png",
-      "idiom" : "universal",
-      "platform" : "watchos",
-      "size" : "1024x1024"
+      "filename": "GiantTextLogoMac.png",
+      "idiom": "mac",
+      "scale": "2x",
+      "size": "512x512"
     }
   ],
-  "info" : {
-    "author" : "xcode",
-    "version" : 1
+  "info": {
+    "author": "xcode",
+    "version": 1
   }
 }

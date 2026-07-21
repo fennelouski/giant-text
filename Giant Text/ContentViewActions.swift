@@ -221,8 +221,13 @@ class ContentViewActions {
         sharedDefaults?.set(state.isItalicized, forKey: "isItalicized")
 
         // Trigger widget update
-        #if os(iOS) || os(watchOS) || os(visionOS)
+        #if os(iOS) || os(watchOS)
         WidgetCenter.shared.reloadAllTimelines()
+        #elseif os(visionOS)
+        // WidgetKit only reaches visionOS in 26.0; the app deploys back further.
+        if #available(visionOS 26.0, *) {
+            WidgetCenter.shared.reloadAllTimelines()
+        }
         #endif
     }
 } 

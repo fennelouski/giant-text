@@ -157,9 +157,11 @@ struct RichTextEditor: UIViewRepresentable {
         textView.text = plainText
         textView.autocapitalizationType = .allCharacters
         
-        // Set up input accessory view
+        // Set up input accessory view (visionOS has no input accessory views)
+        #if !os(visionOS)
         textView.inputAccessoryView = context.coordinator.createInputAccessoryView()
-        
+        #endif
+
         // Store reference to text view in coordinator
         context.coordinator.textView = textView
         
@@ -294,7 +296,9 @@ struct RichTextEditor: UIViewRepresentable {
             // Create a custom container view instead of using UIToolbar
             let containerView = UIView()
             containerView.backgroundColor = UIColor(parent.theme.backgroundColor(for: parent.colorScheme)).withAlphaComponent(0.95)
-            containerView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44)
+            // UIKit stretches an input accessory view to the input view's width,
+            // so only the height here is meaningful.
+            containerView.frame = CGRect(x: 0, y: 0, width: 320, height: 44)
             
             // Create a horizontal stack view for the buttons
             let stackView = UIStackView()
@@ -413,10 +417,12 @@ struct RichTextEditor: UIViewRepresentable {
             previousIsItalicized = parent.isItalicized
             
             // Recreate the input accessory view to reflect the new state
+            #if !os(visionOS)
             if let textView = textView {
                 textView.inputAccessoryView = createInputAccessoryView()
                 textView.reloadInputViews()
             }
+            #endif
         }
         
         func forceInputAccessoryViewUpdate() {
