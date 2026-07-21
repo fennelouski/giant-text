@@ -477,8 +477,6 @@ struct RichTextEditor: UIViewRepresentable {
             // Simply toggle the bold state
             DispatchQueue.main.async {
                 self.parent.isBold.toggle()
-                // Save to UserDefaults
-                UserDefaults.standard.set(self.parent.isBold, forKey: "isBold")
                 self.updateInputAccessoryView()
 
                 // Update the attributed text with new formatting
@@ -505,8 +503,6 @@ struct RichTextEditor: UIViewRepresentable {
             // Simply toggle the italic state
             DispatchQueue.main.async {
                 self.parent.isItalicized.toggle()
-                // Save to UserDefaults
-                UserDefaults.standard.set(self.parent.isItalicized, forKey: "isItalicized")
                 self.updateInputAccessoryView()
 
                 // Update the attributed text with new formatting

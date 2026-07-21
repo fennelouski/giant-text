@@ -99,10 +99,6 @@ class ContentViewActions {
                 let traits = font.fontDescriptor.symbolicTraits
                 state.isBold = traits.contains(.traitBold)
                 state.isItalicized = traits.contains(.traitItalic)
-
-                // Save to UserDefaults
-                UserDefaults.standard.set(state.isBold, forKey: "isBold")
-                UserDefaults.standard.set(state.isItalicized, forKey: "isItalicized")
             }
         }
         #endif
@@ -192,23 +188,6 @@ class ContentViewActions {
     }
     #endif
     
-    // MARK: - UserDefaults Management
-    func saveUserDefaults() {
-        UserDefaults.standard.set(state.selectedAnimation.rawValue, forKey: "selectedAnimation")
-        UserDefaults.standard.set(state.animationIntensity, forKey: "animationIntensity")
-        UserDefaults.standard.set(state.isClippingEnabled, forKey: "isClippingEnabled")
-        UserDefaults.standard.set(state.useSerifFont, forKey: "useSerifFont")
-        UserDefaults.standard.set(state.kerning, forKey: "kerning")
-        UserDefaults.standard.set(state.isBold, forKey: "isBold")
-        UserDefaults.standard.set(state.isItalicized, forKey: "isItalicized")
-        UserDefaults.standard.set(state.maxLines, forKey: "maxLines")
-    }
-    
-    func saveFormattingState() {
-        UserDefaults.standard.set(state.isBold, forKey: "isBold")
-        UserDefaults.standard.set(state.isItalicized, forKey: "isItalicized")
-    }
-    
     // MARK: - Welcome View Actions
     func dismissWelcomeView() {
         state.showingWelcomeView = false
@@ -224,23 +203,18 @@ class ContentViewActions {
     func saveTextForWidget(attributedText: NSAttributedString) {
         // Use shared UserDefaults for widget communication
         let sharedDefaults = UserDefaults(suiteName: "group.com.fennel.Giant-Text")
-        
-        print("App: Saving text for widget: \(attributedText.string)")
-        
+
         // Save as attributed string data for rich text support
         if let textData = try? NSKeyedArchiver.archivedData(withRootObject: attributedText, requiringSecureCoding: false) {
             sharedDefaults?.set(textData, forKey: "currentTextData")
-            print("App: Saved rich text data")
         }
-        
+
         // Also save as plain text as fallback
         sharedDefaults?.set(attributedText.string, forKey: "currentText")
-        print("App: Saved plain text")
-        
+
         // Save font size for widget
         sharedDefaults?.set(state.fontSize, forKey: "fontSize")
-        print("App: Saved font size: \(state.fontSize)")
-        
+
         // Save formatting preferences
         sharedDefaults?.set(state.useSerifFont, forKey: "useSerifFont")
         sharedDefaults?.set(state.isBold, forKey: "isBold")
@@ -249,8 +223,6 @@ class ContentViewActions {
         // Trigger widget update
         #if os(iOS) || os(watchOS) || os(visionOS)
         WidgetCenter.shared.reloadAllTimelines()
-        print("App: Triggered widget update")
         #endif
-        sharedDefaults?.synchronize()
     }
 } 

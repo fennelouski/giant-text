@@ -76,13 +76,6 @@ struct MainContentView: View {
             addToHistory: addToHistory
         )
         .allowsHitTesting(!showingWelcomeView)
-        .onTapGesture {
-            if showingWelcomeView {
-                print("❌ GiantTextView tapped while welcome screen is showing - this should not happen")
-            } else {
-                print("✅ GiantTextView tapped - welcome screen not showing")
-            }
-        }
         #else
         GiantTextView(
             attributedText: $attributedText,
@@ -104,13 +97,6 @@ struct MainContentView: View {
             addToHistory: addToHistory
         )
         .allowsHitTesting(!showingWelcomeView)
-        .onTapGesture {
-            if showingWelcomeView {
-                print("❌ GiantTextView tapped while welcome screen is showing - this should not happen")
-            } else {
-                print("✅ GiantTextView tapped - welcome screen not showing")
-            }
-        }
         #endif
     }
-} 
+}

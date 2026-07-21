@@ -18,7 +18,6 @@ struct WelcomeView: View {
         Color.black.opacity(0.7)
             .ignoresSafeArea()
             .onTapGesture {
-                print("🔴 Background overlay tapped - dismissing welcome screen")
                 onDismiss()
             }
     }
@@ -42,40 +41,34 @@ struct WelcomeView: View {
     }
     
     private var description: some View {
-        VStack(spacing: 12) {
+        VStack(spacing: 16) {
             Text("Create stunning, animated text displays")
                 .font(.headline)
                 .foregroundColor(colorScheme == .dark ? .white : .black)
                 .multilineTextAlignment(.center)
-            
-                                                #if os(iOS)
-                                    if UIDevice.current.userInterfaceIdiom == .phone {
-                                        VStack(spacing: 4) {
-                                            BulletPoint(text: "Type your message")
-                                            BulletPoint(text: "Text displays in landscape orientation")
-                                            BulletPoint(text: "Device stays in portrait mode")
-                                            BulletPoint(text: "Choose from multiple animation effects")
-                                            BulletPoint(text: "Perfect for sharing short text quickly")
-                                        }
-                                        .frame(maxWidth: .infinity)
-                                    } else {
-                                        VStack(spacing: 4) {
-                                            BulletPoint(text: "Type your message")
-                                            BulletPoint(text: "Choose from multiple animation effects")
-                                            BulletPoint(text: "Perfect for sharing short text quickly")
-                                            BulletPoint(text: "Works across all your Apple devices")
-                                        }
-                                        .frame(maxWidth: .infinity)
-                                    }
-                                    #else
-                                    VStack(spacing: 4) {
-                                        BulletPoint(text: "Type your message")
-                                        BulletPoint(text: "Choose from multiple animation effects")
-                                        BulletPoint(text: "Perfect for sharing short text quickly")
-                                        BulletPoint(text: "Works across all your Apple devices")
-                                    }
-                                    .frame(maxWidth: .infinity)
-                                    #endif
+
+            VStack(spacing: 10) {
+                #if os(iOS)
+                if UIDevice.current.userInterfaceIdiom == .phone {
+                    BulletPoint(text: "Type your message")
+                    BulletPoint(text: "Text displays in landscape orientation")
+                    BulletPoint(text: "Device stays in portrait mode")
+                    BulletPoint(text: "Choose from multiple animation effects")
+                    BulletPoint(text: "Perfect for sharing short text quickly")
+                } else {
+                    BulletPoint(text: "Type your message")
+                    BulletPoint(text: "Choose from multiple animation effects")
+                    BulletPoint(text: "Perfect for sharing short text quickly")
+                    BulletPoint(text: "Works across all your Apple devices")
+                }
+                #else
+                BulletPoint(text: "Type your message")
+                BulletPoint(text: "Choose from multiple animation effects")
+                BulletPoint(text: "Perfect for sharing short text quickly")
+                BulletPoint(text: "Works across all your Apple devices")
+                #endif
+            }
+            .frame(maxWidth: .infinity)
         }
     }
     
@@ -195,7 +188,6 @@ struct WelcomeView: View {
     
     private var getStartedButton: some View {
         Button("Get Started") {
-            print("🟢 Get Started button tapped")
             onGetStarted()
         }
         .buttonStyle(.plain)
@@ -293,8 +285,7 @@ struct WelcomeView: View {
                 #endif
             }
         }
-        .transition(.opacity.combined(with: .scale))
-        .animation(.easeInOut(duration: 0.3), value: true)
+        .transition(.opacity.combined(with: .scale(scale: 0.95)))
     }
 }
 
@@ -302,20 +293,20 @@ struct WelcomeView: View {
 struct BulletPoint: View {
     let text: String
     @Environment(\.colorScheme) private var colorScheme
-    
+
     var body: some View {
-        HStack(spacing: 8) {
-            Text("•")
-                .font(.body)
-                .foregroundColor(colorScheme == .dark ? .white.opacity(0.8) : .black.opacity(0.8))
-                .frame(width: 12, alignment: .center)
-            
+        HStack(alignment: .top, spacing: 10) {
+            Image(systemName: "checkmark.circle.fill")
+                .font(.footnote)
+                .foregroundColor(.blue)
+                .padding(.top, 2)
+
             Text(text)
                 .font(.body)
-                .foregroundColor(colorScheme == .dark ? .white.opacity(0.8) : .black.opacity(0.8))
-                .multilineTextAlignment(.center)
+                .foregroundColor(colorScheme == .dark ? .white.opacity(0.85) : .black.opacity(0.85))
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .frame(maxWidth: .infinity, alignment: .center)
     }
 }
 

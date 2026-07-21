@@ -168,7 +168,7 @@ struct AnimatedTextDisplay: View {
             for i in 0..<totalLetters {
                 let startDelay = stagger * Double(i)
                 DispatchQueue.main.asyncAfter(deadline: .now() + startDelay) {
-                    guard isAnimationActive else { return }
+                    guard isAnimationActive, characterAnimations.indices.contains(i) else { return }
                     // Scale up
                     withAnimation(.easeInOut(duration: scaleUpDuration)) {
                         characterAnimations[i].scale = 1.3
@@ -178,7 +178,7 @@ struct AnimatedTextDisplay: View {
                         guard isAnimationActive else { return }
                         // Hold for holdDuration, then scale down
                         DispatchQueue.main.asyncAfter(deadline: .now() + holdDuration) {
-                            guard isAnimationActive else { return }
+                            guard isAnimationActive, characterAnimations.indices.contains(i) else { return }
                             withAnimation(.easeInOut(duration: scaleDownDuration)) {
                                 characterAnimations[i].scale = 1.0
                             }
@@ -315,7 +315,7 @@ struct AnimatedTextDisplay: View {
             for i in 0..<totalLetters {
                 let startDelay = stagger * Double(i)
                 DispatchQueue.main.asyncAfter(deadline: .now() + startDelay) {
-                    guard isAnimationActive else { return }
+                    guard isAnimationActive, characterAnimations.indices.contains(i) else { return }
                     // Jump up
                     withAnimation(.easeOut(duration: jumpUpDuration)) {
                         characterAnimations[i].offset = CGSize(
@@ -323,15 +323,11 @@ struct AnimatedTextDisplay: View {
                             height: -intensity * 20
                         )
                     }
-                    // Hold
+                    // Hold, then jump down
                     DispatchQueue.main.asyncAfter(deadline: .now() + jumpUpDuration) {
-                        guard isAnimationActive else { return }
-                        // Hold for holdDuration, then jump down
-                        DispatchQueue.main.asyncAfter(deadline: .now()) {
-                            guard isAnimationActive else { return }
-                            withAnimation(.easeIn(duration: jumpDownDuration)) {
-                                characterAnimations[i].offset = .zero
-                            }
+                        guard isAnimationActive, characterAnimations.indices.contains(i) else { return }
+                        withAnimation(.easeIn(duration: jumpDownDuration)) {
+                            characterAnimations[i].offset = .zero
                         }
                     }
                 }

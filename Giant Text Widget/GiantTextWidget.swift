@@ -23,7 +23,7 @@ struct GiantTextWidgetEntryView: View {
                 attributedText: attributedText
             )
         } else {
-            Text("GIANT TEXT 5")
+            Text("GIANT TEXT")
                 .font(.system(size: 16, weight: .bold))
                 .foregroundColor(.secondary)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -81,19 +81,16 @@ struct GiantTextWidgetProvider: TimelineProvider {
         // Try to get rich text data first
         if let textData = sharedDefaults?.data(forKey: "currentTextData"),
            let attributedString = try? NSKeyedUnarchiver.unarchivedObject(ofClass: NSAttributedString.self, from: textData) {
-            print("Widget: Found rich text data")
             return attributedString
         }
-        
+
         // Fallback to plain text
         if let plainText = sharedDefaults?.string(forKey: "currentText"), !plainText.isEmpty {
-            print("Widget: Found plain text: \(plainText)")
             return NSAttributedString(string: plainText)
         }
-        
-        print("Widget: No text found, using default")
+
         // Return a default message if no text is available
-        return NSAttributedString(string: "GIANT TEXT 7")
+        return NSAttributedString(string: "GIANT TEXT")
     }
 }
 

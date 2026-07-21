@@ -85,9 +85,13 @@ struct ContentView: View {
                 #if !os(watchOS)
                 if state.showingWelcomeView {
                     WelcomeView {
-                        state.showingWelcomeView = false
+                        withAnimation(.easeInOut(duration: 0.3)) {
+                            state.showingWelcomeView = false
+                        }
                     } onGetStarted: {
-                        state.showingWelcomeView = false
+                        withAnimation(.easeInOut(duration: 0.3)) {
+                            state.showingWelcomeView = false
+                        }
                         state.isEditing = true
                         UserDefaults.standard.set(true, forKey: "hasPressedGetStarted")
                     }
@@ -131,6 +135,10 @@ struct ContentView: View {
                 canUndo: state.currentHistoryIndex > 0,
                 currentTheme: state.currentTheme()
             )
+            #if os(iOS) || os(visionOS)
+            .presentationDetents([.medium, .large])
+            .presentationDragIndicator(.visible)
+            #endif
         }
         .preferredColorScheme(state.appearanceMode.colorScheme)
         .onAppear {

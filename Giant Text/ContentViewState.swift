@@ -76,26 +76,60 @@ class ContentViewState {
     var currentHistoryIndex: Int = -1
     
     // MARK: - Animation State
-    var selectedAnimation: TextAnimation = UserDefaults.standard.string(forKey: "selectedAnimation").flatMap { TextAnimation(rawValue: $0) } ?? .none
-    var animationIntensity: Double = UserDefaults.standard.double(forKey: "animationIntensity") > 0 ? UserDefaults.standard.double(forKey: "animationIntensity") : 0.9
-    
+    // Each persisted setting writes back on change so persistence is a property of
+    // the model itself, rather than depending on a view's .onChange staying alive.
+    var selectedAnimation: TextAnimation = UserDefaults.standard.string(forKey: "selectedAnimation").flatMap { TextAnimation(rawValue: $0) } ?? .none {
+        didSet {
+            UserDefaults.standard.set(selectedAnimation.rawValue, forKey: "selectedAnimation")
+        }
+    }
+    var animationIntensity: Double = UserDefaults.standard.double(forKey: "animationIntensity") > 0 ? UserDefaults.standard.double(forKey: "animationIntensity") : 0.9 {
+        didSet {
+            UserDefaults.standard.set(animationIntensity, forKey: "animationIntensity")
+        }
+    }
+
     // MARK: - Text Formatting State
-    var isBold: Bool = UserDefaults.standard.bool(forKey: "isBold")
-    var isItalicized: Bool = UserDefaults.standard.bool(forKey: "isItalicized")
-    
+    var isBold: Bool = UserDefaults.standard.bool(forKey: "isBold") {
+        didSet {
+            UserDefaults.standard.set(isBold, forKey: "isBold")
+        }
+    }
+    var isItalicized: Bool = UserDefaults.standard.bool(forKey: "isItalicized") {
+        didSet {
+            UserDefaults.standard.set(isItalicized, forKey: "isItalicized")
+        }
+    }
+
     // MARK: - UI State
     var showingOptionsMenu: Bool = false
     var showingMarqueeTooltip: Bool = false
     var showingWelcomeView: Bool = false
-    
+
     // MARK: - Display Settings
-    var isClippingEnabled: Bool = UserDefaults.standard.bool(forKey: "isClippingEnabled")
-    var useSerifFont: Bool = UserDefaults.standard.object(forKey: "useSerifFont") == nil ? true : UserDefaults.standard.bool(forKey: "useSerifFont")
-    var kerning: Double = UserDefaults.standard.double(forKey: "kerning") > 0 ? UserDefaults.standard.double(forKey: "kerning") : 0.0
+    var isClippingEnabled: Bool = UserDefaults.standard.bool(forKey: "isClippingEnabled") {
+        didSet {
+            UserDefaults.standard.set(isClippingEnabled, forKey: "isClippingEnabled")
+        }
+    }
+    var useSerifFont: Bool = UserDefaults.standard.object(forKey: "useSerifFont") == nil ? true : UserDefaults.standard.bool(forKey: "useSerifFont") {
+        didSet {
+            UserDefaults.standard.set(useSerifFont, forKey: "useSerifFont")
+        }
+    }
+    var kerning: Double = UserDefaults.standard.double(forKey: "kerning") > 0 ? UserDefaults.standard.double(forKey: "kerning") : 0.0 {
+        didSet {
+            UserDefaults.standard.set(kerning, forKey: "kerning")
+        }
+    }
     var maxLines: Int = {
         let stored = UserDefaults.standard.integer(forKey: "maxLines")
         return (stored >= 1 && stored <= 5) ? stored : 1
-    }()
+    }() {
+        didSet {
+            UserDefaults.standard.set(maxLines, forKey: "maxLines")
+        }
+    }
     var appearanceMode: AppearanceMode = {
         if let rawValue = UserDefaults.standard.string(forKey: "appearanceMode"),
            let mode = AppearanceMode(rawValue: rawValue) {

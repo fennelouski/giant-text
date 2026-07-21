@@ -63,9 +63,41 @@ struct OptionsMenuSheet: View {
             return colorScheme == .dark ? .white : .black
         }
     }
-    
+
+    // A live "Aa" swatch rendered in the theme's own colors so each option
+    // previews exactly how the giant text will look.
+    @ViewBuilder
+    private func themePreview(_ theme: ColorTheme, height: CGFloat) -> some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 8)
+                .fill(theme.backgroundColor(for: colorScheme))
+
+            Text("Aa")
+                .font(.system(size: height * 0.45, weight: .semibold, design: .serif))
+                .foregroundColor(theme.textColor(for: colorScheme))
+
+            if selectedThemeId == theme.id {
+                VStack {
+                    HStack {
+                        Spacer()
+                        Image(systemName: "checkmark.circle.fill")
+                            .font(.system(size: 15))
+                            .foregroundStyle(.white, .blue)
+                            .padding(5)
+                    }
+                    Spacer()
+                }
+            }
+        }
+        .frame(height: height)
+        .overlay(
+            RoundedRectangle(cornerRadius: 8)
+                .strokeBorder(Color.primary.opacity(0.12), lineWidth: 1)
+        )
+    }
+
     var body: some View {
-        NavigationView {
+        NavigationStack {
 
             #if os(tvOS)
             // Simplified menu for tvOS
@@ -124,7 +156,7 @@ struct OptionsMenuSheet: View {
                         VStack {
                             Text(LocalizationManager.intensity)
                             Slider(value: $animationIntensity, in: 0.1...1.0)
-                                .accentColor(.blue)
+                                .tint(.blue)
                         }
                     }
                     
@@ -171,17 +203,25 @@ struct OptionsMenuSheet: View {
                             Button(action: {
                                 selectedAnimation = animation
                             }) {
-                                HStack {
+                                HStack(spacing: 8) {
                                     Image(systemName: animation.icon)
                                         .foregroundColor(textColor(for: animation))
                                     Text(animation.localizedName)
+                                        .fontWeight(selectedAnimation == animation ? .semibold : .regular)
                                         .foregroundColor(textColor(for: animation))
                                 }
                                 .padding()
                                 .frame(maxWidth: .infinity)
                                 .background(
-                                    RoundedRectangle(cornerRadius: 8)
+                                    RoundedRectangle(cornerRadius: 12)
                                         .fill(animationBackgroundColor(for: animation))
+                                )
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 12)
+                                        .strokeBorder(
+                                            selectedAnimation == animation ? Color.blue : Color.clear,
+                                            lineWidth: 2
+                                        )
                                 )
                             }
                             .buttonStyle(.plain)
@@ -198,7 +238,7 @@ struct OptionsMenuSheet: View {
                                     .foregroundColor(colorScheme == .dark ? .white : .black)
                             }
                             Slider(value: $animationIntensity, in: 0.1...1.0)
-                                .accentColor(.blue)
+                                .tint(.blue)
                         }
                         .padding(.top, 8)
                     }
@@ -227,27 +267,28 @@ struct OptionsMenuSheet: View {
                                         Button(action: {
                                             selectedThemeId = theme.id
                                         }) {
-                                            VStack(spacing: 4) {
-                                                // Preview colors
-                                                HStack(spacing: 2) {
-                                                    Rectangle()
-                                                        .fill(theme.backgroundColor(for: colorScheme))
-                                                        .frame(height: 30)
-                                                    Rectangle()
-                                                        .fill(theme.textColor(for: colorScheme))
-                                                        .frame(height: 30)
-                                                }
-                                                .cornerRadius(4)
+                                            VStack(spacing: 8) {
+                                                themePreview(theme, height: 44)
 
                                                 Text(theme.name)
                                                     .font(.caption)
+                                                    .fontWeight(selectedThemeId == theme.id ? .semibold : .regular)
                                                     .foregroundColor(themeTextColor(for: theme))
+                                                    .lineLimit(1)
+                                                    .minimumScaleFactor(0.8)
                                             }
                                             .padding(8)
                                             .frame(maxWidth: .infinity)
                                             .background(
-                                                RoundedRectangle(cornerRadius: 8)
+                                                RoundedRectangle(cornerRadius: 12)
                                                     .fill(themeBackgroundColor(for: theme))
+                                            )
+                                            .overlay(
+                                                RoundedRectangle(cornerRadius: 12)
+                                                    .strokeBorder(
+                                                        selectedThemeId == theme.id ? Color.blue : Color.clear,
+                                                        lineWidth: 2
+                                                    )
                                             )
                                         }
                                         .buttonStyle(.plain)
@@ -263,15 +304,7 @@ struct OptionsMenuSheet: View {
                                         Text(currentTheme.name)
                                             .foregroundColor(.blue)
                                     }
-                                    HStack(spacing: 2) {
-                                        Rectangle()
-                                            .fill(currentTheme.backgroundColor(for: colorScheme))
-                                            .frame(height: 40)
-                                        Rectangle()
-                                            .fill(currentTheme.textColor(for: colorScheme))
-                                            .frame(height: 40)
-                                    }
-                                    .cornerRadius(4)
+                                    themePreview(currentTheme, height: 56)
                                 }
                                 .padding()
                                 .background(
@@ -361,7 +394,7 @@ struct OptionsMenuSheet: View {
                                 .foregroundColor(colorScheme == .dark ? .white : .black)
                         }
                         Slider(value: $kerning, in: -10...30)
-                            .accentColor(.blue)
+                            .tint(.blue)
                     }
                     .padding()
                     .background(

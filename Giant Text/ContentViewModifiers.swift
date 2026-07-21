@@ -25,29 +25,9 @@ extension View {
                 actions.setupOrientationObserver()
             }
         
+        // Settings persistence lives in ContentViewState's property observers,
+        // so no .onChange mirroring is needed here.
         let view2 = view1
-            .onChange(of: state.selectedAnimation) { _, newValue in
-                UserDefaults.standard.set(newValue.rawValue, forKey: "selectedAnimation")
-            }
-            .onChange(of: state.animationIntensity) { _, newValue in
-                UserDefaults.standard.set(newValue, forKey: "animationIntensity")
-            }
-            .onChange(of: state.isClippingEnabled) { _, newValue in
-                UserDefaults.standard.set(newValue, forKey: "isClippingEnabled")
-            }
-
-        let view2b = view2
-            .onChange(of: state.useSerifFont) { _, newValue in
-                UserDefaults.standard.set(newValue, forKey: "useSerifFont")
-            }
-            .onChange(of: state.kerning) { _, newValue in
-                UserDefaults.standard.set(newValue, forKey: "kerning")
-            }
-            .onChange(of: state.maxLines) { _, newValue in
-                UserDefaults.standard.set(newValue, forKey: "maxLines")
-            }
-        
-        let view3 = view2b
             #if os(iOS)
             .onChange(of: state.deviceOrientation) { oldOrientation, newOrientation in
                 actions.handleOrientationChange(oldOrientation: oldOrientation, newOrientation: newOrientation)
@@ -57,7 +37,7 @@ extension View {
                 actions.checkFirstLaunch()
             }
 
-        return view3
+        return view2
     }
     
     func contentViewPlatformModifiers(
