@@ -8,9 +8,18 @@ checks that have already been done and the ones only you can finish.
 - **Ships on:** iPhone, iPad, Mac, Apple TV, Apple Vision Pro
 - **Extension:** Giant Text Widget (`com.fennel.Giant-Text.GiantTextWidget`)
 
+### URLs for the listing
+
+| Field | URL |
+|---|---|
+| **Privacy policy URL** *(required)* | `https://nathanfennel.com/giant-text/privacy` |
+| **Support URL** *(required)* | `https://nathanfennel.com/giant-text/support` |
+| **Marketing URL** *(optional)* | `https://nathanfennel.com/giant-text` |
+
+These live in the `nathanfennel.com` repo under `src/app/giant-text/`. If the
+privacy policy ever needs to change, that page is the canonical copy.
+
 > **Before you submit, finish the items in [Still needs you](#still-needs-you).**
-> Two of them (privacy policy URL, support URL) are hard blockers — App Store
-> Connect will not accept the listing without them.
 
 ---
 
@@ -234,36 +243,36 @@ Ordered by how much they block submission.
 
 **Hard blockers**
 
-1. **Privacy policy URL** — required for every App Store listing, even with no
-   data collection. Must be a public, reachable page.
-2. **Support URL** — required. A public page with a way to contact you.
-3. **Signing** — everything here was verified with `CODE_SIGNING_ALLOWED=NO`.
+1. **Signing** — everything here was verified with `CODE_SIGNING_ALLOWED=NO`.
    You need to archive with your real team and distribution certificate, and
    confirm the App Group `group.com.fennel.Giant-Text` is enabled on the App ID
    for both the app and the widget extension.
 
+*(Privacy policy and support URLs are done — see
+[URLs for the listing](#urls-for-the-listing). Both are live on nathanfennel.com.)*
+
 **Should decide before you ship**
 
-4. **Home screen name is `GT`, not `Giant Text`.** `CFBundleDisplayName` is set
+2. **Home screen name is `GT`, not `Giant Text`.** `CFBundleDisplayName` is set
    to `GT`, so that's what appears under the icon. "Giant Text" fits fine under
    an icon, so if `GT` wasn't deliberate, change
    `INFOPLIST_KEY_CFBundleDisplayName` in the project.
-5. **54 localizations show the English word "Ripple".** The `ripple` animation
+3. **54 localizations show the English word "Ripple".** The `ripple` animation
    had no localization entry in any of the 55 languages, so it rendered as the
    raw lowercase key. Every file now has the key, but only `en` is genuinely
    translated — the rest are English placeholders and need a translator.
    `none`, `bloom`, and `jitter` are properly translated in all 55.
-6. **Test on real hardware.** Everything above was verified in simulators and on
+4. **Test on real hardware.** Everything above was verified in simulators and on
    this Mac. In particular the iPhone rotate-while-portrait behavior, the
    two-finger-tap gesture, and the widget deserve a pass on a physical device.
-7. **Apple TV and Vision Pro** have never run on real hardware. They build clean
+5. **Apple TV and Vision Pro** have never run on real hardware. They build clean
    and behave correctly in the simulator, but if you'd rather not support them
    yet, drop `appletvos`/`xros` from `SUPPORTED_PLATFORMS` and remove `3`/`7`
    from `TARGETED_DEVICE_FAMILY` rather than shipping unverified.
 
 **Optional**
 
-8. Marketing URL, and an App Store promo video, if you want them.
-9. `Graphics/` holds unused watch/visionOS source art. watchOS isn't in
+6. An App Store promo video, if you want one.
+7. `Graphics/` holds unused watch/visionOS source art. watchOS isn't in
    `SUPPORTED_PLATFORMS` and has no target, though there is still `#if
    os(watchOS)` code in the source. Harmless, but it's dead weight.
