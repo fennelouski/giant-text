@@ -241,23 +241,22 @@ Fixed while getting here, worth knowing about:
 
 Ordered by how much they block submission.
 
-**Hard blockers**
-
-1. **Signing** — everything here was verified with `CODE_SIGNING_ALLOWED=NO`.
-   You need to archive with your real team and distribution certificate, and
-   confirm the App Group `group.com.fennel.Giant-Text` is enabled on the App ID
-   for both the app and the widget extension.
-
-*(Privacy policy and support URLs are done — see
+*(Signing is done — archived with the real team and distribution certificate
+and uploaded to App Store Connect. The App Group `group.com.fennel.Giant-Text`
+is confirmed working on the App ID for both the app and the widget extension.
+Privacy policy and support URLs are also done — see
 [URLs for the listing](#urls-for-the-listing). Both are live on nathanfennel.com.)*
 
 **Should decide before you ship**
 
-2. **Home screen name is `GT`, not `Giant Text`.** `CFBundleDisplayName` is set
-   to `GT`, so that's what appears under the icon. "Giant Text" fits fine under
-   an icon, so if `GT` wasn't deliberate, change
-   `INFOPLIST_KEY_CFBundleDisplayName` in the project.
-3. **Have a native speaker check the machine-translated strings.** Both the
+1. **Home screen name is localized per language.** All 55 locales have an
+   `InfoPlist.strings` overriding `CFBundleDisplayName`: English shows
+   **Giant Text**, other languages show the word "TEXT" localized (TEXTO,
+   TEXTE, テキスト, 文本, …). The `GT` in
+   `INFOPLIST_KEY_CFBundleDisplayName` is only the unlocalized fallback and
+   never surfaces in practice — verified on the simulator home screen. Nothing
+   to do unless you dislike the localized-"TEXT" naming choice.
+2. **Have a native speaker check the machine-translated strings.** Both the
    `ripple` animation name and the 41 Theme/Display/Welcome-screen strings
    (formerly hardcoded English, now localized in all 55 languages — see
    `LOCALIZATION.md`) are machine-translated without a native-speaker review.
@@ -265,17 +264,17 @@ Ordered by how much they block submission.
    confident, some are worth confirming for register, and 5 — Amharic,
    Tibetan, Hausa, Sinhala, Zulu — shouldn't be considered final without a
    check.
-4. **Test on real hardware.** Everything above was verified in simulators and on
+3. **Test on real hardware.** Everything above was verified in simulators and on
    this Mac. In particular the iPhone rotate-while-portrait behavior, the
    two-finger-tap gesture, and the widget deserve a pass on a physical device.
-5. **Apple TV and Vision Pro** have never run on real hardware. They build clean
+4. **Apple TV and Vision Pro** have never run on real hardware. They build clean
    and behave correctly in the simulator, but if you'd rather not support them
    yet, drop `appletvos`/`xros` from `SUPPORTED_PLATFORMS` and remove `3`/`7`
    from `TARGETED_DEVICE_FAMILY` rather than shipping unverified.
 
 **Optional**
 
-6. An App Store promo video, if you want one.
-7. `Graphics/` holds unused watch/visionOS source art. watchOS isn't in
+5. An App Store promo video, if you want one.
+6. `Graphics/` holds unused watch/visionOS source art. watchOS isn't in
    `SUPPORTED_PLATFORMS` and has no target, though there is still `#if
    os(watchOS)` code in the source. Harmless, but it's dead weight.
