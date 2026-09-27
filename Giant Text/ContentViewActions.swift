@@ -17,7 +17,7 @@ import WidgetKit
 class ContentViewActions {
     private let state: ContentViewState
     private let modelContext: ModelContext
-    private let documents: [TextDocument]
+    private var documents: [TextDocument]
     
     init(state: ContentViewState, modelContext: ModelContext, documents: [TextDocument]) {
         self.state = state
@@ -27,13 +27,19 @@ class ContentViewActions {
     
     // MARK: - Document Management
     func ensureDocumentExists() {
-        if documents.isEmpty {
-            let newDocument = TextDocument()
-            modelContext.insert(newDocument)
-            try? modelContext.save()
-            
-            // Save initial text for widget
-            saveTextForWidget(attributedText: NSAttributedString(string: newDocument.text))
+        guard documents.isEmpty else { return }
+        do {
+            documents = try modelContext.fetch(FetchDescriptor<TextDocument>(
+                sortBy: [SortDescriptor(\.lastModified, order: .reverse)]
+            ))
+            if documents.isEmpty {
+                let newDocument = TextDocument()
+                modelContext.insert(newDocument)
+                documents = [newDocument]
+                try modelContext.save()
+            }
+        } catch {
+            state.persistenceError = error.localizedDescription
         }
     }
     
@@ -57,7 +63,12 @@ class ContentViewActions {
         document.text = attributedText.string
         document.richTextData = try? attributedText.data(from: NSRange(location: 0, length: attributedText.length), documentAttributes: [.documentType: NSAttributedString.DocumentType.rtf])
         document.lastModified = Date()
-        try? modelContext.save()
+        do {
+            try modelContext.save()
+            state.persistenceError = nil
+        } catch {
+            state.persistenceError = error.localizedDescription
+        }
         
         // Save text for widget
         saveTextForWidget(attributedText: attributedText)
@@ -68,13 +79,23 @@ class ContentViewActions {
         // Don't add to history if it's the same value (compare both text and attributes)
         guard !oldValue.isEqual(to: newValue) else { return }
 
+        // Editor callbacks and SwiftUI can report the same change. Undo also
+        // changes the binding, but already points at its history entry.
+        if state.textHistory.indices.contains(state.currentHistoryIndex),
+           state.textHistory[state.currentHistoryIndex].isEqual(to: newValue) {
+            return
+        }
+        if state.textHistory.isEmpty {
+            state.textHistory = [oldValue]
+            state.currentHistoryIndex = 0
+        }
+
         // Remove any history after current index (for redo functionality)
         if state.currentHistoryIndex < state.textHistory.count - 1 {
             state.textHistory.removeSubrange((state.currentHistoryIndex + 1)...)
         }
 
-        // Add the old value to history
-        state.textHistory.append(oldValue)
+        state.textHistory.append(newValue)
         state.currentHistoryIndex = state.textHistory.count - 1
 
         // Limit history size to prevent memory issues
@@ -158,20 +179,6 @@ class ContentViewActions {
     }
     
     // MARK: - Orientation Management
-    func setupOrientationObserver() {
-        #if os(iOS)
-        NotificationCenter.default.addObserver(
-            forName: UIDevice.orientationDidChangeNotification,
-            object: nil,
-            queue: .main
-        ) { _ in
-            Task { @MainActor in
-                self.state.deviceOrientation = UIDevice.current.orientation
-            }
-        }
-        #endif
-    }
-
     #if os(iOS)
     func handleOrientationChange(oldOrientation: UIDeviceOrientation, newOrientation: UIDeviceOrientation) {
         // Only trigger recalculation for meaningful orientation changes

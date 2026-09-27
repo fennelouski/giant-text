@@ -492,14 +492,14 @@ struct OptionsMenuSheet: View {
             .navigationTitle(LocalizationManager.options)
             #if os(iOS) || os(tvOS) || os(visionOS)
             .navigationBarTitleDisplayMode(.inline)
+            #endif
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
+                ToolbarItem(placement: .cancellationAction) {
                     Button(LocalizationManager.close) {
                         dismiss()
                     }
                 }
             }
-            #endif
             #endif
         }
     }

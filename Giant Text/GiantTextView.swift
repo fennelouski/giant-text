@@ -140,7 +140,9 @@ struct GiantTextView: View {
                     isItalicized: isItalicized,
                     maxLines: maxLines
                 )
+                .accessibilityElement(children: .ignore)
                 .accessibilityLabel(LocalizationManager.giantTextDisplay)
+                .accessibilityValue(attributedText.string)
 
                 // Show "no text" label when there's no text in presentation mode
                 if attributedText.string.isEmpty {

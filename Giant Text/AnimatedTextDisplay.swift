@@ -20,6 +20,7 @@ struct AnimatedTextDisplay: View {
     let isBold: Bool
     let isItalicized: Bool
     let maxLines: Int
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     @State private var animationPhase: Double = 0
     @State private var characterAnimations: [CharacterAnimation] = []
@@ -81,6 +82,7 @@ struct AnimatedTextDisplay: View {
             .allowsHitTesting(false)
         }
         .onAppear { setupCharacterAnimations() }
+        .onChange(of: reduceMotion) { _, _ in setupCharacterAnimations() }
         .onChange(of: animation) { _, _ in 
             // Immediately reset and restart animation
             DispatchQueue.main.async {
@@ -138,6 +140,8 @@ struct AnimatedTextDisplay: View {
 
         // Create fresh character animations array
         characterAnimations = Array(repeating: CharacterAnimation(), count: attributedText.string.count)
+
+        guard !reduceMotion else { return }
 
         // Start new animation based on current settings
         switch animation {

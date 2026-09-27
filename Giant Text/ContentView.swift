@@ -17,7 +17,7 @@ import AppKit
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var colorScheme
-    @Query private var documents: [TextDocument]
+    @Query(sort: \TextDocument.lastModified, order: .reverse) private var documents: [TextDocument]
     
     @State private var state = ContentViewState()
     @State private var actions: ContentViewActions?
@@ -113,6 +113,17 @@ struct ContentView: View {
             .contentViewBackgroundModifiers(theme: state.currentTheme(), colorScheme: colorScheme)
             .contentViewOverlayModifiers(state: state, actions: actions ?? ContentViewActions(state: state, modelContext: modelContext, documents: documents))
             .contentViewModifiers(state: state, actions: actions ?? ContentViewActions(state: state, modelContext: modelContext, documents: documents))
+            .overlay(alignment: .topTrailing) {
+                if !state.showingWelcomeView {
+                    Button {
+                        state.showingOptionsMenu = true
+                    } label: {
+                        Label(LocalizationManager.options, systemImage: "ellipsis.circle")
+                    }
+                    .buttonStyle(.bordered)
+                    .padding()
+                }
+            }
         }
         .contentViewPlatformModifiers(state: state, actions: actions ?? ContentViewActions(state: state, modelContext: modelContext, documents: documents))
         #if os(iOS)
@@ -151,6 +162,14 @@ struct ContentView: View {
             #endif
         }
         .preferredColorScheme(state.appearanceMode.colorScheme)
+        .alert("Couldn't Save Text", isPresented: Binding(
+            get: { state.persistenceError != nil },
+            set: { if !$0 { state.persistenceError = nil } }
+        )) {
+            Button("OK", role: .cancel) { state.persistenceError = nil }
+        } message: {
+            Text(state.persistenceError ?? "")
+        }
         .onAppear {
             let actions = ContentViewActions(state: state, modelContext: modelContext, documents: documents)
             self.actions = actions
@@ -202,4 +221,3 @@ struct ContentView: View {
     ContentView()
         .modelContainer(for: TextDocument.self, inMemory: true)
 }
-

@@ -20,15 +20,14 @@ extension View {
                 actions.updateDocument(attributedText: newValue)
                 actions.addToHistory(oldValue: oldValue, newValue: newValue)
             }
-            .onAppear {
-                actions.loadDocument()
-                actions.setupOrientationObserver()
-            }
         
         // Settings persistence lives in ContentViewState's property observers,
         // so no .onChange mirroring is needed here.
         let view2 = view1
             #if os(iOS)
+            .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
+                state.deviceOrientation = UIDevice.current.orientation
+            }
             .onChange(of: state.deviceOrientation) { oldOrientation, newOrientation in
                 actions.handleOrientationChange(oldOrientation: oldOrientation, newOrientation: newOrientation)
             }
@@ -44,12 +43,7 @@ extension View {
         state: ContentViewState,
         actions: ContentViewActions
     ) -> some View {
-        let view1 = self
-            .onAppear {
-                actions.ensureDocumentExists()
-            }
-
-        let view2 = view1
+        let view2 = self
             #if os(iOS)
             .onReceive(NotificationCenter.default.publisher(for: .deviceDidShakeNotification)) { _ in
                 actions.undoLastChange()
@@ -105,7 +99,7 @@ extension View {
                             state.isEditing = true
                         }
                     }
-                    .allowsHitTesting(!state.showingWelcomeView)
+                    .allowsHitTesting(!state.showingWelcomeView && !state.isEditing)
             )
             #elseif os(tvOS)
             .overlay(
@@ -118,7 +112,7 @@ extension View {
                 } onOneFingerTap: {
                     state.isEditing.toggle()
                 }
-                .allowsHitTesting(!state.showingWelcomeView)
+                .allowsHitTesting(!state.showingWelcomeView && !state.isEditing)
             )
             #endif
 

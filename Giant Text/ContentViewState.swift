@@ -93,6 +93,7 @@ class ContentViewState {
     var showingOptionsMenu: Bool = false
     var showingMarqueeTooltip: Bool = false
     var showingWelcomeView: Bool = false
+    var persistenceError: String?
 
     // MARK: - Display Settings
     var isClippingEnabled: Bool = UserDefaults.standard.bool(forKey: "isClippingEnabled") {
@@ -105,7 +106,7 @@ class ContentViewState {
             UserDefaults.standard.set(useSerifFont, forKey: "useSerifFont")
         }
     }
-    var kerning: Double = UserDefaults.standard.double(forKey: "kerning") > 0 ? UserDefaults.standard.double(forKey: "kerning") : 0.0 {
+    var kerning: Double = UserDefaults.standard.double(forKey: "kerning") {
         didSet {
             UserDefaults.standard.set(kerning, forKey: "kerning")
         }

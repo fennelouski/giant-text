@@ -11,7 +11,7 @@ import SwiftData
 struct AirPlayDisplayView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.colorScheme) private var colorScheme
-    @Query private var documents: [TextDocument]
+    @Query(sort: \TextDocument.lastModified, order: .reverse) private var documents: [TextDocument]
     
     @State private var state = ContentViewState()
     
@@ -38,7 +38,9 @@ struct AirPlayDisplayView: View {
                         isItalicized: state.isItalicized,
                         maxLines: state.maxLines
                     )
+                    .accessibilityElement(children: .ignore)
                     .accessibilityLabel(LocalizationManager.giantTextDisplay)
+                    .accessibilityValue(state.attributedText.string)
                 } else {
                     // Show placeholder when no text
                     Text(LocalizationManager.giantText)
@@ -61,6 +63,11 @@ struct AirPlayDisplayView: View {
                 loadDocumentFromModel(latestDocument)
             }
         }
+        .onChange(of: documents.first?.lastModified) { _, _ in
+            if let latestDocument = documents.first {
+                loadDocumentFromModel(latestDocument)
+            }
+        }
     }
     
     private func loadDocumentFromModel(_ document: TextDocument) {
@@ -77,7 +84,7 @@ struct AirPlayDisplayView: View {
         state.animationIntensity = UserDefaults.standard.double(forKey: "animationIntensity") > 0 ? UserDefaults.standard.double(forKey: "animationIntensity") : 0.9
         state.isClippingEnabled = UserDefaults.standard.bool(forKey: "isClippingEnabled")
         state.useSerifFont = UserDefaults.standard.object(forKey: "useSerifFont") == nil ? true : UserDefaults.standard.bool(forKey: "useSerifFont")
-        state.kerning = UserDefaults.standard.double(forKey: "kerning") > 0 ? UserDefaults.standard.double(forKey: "kerning") : 0.0
+        state.kerning = UserDefaults.standard.double(forKey: "kerning")
         state.isBold = UserDefaults.standard.bool(forKey: "isBold")
         state.isItalicized = UserDefaults.standard.bool(forKey: "isItalicized")
     }
@@ -86,4 +93,4 @@ struct AirPlayDisplayView: View {
 #Preview {
     AirPlayDisplayView()
         .modelContainer(for: TextDocument.self, inMemory: true)
-} 
+}
