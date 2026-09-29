@@ -108,6 +108,20 @@ struct GiantTextView: View {
                         isTextFieldFocused = false
                     }
                 }
+                #if os(visionOS)
+                .overlay(alignment: .bottomTrailing) {
+                    Button {
+                        isEditing = false
+                        isTextFieldFocused = false
+                    } label: {
+                        Label(LocalizationManager.done, systemImage: "checkmark")
+                            .font(.headline)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .padding(24)
+                    .accessibilityIdentifier("VisionDoneButton")
+                }
+                #endif
                 #elseif os(macOS)
                 TextEditor(text: Binding(
                     get: { attributedText.string },
