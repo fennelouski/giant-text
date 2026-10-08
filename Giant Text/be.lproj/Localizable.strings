@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Выкарыстоўвайце пульт для рэдагавання і доступу да параметраў";
 "feature_easy_editing_desc_other" = "Дакраніцеся, каб рэдагаваць, дотык двума пальцамі для параметраў";
 "get_started_button" = "Пачаць";
+
+// MARK: - Controls Help
+"Present text" = "Паказаць тэкст";
+"Erase the message and start typing a new one." = "Сцерці паведамленне і пачаць уводзіць новае.";
+"Finish editing and show your giant text." = "Завяршыць рэдагаванне і паказаць вялікі тэкст.";
+"Settings" = "Налады";
+"Turn italic text on or off." = "Уключыць або выключыць курсіў.";
+"Keep the text still." = "Пакінуць тэкст нерухомым.";
+"Switch from the editor to the giant text display." = "Пераключыцца з рэдактара на паказ вялікага тэксту.";
+"Shake the text." = "Патрэсці тэкст.";
+"Restore the previous text. Available after a change." = "Аднавіць папярэдні тэкст. Даступна пасля змены.";
+"Open editing actions, Settings, and Help." = "Адкрыць дзеянні рэдагавання, налады і даведку.";
+"Move a wave through the letters." = "Правесці хвалю праз літары.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Націсніце на ўзор колеру, каб прымяніць тэму. Галачка паказвае выбраную тэму.";
+"Adjust how your text appears." = "Наладзіць выгляд тэксту.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Націсніце стрэлку, каб напісаць першае паведамленне. У меню з трыма кропкамі ёсць налады і даведка.";
+"Turn bold text on or off." = "Уключыць або выключыць паўтлусты шрыфт.";
+"Leave the welcome screen and start your message." = "Выйсці з экрана прывітання і пачаць паведамленне.";
+"Change the text animation from the editor toolbar." = "Змяніць анімацыю тэксту на панэлі рэдактара.";
+"Show this guide to the controls." = "Паказаць гэты даведнік па элементах кіравання.";
+"Help" = "Даведка";
+"Controls" = "Элементы кіравання";
+"Pulse the size of the text." = "Пульсацыя памеру тэксту.";
+"Close the current panel." = "Закрыць бягучую панэль.";
+"Open live display" = "Адкрыць прамы паказ";
+"Editor" = "Рэдактар";
+"Edit the message shown on the display." = "Рэдагаваць паведамленне на экране.";
+"Open another sign window that follows your message and styling." = "Адкрыць яшчэ адно акно шыльды, якое паўтарае паведамленне і стыль.";

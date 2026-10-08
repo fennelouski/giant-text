@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Dùng điều khiển từ xa để chỉnh sửa và truy cập tùy chọn";
 "feature_easy_editing_desc_other" = "Chạm để chỉnh sửa, chạm hai ngón tay để xem tùy chọn";
 "get_started_button" = "Bắt đầu";
+
+// MARK: - Controls Help
+"Present text" = "Hiển thị văn bản";
+"Erase the message and start typing a new one." = "Xóa tin nhắn và bắt đầu nhập tin nhắn mới.";
+"Finish editing and show your giant text." = "Hoàn tất chỉnh sửa và hiển thị chữ lớn của bạn.";
+"Settings" = "Cài đặt";
+"Turn italic text on or off." = "Bật hoặc tắt chữ nghiêng.";
+"Keep the text still." = "Giữ văn bản đứng yên.";
+"Switch from the editor to the giant text display." = "Chuyển từ trình sửa sang màn hình chữ lớn.";
+"Shake the text." = "Làm chữ rung.";
+"Restore the previous text. Available after a change." = "Khôi phục văn bản trước đó. Có thể dùng sau khi thay đổi.";
+"Open editing actions, Settings, and Help." = "Mở các thao tác chỉnh sửa, Cài đặt và Trợ giúp.";
+"Move a wave through the letters." = "Tạo làn sóng chạy qua các chữ cái.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Chạm vào bản xem trước màu để áp dụng giao diện. Dấu kiểm cho biết giao diện đang chọn.";
+"Adjust how your text appears." = "Điều chỉnh cách hiển thị văn bản.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Chạm vào mũi tên để viết tin nhắn đầu tiên. Menu ba chấm có Cài đặt và Trợ giúp.";
+"Turn bold text on or off." = "Bật hoặc tắt chữ đậm.";
+"Leave the welcome screen and start your message." = "Thoát màn hình chào mừng và bắt đầu viết tin nhắn.";
+"Change the text animation from the editor toolbar." = "Đổi hiệu ứng chuyển động của chữ từ thanh công cụ trình sửa.";
+"Show this guide to the controls." = "Hiển thị hướng dẫn điều khiển này.";
+"Help" = "Trợ giúp";
+"Controls" = "Điều khiển";
+"Pulse the size of the text." = "Làm kích thước chữ nhấp nhô.";
+"Close the current panel." = "Đóng bảng hiện tại.";
+"Open live display" = "Mở màn hình trực tiếp";
+"Editor" = "Trình sửa";
+"Edit the message shown on the display." = "Chỉnh sửa tin nhắn đang hiển thị trên màn hình.";
+"Open another sign window that follows your message and styling." = "Mở thêm một cửa sổ bảng hiệu theo tin nhắn và kiểu chữ của bạn.";

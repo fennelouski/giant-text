@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Χρησιμοποιήστε το τηλεχειριστήριο για επεξεργασία και πρόσβαση σε επιλογές";
 "feature_easy_editing_desc_other" = "Πατήστε για επεξεργασία, άγγιγμα με δύο δάχτυλα για επιλογές";
 "get_started_button" = "Ξεκινήστε";
+
+// MARK: - Controls Help
+"Present text" = "Εμφάνιση κειμένου";
+"Erase the message and start typing a new one." = "Διαγράψτε το μήνυμα και αρχίστε να πληκτρολογείτε ένα νέο.";
+"Finish editing and show your giant text." = "Ολοκληρώστε την επεξεργασία και εμφανίστε το μεγάλο κείμενό σας.";
+"Settings" = "Ρυθμίσεις";
+"Turn italic text on or off." = "Ενεργοποίηση ή απενεργοποίηση πλάγιων γραμμάτων.";
+"Keep the text still." = "Διατήρηση του κειμένου ακίνητου.";
+"Switch from the editor to the giant text display." = "Μετάβαση από το πρόγραμμα επεξεργασίας στην προβολή μεγάλου κειμένου.";
+"Shake the text." = "Κούνημα του κειμένου.";
+"Restore the previous text. Available after a change." = "Επαναφορά του προηγούμενου κειμένου. Διαθέσιμο μετά από αλλαγή.";
+"Open editing actions, Settings, and Help." = "Άνοιγμα ενεργειών επεξεργασίας, Ρυθμίσεων και Βοήθειας.";
+"Move a wave through the letters." = "Μετακίνηση ενός κύματος μέσα από τα γράμματα.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Πατήστε μια προεπισκόπηση χρώματος για να εφαρμόσετε το θέμα. Το σημάδι επιλογής υποδεικνύει το επιλεγμένο θέμα.";
+"Adjust how your text appears." = "Προσαρμογή της εμφάνισης του κειμένου.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Πατήστε το βέλος για να γράψετε το πρώτο σας μήνυμα. Το μενού με τις τρεις τελείες περιέχει τις Ρυθμίσεις και τη Βοήθεια.";
+"Turn bold text on or off." = "Ενεργοποίηση ή απενεργοποίηση έντονων γραμμάτων.";
+"Leave the welcome screen and start your message." = "Έξοδος από την οθόνη καλωσορίσματος και έναρξη του μηνύματός σας.";
+"Change the text animation from the editor toolbar." = "Αλλαγή της κίνησης κειμένου από τη γραμμή εργαλείων επεξεργασίας.";
+"Show this guide to the controls." = "Εμφάνιση αυτού του οδηγού για τα χειριστήρια.";
+"Help" = "Βοήθεια";
+"Controls" = "Χειριστήρια";
+"Pulse the size of the text." = "Παλμός του μεγέθους του κειμένου.";
+"Close the current panel." = "Κλείσιμο του τρέχοντος πλαισίου.";
+"Open live display" = "Άνοιγμα ζωντανής προβολής";
+"Editor" = "Επεξεργασία";
+"Edit the message shown on the display." = "Επεξεργαστείτε το μήνυμα που εμφανίζεται στην οθόνη.";
+"Open another sign window that follows your message and styling." = "Άνοιγμα άλλου παραθύρου πινακίδας που ακολουθεί το μήνυμα και το στυλ σας.";

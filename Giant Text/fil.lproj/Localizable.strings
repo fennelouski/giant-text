@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Gamitin ang remote para mag-edit at makakuha ng access sa mga opsyon";
 "feature_easy_editing_desc_other" = "Mag-tap para mag-edit, mag-tap gamit ang dalawang daliri para sa mga opsyon";
 "get_started_button" = "Simulan";
+
+// MARK: - Controls Help
+"Present text" = "Ipakita ang text";
+"Erase the message and start typing a new one." = "Burahin ang mensahe at magsimulang mag-type ng bago.";
+"Finish editing and show your giant text." = "Tapusin ang pag-edit at ipakita ang malaking text mo.";
+"Settings" = "Mga Setting";
+"Turn italic text on or off." = "I-on o i-off ang italic na text.";
+"Keep the text still." = "Panatilihing hindi gumagalaw ang text.";
+"Switch from the editor to the giant text display." = "Lumipat mula sa editor papunta sa malaking text display.";
+"Shake the text." = "Alugin ang text.";
+"Restore the previous text. Available after a change." = "Ibalik ang naunang text. Magagamit pagkatapos ng pagbabago.";
+"Open editing actions, Settings, and Help." = "Buksan ang mga aksyon sa pag-edit, Mga Setting, at Tulong.";
+"Move a wave through the letters." = "Pag-alunin ang mga letra.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "I-tap ang preview ng kulay para ilapat ang tema. Ipinapakita ng checkmark ang napiling tema.";
+"Adjust how your text appears." = "Ayusin ang hitsura ng text mo.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "I-tap ang arrow para isulat ang una mong mensahe. Nasa three-dot menu ang Mga Setting at Tulong.";
+"Turn bold text on or off." = "I-on o i-off ang bold na text.";
+"Leave the welcome screen and start your message." = "Umalis sa welcome screen at simulan ang mensahe mo.";
+"Change the text animation from the editor toolbar." = "Palitan ang text animation mula sa toolbar ng editor.";
+"Show this guide to the controls." = "Ipakita ang gabay na ito para sa mga control.";
+"Help" = "Tulong";
+"Controls" = "Mga Control";
+"Pulse the size of the text." = "Pumintig ang laki ng text.";
+"Close the current panel." = "Isara ang kasalukuyang panel.";
+"Open live display" = "Buksan ang live display";
+"Editor" = "Editor";
+"Edit the message shown on the display." = "I-edit ang mensaheng ipinapakita sa display.";
+"Open another sign window that follows your message and styling." = "Magbukas ng isa pang sign window na sumusunod sa mensahe at estilo mo.";

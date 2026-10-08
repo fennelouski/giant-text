@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "සංස්කරණය කිරීමට සහ විකල්පවලට පිවිසීමට රිමෝට් පාවිච්චි කරන්න";
 "feature_easy_editing_desc_other" = "සංස්කරණයට තට්ටු කරන්න, විකල්ප සඳහා ඇඟිලි දෙකකින් තට්ටු කරන්න";
 "get_started_button" = "ආරම්භ කරන්න";
+
+// MARK: - Controls Help
+"Present text" = "පෙළ පෙන්වන්න";
+"Erase the message and start typing a new one." = "පණිවිඩය මකා අලුත් එකක් ලිවීම අරඹන්න.";
+"Finish editing and show your giant text." = "සංස්කරණය අවසන් කර ඔබේ විශාල පෙළ පෙන්වන්න.";
+"Settings" = "සැකසීම්";
+"Turn italic text on or off." = "ඇල අකුරු සක්‍රිය හෝ අක්‍රිය කරන්න.";
+"Keep the text still." = "පෙළ නිශ්චලව තබන්න.";
+"Switch from the editor to the giant text display." = "සංස්කාරකයෙන් විශාල පෙළ දර්ශනයට මාරු වන්න.";
+"Shake the text." = "පෙළ සොලවන්න.";
+"Restore the previous text. Available after a change." = "පෙර පෙළ ප්‍රතිසාධනය කරන්න. වෙනසක් කළ පසු ලබාගත හැක.";
+"Open editing actions, Settings, and Help." = "සංස්කරණ ක්‍රියා, සැකසීම් සහ උදව් විවෘත කරන්න.";
+"Move a wave through the letters." = "අකුරු අතරින් රැල්ලක් ගෙන යන්න.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "තේමාව යෙදීමට වර්ණ පෙරදසුනක් තට්ටු කරන්න. සලකුණු ලකුණින් තෝරාගත් තේමාව පෙන්වයි.";
+"Adjust how your text appears." = "ඔබේ පෙළේ පෙනුම සකස් කරන්න.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "පළමු පණිවිඩය ලිවීමට ඊතලය තට්ටු කරන්න. තිත් තුනේ මෙනුවේ සැකසීම් සහ උදව් ඇත.";
+"Turn bold text on or off." = "තද අකුරු සක්‍රිය හෝ අක්‍රිය කරන්න.";
+"Leave the welcome screen and start your message." = "ආරම්භක තිරයෙන් පිටවී ඔබේ පණිවිඩය අරඹන්න.";
+"Change the text animation from the editor toolbar." = "සංස්කාරක මෙවලම් තීරුවෙන් පෙළ සජීවීකරණය වෙනස් කරන්න.";
+"Show this guide to the controls." = "පාලක පිළිබඳ මෙම මාර්ගෝපදේශය පෙන්වන්න.";
+"Help" = "උදව්";
+"Controls" = "පාලක";
+"Pulse the size of the text." = "පෙළේ ප්‍රමාණය ස්පන්දනය කරන්න.";
+"Close the current panel." = "දැනට ඇති පැනලය වසන්න.";
+"Open live display" = "සජීවී දර්ශනය විවෘත කරන්න";
+"Editor" = "සංස්කාරකය";
+"Edit the message shown on the display." = "තිරයේ පෙන්වන පණිවිඩය සංස්කරණය කරන්න.";
+"Open another sign window that follows your message and styling." = "ඔබේ පණිවිඩය සහ රටාව අනුගමනය කරන තවත් පුවරු කවුළුවක් විවෘත කරන්න.";

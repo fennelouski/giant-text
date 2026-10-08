@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Använd fjärrkontrollen för att redigera och komma åt alternativ";
 "feature_easy_editing_desc_other" = "Tryck för att redigera, tryck med två fingrar för alternativ";
 "get_started_button" = "Kom igång";
+
+// MARK: - Controls Help
+"Present text" = "Visa text";
+"Erase the message and start typing a new one." = "Radera meddelandet och börja skriva ett nytt.";
+"Finish editing and show your giant text." = "Slutför redigeringen och visa din stora text.";
+"Settings" = "Inställningar";
+"Turn italic text on or off." = "Slå på eller av kursiv text.";
+"Keep the text still." = "Håll texten stilla.";
+"Switch from the editor to the giant text display." = "Byt från redigeraren till visning av stor text.";
+"Shake the text." = "Skaka texten.";
+"Restore the previous text. Available after a change." = "Återställ föregående text. Tillgängligt efter en ändring.";
+"Open editing actions, Settings, and Help." = "Öppna redigeringsåtgärder, Inställningar och Hjälp.";
+"Move a wave through the letters." = "Låt en våg röra sig genom bokstäverna.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Tryck på en färgförhandsvisning för att använda temat. En bock markerar det valda temat.";
+"Adjust how your text appears." = "Justera textens utseende.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Tryck på pilen för att skriva ditt första meddelande. Menyn med tre punkter innehåller Inställningar och Hjälp.";
+"Turn bold text on or off." = "Slå på eller av fet text.";
+"Leave the welcome screen and start your message." = "Lämna välkomstskärmen och börja skriva ditt meddelande.";
+"Change the text animation from the editor toolbar." = "Ändra textanimeringen från redigerarens verktygsfält.";
+"Show this guide to the controls." = "Visa den här guiden till reglagen.";
+"Help" = "Hjälp";
+"Controls" = "Reglage";
+"Pulse the size of the text." = "Låt textstorleken pulsera.";
+"Close the current panel." = "Stäng den aktuella panelen.";
+"Open live display" = "Öppna livevisning";
+"Editor" = "Redigerare";
+"Edit the message shown on the display." = "Redigera meddelandet som visas på skärmen.";
+"Open another sign window that follows your message and styling." = "Öppna ett till skyltfönster som följer meddelandet och stilen.";

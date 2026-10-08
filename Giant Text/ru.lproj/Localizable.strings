@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Используйте пульт для редактирования и доступа к параметрам";
 "feature_easy_editing_desc_other" = "Нажмите для редактирования, коснитесь двумя пальцами для параметров";
 "get_started_button" = "Начать";
+
+// MARK: - Controls Help
+"Present text" = "Показать текст";
+"Erase the message and start typing a new one." = "Удалите сообщение и начните вводить новое.";
+"Finish editing and show your giant text." = "Завершите редактирование и покажите крупный текст.";
+"Settings" = "Настройки";
+"Turn italic text on or off." = "Включить или выключить курсив.";
+"Keep the text still." = "Оставить текст неподвижным.";
+"Switch from the editor to the giant text display." = "Переключиться из редактора на отображение крупного текста.";
+"Shake the text." = "Встряхнуть текст.";
+"Restore the previous text. Available after a change." = "Восстановить предыдущий текст. Доступно после изменения.";
+"Open editing actions, Settings, and Help." = "Открыть действия редактирования, настройки и справку.";
+"Move a wave through the letters." = "Провести волной через буквы.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Коснитесь образца цвета, чтобы применить тему. Галочка указывает выбранную тему.";
+"Adjust how your text appears." = "Настроить внешний вид текста.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Коснитесь стрелки, чтобы написать первое сообщение. В меню с тремя точками находятся настройки и справка.";
+"Turn bold text on or off." = "Включить или выключить полужирный текст.";
+"Leave the welcome screen and start your message." = "Закрыть экран приветствия и начать вводить сообщение.";
+"Change the text animation from the editor toolbar." = "Изменить анимацию текста на панели инструментов редактора.";
+"Show this guide to the controls." = "Показать это руководство по элементам управления.";
+"Help" = "Справка";
+"Controls" = "Элементы управления";
+"Pulse the size of the text." = "Пульсация размера текста.";
+"Close the current panel." = "Закрыть текущую панель.";
+"Open live display" = "Открыть дополнительное окно вывески";
+"Editor" = "Редактор";
+"Edit the message shown on the display." = "Изменить сообщение на экране.";
+"Open another sign window that follows your message and styling." = "Открыть еще одно окно вывески, которое повторяет сообщение и его оформление.";

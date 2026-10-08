@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "திருத்தவும் விருப்பங்களை அணுகவும் ரிமோட்டைப் பயன்படுத்தவும்";
 "feature_easy_editing_desc_other" = "திருத்த தட்டவும், விருப்பங்களுக்கு இரு விரல்களால் தட்டவும்";
 "get_started_button" = "தொடங்குங்கள்";
+
+// MARK: - Controls Help
+"Present text" = "உரையைக் காட்டு";
+"Erase the message and start typing a new one." = "செய்தியை அழித்துவிட்டு புதியதைத் தட்டச்சு செய்யத் தொடங்குங்கள்.";
+"Finish editing and show your giant text." = "திருத்துவதை முடித்து உங்கள் பெரிய உரையைக் காட்டுங்கள்.";
+"Settings" = "அமைப்புகள்";
+"Turn italic text on or off." = "சாய்வெழுத்தை இயக்கவும் அல்லது முடக்கவும்.";
+"Keep the text still." = "உரையை அசையாமல் வைக்கவும்.";
+"Switch from the editor to the giant text display." = "திருத்தியிலிருந்து பெரிய உரைக் காட்சிக்கு மாறவும்.";
+"Shake the text." = "உரையை அசைக்கவும்.";
+"Restore the previous text. Available after a change." = "முந்தைய உரையை மீட்டெடுக்கவும். மாற்றத்திற்குப் பிறகு கிடைக்கும்.";
+"Open editing actions, Settings, and Help." = "திருத்தச் செயல்கள், அமைப்புகள், உதவி ஆகியவற்றைத் திறக்கவும்.";
+"Move a wave through the letters." = "எழுத்துகளின் வழியே அலையை நகர்த்தவும்.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "தீமையைப் பயன்படுத்த வண்ண முன்னோட்டத்தைத் தட்டவும். தேர்ந்த தீமைக்கு சரிக்குறி இருக்கும்.";
+"Adjust how your text appears." = "உரையின் தோற்றத்தைச் சரிசெய்யவும்.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "முதல் செய்தியை எழுத அம்புக்குறியைத் தட்டவும். மூன்று புள்ளி பட்டியலில் அமைப்புகளும் உதவியும் உள்ளன.";
+"Turn bold text on or off." = "தடித்த எழுத்தை இயக்கவும் அல்லது முடக்கவும்.";
+"Leave the welcome screen and start your message." = "வரவேற்புத் திரையை விட்டு உங்கள் செய்தியைத் தொடங்கவும்.";
+"Change the text animation from the editor toolbar." = "திருத்தியின் கருவிப்பட்டியில் உரை அசைவூட்டத்தை மாற்றவும்.";
+"Show this guide to the controls." = "கட்டுப்பாடுகளுக்கான இந்த வழிகாட்டியைக் காட்டவும்.";
+"Help" = "உதவி";
+"Controls" = "கட்டுப்பாடுகள்";
+"Pulse the size of the text." = "உரையின் அளவைத் துடிப்படையச் செய்யவும்.";
+"Close the current panel." = "தற்போதைய பலகத்தை மூடவும்.";
+"Open live display" = "நேரடி காட்சியைத் திறக்கவும்";
+"Editor" = "திருத்தி";
+"Edit the message shown on the display." = "திரையில் காட்டப்படும் செய்தியைத் திருத்தவும்.";
+"Open another sign window that follows your message and styling." = "உங்கள் செய்தி மற்றும் பாணியைப் பின்பற்றும் மற்றொரு அறிவிப்புப் பலகச் சாளரத்தைத் திறக்கவும்.";

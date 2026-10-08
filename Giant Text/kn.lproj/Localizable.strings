@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "ಸಂಪಾದಿಸಲು ಮತ್ತು ಆಯ್ಕೆಗಳನ್ನು ಪ್ರವೇಶಿಸಲು ರಿಮೋಟ್ ಬಳಸಿ";
 "feature_easy_editing_desc_other" = "ಸಂಪಾದಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ, ಆಯ್ಕೆಗಳಿಗಾಗಿ ಎರಡು ಬೆರಳುಗಳಿಂದ ಟ್ಯಾಪ್ ಮಾಡಿ";
 "get_started_button" = "ಪ್ರಾರಂಭಿಸಿ";
+
+// MARK: - Controls Help
+"Present text" = "ಪಠ್ಯ ತೋರಿಸಿ";
+"Erase the message and start typing a new one." = "ಸಂದೇಶವನ್ನು ಅಳಿಸಿ ಹೊಸದನ್ನು ಟೈಪ್ ಮಾಡಲು ಪ್ರಾರಂಭಿಸಿ.";
+"Finish editing and show your giant text." = "ಸಂಪಾದನೆ ಮುಗಿಸಿ ನಿಮ್ಮ ದೊಡ್ಡ ಪಠ್ಯವನ್ನು ತೋರಿಸಿ.";
+"Settings" = "ಸೆಟ್ಟಿಂಗ್‌ಗಳು";
+"Turn italic text on or off." = "ಇಟಾಲಿಕ್ ಪಠ್ಯವನ್ನು ಆನ್ ಅಥವಾ ಆಫ್ ಮಾಡಿ.";
+"Keep the text still." = "ಪಠ್ಯವನ್ನು ಸ್ಥಿರವಾಗಿರಿಸಿ.";
+"Switch from the editor to the giant text display." = "ಸಂಪಾದಕದಿಂದ ದೊಡ್ಡ ಪಠ್ಯ ಪ್ರದರ್ಶನಕ್ಕೆ ಬದಲಾಯಿಸಿ.";
+"Shake the text." = "ಪಠ್ಯವನ್ನು ಅಲುಗಾಡಿಸಿ.";
+"Restore the previous text. Available after a change." = "ಹಿಂದಿನ ಪಠ್ಯವನ್ನು ಮರುಸ್ಥಾಪಿಸಿ. ಬದಲಾವಣೆಯ ನಂತರ ಲಭ್ಯ.";
+"Open editing actions, Settings, and Help." = "ಸಂಪಾದನೆ ಕ್ರಿಯೆಗಳು, ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಮತ್ತು ಸಹಾಯ ತೆರೆಯಿರಿ.";
+"Move a wave through the letters." = "ಅಕ್ಷರಗಳ ಮೂಲಕ ಅಲೆಯನ್ನು ಚಲಿಸಿ.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "ಥೀಮ್ ಅನ್ವಯಿಸಲು ಬಣ್ಣದ ಪೂರ್ವವೀಕ್ಷಣೆಯನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ. ಚೆಕ್‌ಮಾರ್ಕ್ ಆಯ್ಕೆಮಾಡಿದ ಥೀಮ್ ತೋರಿಸುತ್ತದೆ.";
+"Adjust how your text appears." = "ನಿಮ್ಮ ಪಠ್ಯದ ನೋಟವನ್ನು ಹೊಂದಿಸಿ.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "ಮೊದಲ ಸಂದೇಶ ಬರೆಯಲು ಬಾಣವನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ. ಮೂರು-ಚುಕ್ಕೆಗಳ ಮೆನುವಿನಲ್ಲಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಮತ್ತು ಸಹಾಯ ಇವೆ.";
+"Turn bold text on or off." = "ಬೋಲ್ಡ್ ಪಠ್ಯವನ್ನು ಆನ್ ಅಥವಾ ಆಫ್ ಮಾಡಿ.";
+"Leave the welcome screen and start your message." = "ಸ್ವಾಗತ ಪರದೆಯಿಂದ ಹೊರಬಂದು ನಿಮ್ಮ ಸಂದೇಶವನ್ನು ಪ್ರಾರಂಭಿಸಿ.";
+"Change the text animation from the editor toolbar." = "ಸಂಪಾದಕ ಟೂಲ್‌ಬಾರ್‌ನಿಂದ ಪಠ್ಯದ ಅನಿಮೇಶನ್ ಬದಲಾಯಿಸಿ.";
+"Show this guide to the controls." = "ನಿಯಂತ್ರಣಗಳ ಈ ಮಾರ್ಗದರ್ಶಿಯನ್ನು ತೋರಿಸಿ.";
+"Help" = "ಸಹಾಯ";
+"Controls" = "ನಿಯಂತ್ರಣಗಳು";
+"Pulse the size of the text." = "ಪಠ್ಯದ ಗಾತ್ರವನ್ನು ಮಿಡಿಯುವಂತೆ ಮಾಡಿ.";
+"Close the current panel." = "ಪ್ರಸ್ತುತ ಫಲಕವನ್ನು ಮುಚ್ಚಿ.";
+"Open live display" = "ನೇರ ಪ್ರದರ್ಶನ ತೆರೆಯಿರಿ";
+"Editor" = "ಸಂಪಾದಕ";
+"Edit the message shown on the display." = "ಪರದೆಯಲ್ಲಿ ತೋರಿಸಿರುವ ಸಂದೇಶವನ್ನು ಸಂಪಾದಿಸಿ.";
+"Open another sign window that follows your message and styling." = "ನಿಮ್ಮ ಸಂದೇಶ ಮತ್ತು ಶೈಲಿಯನ್ನು ಅನುಸರಿಸುವ ಮತ್ತೊಂದು ಫಲಕದ ವಿಂಡೋ ತೆರೆಯಿರಿ.";

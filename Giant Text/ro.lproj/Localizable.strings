@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Folosește telecomanda pentru a edita și accesa opțiunile";
 "feature_easy_editing_desc_other" = "Atinge pentru a edita, atinge cu două degete pentru opțiuni";
 "get_started_button" = "Începe";
+
+// MARK: - Controls Help
+"Present text" = "Afișează textul";
+"Erase the message and start typing a new one." = "Șterge mesajul și începe să scrii unul nou.";
+"Finish editing and show your giant text." = "Încheie editarea și afișează textul tău mare.";
+"Settings" = "Configurări";
+"Turn italic text on or off." = "Activează sau dezactivează textul cursiv.";
+"Keep the text still." = "Păstrează textul nemișcat.";
+"Switch from the editor to the giant text display." = "Treci de la editor la afișarea textului mare.";
+"Shake the text." = "Scutură textul.";
+"Restore the previous text. Available after a change." = "Restabilește textul anterior. Disponibil după o modificare.";
+"Open editing actions, Settings, and Help." = "Deschide acțiunile de editare, Configurările și Ajutorul.";
+"Move a wave through the letters." = "Treci un val printre litere.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Atinge o previzualizare de culoare pentru a aplica tema. Bifa indică tema selectată.";
+"Adjust how your text appears." = "Ajustează aspectul textului.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Atinge săgeata pentru a scrie primul mesaj. Meniul cu trei puncte conține Configurările și Ajutorul.";
+"Turn bold text on or off." = "Activează sau dezactivează textul aldin.";
+"Leave the welcome screen and start your message." = "Ieși din ecranul de întâmpinare și începe mesajul.";
+"Change the text animation from the editor toolbar." = "Schimbă animația textului din bara de instrumente a editorului.";
+"Show this guide to the controls." = "Afișează acest ghid al comenzilor.";
+"Help" = "Ajutor";
+"Controls" = "Comenzi";
+"Pulse the size of the text." = "Pulsează dimensiunea textului.";
+"Close the current panel." = "Închide panoul curent.";
+"Open live display" = "Deschide afișarea live";
+"Editor" = "Editor";
+"Edit the message shown on the display." = "Editează mesajul afișat pe ecran.";
+"Open another sign window that follows your message and styling." = "Deschide încă o fereastră de afișaj care urmărește mesajul și stilul tău.";

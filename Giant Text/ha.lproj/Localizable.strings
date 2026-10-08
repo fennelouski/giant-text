@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Yi amfani da rimoti don gyarawa da samun zaɓuɓɓuka";
 "feature_easy_editing_desc_other" = "Taɓa don gyarawa, taɓa da yatsu biyu don zaɓuɓɓuka";
 "get_started_button" = "Fara";
+
+// MARK: - Controls Help
+"Present text" = "Nuna rubutu";
+"Erase the message and start typing a new one." = "Goge saƙon sannan a fara rubuta sabon saƙo.";
+"Finish editing and show your giant text." = "Kammala gyara sannan a nuna babban rubutunka.";
+"Settings" = "Saituna";
+"Turn italic text on or off." = "Kunna ko kashe rubutu mai karkata.";
+"Keep the text still." = "A bar rubutun a tsaye.";
+"Switch from the editor to the giant text display." = "Canza daga editan zuwa nunin babban rubutu.";
+"Shake the text." = "Girgiza rubutun.";
+"Restore the previous text. Available after a change." = "Mayar da rubutun da ya gabata. Ana samunsa bayan an yi canji.";
+"Open editing actions, Settings, and Help." = "Buɗe ayyukan gyara, Saituna, da Taimako.";
+"Move a wave through the letters." = "A motsa igiyar ruwa ta cikin haruffa.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Taɓa hoton launi don amfani da jigon. Alamar tik tana nuna jigon da aka zaɓa.";
+"Adjust how your text appears." = "Daidaita yadda rubutunka yake bayyana.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Taɓa kibiya don rubuta saƙonka na farko. Menu mai ɗigo uku yana da Saituna da Taimako.";
+"Turn bold text on or off." = "Kunna ko kashe rubutu mai kauri.";
+"Leave the welcome screen and start your message." = "Fita daga allon maraba ka fara saƙonka.";
+"Change the text animation from the editor toolbar." = "Canza motsin rubutu daga sandar kayan aikin editan.";
+"Show this guide to the controls." = "Nuna wannan jagorar sarrafawa.";
+"Help" = "Taimako";
+"Controls" = "Sarrafawa";
+"Pulse the size of the text." = "A sa girman rubutun ya riƙa bugawa.";
+"Close the current panel." = "Rufe wannan panel ɗin.";
+"Open live display" = "Buɗe nunin kai-tsaye";
+"Editor" = "Editan";
+"Edit the message shown on the display." = "Gyara saƙon da aka nuna a allon.";
+"Open another sign window that follows your message and styling." = "Buɗe wata tagar allo da ke bin saƙonka da salonka.";

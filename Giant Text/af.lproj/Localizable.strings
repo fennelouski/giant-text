@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Gebruik afstandbeheer om te wysig en toegang tot opsies te kry";
 "feature_easy_editing_desc_other" = "Tik om te wysig, tik met twee vingers vir opsies";
 "get_started_button" = "Begin";
+
+// MARK: - Controls Help
+"Present text" = "Wys teks";
+"Erase the message and start typing a new one." = "Vee die boodskap uit en begin ’n nuwe een tik.";
+"Finish editing and show your giant text." = "Voltooi die wysiging en wys jou groot teks.";
+"Settings" = "Instellings";
+"Turn italic text on or off." = "Skakel kursiewe teks aan of af.";
+"Keep the text still." = "Hou die teks stil.";
+"Switch from the editor to the giant text display." = "Skakel van die redigeerder na die grootteksvertoning.";
+"Shake the text." = "Skud die teks.";
+"Restore the previous text. Available after a change." = "Herstel die vorige teks. Beskikbaar nadat iets verander is.";
+"Open editing actions, Settings, and Help." = "Maak wysigingsaksies, Instellings en Hulp oop.";
+"Move a wave through the letters." = "Laat ’n golf deur die letters beweeg.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Tik ’n kleurvoorskou om die tema toe te pas. ’n Regmerkie wys die gekose tema.";
+"Adjust how your text appears." = "Verander hoe jou teks lyk.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Tik die pyltjie om jou eerste boodskap te skryf. Die driestippelkieslys bevat Instellings en Hulp.";
+"Turn bold text on or off." = "Skakel vetdruk aan of af.";
+"Leave the welcome screen and start your message." = "Verlaat die welkomskerm en begin jou boodskap.";
+"Change the text animation from the editor toolbar." = "Verander die teksanimasie vanaf die redigeerder se nutsbalk.";
+"Show this guide to the controls." = "Wys hierdie gids vir die kontroles.";
+"Help" = "Hulp";
+"Controls" = "Kontroles";
+"Pulse the size of the text." = "Laat die teks pols.";
+"Close the current panel." = "Maak die huidige paneel toe.";
+"Open live display" = "Maak regstreekse vertoning oop";
+"Editor" = "Redigeerder";
+"Edit the message shown on the display." = "Wysig die boodskap wat op die skerm verskyn.";
+"Open another sign window that follows your message and styling." = "Maak nog ’n teksvenster oop wat jou boodskap en styl volg.";

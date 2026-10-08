@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "השתמשו בשלט כדי לערוך ולגשת לאפשרויות";
 "feature_easy_editing_desc_other" = "הקישו לעריכה, הקשה בשתי אצבעות לאפשרויות";
 "get_started_button" = "בואו נתחיל";
+
+// MARK: - Controls Help
+"Present text" = "הצגת הטקסט";
+"Erase the message and start typing a new one." = "מחיקת ההודעה והתחלת כתיבת הודעה חדשה.";
+"Finish editing and show your giant text." = "סיום העריכה והצגת הטקסט הגדול שלך.";
+"Settings" = "הגדרות";
+"Turn italic text on or off." = "הפעלה או כיבוי של טקסט נטוי.";
+"Keep the text still." = "השארת הטקסט ללא תנועה.";
+"Switch from the editor to the giant text display." = "מעבר מהעורך לתצוגת הטקסט הגדול.";
+"Shake the text." = "טלטול הטקסט.";
+"Restore the previous text. Available after a change." = "שחזור הטקסט הקודם. זמין לאחר שינוי.";
+"Open editing actions, Settings, and Help." = "פתיחת פעולות העריכה, ההגדרות והעזרה.";
+"Move a wave through the letters." = "העברת גל דרך האותיות.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "הקשה על תצוגה מקדימה של צבע כדי להחיל את ערכת העיצוב. סימן ביקורת מציין את ערכת העיצוב שנבחרה.";
+"Adjust how your text appears." = "התאמת המראה של הטקסט.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "הקשה על החץ כדי לכתוב את ההודעה הראשונה. התפריט עם שלוש הנקודות כולל הגדרות ועזרה.";
+"Turn bold text on or off." = "הפעלה או כיבוי של טקסט מודגש.";
+"Leave the welcome screen and start your message." = "יציאה ממסך הפתיחה והתחלת ההודעה שלך.";
+"Change the text animation from the editor toolbar." = "שינוי הנפשת הטקסט מסרגל הכלים של העורך.";
+"Show this guide to the controls." = "הצגת מדריך זה לפקדים.";
+"Help" = "עזרה";
+"Controls" = "פקדים";
+"Pulse the size of the text." = "הפעמת גודל הטקסט.";
+"Close the current panel." = "סגירת החלונית הנוכחית.";
+"Open live display" = "פתיחת התצוגה החיה";
+"Editor" = "עורך";
+"Edit the message shown on the display." = "עריכת ההודעה שמוצגת על המסך.";
+"Open another sign window that follows your message and styling." = "פתיחת חלון שלט נוסף שמציג את ההודעה והעיצוב שלך.";

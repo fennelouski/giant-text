@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "এডিট করতে এবং অপশন অ্যাক্সেস করতে রিমোট ব্যবহার করুন";
 "feature_easy_editing_desc_other" = "এডিট করতে ট্যাপ করুন, অপশনের জন্য দুই আঙুলে ট্যাপ করুন";
 "get_started_button" = "শুরু করুন";
+
+// MARK: - Controls Help
+"Present text" = "লেখা দেখান";
+"Erase the message and start typing a new one." = "বার্তাটি মুছে নতুন বার্তা লেখা শুরু করুন।";
+"Finish editing and show your giant text." = "সম্পাদনা শেষ করে আপনার বড় লেখা দেখান।";
+"Settings" = "সেটিংস";
+"Turn italic text on or off." = "ইটালিক লেখা চালু বা বন্ধ করুন।";
+"Keep the text still." = "লেখা স্থির রাখুন।";
+"Switch from the editor to the giant text display." = "সম্পাদক থেকে বড় লেখার প্রদর্শনে যান।";
+"Shake the text." = "লেখা কাঁপান।";
+"Restore the previous text. Available after a change." = "আগের লেখা ফিরিয়ে আনুন। পরিবর্তনের পর ব্যবহার করা যায়।";
+"Open editing actions, Settings, and Help." = "সম্পাদনার কাজ, সেটিংস ও সহায়তা খুলুন।";
+"Move a wave through the letters." = "অক্ষরের মধ্যে দিয়ে ঢেউ চালান।";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "থিম প্রয়োগ করতে রঙের নমুনায় ট্যাপ করুন। টিকচিহ্ন নির্বাচিত থিম দেখায়।";
+"Adjust how your text appears." = "আপনার লেখার চেহারা ঠিক করুন।";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "প্রথম বার্তা লিখতে তীরচিহ্নে ট্যাপ করুন। তিন-বিন্দুর মেনুতে সেটিংস ও সহায়তা আছে।";
+"Turn bold text on or off." = "বোল্ড লেখা চালু বা বন্ধ করুন।";
+"Leave the welcome screen and start your message." = "স্বাগত পর্দা ছেড়ে আপনার বার্তা শুরু করুন।";
+"Change the text animation from the editor toolbar." = "সম্পাদকের টুলবার থেকে লেখার অ্যানিমেশন বদলান।";
+"Show this guide to the controls." = "নিয়ন্ত্রণগুলোর এই নির্দেশিকা দেখান।";
+"Help" = "সহায়তা";
+"Controls" = "নিয়ন্ত্রণ";
+"Pulse the size of the text." = "লেখার আকার স্পন্দিত করুন।";
+"Close the current panel." = "বর্তমান প্যানেল বন্ধ করুন।";
+"Open live display" = "লাইভ প্রদর্শন খুলুন";
+"Editor" = "সম্পাদক";
+"Edit the message shown on the display." = "পর্দায় দেখানো বার্তাটি সম্পাদনা করুন।";
+"Open another sign window that follows your message and styling." = "আপনার বার্তা ও স্টাইল অনুসরণ করে এমন আরেকটি সাইন উইন্ডো খুলুন।";

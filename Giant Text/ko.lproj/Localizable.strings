@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "리모컨으로 편집 및 옵션 접근";
 "feature_easy_editing_desc_other" = "탭하여 편집, 두 손가락 탭으로 옵션 보기";
 "get_started_button" = "시작하기";
+
+// MARK: - Controls Help
+"Present text" = "텍스트 표시";
+"Erase the message and start typing a new one." = "메시지를 지우고 새 메시지 작성을 시작합니다.";
+"Finish editing and show your giant text." = "편집을 마치고 큰 글씨를 표시합니다.";
+"Settings" = "설정";
+"Turn italic text on or off." = "기울임꼴을 켜거나 끕니다.";
+"Keep the text still." = "텍스트를 움직이지 않게 합니다.";
+"Switch from the editor to the giant text display." = "편집기에서 큰 글씨 표시로 전환합니다.";
+"Shake the text." = "텍스트를 흔듭니다.";
+"Restore the previous text. Available after a change." = "이전 텍스트를 복원합니다. 변경 후 사용할 수 있습니다.";
+"Open editing actions, Settings, and Help." = "편집 동작, 설정, 도움말을 엽니다.";
+"Move a wave through the letters." = "글자 사이로 물결을 움직입니다.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "색상 미리보기를 탭해 테마를 적용합니다. 체크 표시는 선택한 테마를 나타냅니다.";
+"Adjust how your text appears." = "텍스트 모양을 조정합니다.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "화살표를 탭해 첫 메시지를 작성합니다. 점 세 개 메뉴에서 설정과 도움말을 열 수 있습니다.";
+"Turn bold text on or off." = "굵은 글씨를 켜거나 끕니다.";
+"Leave the welcome screen and start your message." = "환영 화면을 나가 메시지 작성을 시작합니다.";
+"Change the text animation from the editor toolbar." = "편집기 도구 막대에서 텍스트 애니메이션을 변경합니다.";
+"Show this guide to the controls." = "이 조작 안내를 표시합니다.";
+"Help" = "도움말";
+"Controls" = "조작";
+"Pulse the size of the text." = "텍스트 크기를 맥박처럼 변화시킵니다.";
+"Close the current panel." = "현재 패널을 닫습니다.";
+"Open live display" = "라이브 디스플레이 열기";
+"Editor" = "편집기";
+"Edit the message shown on the display." = "화면에 표시된 메시지를 편집합니다.";
+"Open another sign window that follows your message and styling." = "메시지와 스타일을 따라가는 다른 전광판 창을 엽니다.";

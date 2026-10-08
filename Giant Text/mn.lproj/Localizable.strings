@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Засах, сонголтод хандахын тулд удирдлагыг ашиглана уу";
 "feature_easy_editing_desc_other" = "Засахын тулд товшиж, сонголтын хувьд хоёр хуруугаар товшино уу";
 "get_started_button" = "Эхлэх";
+
+// MARK: - Controls Help
+"Present text" = "Текст харуулах";
+"Erase the message and start typing a new one." = "Мессежийг арилгаад шинээр бичиж эхэлнэ.";
+"Finish editing and show your giant text." = "Засварлаж дуусаад том текстээ харуулна.";
+"Settings" = "Тохиргоо";
+"Turn italic text on or off." = "Налуу бичвэрийг асаах эсвэл унтраах.";
+"Keep the text still." = "Текстийг хөдөлгөөнгүй байлгах.";
+"Switch from the editor to the giant text display." = "Засварлагчаас том текстийн дэлгэц рүү шилжих.";
+"Shake the text." = "Текстийг чичиргэх.";
+"Restore the previous text. Available after a change." = "Өмнөх текстийг сэргээх. Өөрчлөлт хийсний дараа боломжтой.";
+"Open editing actions, Settings, and Help." = "Засварлах үйлдэл, Тохиргоо, Тусламжийг нээх.";
+"Move a wave through the letters." = "Үсгүүдийн дундуур долгион хөдөлгөх.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Өнгөний урьдчилсан харагдац дээр товшиж загварыг хэрэглэх. Чагт сонгосон загварыг заана.";
+"Adjust how your text appears." = "Текстийн харагдах байдлыг тохируулах.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Эхний зурвасаа бичихийн тулд сумыг товш. Гурван цэгтэй цэсэнд Тохиргоо ба Тусламж бий.";
+"Turn bold text on or off." = "Тод бичвэрийг асаах эсвэл унтраах.";
+"Leave the welcome screen and start your message." = "Тавтай морилно уу дэлгэцээс гарч зурвасаа эхлүүлэх.";
+"Change the text animation from the editor toolbar." = "Засварлагчийн хэрэгслийн мөрөөс текстийн хөдөлгөөнийг өөрчлөх.";
+"Show this guide to the controls." = "Удирдлагын энэ зааврыг харуулах.";
+"Help" = "Тусламж";
+"Controls" = "Удирдлага";
+"Pulse the size of the text." = "Текстийн хэмжээг лугшуулан хөдөлгөх.";
+"Close the current panel." = "Одоогийн самбарыг хаах.";
+"Open live display" = "Шууд дэлгэц нээх";
+"Editor" = "Засварлагч";
+"Edit the message shown on the display." = "Дэлгэц дээр харагдаж буй зурвасыг засах.";
+"Open another sign window that follows your message and styling." = "Зурвас болон загварыг дагадаг өөр нэг самбарын цонх нээх.";

@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Úsáid an cianrialtán chun eagar a chur air agus rochtain a fháil ar roghanna";
 "feature_easy_editing_desc_other" = "Tapáil chun eagar a chur air, tapáil le dhá mhéar le haghaidh roghanna";
 "get_started_button" = "Tosaigh";
+
+// MARK: - Controls Help
+"Present text" = "Taispeáin téacs";
+"Erase the message and start typing a new one." = "Glan an teachtaireacht agus tosaigh ar theachtaireacht nua a chlóscríobh.";
+"Finish editing and show your giant text." = "Críochnaigh an eagarthóireacht agus taispeáin do théacs mór.";
+"Settings" = "Socruithe";
+"Turn italic text on or off." = "Cuir an iodálach air nó as.";
+"Keep the text still." = "Coinnigh an téacs socair.";
+"Switch from the editor to the giant text display." = "Athraigh ón eagarthóir go dtí taispeáint an téacs mhóir.";
+"Shake the text." = "Croith an téacs.";
+"Restore the previous text. Available after a change." = "Athchóirigh an téacs roimhe seo. Ar fáil tar éis athrú.";
+"Open editing actions, Settings, and Help." = "Oscail gníomhartha eagarthóireachta, Socruithe agus Cabhair.";
+"Move a wave through the letters." = "Bog tonn trí na litreacha.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Tapáil réamhamharc datha chun an téama sin a chur i bhfeidhm. Léiríonn tic an téama roghnaithe.";
+"Adjust how your text appears." = "Coigeartaigh cuma do théacs.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Tapáil an tsaighead chun do chéad teachtaireacht a scríobh. Tá Socruithe agus Cabhair sa roghchlár trí phonc.";
+"Turn bold text on or off." = "Cuir cló trom air nó as.";
+"Leave the welcome screen and start your message." = "Fág an scáileán fáilte agus tosaigh ar do theachtaireacht.";
+"Change the text animation from the editor toolbar." = "Athraigh beochan an téacs ó bharra uirlisí an eagarthóra.";
+"Show this guide to the controls." = "Taispeáin an treoir seo do na rialtáin.";
+"Help" = "Cabhair";
+"Controls" = "Rialtáin";
+"Pulse the size of the text." = "Cuir méid an téacs ag preabadh.";
+"Close the current panel." = "Dún an painéal reatha.";
+"Open live display" = "Oscail taispeáint bheo";
+"Editor" = "Eagarthóir";
+"Edit the message shown on the display." = "Cuir an teachtaireacht atá ar an taispeáint in eagar.";
+"Open another sign window that follows your message and styling." = "Oscail fuinneog chomhartha eile a leanann do theachtaireacht agus do stíl.";

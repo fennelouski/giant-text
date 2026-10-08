@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "K úpravě a přístupu k možnostem použijte ovladač";
 "feature_easy_editing_desc_other" = "Klepnutím upravíte, dvěma prsty zobrazíte možnosti";
 "get_started_button" = "Začít";
+
+// MARK: - Controls Help
+"Present text" = "Zobrazit text";
+"Erase the message and start typing a new one." = "Smažte zprávu a začněte psát novou.";
+"Finish editing and show your giant text." = "Dokončete úpravy a zobrazte velký text.";
+"Settings" = "Nastavení";
+"Turn italic text on or off." = "Zapnout nebo vypnout kurzívu.";
+"Keep the text still." = "Ponechat text bez pohybu.";
+"Switch from the editor to the giant text display." = "Přepnout z editoru na zobrazení velkého textu.";
+"Shake the text." = "Rozhýbat text.";
+"Restore the previous text. Available after a change." = "Obnovit předchozí text. Dostupné po změně.";
+"Open editing actions, Settings, and Help." = "Otevřít úpravy, nastavení a nápovědu.";
+"Move a wave through the letters." = "Nechat písmeny procházet vlnu.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Klepnutím na náhled barvy použijete motiv. Zaškrtnutí označuje vybraný motiv.";
+"Adjust how your text appears." = "Upravit vzhled textu.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Klepnutím na šipku napíšete první zprávu. Nabídka se třemi tečkami obsahuje nastavení a nápovědu.";
+"Turn bold text on or off." = "Zapnout nebo vypnout tučné písmo.";
+"Leave the welcome screen and start your message." = "Opustit uvítací obrazovku a začít psát zprávu.";
+"Change the text animation from the editor toolbar." = "Změnit animaci textu na panelu nástrojů editoru.";
+"Show this guide to the controls." = "Zobrazit tohoto průvodce ovládáním.";
+"Help" = "Nápověda";
+"Controls" = "Ovládání";
+"Pulse the size of the text." = "Pulzovat velikostí textu.";
+"Close the current panel." = "Zavřít aktuální panel.";
+"Open live display" = "Otevřít živé zobrazení";
+"Editor" = "Editor";
+"Edit the message shown on the display." = "Upravit zprávu zobrazenou na displeji.";
+"Open another sign window that follows your message and styling." = "Otevřít další okno s nápisem, které přebírá zprávu a styl.";

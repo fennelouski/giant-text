@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "ཞུ་དག་དང་གདམ་ཀ་ཐོབ་ཆེད་ཐག་རིང་ཚད་འཛིན་བེད་སྤྱོད་གྱིས།";
 "feature_easy_editing_desc_other" = "ཞུ་དག་ཆེད་མནན་རོགས། གདམ་ཀའི་ཆེད་མཛུབ་མོ་གཉིས་ཀྱིས་མནན་རོགས།";
 "get_started_button" = "འགོ་འཛུགས།";
+
+// MARK: - Controls Help
+"Present text" = "ཡི་གེ་སྟོན།";
+"Erase the message and start typing a new one." = "འཕྲིན་ཡིག་སུབ་ནས་གསར་པ་ཞིག་འབྲི་འགོ་འཛུགས།";
+"Finish editing and show your giant text." = "རྩོམ་སྒྲིག་མཇུག་བསྡུས་ནས་ཡི་གེ་ཆེན་པོ་སྟོན།";
+"Settings" = "སྒྲིག་འགོད།";
+"Turn italic text on or off." = "གསེག་གཟུགས་ཡི་གེ་སྒོ་ཕྱེ་ཡང་ན་སྒོ་རྒྱག";
+"Keep the text still." = "ཡི་གེ་འགུལ་མེད་དུ་འཇོག";
+"Switch from the editor to the giant text display." = "རྩོམ་སྒྲིག་ཆས་ནས་ཡི་གེ་ཆེན་པོའི་མངོན་སྟོན་ལ་བསྒྱུར།";
+"Shake the text." = "ཡི་གེ་འདར་དུ་བཅུག";
+"Restore the previous text. Available after a change." = "སྔོན་གྱི་ཡི་གེ་སླར་གསོ། བསྒྱུར་བཅོས་བྱས་རྗེས་སྤྱོད་ཐུབ།";
+"Open editing actions, Settings, and Help." = "རྩོམ་སྒྲིག་བྱ་བ་དང་། སྒྲིག་འགོད། རོགས་རམ་ཁ་ཕྱེ།";
+"Move a wave through the letters." = "ཡི་གེའི་བར་དུ་རླབས་ཤིག་འགྲོ་བར་བྱེད།";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "ཚོན་མདོག་སྔོན་ལྟ་ལ་རེག་ནས་བརྗོད་གཞི་དེ་སྤྱོད། འདེམས་ཟིན་པའི་བརྗོད་གཞི་ལ་འགྲིག་རྟགས་ཡོད།";
+"Adjust how your text appears." = "ཡི་གེའི་མངོན་ཚུལ་སྒྲིག";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "འཕྲུལ་གྱི་རྟགས་ལ་རེག་ནས་འཕྲིན་ཡིག་དང་པོ་འབྲི། ཚེག་གསུམ་གྱི་ཐོ་ཡིག་ནང་སྒྲིག་འགོད་དང་རོགས་རམ་ཡོད།";
+"Turn bold text on or off." = "སྦོམ་ཡི་གེ་སྒོ་ཕྱེ་ཡང་ན་སྒོ་རྒྱག";
+"Leave the welcome screen and start your message." = "བསུ་བའི་ངོས་ནས་ཕྱིར་ཐོན་ནས་འཕྲིན་ཡིག་འགོ་འཛུགས།";
+"Change the text animation from the editor toolbar." = "རྩོམ་སྒྲིག་ལག་ཆའི་སྟེང་ནས་ཡི་གེའི་འགུལ་སྟངས་བསྒྱུར།";
+"Show this guide to the controls." = "འཛིན་ཆས་ཀྱི་ལམ་སྟོན་འདི་སྟོན།";
+"Help" = "རོགས་རམ།";
+"Controls" = "འཛིན་ཆས།";
+"Pulse the size of the text." = "ཡི་གེའི་ཆེ་ཆུང་འཕར་ཆག་བྱེད།";
+"Close the current panel." = "ད་ལྟའི་སྒེའུ་ཁུང་ཁ་རྒྱག";
+"Open live display" = "ཐད་ཀར་མངོན་སྟོན་ཁ་ཕྱེ།";
+"Editor" = "རྩོམ་སྒྲིག་ཆས།";
+"Edit the message shown on the display." = "གསལ་ཡོད་པའི་འཕྲིན་ཡིག་སྒྲིག";
+"Open another sign window that follows your message and styling." = "འཕྲིན་ཡིག་དང་བཟོ་ལྟ་རྗེས་སུ་འབྲང་བའི་རྟགས་སྒེའུ་ཁུང་གཞན་ཞིག་ཁ་ཕྱེ།";

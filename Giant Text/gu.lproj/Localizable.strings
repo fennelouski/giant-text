@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "એડિટ કરવા અને વિકલ્પો ઍક્સેસ કરવા રિમોટનો ઉપયોગ કરો";
 "feature_easy_editing_desc_other" = "એડિટ કરવા ટેપ કરો, વિકલ્પો માટે બે આંગળીથી ટેપ કરો";
 "get_started_button" = "શરૂ કરો";
+
+// MARK: - Controls Help
+"Present text" = "ટેક્સ્ટ બતાવો";
+"Erase the message and start typing a new one." = "સંદેશો ભૂંસી નાખો અને નવો લખવાનું શરૂ કરો.";
+"Finish editing and show your giant text." = "સંપાદન પૂર્ણ કરો અને તમારો મોટો ટેક્સ્ટ બતાવો.";
+"Settings" = "સેટિંગ્સ";
+"Turn italic text on or off." = "ઇટાલિક ટેક્સ્ટ ચાલુ કે બંધ કરો.";
+"Keep the text still." = "ટેક્સ્ટને સ્થિર રાખો.";
+"Switch from the editor to the giant text display." = "સંપાદકમાંથી મોટા ટેક્સ્ટના પ્રદર્શન પર જાઓ.";
+"Shake the text." = "ટેક્સ્ટને હલાવો.";
+"Restore the previous text. Available after a change." = "પહેલાનો ટેક્સ્ટ પુનઃસ્થાપિત કરો. ફેરફાર પછી ઉપલબ્ધ.";
+"Open editing actions, Settings, and Help." = "સંપાદન ક્રિયાઓ, સેટિંગ્સ અને મદદ ખોલો.";
+"Move a wave through the letters." = "અક્ષરોમાંથી તરંગ પસાર કરો.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "થીમ લાગુ કરવા રંગના પૂર્વાવલોકન પર ટૅપ કરો. ચેકમાર્ક પસંદ કરેલી થીમ દર્શાવે છે.";
+"Adjust how your text appears." = "તમારા ટેક્સ્ટનો દેખાવ ગોઠવો.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "પ્રથમ સંદેશ લખવા તીર પર ટૅપ કરો. ત્રણ-બિંદુવાળા મેનૂમાં સેટિંગ્સ અને મદદ છે.";
+"Turn bold text on or off." = "બોલ્ડ ટેક્સ્ટ ચાલુ કે બંધ કરો.";
+"Leave the welcome screen and start your message." = "સ્વાગત સ્ક્રીન છોડો અને તમારો સંદેશ શરૂ કરો.";
+"Change the text animation from the editor toolbar." = "સંપાદકની ટૂલબારમાંથી ટેક્સ્ટનું એનિમેશન બદલો.";
+"Show this guide to the controls." = "નિયંત્રણોની આ માર્ગદર્શિકા બતાવો.";
+"Help" = "મદદ";
+"Controls" = "નિયંત્રણો";
+"Pulse the size of the text." = "ટેક્સ્ટના કદને ધબકતું કરો.";
+"Close the current panel." = "હાલની પેનલ બંધ કરો.";
+"Open live display" = "લાઇવ પ્રદર્શન ખોલો";
+"Editor" = "સંપાદક";
+"Edit the message shown on the display." = "સ્ક્રીન પર દેખાતો સંદેશ સંપાદિત કરો.";
+"Open another sign window that follows your message and styling." = "તમારા સંદેશ અને શૈલીને અનુસરતી બીજી સાઇન વિન્ડો ખોલો.";

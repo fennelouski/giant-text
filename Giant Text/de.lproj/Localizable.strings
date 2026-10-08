@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Mit der Fernbedienung bearbeiten und auf Optionen zugreifen";
 "feature_easy_editing_desc_other" = "Tippen zum Bearbeiten, mit zwei Fingern tippen für Optionen";
 "get_started_button" = "Los geht's";
+
+// MARK: - Controls Help
+"Present text" = "Text anzeigen";
+"Erase the message and start typing a new one." = "Lösche die Nachricht und beginne eine neue.";
+"Finish editing and show your giant text." = "Beende die Bearbeitung und zeige deinen großen Text.";
+"Settings" = "Einstellungen";
+"Turn italic text on or off." = "Kursivschrift ein- oder ausschalten.";
+"Keep the text still." = "Text stillstehen lassen.";
+"Switch from the editor to the giant text display." = "Von der Bearbeitung zur Großtextanzeige wechseln.";
+"Shake the text." = "Text zittern lassen.";
+"Restore the previous text. Available after a change." = "Vorherigen Text wiederherstellen. Nach einer Änderung verfügbar.";
+"Open editing actions, Settings, and Help." = "Bearbeitungsaktionen, Einstellungen und Hilfe öffnen.";
+"Move a wave through the letters." = "Eine Welle durch die Buchstaben laufen lassen.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Tippe auf eine Farbvorschau, um das Design anzuwenden. Ein Häkchen markiert das ausgewählte Design.";
+"Adjust how your text appears." = "Passe das Erscheinungsbild deines Textes an.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Tippe auf den Pfeil, um deine erste Nachricht zu schreiben. Das Drei-Punkte-Menü enthält Einstellungen und Hilfe.";
+"Turn bold text on or off." = "Fettschrift ein- oder ausschalten.";
+"Leave the welcome screen and start your message." = "Willkommensbildschirm verlassen und mit deiner Nachricht beginnen.";
+"Change the text animation from the editor toolbar." = "Textanimation über die Symbolleiste des Editors ändern.";
+"Show this guide to the controls." = "Diese Anleitung zu den Bedienelementen anzeigen.";
+"Help" = "Hilfe";
+"Controls" = "Bedienung";
+"Pulse the size of the text." = "Textgröße pulsieren lassen.";
+"Close the current panel." = "Aktuelle Ansicht schließen.";
+"Open live display" = "Liveanzeige öffnen";
+"Editor" = "Editor";
+"Edit the message shown on the display." = "Die auf dem Bildschirm angezeigte Nachricht bearbeiten.";
+"Open another sign window that follows your message and styling." = "Ein weiteres Anzeigefenster öffnen, das deiner Nachricht und Formatierung folgt.";

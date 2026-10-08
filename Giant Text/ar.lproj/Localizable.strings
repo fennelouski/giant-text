@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "استخدم جهاز التحكم عن بُعد للتحرير والوصول إلى الخيارات";
 "feature_easy_editing_desc_other" = "اضغط للتحرير، واضغط بإصبعين للخيارات";
 "get_started_button" = "ابدأ";
+
+// MARK: - Controls Help
+"Present text" = "عرض النص";
+"Erase the message and start typing a new one." = "امسح الرسالة وابدأ بكتابة رسالة جديدة.";
+"Finish editing and show your giant text." = "أنهِ التحرير واعرض نصك الكبير.";
+"Settings" = "الإعدادات";
+"Turn italic text on or off." = "تشغيل النص المائل أو إيقافه.";
+"Keep the text still." = "إبقاء النص ثابتًا.";
+"Switch from the editor to the giant text display." = "الانتقال من المحرر إلى عرض النص الكبير.";
+"Shake the text." = "هزّ النص.";
+"Restore the previous text. Available after a change." = "استعادة النص السابق. يتوفر ذلك بعد إجراء تغيير.";
+"Open editing actions, Settings, and Help." = "فتح إجراءات التحرير والإعدادات والمساعدة.";
+"Move a wave through the letters." = "تحريك موجة عبر الحروف.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "اضغط على معاينة لون لتطبيق النسق. تشير علامة الصح إلى النسق المحدد.";
+"Adjust how your text appears." = "اضبط مظهر النص.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "اضغط على السهم لكتابة رسالتك الأولى. تحتوي قائمة النقاط الثلاث على الإعدادات والمساعدة.";
+"Turn bold text on or off." = "تشغيل النص العريض أو إيقافه.";
+"Leave the welcome screen and start your message." = "مغادرة شاشة الترحيب وبدء رسالتك.";
+"Change the text animation from the editor toolbar." = "تغيير حركة النص من شريط أدوات المحرر.";
+"Show this guide to the controls." = "عرض دليل عناصر التحكم هذا.";
+"Help" = "المساعدة";
+"Controls" = "عناصر التحكم";
+"Pulse the size of the text." = "جعل حجم النص ينبض.";
+"Close the current panel." = "إغلاق اللوحة الحالية.";
+"Open live display" = "فتح العرض المباشر";
+"Editor" = "المحرر";
+"Edit the message shown on the display." = "تحرير الرسالة المعروضة على الشاشة.";
+"Open another sign window that follows your message and styling." = "فتح نافذة لافتة أخرى تعرض رسالتك ونمطها.";

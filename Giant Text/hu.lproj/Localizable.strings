@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Használd a távirányítót a szerkesztéshez és a beállítások eléréséhez";
 "feature_easy_editing_desc_other" = "Koppints a szerkesztéshez, kétujjas koppintás a beállításokhoz";
 "get_started_button" = "Kezdés";
+
+// MARK: - Controls Help
+"Present text" = "Szöveg megjelenítése";
+"Erase the message and start typing a new one." = "Töröld az üzenetet, és kezdj újat írni.";
+"Finish editing and show your giant text." = "Fejezd be a szerkesztést, és jelenítsd meg a nagy szöveget.";
+"Settings" = "Beállítások";
+"Turn italic text on or off." = "Dőlt szöveg be- vagy kikapcsolása.";
+"Keep the text still." = "A szöveg maradjon mozdulatlan.";
+"Switch from the editor to the giant text display." = "Váltás a szerkesztőről a nagy szöveg megjelenítésére.";
+"Shake the text." = "A szöveg megremegtetése.";
+"Restore the previous text. Available after a change." = "Előző szöveg visszaállítása. Módosítás után érhető el.";
+"Open editing actions, Settings, and Help." = "Szerkesztési műveletek, Beállítások és Súgó megnyitása.";
+"Move a wave through the letters." = "Hullám mozgatása a betűk között.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Koppints egy színelőnézetre a téma alkalmazásához. A pipa jelzi a kiválasztott témát.";
+"Adjust how your text appears." = "A szöveg megjelenésének módosítása.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Koppints a nyílra az első üzenet megírásához. A hárompontos menüben találhatók a Beállítások és a Súgó.";
+"Turn bold text on or off." = "Félkövér szöveg be- vagy kikapcsolása.";
+"Leave the welcome screen and start your message." = "Kilépés az üdvözlőképernyőről, és az üzenet megkezdése.";
+"Change the text animation from the editor toolbar." = "A szöveg animációjának módosítása a szerkesztő eszköztárán.";
+"Show this guide to the controls." = "Az útmutató megjelenítése a vezérlőkről.";
+"Help" = "Súgó";
+"Controls" = "Vezérlők";
+"Pulse the size of the text." = "A szöveg méretének pulzálása.";
+"Close the current panel." = "Az aktuális panel bezárása.";
+"Open live display" = "Élő megjelenítés megnyitása";
+"Editor" = "Szerkesztő";
+"Edit the message shown on the display." = "A kijelzőn megjelenő üzenet szerkesztése.";
+"Open another sign window that follows your message and styling." = "Újabb feliratablak megnyitása, amely követi az üzenetet és a stílust.";

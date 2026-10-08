@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "ఎడిట్ చేయడానికి మరియు ఎంపికలను యాక్సెస్ చేయడానికి రిమోట్‌ను ఉపయోగించండి";
 "feature_easy_editing_desc_other" = "ఎడిట్ చేయడానికి ట్యాప్ చేయండి, ఎంపికల కోసం రెండు వేళ్లతో ట్యాప్ చేయండి";
 "get_started_button" = "ప్రారంభించండి";
+
+// MARK: - Controls Help
+"Present text" = "వచనాన్ని చూపించండి";
+"Erase the message and start typing a new one." = "సందేశాన్ని తొలగించి కొత్తది టైప్ చేయడం ప్రారంభించండి.";
+"Finish editing and show your giant text." = "సవరణను ముగించి మీ పెద్ద వచనాన్ని చూపించండి.";
+"Settings" = "సెట్టింగ్‌లు";
+"Turn italic text on or off." = "ఇటాలిక్ వచనాన్ని ఆన్ లేదా ఆఫ్ చేయండి.";
+"Keep the text still." = "వచనాన్ని కదలకుండా ఉంచండి.";
+"Switch from the editor to the giant text display." = "ఎడిటర్ నుంచి పెద్ద వచన ప్రదర్శనకు మారండి.";
+"Shake the text." = "వచనాన్ని కదిలించండి.";
+"Restore the previous text. Available after a change." = "మునుపటి వచనాన్ని పునరుద్ధరించండి. మార్పు చేసిన తర్వాత అందుబాటులో ఉంటుంది.";
+"Open editing actions, Settings, and Help." = "సవరణ చర్యలు, సెట్టింగ్‌లు, సహాయం తెరవండి.";
+"Move a wave through the letters." = "అక్షరాల గుండా అలను కదిలించండి.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "థీమ్‌ను వర్తింపజేయడానికి రంగు ప్రివ్యూను తాకండి. ఎంపిక చేసిన థీమ్‌ను చెక్‌మార్క్ సూచిస్తుంది.";
+"Adjust how your text appears." = "మీ వచనం కనిపించే తీరును సర్దుబాటు చేయండి.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "మొదటి సందేశం రాయడానికి బాణాన్ని తాకండి. మూడు చుక్కల మెనూలో సెట్టింగ్‌లు, సహాయం ఉంటాయి.";
+"Turn bold text on or off." = "బోల్డ్ వచనాన్ని ఆన్ లేదా ఆఫ్ చేయండి.";
+"Leave the welcome screen and start your message." = "స్వాగత స్క్రీన్ నుంచి బయటకు వచ్చి మీ సందేశాన్ని ప్రారంభించండి.";
+"Change the text animation from the editor toolbar." = "ఎడిటర్ టూల్‌బార్ నుంచి వచన యానిమేషన్‌ను మార్చండి.";
+"Show this guide to the controls." = "నియంత్రణల కోసం ఈ మార్గదర్శిని చూపించండి.";
+"Help" = "సహాయం";
+"Controls" = "నియంత్రణలు";
+"Pulse the size of the text." = "వచన పరిమాణాన్ని కొట్టుకునేలా చేయండి.";
+"Close the current panel." = "ప్రస్తుత ప్యానెల్‌ను మూసివేయండి.";
+"Open live display" = "ప్రత్యక్ష ప్రదర్శనను తెరవండి";
+"Editor" = "ఎడిటర్";
+"Edit the message shown on the display." = "తెరపై చూపిన సందేశాన్ని సవరించండి.";
+"Open another sign window that follows your message and styling." = "మీ సందేశం, శైలిని అనుసరించే మరో సైన్ విండోను తెరవండి.";
