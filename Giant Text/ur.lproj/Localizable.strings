@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "ترمیم کرنے اور اختیارات تک رسائی کے لیے ریموٹ استعمال کریں";
 "feature_easy_editing_desc_other" = "ترمیم کے لیے تھپتھپائیں، اختیارات کے لیے دو انگلیوں سے تھپتھپائیں";
 "get_started_button" = "شروع کریں";
+
+// MARK: - Controls Help
+"Present text" = "متن دکھائیں";
+"Erase the message and start typing a new one." = "پیغام مٹائیں اور نیا پیغام لکھنا شروع کریں۔";
+"Finish editing and show your giant text." = "ترمیم مکمل کریں اور اپنا بڑا متن دکھائیں۔";
+"Settings" = "ترتیبات";
+"Turn italic text on or off." = "ترچھا متن آن یا آف کریں۔";
+"Keep the text still." = "متن کو ساکن رکھیں۔";
+"Switch from the editor to the giant text display." = "ایڈیٹر سے بڑے متن کے ڈسپلے پر جائیں۔";
+"Shake the text." = "متن کو ہلائیں۔";
+"Restore the previous text. Available after a change." = "پچھلا متن بحال کریں۔ تبدیلی کے بعد دستیاب ہے۔";
+"Open editing actions, Settings, and Help." = "ترمیم کے اعمال، ترتیبات اور مدد کھولیں۔";
+"Move a wave through the letters." = "حروف کے درمیان لہر چلائیں۔";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "تھیم لگانے کے لیے رنگ کے پیش منظر کو تھپتھپائیں۔ نشانِ درست منتخب تھیم دکھاتا ہے۔";
+"Adjust how your text appears." = "اپنے متن کی صورت بدلیں۔";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "پہلا پیغام لکھنے کے لیے تیر کو تھپتھپائیں۔ تین نقطوں والے مینو میں ترتیبات اور مدد ہیں۔";
+"Turn bold text on or off." = "موٹا متن آن یا آف کریں۔";
+"Leave the welcome screen and start your message." = "خوش آمدید اسکرین سے نکل کر اپنا پیغام شروع کریں۔";
+"Change the text animation from the editor toolbar." = "ایڈیٹر کے ٹول بار سے متن کی اینیمیشن بدلیں۔";
+"Show this guide to the controls." = "کنٹرولز کی یہ رہنما دکھائیں۔";
+"Help" = "مدد";
+"Controls" = "کنٹرولز";
+"Pulse the size of the text." = "متن کے سائز کو دھڑکتا ہوا بنائیں۔";
+"Close the current panel." = "موجودہ پینل بند کریں۔";
+"Open live display" = "لائیو ڈسپلے کھولیں";
+"Editor" = "ایڈیٹر";
+"Edit the message shown on the display." = "اسکرین پر دکھایا گیا پیغام ترمیم کریں۔";
+"Open another sign window that follows your message and styling." = "ایک اور سائن ونڈو کھولیں جو آپ کے پیغام اور انداز کے مطابق ہو۔";

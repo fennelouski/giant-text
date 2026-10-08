@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Düzenlemek ve seçeneklere erişmek için kumandayı kullanın";
 "feature_easy_editing_desc_other" = "Düzenlemek için dokunun, seçenekler için iki parmakla dokunun";
 "get_started_button" = "Başlayın";
+
+// MARK: - Controls Help
+"Present text" = "Metni göster";
+"Erase the message and start typing a new one." = "Mesajı silip yeni bir mesaj yazmaya başlayın.";
+"Finish editing and show your giant text." = "Düzenlemeyi bitirip büyük metninizi gösterin.";
+"Settings" = "Ayarlar";
+"Turn italic text on or off." = "İtalik metni açın veya kapatın.";
+"Keep the text still." = "Metni sabit tutun.";
+"Switch from the editor to the giant text display." = "Düzenleyiciden büyük metin görünümüne geçin.";
+"Shake the text." = "Metni sallayın.";
+"Restore the previous text. Available after a change." = "Önceki metni geri yükleyin. Değişiklikten sonra kullanılabilir.";
+"Open editing actions, Settings, and Help." = "Düzenleme işlemlerini, Ayarlar’ı ve Yardım’ı açın.";
+"Move a wave through the letters." = "Harflerin içinden bir dalga geçirin.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Temayı uygulamak için renk önizlemesine dokunun. Onay işareti seçili temayı gösterir.";
+"Adjust how your text appears." = "Metninizin görünümünü ayarlayın.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "İlk mesajınızı yazmak için oka dokunun. Üç noktalı menüde Ayarlar ve Yardım bulunur.";
+"Turn bold text on or off." = "Kalın metni açın veya kapatın.";
+"Leave the welcome screen and start your message." = "Karşılama ekranından çıkıp mesajınızı yazmaya başlayın.";
+"Change the text animation from the editor toolbar." = "Metin animasyonunu düzenleyici araç çubuğundan değiştirin.";
+"Show this guide to the controls." = "Bu denetim kılavuzunu gösterin.";
+"Help" = "Yardım";
+"Controls" = "Denetimler";
+"Pulse the size of the text." = "Metin boyutunu titreştirin.";
+"Close the current panel." = "Geçerli paneli kapatın.";
+"Open live display" = "Canlı ekranı aç";
+"Editor" = "Düzenleyici";
+"Edit the message shown on the display." = "Ekranda gösterilen mesajı düzenleyin.";
+"Open another sign window that follows your message and styling." = "Mesajınızı ve stilinizi izleyen başka bir pano penceresi açın.";

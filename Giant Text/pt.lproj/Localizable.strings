@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Utilize o comando para editar e aceder às opções";
 "feature_easy_editing_desc_other" = "Toque para editar, toque com dois dedos para ver as opções";
 "get_started_button" = "Começar";
+
+// MARK: - Controls Help
+"Present text" = "Mostrar texto";
+"Erase the message and start typing a new one." = "Apague a mensagem e comece a escrever uma nova.";
+"Finish editing and show your giant text." = "Termine de editar e apresente o texto gigante.";
+"Settings" = "Definições";
+"Turn italic text on or off." = "Ative ou desative o itálico.";
+"Keep the text still." = "Mantenha o texto imóvel.";
+"Switch from the editor to the giant text display." = "Mude do editor para a apresentação de texto gigante.";
+"Shake the text." = "Abane o texto.";
+"Restore the previous text. Available after a change." = "Restaure o texto anterior. Disponível após uma alteração.";
+"Open editing actions, Settings, and Help." = "Abra as ações de edição, as Definições e a Ajuda.";
+"Move a wave through the letters." = "Faça passar uma onda pelas letras.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Toque numa pré-visualização de cor para aplicar o tema. Uma marca de verificação indica o tema selecionado.";
+"Adjust how your text appears." = "Ajuste o aspeto do texto.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Toque na seta para escrever a primeira mensagem. O menu de três pontos contém as Definições e a Ajuda.";
+"Turn bold text on or off." = "Ative ou desative o negrito.";
+"Leave the welcome screen and start your message." = "Saia do ecrã de boas-vindas e comece a sua mensagem.";
+"Change the text animation from the editor toolbar." = "Altere a animação do texto na barra de ferramentas do editor.";
+"Show this guide to the controls." = "Mostrar este guia dos controlos.";
+"Help" = "Ajuda";
+"Controls" = "Controlos";
+"Pulse the size of the text." = "Faça o tamanho do texto pulsar.";
+"Close the current panel." = "Feche o painel atual.";
+"Open live display" = "Abrir visualização em direto";
+"Editor" = "Editor";
+"Edit the message shown on the display." = "Edite a mensagem apresentada no ecrã.";
+"Open another sign window that follows your message and styling." = "Abra outra janela de letreiro que acompanha a sua mensagem e estilo.";

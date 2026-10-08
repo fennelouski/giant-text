@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "सम्पादन गर्न र विकल्पहरू पहुँच गर्न रिमोट प्रयोग गर्नुहोस्";
 "feature_easy_editing_desc_other" = "सम्पादन गर्न ट्याप गर्नुहोस्, विकल्पहरूका लागि दुई-औंलाले ट्याप गर्नुहोस्";
 "get_started_button" = "सुरु गरौं";
+
+// MARK: - Controls Help
+"Present text" = "पाठ देखाउनुहोस्";
+"Erase the message and start typing a new one." = "सन्देश मेटाएर नयाँ लेख्न सुरु गर्नुहोस्।";
+"Finish editing and show your giant text." = "सम्पादन पूरा गरेर आफ्नो ठूलो पाठ देखाउनुहोस्।";
+"Settings" = "सेटिङहरू";
+"Turn italic text on or off." = "इटालिक पाठ खोल्नुहोस् वा बन्द गर्नुहोस्।";
+"Keep the text still." = "पाठलाई स्थिर राख्नुहोस्।";
+"Switch from the editor to the giant text display." = "सम्पादकबाट ठूलो पाठ प्रदर्शनमा जानुहोस्।";
+"Shake the text." = "पाठ हल्लाउनुहोस्।";
+"Restore the previous text. Available after a change." = "अघिल्लो पाठ पुनःस्थापना गर्नुहोस्। परिवर्तनपछि उपलब्ध हुन्छ।";
+"Open editing actions, Settings, and Help." = "सम्पादनका कार्य, सेटिङहरू र मद्दत खोल्नुहोस्।";
+"Move a wave through the letters." = "अक्षरहरूबीच तरङ्ग चलाउनुहोस्।";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "थिम लागू गर्न रङको पूर्वावलोकनमा ट्याप गर्नुहोस्। चेकमार्कले छानिएको थिम देखाउँछ।";
+"Adjust how your text appears." = "आफ्नो पाठको रूप मिलाउनुहोस्।";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "पहिलो सन्देश लेख्न तीरमा ट्याप गर्नुहोस्। तीन-थोप्ले मेनुमा सेटिङहरू र मद्दत छन्।";
+"Turn bold text on or off." = "बोल्ड पाठ खोल्नुहोस् वा बन्द गर्नुहोस्।";
+"Leave the welcome screen and start your message." = "स्वागत स्क्रिन छोडेर आफ्नो सन्देश सुरु गर्नुहोस्।";
+"Change the text animation from the editor toolbar." = "सम्पादकको टुलबारबाट पाठको एनिमेसन बदल्नुहोस्।";
+"Show this guide to the controls." = "नियन्त्रणहरूको यो निर्देशिका देखाउनुहोस्।";
+"Help" = "मद्दत";
+"Controls" = "नियन्त्रणहरू";
+"Pulse the size of the text." = "पाठको आकारलाई धड्किने बनाउनुहोस्।";
+"Close the current panel." = "हालको प्यानल बन्द गर्नुहोस्।";
+"Open live display" = "लाइभ प्रदर्शन खोल्नुहोस्";
+"Editor" = "सम्पादक";
+"Edit the message shown on the display." = "स्क्रिनमा देखाइएको सन्देश सम्पादन गर्नुहोस्।";
+"Open another sign window that follows your message and styling." = "तपाईंको सन्देश र शैलीअनुसार चल्ने अर्को साइन विन्डो खोल्नुहोस्।";

@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Sebenzisa ikhontroli ukuze uhlele futhi ufinyelele izinketho";
 "feature_easy_editing_desc_other" = "Thepha ukuze uhlele, thepha ngeminwe emibili ukuze uthole izinketho";
 "get_started_button" = "Qala";
+
+// MARK: - Controls Help
+"Present text" = "Bonisa umbhalo";
+"Erase the message and start typing a new one." = "Sula umlayezo bese uqala ukuthayipha omusha.";
+"Finish editing and show your giant text." = "Qeda ukuhlela bese ubonisa umbhalo wakho omkhulu.";
+"Settings" = "Izilungiselelo";
+"Turn italic text on or off." = "Vula noma uvale umbhalo otshekile.";
+"Keep the text still." = "Gcina umbhalo unganyakazi.";
+"Switch from the editor to the giant text display." = "Shintsha kumhleli uye ekubonisweni kombhalo omkhulu.";
+"Shake the text." = "Nyakazisa umbhalo.";
+"Restore the previous text. Available after a change." = "Buyisela umbhalo odlule. Uyatholakala ngemva koshintsho.";
+"Open editing actions, Settings, and Help." = "Vula izenzo zokuhlela, Izilungiselelo noSizo.";
+"Move a wave through the letters." = "Hambisa igagasi phakathi kwezinhlamvu.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Thepha ukuhlola umbala ukuze usebenzise itimu. Uphawu lokuhlola lubonisa itimu ekhethiwe.";
+"Adjust how your text appears." = "Lungisa indlela umbhalo wakho obukeka ngayo.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Thepha umcibisholo ukuze ubhale umlayezo wakho wokuqala. Imenyu yamachashazi amathathu inezilungiselelo nosizo.";
+"Turn bold text on or off." = "Vula noma uvale umbhalo ogqamile.";
+"Leave the welcome screen and start your message." = "Phuma esikrinini sokwamukela bese uqala umlayezo wakho.";
+"Change the text animation from the editor toolbar." = "Shintsha ukunyakaza kombhalo kubha yamathuluzi yomhleli.";
+"Show this guide to the controls." = "Bonisa lo mhlahlandlela wokulawula.";
+"Help" = "Usizo";
+"Controls" = "Izilawuli";
+"Pulse the size of the text." = "Yenza usayizi wombhalo ushaye njengokushaya kwenhliziyo.";
+"Close the current panel." = "Vala iphaneli yamanje.";
+"Open live display" = "Vula isibonisi esibukhoma";
+"Editor" = "Umhleli";
+"Edit the message shown on the display." = "Hlela umlayezo oboniswa esikrinini.";
+"Open another sign window that follows your message and styling." = "Vula elinye iwindi lebhodi elilandela umlayezo nesitayela sakho.";

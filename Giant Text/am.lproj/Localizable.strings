@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "ለማርትዕ እና አማራጮችን ለማግኘት መቆጣጠሪያውን ይጠቀሙ";
 "feature_easy_editing_desc_other" = "ለማርትዕ መታ ያድርጉ፣ ለአማራጮች በሁለት ጣት መታ ያድርጉ";
 "get_started_button" = "ጀምር";
+
+// MARK: - Controls Help
+"Present text" = "ጽሑፍ አሳይ";
+"Erase the message and start typing a new one." = "መልዕክቱን ያጥፉ እና አዲስ መልዕክት መተየብ ይጀምሩ።";
+"Finish editing and show your giant text." = "አርትዖቱን ጨርሰው ትልቁን ጽሑፍ ያሳዩ።";
+"Settings" = "ቅንብሮች";
+"Turn italic text on or off." = "ሰያፍ ጽሑፍን ያብሩ ወይም ያጥፉ።";
+"Keep the text still." = "ጽሑፉን ያለ እንቅስቃሴ ያቆዩ።";
+"Switch from the editor to the giant text display." = "ከአርታዒው ወደ ትልቁ ጽሑፍ ማሳያ ይቀይሩ።";
+"Shake the text." = "ጽሑፉን ያንቀጥቅጡ።";
+"Restore the previous text. Available after a change." = "ቀዳሚውን ጽሑፍ ይመልሱ። ለውጥ ከተደረገ በኋላ ይገኛል።";
+"Open editing actions, Settings, and Help." = "የአርትዖት እርምጃዎችን፣ ቅንብሮችን እና እገዛን ይክፈቱ።";
+"Move a wave through the letters." = "በፊደሎቹ መካከል ማዕበል ያንቀሳቅሱ።";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "ገጽታውን ለመተግበር የቀለም ቅድመ እይታውን ይንኩ። የምልክት ምልክቱ የተመረጠውን ገጽታ ያሳያል።";
+"Adjust how your text appears." = "የጽሑፍዎን አቀራረብ ያስተካክሉ።";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "የመጀመሪያዎን መልዕክት ለመጻፍ ቀስቱን ይንኩ። ባለ ሶስት ነጥብ ምናሌው ቅንብሮችን እና እገዛን ይዟል።";
+"Turn bold text on or off." = "ደማቅ ጽሑፍን ያብሩ ወይም ያጥፉ።";
+"Leave the welcome screen and start your message." = "የእንኳን ደህና መጡ ማያ ገጹን ይውጡና መልዕክትዎን ይጀምሩ።";
+"Change the text animation from the editor toolbar." = "ከአርታዒው የመሳሪያ አሞሌ የጽሑፍ እነማውን ይቀይሩ።";
+"Show this guide to the controls." = "ስለ መቆጣጠሪያዎች ይህን መመሪያ ያሳዩ።";
+"Help" = "እገዛ";
+"Controls" = "መቆጣጠሪያዎች";
+"Pulse the size of the text." = "የጽሑፉን መጠን በድብደባ እንዲታይ ያድርጉ።";
+"Close the current panel." = "የአሁኑን ፓነል ይዝጉ።";
+"Open live display" = "ቀጥታ ማሳያን ይክፈቱ።";
+"Editor" = "አርታዒ";
+"Edit the message shown on the display." = "በማያ ገጹ ላይ የሚታየውን መልዕክት ያርትዑ።";
+"Open another sign window that follows your message and styling." = "መልዕክትዎን እና ዘይቤዎን የሚከተል ሌላ የምልክት መስኮት ይክፈቱ።";

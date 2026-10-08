@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Użyj pilota, aby edytować i uzyskać dostęp do opcji";
 "feature_easy_editing_desc_other" = "Stuknij, aby edytować, stuknij dwoma palcami, aby wyświetlić opcje";
 "get_started_button" = "Rozpocznij";
+
+// MARK: - Controls Help
+"Present text" = "Pokaż tekst";
+"Erase the message and start typing a new one." = "Usuń wiadomość i zacznij wpisywać nową.";
+"Finish editing and show your giant text." = "Zakończ edycję i wyświetl swój wielki tekst.";
+"Settings" = "Ustawienia";
+"Turn italic text on or off." = "Włącz lub wyłącz kursywę.";
+"Keep the text still." = "Pozostaw tekst nieruchomy.";
+"Switch from the editor to the giant text display." = "Przełącz z edytora na widok dużego tekstu.";
+"Shake the text." = "Potrząśnij tekstem.";
+"Restore the previous text. Available after a change." = "Przywróć poprzedni tekst. Dostępne po wprowadzeniu zmiany.";
+"Open editing actions, Settings, and Help." = "Otwórz czynności edycji, Ustawienia i Pomoc.";
+"Move a wave through the letters." = "Przesuń falę przez litery.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Stuknij podgląd koloru, aby zastosować motyw. Znacznik wyboru wskazuje wybrany motyw.";
+"Adjust how your text appears." = "Dostosuj wygląd tekstu.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Stuknij strzałkę, aby napisać pierwszą wiadomość. Menu z trzema kropkami zawiera Ustawienia i Pomoc.";
+"Turn bold text on or off." = "Włącz lub wyłącz pogrubienie.";
+"Leave the welcome screen and start your message." = "Opuść ekran powitalny i zacznij pisać wiadomość.";
+"Change the text animation from the editor toolbar." = "Zmień animację tekstu na pasku narzędzi edytora.";
+"Show this guide to the controls." = "Pokaż ten przewodnik po elementach sterujących.";
+"Help" = "Pomoc";
+"Controls" = "Sterowanie";
+"Pulse the size of the text." = "Pulsuj rozmiarem tekstu.";
+"Close the current panel." = "Zamknij bieżący panel.";
+"Open live display" = "Otwórz podgląd na żywo";
+"Editor" = "Edytor";
+"Edit the message shown on the display." = "Edytuj wiadomość wyświetlaną na ekranie.";
+"Open another sign window that follows your message and styling." = "Otwórz kolejne okno z napisem, które odzwierciedla wiadomość i styl.";

@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Tahrirlash va parametrlarga kirish uchun pultdan foydalaning";
 "feature_easy_editing_desc_other" = "Tahrirlash uchun bosing, parametrlar uchun ikki barmoq bilan bosing";
 "get_started_button" = "Boshlash";
+
+// MARK: - Controls Help
+"Present text" = "Matnni ko‘rsatish";
+"Erase the message and start typing a new one." = "Xabarni o‘chirib, yangisini yozishni boshlang.";
+"Finish editing and show your giant text." = "Tahrirlashni tugatib, katta matningizni ko‘rsating.";
+"Settings" = "Sozlamalar";
+"Turn italic text on or off." = "Qiya matnni yoqing yoki o‘chiring.";
+"Keep the text still." = "Matnni harakatsiz qoldiring.";
+"Switch from the editor to the giant text display." = "Tahrirlovchidan katta matn ko‘rinishiga o‘ting.";
+"Shake the text." = "Matnni silkitish.";
+"Restore the previous text. Available after a change." = "Oldingi matnni tiklash. O‘zgartirishdan keyin mavjud.";
+"Open editing actions, Settings, and Help." = "Tahrirlash amallari, Sozlamalar va Yordamni oching.";
+"Move a wave through the letters." = "Harflar orasidan to‘lqin o‘tkazing.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Mavzuni qo‘llash uchun rang namunasiga teging. Belgi tanlangan mavzuni ko‘rsatadi.";
+"Adjust how your text appears." = "Matn ko‘rinishini sozlang.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Birinchi xabarni yozish uchun strelkaga teging. Uch nuqtali menyuda Sozlamalar va Yordam bor.";
+"Turn bold text on or off." = "Qalin matnni yoqing yoki o‘chiring.";
+"Leave the welcome screen and start your message." = "Xush kelibsiz ekranidan chiqib, xabaringizni boshlang.";
+"Change the text animation from the editor toolbar." = "Tahrirlovchi asboblar panelidan matn animatsiyasini o‘zgartiring.";
+"Show this guide to the controls." = "Boshqaruvlar bo‘yicha ushbu qo‘llanmani ko‘rsating.";
+"Help" = "Yordam";
+"Controls" = "Boshqaruvlar";
+"Pulse the size of the text." = "Matn o‘lchamini urib turgandek ko‘rsating.";
+"Close the current panel." = "Joriy panelni yoping.";
+"Open live display" = "Jonli ko‘rinishni ochish";
+"Editor" = "Tahrirlovchi";
+"Edit the message shown on the display." = "Ekranda ko‘rsatilgan xabarni tahrirlang.";
+"Open another sign window that follows your message and styling." = "Xabaringiz va uslubingizga mos ishlaydigan boshqa yozuv oynasini oching.";

@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Usa il telecomando per modificare e accedere alle opzioni";
 "feature_easy_editing_desc_other" = "Tocca per modificare, tocco con due dita per le opzioni";
 "get_started_button" = "Inizia";
+
+// MARK: - Controls Help
+"Present text" = "Mostra testo";
+"Erase the message and start typing a new one." = "Cancella il messaggio e inizia a scriverne uno nuovo.";
+"Finish editing and show your giant text." = "Termina la modifica e mostra il tuo testo gigante.";
+"Settings" = "Impostazioni";
+"Turn italic text on or off." = "Attiva o disattiva il corsivo.";
+"Keep the text still." = "Mantieni fermo il testo.";
+"Switch from the editor to the giant text display." = "Passa dall’editor alla visualizzazione del testo gigante.";
+"Shake the text." = "Fai tremare il testo.";
+"Restore the previous text. Available after a change." = "Ripristina il testo precedente. Disponibile dopo una modifica.";
+"Open editing actions, Settings, and Help." = "Apri le azioni di modifica, le Impostazioni e l’Aiuto.";
+"Move a wave through the letters." = "Fai passare un’onda tra le lettere.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Tocca un’anteprima colore per applicare il tema. Un segno di spunta indica il tema selezionato.";
+"Adjust how your text appears." = "Regola l’aspetto del testo.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Tocca la freccia per scrivere il primo messaggio. Il menu con tre puntini contiene Impostazioni e Aiuto.";
+"Turn bold text on or off." = "Attiva o disattiva il grassetto.";
+"Leave the welcome screen and start your message." = "Esci dalla schermata di benvenuto e inizia il messaggio.";
+"Change the text animation from the editor toolbar." = "Cambia l’animazione del testo dalla barra strumenti dell’editor.";
+"Show this guide to the controls." = "Mostra questa guida ai controlli.";
+"Help" = "Aiuto";
+"Controls" = "Controlli";
+"Pulse the size of the text." = "Fai pulsare la dimensione del testo.";
+"Close the current panel." = "Chiudi il pannello attuale.";
+"Open live display" = "Apri la visualizzazione in tempo reale";
+"Editor" = "Editor";
+"Edit the message shown on the display." = "Modifica il messaggio mostrato sullo schermo.";
+"Open another sign window that follows your message and styling." = "Apri un’altra finestra con il cartello che segue il messaggio e lo stile.";

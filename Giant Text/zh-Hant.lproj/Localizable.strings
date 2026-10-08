@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "使用遙控器編輯並存取選項";
 "feature_easy_editing_desc_other" = "輕點編輯,雙指輕點查看選項";
 "get_started_button" = "開始使用";
+
+// MARK: - Controls Help
+"Present text" = "顯示文字";
+"Erase the message and start typing a new one." = "清除這則訊息並開始輸入新訊息。";
+"Finish editing and show your giant text." = "完成編輯並顯示大型文字。";
+"Settings" = "設定";
+"Turn italic text on or off." = "開啟或關閉斜體。";
+"Keep the text still." = "保持文字靜止。";
+"Switch from the editor to the giant text display." = "從編輯器切換至大型文字顯示。";
+"Shake the text." = "抖動文字。";
+"Restore the previous text. Available after a change." = "還原先前的文字。變更後即可使用。";
+"Open editing actions, Settings, and Help." = "開啟編輯操作、設定和說明。";
+"Move a wave through the letters." = "讓波浪穿過文字。";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "點一下色彩預覽以套用主題。勾選標記代表目前選取的主題。";
+"Adjust how your text appears." = "調整文字外觀。";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "點一下箭頭開始輸入第一則訊息。三點選單中有設定和說明。";
+"Turn bold text on or off." = "開啟或關閉粗體。";
+"Leave the welcome screen and start your message." = "離開歡迎畫面並開始輸入訊息。";
+"Change the text animation from the editor toolbar." = "在編輯器工具列中更改文字動畫。";
+"Show this guide to the controls." = "顯示此控制項指南。";
+"Help" = "說明";
+"Controls" = "控制項";
+"Pulse the size of the text." = "讓文字大小跳動。";
+"Close the current panel." = "關閉目前面板。";
+"Open live display" = "開啟即時顯示";
+"Editor" = "編輯器";
+"Edit the message shown on the display." = "編輯畫面上顯示的訊息。";
+"Open another sign window that follows your message and styling." = "開啟另一個會跟隨訊息和樣式的看板視窗。";

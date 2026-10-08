@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "ใช้รีโมทเพื่อแก้ไขและเข้าถึงตัวเลือก";
 "feature_easy_editing_desc_other" = "แตะเพื่อแก้ไข แตะสองนิ้วเพื่อดูตัวเลือก";
 "get_started_button" = "เริ่มต้นใช้งาน";
+
+// MARK: - Controls Help
+"Present text" = "แสดงข้อความ";
+"Erase the message and start typing a new one." = "ลบข้อความแล้วเริ่มพิมพ์ข้อความใหม่";
+"Finish editing and show your giant text." = "แก้ไขเสร็จแล้วแสดงข้อความขนาดใหญ่ของคุณ";
+"Settings" = "การตั้งค่า";
+"Turn italic text on or off." = "เปิดหรือปิดข้อความตัวเอียง";
+"Keep the text still." = "ให้ข้อความอยู่นิ่ง";
+"Switch from the editor to the giant text display." = "สลับจากตัวแก้ไขไปยังการแสดงข้อความขนาดใหญ่";
+"Shake the text." = "เขย่าข้อความ";
+"Restore the previous text. Available after a change." = "เรียกคืนข้อความก่อนหน้า ใช้ได้หลังจากมีการเปลี่ยนแปลง";
+"Open editing actions, Settings, and Help." = "เปิดการแก้ไข การตั้งค่า และวิธีใช้";
+"Move a wave through the letters." = "เคลื่อนคลื่นผ่านตัวอักษร";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "แตะตัวอย่างสีเพื่อใช้ธีมนั้น เครื่องหมายถูกแสดงธีมที่เลือก";
+"Adjust how your text appears." = "ปรับลักษณะที่แสดงของข้อความ";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "แตะลูกศรเพื่อเขียนข้อความแรก เมนูสามจุดมีการตั้งค่าและวิธีใช้";
+"Turn bold text on or off." = "เปิดหรือปิดข้อความตัวหนา";
+"Leave the welcome screen and start your message." = "ออกจากหน้าต้อนรับแล้วเริ่มเขียนข้อความ";
+"Change the text animation from the editor toolbar." = "เปลี่ยนภาพเคลื่อนไหวของข้อความจากแถบเครื่องมือของตัวแก้ไข";
+"Show this guide to the controls." = "แสดงคู่มือการควบคุมนี้";
+"Help" = "วิธีใช้";
+"Controls" = "การควบคุม";
+"Pulse the size of the text." = "ทำให้ขนาดข้อความเต้นเป็นจังหวะ";
+"Close the current panel." = "ปิดแผงปัจจุบัน";
+"Open live display" = "เปิดการแสดงผลสด";
+"Editor" = "ตัวแก้ไข";
+"Edit the message shown on the display." = "แก้ไขข้อความที่แสดงบนหน้าจอ";
+"Open another sign window that follows your message and styling." = "เปิดหน้าต่างป้ายอีกบานที่แสดงข้อความและรูปแบบของคุณ";

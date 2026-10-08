@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Erabili urrutiko agintea editatzeko eta aukerak ikusteko";
 "feature_easy_editing_desc_other" = "Sakatu editatzeko, bi hatzekin sakatu aukerak ikusteko";
 "get_started_button" = "Hasi";
+
+// MARK: - Controls Help
+"Present text" = "Erakutsi testua";
+"Erase the message and start typing a new one." = "Ezabatu mezua eta hasi berri bat idazten.";
+"Finish editing and show your giant text." = "Amaitu edizioa eta erakutsi zure testu handia.";
+"Settings" = "Ezarpenak";
+"Turn italic text on or off." = "Aktibatu edo desaktibatu letra etzana.";
+"Keep the text still." = "Mantendu testua geldi.";
+"Switch from the editor to the giant text display." = "Aldatu editoretik testu handiaren pantailara.";
+"Shake the text." = "Astindu testua.";
+"Restore the previous text. Available after a change." = "Berreskuratu aurreko testua. Aldaketa baten ondoren erabilgarri.";
+"Open editing actions, Settings, and Help." = "Ireki edizio-ekintzak, Ezarpenak eta Laguntza.";
+"Move a wave through the letters." = "Mugitu uhin bat letren artean.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Ukitu kolore-aurrebista gai hori aplikatzeko. Marka batek hautatutako gaia adierazten du.";
+"Adjust how your text appears." = "Doitu testuaren itxura.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Ukitu gezia lehen mezua idazteko. Hiru puntuko menuak Ezarpenak eta Laguntza ditu.";
+"Turn bold text on or off." = "Aktibatu edo desaktibatu letra lodia.";
+"Leave the welcome screen and start your message." = "Irten ongietorri-pantailatik eta hasi mezua idazten.";
+"Change the text animation from the editor toolbar." = "Aldatu testuaren animazioa editorearen tresna-barratik.";
+"Show this guide to the controls." = "Erakutsi kontrolen gida hau.";
+"Help" = "Laguntza";
+"Controls" = "Kontrolak";
+"Pulse the size of the text." = "Egin testuaren tamainak taupada egitea.";
+"Close the current panel." = "Itxi uneko panela.";
+"Open live display" = "Ireki zuzeneko pantaila";
+"Editor" = "Editorea";
+"Edit the message shown on the display." = "Editatu pantailan agertzen den mezua.";
+"Open another sign window that follows your message and styling." = "Ireki beste seinale-leiho bat, zure mezua eta estiloa erakusten dituena.";

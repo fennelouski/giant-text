@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "برای ویرایش و دسترسی به گزینه‌ها از ریموت استفاده کنید";
 "feature_easy_editing_desc_other" = "برای ویرایش ضربه بزنید، برای گزینه‌ها با دو انگشت ضربه بزنید";
 "get_started_button" = "شروع کنید";
+
+// MARK: - Controls Help
+"Present text" = "نمایش متن";
+"Erase the message and start typing a new one." = "پیام را پاک کنید و نوشتن پیام تازه‌ای را شروع کنید.";
+"Finish editing and show your giant text." = "ویرایش را تمام کنید و متن بزرگ خود را نمایش دهید.";
+"Settings" = "تنظیمات";
+"Turn italic text on or off." = "متن ایتالیک را روشن یا خاموش کنید.";
+"Keep the text still." = "متن را ثابت نگه دارید.";
+"Switch from the editor to the giant text display." = "از ویرایشگر به نمایش متن بزرگ بروید.";
+"Shake the text." = "متن را بلرزانید.";
+"Restore the previous text. Available after a change." = "متن قبلی را بازیابی کنید. پس از تغییر در دسترس است.";
+"Open editing actions, Settings, and Help." = "اقدام‌های ویرایش، تنظیمات و راهنما را باز کنید.";
+"Move a wave through the letters." = "موجی را از میان حروف عبور دهید.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "برای اعمال طرح، پیش‌نمایش رنگ را لمس کنید. علامت تیک طرح انتخاب‌شده را نشان می‌دهد.";
+"Adjust how your text appears." = "ظاهر متن را تنظیم کنید.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "برای نوشتن نخستین پیام، پیکان را لمس کنید. منوی سه‌نقطه‌ای شامل تنظیمات و راهنماست.";
+"Turn bold text on or off." = "متن پررنگ را روشن یا خاموش کنید.";
+"Leave the welcome screen and start your message." = "از صفحه خوش‌آمدگویی خارج شوید و نوشتن پیام را آغاز کنید.";
+"Change the text animation from the editor toolbar." = "انیمیشن متن را از نوار ابزار ویرایشگر تغییر دهید.";
+"Show this guide to the controls." = "این راهنمای کنترل‌ها را نشان دهید.";
+"Help" = "راهنما";
+"Controls" = "کنترل‌ها";
+"Pulse the size of the text." = "اندازه متن را ضربانی کنید.";
+"Close the current panel." = "صفحه کنونی را ببندید.";
+"Open live display" = "نمایش زنده را باز کنید";
+"Editor" = "ویرایشگر";
+"Edit the message shown on the display." = "پیام نمایش‌داده‌شده را ویرایش کنید.";
+"Open another sign window that follows your message and styling." = "پنجره تابلوی دیگری را باز کنید که پیام و سبک شما را دنبال می‌کند.";

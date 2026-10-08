@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Tumia rimoti kuhariri na kufikia chaguo";
 "feature_easy_editing_desc_other" = "Gusa kuhariri, gusa kwa vidole viwili kwa chaguo";
 "get_started_button" = "Anza";
+
+// MARK: - Controls Help
+"Present text" = "Onyesha maandishi";
+"Erase the message and start typing a new one." = "Futa ujumbe na uanze kuandika mpya.";
+"Finish editing and show your giant text." = "Maliza kuhariri na uonyeshe maandishi yako makubwa.";
+"Settings" = "Mipangilio";
+"Turn italic text on or off." = "Washa au zima maandishi ya italiki.";
+"Keep the text still." = "Acha maandishi yasitembee.";
+"Switch from the editor to the giant text display." = "Badilisha kutoka kihariri hadi onyesho la maandishi makubwa.";
+"Shake the text." = "Tikisa maandishi.";
+"Restore the previous text. Available after a change." = "Rejesha maandishi yaliyotangulia. Inapatikana baada ya mabadiliko.";
+"Open editing actions, Settings, and Help." = "Fungua vitendo vya kuhariri, Mipangilio na Msaada.";
+"Move a wave through the letters." = "Sogeza wimbi katikati ya herufi.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Gusa onyesho la rangi ili kutumia mandhari hiyo. Alama ya tiki inaonyesha mandhari iliyochaguliwa.";
+"Adjust how your text appears." = "Rekebisha mwonekano wa maandishi yako.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Gusa mshale ili uandike ujumbe wako wa kwanza. Menyu ya vitone vitatu ina Mipangilio na Msaada.";
+"Turn bold text on or off." = "Washa au zima maandishi mazito.";
+"Leave the welcome screen and start your message." = "Ondoka kwenye skrini ya kukaribisha na uanze ujumbe wako.";
+"Change the text animation from the editor toolbar." = "Badilisha uhuishaji wa maandishi kutoka kwenye upau wa zana wa kihariri.";
+"Show this guide to the controls." = "Onyesha mwongozo huu wa vidhibiti.";
+"Help" = "Msaada";
+"Controls" = "Vidhibiti";
+"Pulse the size of the text." = "Fanya ukubwa wa maandishi upige kwa mpigo.";
+"Close the current panel." = "Funga paneli ya sasa.";
+"Open live display" = "Fungua onyesho la moja kwa moja";
+"Editor" = "Kihariri";
+"Edit the message shown on the display." = "Hariri ujumbe unaoonyeshwa kwenye skrini.";
+"Open another sign window that follows your message and styling." = "Fungua dirisha jingine la bango linalofuata ujumbe na mtindo wako.";

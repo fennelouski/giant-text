@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Utilitza el comandament per editar i accedir a les opcions";
 "feature_easy_editing_desc_other" = "Toca per editar, toca amb dos dits per veure les opcions";
 "get_started_button" = "Comença";
+
+// MARK: - Controls Help
+"Present text" = "Mostra el text";
+"Erase the message and start typing a new one." = "Esborra el missatge i comença a escriure’n un de nou.";
+"Finish editing and show your giant text." = "Acaba d’editar i mostra el text gegant.";
+"Settings" = "Configuració";
+"Turn italic text on or off." = "Activa o desactiva la cursiva.";
+"Keep the text still." = "Mantén el text quiet.";
+"Switch from the editor to the giant text display." = "Canvia de l’editor a la pantalla de text gegant.";
+"Shake the text." = "Fes tremolar el text.";
+"Restore the previous text. Available after a change." = "Recupera el text anterior. Disponible després d’un canvi.";
+"Open editing actions, Settings, and Help." = "Obre les accions d’edició, la configuració i l’ajuda.";
+"Move a wave through the letters." = "Fes passar una ona per les lletres.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Toca una mostra de color per aplicar el tema. Una marca de verificació indica el tema seleccionat.";
+"Adjust how your text appears." = "Canvia l’aspecte del text.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Toca la fletxa per escriure el primer missatge. El menú de tres punts conté la configuració i l’ajuda.";
+"Turn bold text on or off." = "Activa o desactiva la negreta.";
+"Leave the welcome screen and start your message." = "Surt de la pantalla de benvinguda i comença el missatge.";
+"Change the text animation from the editor toolbar." = "Canvia l’animació del text des de la barra d’eines de l’editor.";
+"Show this guide to the controls." = "Mostra aquesta guia dels controls.";
+"Help" = "Ajuda";
+"Controls" = "Controls";
+"Pulse the size of the text." = "Fes que la mida del text bategui.";
+"Close the current panel." = "Tanca el tauler actual.";
+"Open live display" = "Obre la pantalla en directe";
+"Editor" = "Editor";
+"Edit the message shown on the display." = "Edita el missatge que es mostra a la pantalla.";
+"Open another sign window that follows your message and styling." = "Obre una altra finestra de rètol que segueix el missatge i l’estil.";

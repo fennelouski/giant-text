@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "リモコンで編集・オプションにアクセス";
 "feature_easy_editing_desc_other" = "タップして編集、2本指タップでオプション表示";
 "get_started_button" = "はじめる";
+
+// MARK: - Controls Help
+"Present text" = "テキストを表示";
+"Erase the message and start typing a new one." = "メッセージを消去して、新しいメッセージを入力します。";
+"Finish editing and show your giant text." = "編集を終了して、大きなテキストを表示します。";
+"Settings" = "設定";
+"Turn italic text on or off." = "斜体をオンまたはオフにします。";
+"Keep the text still." = "テキストを静止させます。";
+"Switch from the editor to the giant text display." = "エディタから大きなテキスト表示に切り替えます。";
+"Shake the text." = "テキストを揺らします。";
+"Restore the previous text. Available after a change." = "前のテキストに戻します。変更後に使用できます。";
+"Open editing actions, Settings, and Help." = "編集操作、設定、ヘルプを開きます。";
+"Move a wave through the letters." = "文字の間に波を走らせます。";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "色のプレビューをタップしてテーマを適用します。チェックマークは選択中のテーマを示します。";
+"Adjust how your text appears." = "テキストの見た目を調整します。";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "矢印をタップして最初のメッセージを入力します。三点メニューから設定とヘルプを開けます。";
+"Turn bold text on or off." = "太字をオンまたはオフにします。";
+"Leave the welcome screen and start your message." = "ようこそ画面を閉じてメッセージを始めます。";
+"Change the text animation from the editor toolbar." = "エディタのツールバーからテキストのアニメーションを変更します。";
+"Show this guide to the controls." = "この操作ガイドを表示します。";
+"Help" = "ヘルプ";
+"Controls" = "操作";
+"Pulse the size of the text." = "テキストの大きさを脈打つようにします。";
+"Close the current panel." = "現在のパネルを閉じます。";
+"Open live display" = "ライブ表示を開く";
+"Editor" = "エディタ";
+"Edit the message shown on the display." = "画面に表示されているメッセージを編集します。";
+"Open another sign window that follows your message and styling." = "メッセージとスタイルに連動する別のサインウインドウを開きます。";

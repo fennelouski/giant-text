@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "एडिट करने और विकल्पों तक पहुंचने के लिए रिमोट का उपयोग करें";
 "feature_easy_editing_desc_other" = "एडिट करने के लिए टैप करें, विकल्पों के लिए दो उंगलियों से टैप करें";
 "get_started_button" = "शुरू करें";
+
+// MARK: - Controls Help
+"Present text" = "टेक्स्ट दिखाएँ";
+"Erase the message and start typing a new one." = "संदेश मिटाकर नया संदेश लिखना शुरू करें।";
+"Finish editing and show your giant text." = "संपादन पूरा करके अपना बड़ा टेक्स्ट दिखाएँ।";
+"Settings" = "सेटिंग्ज़";
+"Turn italic text on or off." = "इटैलिक टेक्स्ट चालू या बंद करें।";
+"Keep the text still." = "टेक्स्ट को स्थिर रखें।";
+"Switch from the editor to the giant text display." = "एडिटर से बड़े टेक्स्ट के डिस्प्ले पर जाएँ।";
+"Shake the text." = "टेक्स्ट को हिलाएँ।";
+"Restore the previous text. Available after a change." = "पिछला टेक्स्ट वापस लाएँ। बदलाव के बाद उपलब्ध।";
+"Open editing actions, Settings, and Help." = "संपादन क्रियाएँ, सेटिंग्ज़ और सहायता खोलें।";
+"Move a wave through the letters." = "अक्षरों के बीच एक लहर चलाएँ।";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "थीम लागू करने के लिए रंग के पूर्वावलोकन पर टैप करें। चेकमार्क चुनी हुई थीम दिखाता है।";
+"Adjust how your text appears." = "अपने टेक्स्ट का रूप बदलें।";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "पहला संदेश लिखने के लिए तीर पर टैप करें। तीन-बिंदु वाले मेनू में सेटिंग्ज़ और सहायता हैं।";
+"Turn bold text on or off." = "बोल्ड टेक्स्ट चालू या बंद करें।";
+"Leave the welcome screen and start your message." = "स्वागत स्क्रीन से बाहर निकलकर अपना संदेश शुरू करें।";
+"Change the text animation from the editor toolbar." = "एडिटर टूलबार से टेक्स्ट एनिमेशन बदलें।";
+"Show this guide to the controls." = "कंट्रोल की यह मार्गदर्शिका दिखाएँ।";
+"Help" = "सहायता";
+"Controls" = "कंट्रोल";
+"Pulse the size of the text." = "टेक्स्ट का आकार धड़कता हुआ दिखाएँ।";
+"Close the current panel." = "मौजूदा पैनल बंद करें।";
+"Open live display" = "लाइव डिस्प्ले खोलें";
+"Editor" = "एडिटर";
+"Edit the message shown on the display." = "स्क्रीन पर दिख रहे संदेश को संपादित करें।";
+"Open another sign window that follows your message and styling." = "एक और साइन विंडो खोलें जो आपके संदेश और शैली का अनुसरण करती है।";

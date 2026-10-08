@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Gunakan remote untuk mengedit dan mengakses opsi";
 "feature_easy_editing_desc_other" = "Ketuk untuk mengedit, ketuk dengan dua jari untuk opsi";
 "get_started_button" = "Mulai";
+
+// MARK: - Controls Help
+"Present text" = "Tampilkan teks";
+"Erase the message and start typing a new one." = "Hapus pesan lalu mulai mengetik pesan baru.";
+"Finish editing and show your giant text." = "Selesaikan pengeditan dan tampilkan teks besar Anda.";
+"Settings" = "Pengaturan";
+"Turn italic text on or off." = "Aktifkan atau nonaktifkan teks miring.";
+"Keep the text still." = "Biarkan teks tetap diam.";
+"Switch from the editor to the giant text display." = "Beralih dari editor ke tampilan teks besar.";
+"Shake the text." = "Goyangkan teks.";
+"Restore the previous text. Available after a change." = "Pulihkan teks sebelumnya. Tersedia setelah ada perubahan.";
+"Open editing actions, Settings, and Help." = "Buka tindakan pengeditan, Pengaturan, dan Bantuan.";
+"Move a wave through the letters." = "Gerakkan gelombang melewati huruf.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Ketuk pratinjau warna untuk menerapkan tema. Tanda centang menunjukkan tema yang dipilih.";
+"Adjust how your text appears." = "Atur tampilan teks Anda.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Ketuk panah untuk menulis pesan pertama. Menu tiga titik berisi Pengaturan dan Bantuan.";
+"Turn bold text on or off." = "Aktifkan atau nonaktifkan teks tebal.";
+"Leave the welcome screen and start your message." = "Keluar dari layar sambutan dan mulai menulis pesan.";
+"Change the text animation from the editor toolbar." = "Ubah animasi teks dari bar alat editor.";
+"Show this guide to the controls." = "Tampilkan panduan kontrol ini.";
+"Help" = "Bantuan";
+"Controls" = "Kontrol";
+"Pulse the size of the text." = "Buat ukuran teks berdenyut.";
+"Close the current panel." = "Tutup panel saat ini.";
+"Open live display" = "Buka tampilan langsung";
+"Editor" = "Editor";
+"Edit the message shown on the display." = "Edit pesan yang ditampilkan di layar.";
+"Open another sign window that follows your message and styling." = "Buka jendela papan teks lain yang mengikuti pesan dan gaya Anda.";

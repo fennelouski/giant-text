@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "ਸੰਪਾਦਿਤ ਕਰਨ ਅਤੇ ਵਿਕਲਪਾਂ ਤੱਕ ਪਹੁੰਚ ਲਈ ਰਿਮੋਟ ਵਰਤੋ";
 "feature_easy_editing_desc_other" = "ਸੰਪਾਦਿਤ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ, ਵਿਕਲਪਾਂ ਲਈ ਦੋ-ਉਂਗਲਾਂ ਨਾਲ ਟੈਪ ਕਰੋ";
 "get_started_button" = "ਸ਼ੁਰੂ ਕਰੋ";
+
+// MARK: - Controls Help
+"Present text" = "ਟੈਕਸਟ ਦਿਖਾਓ";
+"Erase the message and start typing a new one." = "ਸੁਨੇਹਾ ਮਿਟਾਓ ਅਤੇ ਨਵਾਂ ਲਿਖਣਾ ਸ਼ੁਰੂ ਕਰੋ।";
+"Finish editing and show your giant text." = "ਸੰਪਾਦਨ ਪੂਰਾ ਕਰੋ ਅਤੇ ਆਪਣਾ ਵੱਡਾ ਟੈਕਸਟ ਦਿਖਾਓ।";
+"Settings" = "ਸੈਟਿੰਗਾਂ";
+"Turn italic text on or off." = "ਇਟਾਲਿਕ ਟੈਕਸਟ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰੋ।";
+"Keep the text still." = "ਟੈਕਸਟ ਨੂੰ ਸਥਿਰ ਰੱਖੋ।";
+"Switch from the editor to the giant text display." = "ਐਡੀਟਰ ਤੋਂ ਵੱਡੇ ਟੈਕਸਟ ਦੇ ਡਿਸਪਲੇ ਉੱਤੇ ਜਾਓ।";
+"Shake the text." = "ਟੈਕਸਟ ਨੂੰ ਹਿਲਾਓ।";
+"Restore the previous text. Available after a change." = "ਪਿਛਲਾ ਟੈਕਸਟ ਮੁੜ ਲਿਆਓ। ਤਬਦੀਲੀ ਤੋਂ ਬਾਅਦ ਉਪਲਬਧ।";
+"Open editing actions, Settings, and Help." = "ਸੰਪਾਦਨ ਕਾਰਵਾਈਆਂ, ਸੈਟਿੰਗਾਂ ਅਤੇ ਮਦਦ ਖੋਲ੍ਹੋ।";
+"Move a wave through the letters." = "ਅੱਖਰਾਂ ਵਿੱਚੋਂ ਲਹਿਰ ਲੰਘਾਓ।";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "ਥੀਮ ਲਾਗੂ ਕਰਨ ਲਈ ਰੰਗ ਦੇ ਪੂਰਵਦਰਸ਼ਨ ਉੱਤੇ ਟੈਪ ਕਰੋ। ਚੈੱਕ ਦਾ ਨਿਸ਼ਾਨ ਚੁਣੀ ਥੀਮ ਦਿਖਾਉਂਦਾ ਹੈ।";
+"Adjust how your text appears." = "ਆਪਣੇ ਟੈਕਸਟ ਦੀ ਦਿੱਖ ਬਦਲੋ।";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "ਪਹਿਲਾ ਸੁਨੇਹਾ ਲਿਖਣ ਲਈ ਤੀਰ ਉੱਤੇ ਟੈਪ ਕਰੋ। ਤਿੰਨ-ਬਿੰਦੀਆਂ ਵਾਲੇ ਮੀਨੂ ਵਿੱਚ ਸੈਟਿੰਗਾਂ ਅਤੇ ਮਦਦ ਹਨ।";
+"Turn bold text on or off." = "ਬੋਲਡ ਟੈਕਸਟ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰੋ।";
+"Leave the welcome screen and start your message." = "ਸਵਾਗਤ ਸਕ੍ਰੀਨ ਤੋਂ ਬਾਹਰ ਆ ਕੇ ਆਪਣਾ ਸੁਨੇਹਾ ਸ਼ੁਰੂ ਕਰੋ।";
+"Change the text animation from the editor toolbar." = "ਐਡੀਟਰ ਦੇ ਟੂਲਬਾਰ ਤੋਂ ਟੈਕਸਟ ਐਨੀਮੇਸ਼ਨ ਬਦਲੋ।";
+"Show this guide to the controls." = "ਕੰਟਰੋਲਾਂ ਲਈ ਇਹ ਗਾਈਡ ਦਿਖਾਓ।";
+"Help" = "ਮਦਦ";
+"Controls" = "ਕੰਟਰੋਲ";
+"Pulse the size of the text." = "ਟੈਕਸਟ ਦੇ ਆਕਾਰ ਨੂੰ ਧੜਕਦਾ ਬਣਾਓ।";
+"Close the current panel." = "ਮੌਜੂਦਾ ਪੈਨਲ ਬੰਦ ਕਰੋ।";
+"Open live display" = "ਲਾਈਵ ਡਿਸਪਲੇ ਖੋਲ੍ਹੋ";
+"Editor" = "ਐਡੀਟਰ";
+"Edit the message shown on the display." = "ਸਕ੍ਰੀਨ ਉੱਤੇ ਦਿਖਾਏ ਸੁਨੇਹੇ ਨੂੰ ਸੰਪਾਦਿਤ ਕਰੋ।";
+"Open another sign window that follows your message and styling." = "ਇੱਕ ਹੋਰ ਸਾਈਨ ਵਿੰਡੋ ਖੋਲ੍ਹੋ ਜੋ ਤੁਹਾਡੇ ਸੁਨੇਹੇ ਅਤੇ ਸ਼ੈਲੀ ਨਾਲ ਚੱਲਦੀ ਹੈ।";

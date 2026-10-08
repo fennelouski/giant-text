@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Brug fjernbetjeningen til at redigere og tilgå indstillinger";
 "feature_easy_editing_desc_other" = "Tryk for at redigere, tryk med to fingre for indstillinger";
 "get_started_button" = "Kom i gang";
+
+// MARK: - Controls Help
+"Present text" = "Vis tekst";
+"Erase the message and start typing a new one." = "Slet beskeden, og begynd at skrive en ny.";
+"Finish editing and show your giant text." = "Afslut redigering, og vis din store tekst.";
+"Settings" = "Indstillinger";
+"Turn italic text on or off." = "Slå kursiv tekst til eller fra.";
+"Keep the text still." = "Hold teksten stille.";
+"Switch from the editor to the giant text display." = "Skift fra redigering til visning af stor tekst.";
+"Shake the text." = "Ryst teksten.";
+"Restore the previous text. Available after a change." = "Gendan den forrige tekst. Tilgængelig efter en ændring.";
+"Open editing actions, Settings, and Help." = "Åbn redigeringshandlinger, indstillinger og hjælp.";
+"Move a wave through the letters." = "Lad en bølge bevæge sig gennem bogstaverne.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Tryk på en farve for at bruge temaet. Et flueben viser det valgte tema.";
+"Adjust how your text appears." = "Juster tekstens udseende.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Tryk på pilen for at skrive din første besked. Menuen med tre prikker indeholder indstillinger og hjælp.";
+"Turn bold text on or off." = "Slå fed tekst til eller fra.";
+"Leave the welcome screen and start your message." = "Forlad velkomstskærmen, og begynd på din besked.";
+"Change the text animation from the editor toolbar." = "Skift tekstanimation fra redigeringsværktøjslinjen.";
+"Show this guide to the controls." = "Vis denne vejledning til betjeningen.";
+"Help" = "Hjælp";
+"Controls" = "Betjening";
+"Pulse the size of the text." = "Lad tekststørrelsen pulsere.";
+"Close the current panel." = "Luk det aktuelle panel.";
+"Open live display" = "Åbn livevisning";
+"Editor" = "Redigering";
+"Edit the message shown on the display." = "Rediger beskeden, der vises på skærmen.";
+"Open another sign window that follows your message and styling." = "Åbn et ekstra skiltvindue, der følger din besked og typografi.";

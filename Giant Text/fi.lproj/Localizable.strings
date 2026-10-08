@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Muokkaa ja avaa asetukset kaukosäätimellä";
 "feature_easy_editing_desc_other" = "Muokkaa napauttamalla, asetukset kahdella sormella napauttamalla";
 "get_started_button" = "Aloita";
+
+// MARK: - Controls Help
+"Present text" = "Näytä teksti";
+"Erase the message and start typing a new one." = "Tyhjennä viesti ja aloita uuden kirjoittaminen.";
+"Finish editing and show your giant text." = "Lopeta muokkaaminen ja näytä suuri tekstisi.";
+"Settings" = "Asetukset";
+"Turn italic text on or off." = "Ota kursivointi käyttöön tai poista se käytöstä.";
+"Keep the text still." = "Pidä teksti paikallaan.";
+"Switch from the editor to the giant text display." = "Siirry muokkaimesta suuren tekstin näkymään.";
+"Shake the text." = "Tärisytä tekstiä.";
+"Restore the previous text. Available after a change." = "Palauta edellinen teksti. Käytettävissä muutoksen jälkeen.";
+"Open editing actions, Settings, and Help." = "Avaa muokkaustoiminnot, asetukset ja ohje.";
+"Move a wave through the letters." = "Liikuta aaltoa kirjainten läpi.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Ota teema käyttöön napauttamalla väriesikatselua. Valintamerkki osoittaa valitun teeman.";
+"Adjust how your text appears." = "Säädä tekstin ulkoasua.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Kirjoita ensimmäinen viestisi napauttamalla nuolta. Kolmen pisteen valikossa ovat asetukset ja ohje.";
+"Turn bold text on or off." = "Ota lihavointi käyttöön tai poista se käytöstä.";
+"Leave the welcome screen and start your message." = "Poistu tervetulonäytöstä ja aloita viestin kirjoittaminen.";
+"Change the text animation from the editor toolbar." = "Vaihda tekstianimaatiota muokkaimen työkalupalkista.";
+"Show this guide to the controls." = "Näytä tämä ohje ohjaimista.";
+"Help" = "Ohje";
+"Controls" = "Ohjaimet";
+"Pulse the size of the text." = "Sykkivä tekstikoko.";
+"Close the current panel." = "Sulje nykyinen paneeli.";
+"Open live display" = "Avaa reaaliaikainen näyttö";
+"Editor" = "Muokkain";
+"Edit the message shown on the display." = "Muokkaa näytöllä näkyvää viestiä.";
+"Open another sign window that follows your message and styling." = "Avaa toinen näyttöikkuna, joka seuraa viestiäsi ja tyyliäsi.";

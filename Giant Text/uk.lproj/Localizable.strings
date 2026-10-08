@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Використовуйте пульт для редагування та доступу до параметрів";
 "feature_easy_editing_desc_other" = "Торкніться, щоб редагувати, торкніться двома пальцями для параметрів";
 "get_started_button" = "Почати";
+
+// MARK: - Controls Help
+"Present text" = "Показати текст";
+"Erase the message and start typing a new one." = "Зітріть повідомлення та почніть вводити нове.";
+"Finish editing and show your giant text." = "Завершіть редагування та покажіть великий текст.";
+"Settings" = "Параметри";
+"Turn italic text on or off." = "Увімкнути або вимкнути курсив.";
+"Keep the text still." = "Залишити текст нерухомим.";
+"Switch from the editor to the giant text display." = "Перейти з редактора до показу великого тексту.";
+"Shake the text." = "Струсити текст.";
+"Restore the previous text. Available after a change." = "Відновити попередній текст. Доступно після зміни.";
+"Open editing actions, Settings, and Help." = "Відкрити дії редагування, параметри та довідку.";
+"Move a wave through the letters." = "Провести хвилею крізь літери.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Торкніться зразка кольору, щоб застосувати тему. Позначка вказує вибрану тему.";
+"Adjust how your text appears." = "Налаштувати вигляд тексту.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Торкніться стрілки, щоб написати перше повідомлення. У меню з трьома крапками є параметри та довідка.";
+"Turn bold text on or off." = "Увімкнути або вимкнути жирний шрифт.";
+"Leave the welcome screen and start your message." = "Вийти з екрана привітання та почати повідомлення.";
+"Change the text animation from the editor toolbar." = "Змінити анімацію тексту на панелі інструментів редактора.";
+"Show this guide to the controls." = "Показати цей посібник з елементів керування.";
+"Help" = "Довідка";
+"Controls" = "Елементи керування";
+"Pulse the size of the text." = "Пульсація розміру тексту.";
+"Close the current panel." = "Закрити поточну панель.";
+"Open live display" = "Відкрити показ наживо";
+"Editor" = "Редактор";
+"Edit the message shown on the display." = "Змінити повідомлення на екрані.";
+"Open another sign window that follows your message and styling." = "Відкрити ще одне вікно таблички, яке повторює повідомлення та стиль.";

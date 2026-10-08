@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Na úpravu a prístup k možnostiam použite diaľkové ovládanie";
 "feature_easy_editing_desc_other" = "Ťuknutím upravíte, dvomi prstami zobrazíte možnosti";
 "get_started_button" = "Začať";
+
+// MARK: - Controls Help
+"Present text" = "Zobraziť text";
+"Erase the message and start typing a new one." = "Vymaž správu a začni písať novú.";
+"Finish editing and show your giant text." = "Dokonči úpravy a zobraz svoj veľký text.";
+"Settings" = "Nastavenia";
+"Turn italic text on or off." = "Zapnúť alebo vypnúť kurzívu.";
+"Keep the text still." = "Ponechať text bez pohybu.";
+"Switch from the editor to the giant text display." = "Prepnúť z editora na zobrazenie veľkého textu.";
+"Shake the text." = "Roztriasť text.";
+"Restore the previous text. Available after a change." = "Obnoviť predchádzajúci text. Dostupné po zmene.";
+"Open editing actions, Settings, and Help." = "Otvoriť úpravy, Nastavenia a Pomoc.";
+"Move a wave through the letters." = "Rozvlniť písmená.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Ťuknutím na farebnú ukážku použiješ motív. Začiarknutie označuje vybraný motív.";
+"Adjust how your text appears." = "Upraviť vzhľad textu.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Ťuknutím na šípku napíšeš prvú správu. Ponuka s tromi bodkami obsahuje Nastavenia a Pomoc.";
+"Turn bold text on or off." = "Zapnúť alebo vypnúť tučné písmo.";
+"Leave the welcome screen and start your message." = "Opustiť uvítaciu obrazovku a začať písať správu.";
+"Change the text animation from the editor toolbar." = "Zmeniť animáciu textu na paneli nástrojov editora.";
+"Show this guide to the controls." = "Zobraziť túto príručku ovládania.";
+"Help" = "Pomoc";
+"Controls" = "Ovládanie";
+"Pulse the size of the text." = "Pulzovať veľkosťou textu.";
+"Close the current panel." = "Zavrieť aktuálny panel.";
+"Open live display" = "Otvoriť živé zobrazenie";
+"Editor" = "Editor";
+"Edit the message shown on the display." = "Upraviť správu zobrazenú na obrazovke.";
+"Open another sign window that follows your message and styling." = "Otvoriť ďalšie okno s nápisom, ktoré zobrazuje tvoju správu a štýl.";
