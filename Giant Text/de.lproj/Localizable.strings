@@ -117,7 +117,7 @@
 "Help" = "Hilfe";
 "Controls" = "Bedienung";
 "Pulse the size of the text." = "Textgröße pulsieren lassen.";
-"Close the current panel." = "Aktuelles Fenster schließen.";
+"Close the current panel." = "Aktuelle Ansicht schließen.";
 "Open live display" = "Liveanzeige öffnen";
 "Editor" = "Editor";
 "Edit the message shown on the display." = "Die auf dem Bildschirm angezeigte Nachricht bearbeiten.";

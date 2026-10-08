@@ -118,7 +118,7 @@
 "Controls" = "Элементы управления";
 "Pulse the size of the text." = "Пульсация размера текста.";
 "Close the current panel." = "Закрыть текущую панель.";
-"Open live display" = "Открыть трансляцию";
+"Open live display" = "Открыть дополнительное окно вывески";
 "Editor" = "Редактор";
 "Edit the message shown on the display." = "Изменить сообщение на экране.";
 "Open another sign window that follows your message and styling." = "Открыть еще одно окно вывески, которое повторяет сообщение и его оформление.";
