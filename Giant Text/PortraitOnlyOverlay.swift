@@ -37,8 +37,10 @@ struct PortraitOnlyOverlay: View {
                     .foregroundColor(colorScheme == .dark ? .white.opacity(0.8) : .black.opacity(0.8))
                     .padding(.horizontal, 40)
                 
-                Button(LocalizationManager.ok) {
-                    onDismiss()
+                Button(action: onDismiss) {
+                    Label(LocalizationManager.ok, systemImage: "checkmark")
+                        .labelStyle(.iconOnly)
+                        .frame(minWidth: 44, minHeight: 44)
                 }
                 .foregroundColor(.blue)
                 .padding(.top, 20)

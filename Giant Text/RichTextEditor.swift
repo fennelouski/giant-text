@@ -52,6 +52,8 @@ struct RichTextEditor: View {
                     Image(systemName: selectedAnimation.icon)
                         .foregroundColor(.blue)
                 }
+                .accessibilityLabel(LocalizationManager.textAnimation)
+                .accessibilityValue(selectedAnimation.localizedName)
                 
                 Button(action: {
                     // Toggle bold - simplified for tvOS
@@ -64,6 +66,8 @@ struct RichTextEditor: View {
                     Image(systemName: "bold")
                         .foregroundColor(isBold ? .blue : theme.textColor(for: colorScheme))
                 }
+                .accessibilityLabel(LocalizationManager.bold)
+                .accessibilityAddTraits(isBold ? .isSelected : [])
 
                 Button(action: {
                     // Toggle italic - simplified for tvOS
@@ -76,16 +80,20 @@ struct RichTextEditor: View {
                     Image(systemName: "italic")
                         .foregroundColor(isItalicized ? .blue : theme.textColor(for: colorScheme))
                 }
+                .accessibilityLabel(LocalizationManager.italic)
+                .accessibilityAddTraits(isItalicized ? .isSelected : [])
                 
                 Button(action: onClear) {
                     Image(systemName: "trash")
                         .foregroundColor(.red)
                 }
+                .accessibilityLabel(LocalizationManager.clearTextAccessibility)
                 
                 Spacer()
                 
-                Button(LocalizationManager.done) {
-                    onDone()
+                Button(action: onDone) {
+                    Label(LocalizationManager.done, systemImage: "checkmark")
+                        .labelStyle(.iconOnly)
                 }
                 .foregroundColor(.blue)
             }
@@ -305,18 +313,22 @@ struct RichTextEditor: UIViewRepresentable {
             stackView.axis = .horizontal
             stackView.distribution = .fill
             stackView.alignment = .center
-            stackView.spacing = 16
+            stackView.spacing = 8
             stackView.translatesAutoresizingMaskIntoConstraints = false
             
             // Create buttons
             let animationButton = createButton(
                 imageName: "play.circle.fill",
-                action: #selector(showAnimationMenu),
+                accessibilityKey: "text_animation",
+                action: #selector(showAnimationMenu(_:)),
                 tintColor: UIColor(parent.theme.textColor(for: parent.colorScheme))
             )
 
+            animationButton.accessibilityValue = NSLocalizedString(parent.selectedAnimation.rawValue, comment: "Selected animation")
+
             let boldButton = createButton(
                 imageName: "bold",
+                accessibilityKey: "bold",
                 action: #selector(toggleBold),
                 tintColor: parent.isBold ? UIColor.systemBlue : UIColor(parent.theme.textColor(for: parent.colorScheme)),
                 isUnderlined: parent.isBold
@@ -324,6 +336,7 @@ struct RichTextEditor: UIViewRepresentable {
 
             let italicButton = createButton(
                 imageName: "italic",
+                accessibilityKey: "italic",
                 action: #selector(toggleItalic),
                 tintColor: parent.isItalicized ? UIColor.systemBlue : UIColor(parent.theme.textColor(for: parent.colorScheme)),
                 isUnderlined: parent.isItalicized
@@ -331,12 +344,14 @@ struct RichTextEditor: UIViewRepresentable {
             
             let clearButton = createButton(
                 imageName: "trash",
+                accessibilityKey: "clear_text_accessibility",
                 action: #selector(clearText),
                 tintColor: UIColor.red
             )
             
             let doneButton = createButton(
-                title: NSLocalizedString("done", comment: "Done button"),
+                imageName: "checkmark",
+                accessibilityKey: "done_editing_accessibility",
                 action: #selector(doneEditing),
                 tintColor: UIColor.systemBlue
             )
@@ -364,9 +379,12 @@ struct RichTextEditor: UIViewRepresentable {
             return containerView
         }
         
-        private func createButton(imageName: String, action: Selector, tintColor: UIColor, isUnderlined: Bool = false) -> UIButton {
+        private func createButton(imageName: String, accessibilityKey: String, action: Selector, tintColor: UIColor, isUnderlined: Bool = false) -> UIButton {
             let button = UIButton(type: .system)
             button.setImage(UIImage(systemName: imageName), for: .normal)
+            button.accessibilityLabel = NSLocalizedString(accessibilityKey, comment: "Editor control")
+            button.accessibilityIdentifier = accessibilityKey
+            if isUnderlined { button.accessibilityTraits.insert(.selected) }
             button.tintColor = tintColor
             button.addTarget(self, action: action, for: .touchUpInside)
             button.translatesAutoresizingMaskIntoConstraints = false
@@ -390,22 +408,6 @@ struct RichTextEditor: UIViewRepresentable {
             NSLayoutConstraint.activate([
                 button.widthAnchor.constraint(equalToConstant: 44),
                 button.heightAnchor.constraint(equalToConstant: 44)
-            ])
-            
-            return button
-        }
-        
-        private func createButton(title: String, action: Selector, tintColor: UIColor) -> UIButton {
-            let button = UIButton(type: .system)
-            button.setTitle(title, for: .normal)
-            button.tintColor = tintColor
-            button.addTarget(self, action: action, for: .touchUpInside)
-            button.translatesAutoresizingMaskIntoConstraints = false
-            
-            // Set minimum size for text button
-            NSLayoutConstraint.activate([
-                button.heightAnchor.constraint(equalToConstant: 44),
-                button.widthAnchor.constraint(greaterThanOrEqualToConstant: 60)
             ])
             
             return button
@@ -443,7 +445,7 @@ struct RichTextEditor: UIViewRepresentable {
             }
         }
         
-        @objc func showAnimationMenu() {
+        @objc func showAnimationMenu(_ sender: UIButton) {
             let alertController = UIAlertController(
                 title: NSLocalizedString("text_animation", comment: "Text animation menu title"),
                 message: nil,
@@ -469,6 +471,9 @@ struct RichTextEditor: UIViewRepresentable {
             )
             alertController.addAction(cancelAction)
             
+            alertController.popoverPresentationController?.sourceView = sender
+            alertController.popoverPresentationController?.sourceRect = sender.bounds
+
             // Present the alert controller
             if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
                let window = windowScene.windows.first {

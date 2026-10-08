@@ -26,6 +26,8 @@ struct OptionsMenuSheet: View {
     let currentTheme: ColorTheme
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    @ScaledMetric(relativeTo: .body) private var controlMinimumWidth: CGFloat = 64
     #if DEBUG
     @State private var isThemeSectionExpanded: Bool =
         ProcessInfo.processInfo.arguments.contains("--ss-expand-theme")
@@ -61,14 +63,6 @@ struct OptionsMenuSheet: View {
         }
     }
 
-    private func themeTextColor(for theme: ColorTheme) -> Color {
-        if selectedThemeId == theme.id {
-            return .blue
-        } else {
-            return colorScheme == .dark ? .white : .black
-        }
-    }
-
     // A live "Aa" swatch rendered in the theme's own colors so each option
     // previews exactly how the giant text will look.
     @ViewBuilder
@@ -101,6 +95,39 @@ struct OptionsMenuSheet: View {
         )
     }
 
+    private var settingsRowLayout: AnyLayout {
+        dynamicTypeSize.isAccessibilitySize
+            ? AnyLayout(VStackLayout(alignment: .leading, spacing: 8))
+            : AnyLayout(HStackLayout())
+    }
+
+    private var actionButtons: some View {
+        HStack(spacing: 16) {
+            Button(action: onEdit) {
+                Label(LocalizationManager.editText, systemImage: "pencil")
+                    .labelStyle(.iconOnly)
+                    .frame(minWidth: 44, minHeight: 44)
+            }
+            .help(LocalizationManager.editText)
+            Button(action: onUndo) {
+                Label(LocalizationManager.undo, systemImage: "arrow.uturn.backward")
+                    .labelStyle(.iconOnly)
+                    .frame(minWidth: 44, minHeight: 44)
+            }
+            .disabled(!canUndo)
+            .help(LocalizationManager.undo)
+            Button(role: .destructive, action: onClear) {
+                Label(LocalizationManager.clearText, systemImage: "trash")
+                    .labelStyle(.iconOnly)
+                    .frame(minWidth: 44, minHeight: 44)
+            }
+            .help(LocalizationManager.clearText)
+        }
+        .font(.system(size: 22))
+        .buttonStyle(.bordered)
+        .frame(maxWidth: .infinity)
+    }
+
     var body: some View {
         NavigationStack {
 
@@ -116,31 +143,31 @@ struct OptionsMenuSheet: View {
                     }
                     .pickerStyle(.menu)
 
-                    // Actions
-                    Button(action: onEdit) {
-                        Text(LocalizationManager.editText)
-                            .foregroundColor(.blue)
-                    }
-
-                    Button(action: onClear) {
-                        Text(LocalizationManager.clearText)
-                            .foregroundColor(.red)
-                    }
-
-                    if canUndo {
-                        Button(action: onUndo) {
-                            Text(LocalizationManager.undo)
-                        }
-                    }
+                    actionButtons
                 }
                 .padding()
             }
             .navigationTitle(LocalizationManager.options)
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(LocalizationManager.close) {
-                        dismiss()
+                ToolbarItem(placement: .primaryAction) {
+                    NavigationLink {
+                        ControlsHelpView()
+                    } label: {
+                        Label("Help", systemImage: "questionmark.circle")
+                            .labelStyle(.iconOnly)
+                            .frame(minWidth: 44, minHeight: 44)
                     }
+                    .help("Help")
+                    .accessibilityIdentifier("SettingsHelpButton")
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button { dismiss() } label: {
+                        Label(LocalizationManager.close, systemImage: "xmark")
+                            .labelStyle(.iconOnly)
+                            .frame(minWidth: 44, minHeight: 44)
+                    }
+                    .help(LocalizationManager.close)
+                    .accessibilityIdentifier("CloseSettingsButton")
                 }
             }
             #elseif os(watchOS)
@@ -161,36 +188,37 @@ struct OptionsMenuSheet: View {
                         VStack {
                             Text(LocalizationManager.intensity)
                             Slider(value: $animationIntensity, in: 0.1...1.0)
+                                .accessibilityLabel(LocalizationManager.intensity)
                                 .tint(.blue)
                         }
                     }
                     
-                    // Actions
-                    Button(action: onEdit) {
-                        Text(LocalizationManager.editText)
-                            .foregroundColor(.blue)
-                    }
-                    
-                    Button(action: onClear) {
-                        Text(LocalizationManager.clearText)
-                            .foregroundColor(.red)
-                    }
-                    
-                    if canUndo {
-                        Button(action: onUndo) {
-                            Text(LocalizationManager.undo)
-                        }
-                    }
+                    actionButtons
                 }
                 .padding()
             }
             .navigationTitle(LocalizationManager.options)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(LocalizationManager.close) {
-                        dismiss()
+                ToolbarItem(placement: .primaryAction) {
+                    NavigationLink {
+                        ControlsHelpView()
+                    } label: {
+                        Label("Help", systemImage: "questionmark.circle")
+                            .labelStyle(.iconOnly)
+                            .frame(minWidth: 44, minHeight: 44)
                     }
+                    .help("Help")
+                    .accessibilityIdentifier("SettingsHelpButton")
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button { dismiss() } label: {
+                        Label(LocalizationManager.close, systemImage: "xmark")
+                            .labelStyle(.iconOnly)
+                            .frame(minWidth: 44, minHeight: 44)
+                    }
+                    .help(LocalizationManager.close)
+                    .accessibilityIdentifier("CloseSettingsButton")
                 }
             }
             #else
@@ -203,18 +231,15 @@ struct OptionsMenuSheet: View {
                         .font(.headline)
                         .foregroundColor(colorScheme == .dark ? .white : .black)
                     
-                    LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: 12) {
+                    LazyVGrid(columns: [GridItem(.adaptive(minimum: controlMinimumWidth))], spacing: 12) {
                         ForEach(TextAnimation.allCases, id: \.self) { animation in
                             Button(action: {
                                 selectedAnimation = animation
                             }) {
-                                HStack(spacing: 8) {
-                                    Image(systemName: animation.icon)
-                                        .foregroundColor(textColor(for: animation))
-                                    Text(animation.localizedName)
-                                        .fontWeight(selectedAnimation == animation ? .semibold : .regular)
-                                        .foregroundColor(textColor(for: animation))
-                                }
+                                Label(animation.localizedName, systemImage: animation.icon)
+                                    .labelStyle(.iconOnly)
+                                    .foregroundColor(textColor(for: animation))
+                                    .frame(minHeight: 44)
                                 .padding()
                                 .frame(maxWidth: .infinity)
                                 .background(
@@ -230,6 +255,8 @@ struct OptionsMenuSheet: View {
                                 )
                             }
                             .buttonStyle(.plain)
+                            .help(animation.localizedName)
+                            .accessibilityAddTraits(selectedAnimation == animation ? .isSelected : [])
                         }
                     }
                     
@@ -243,6 +270,7 @@ struct OptionsMenuSheet: View {
                                     .foregroundColor(colorScheme == .dark ? .white : .black)
                             }
                             Slider(value: $animationIntensity, in: 0.1...1.0)
+                                .accessibilityLabel(LocalizationManager.intensity)
                                 .tint(.blue)
                         }
                         .padding(.top, 8)
@@ -272,16 +300,7 @@ struct OptionsMenuSheet: View {
                                         Button(action: {
                                             selectedThemeId = theme.id
                                         }) {
-                                            VStack(spacing: 8) {
-                                                themePreview(theme, height: 44)
-
-                                                Text(theme.name)
-                                                    .font(.caption)
-                                                    .fontWeight(selectedThemeId == theme.id ? .semibold : .regular)
-                                                    .foregroundColor(themeTextColor(for: theme))
-                                                    .lineLimit(1)
-                                                    .minimumScaleFactor(0.8)
-                                            }
+                                            themePreview(theme, height: 52)
                                             .padding(8)
                                             .frame(maxWidth: .infinity)
                                             .background(
@@ -297,6 +316,9 @@ struct OptionsMenuSheet: View {
                                             )
                                         }
                                         .buttonStyle(.plain)
+                                        .accessibilityLabel(theme.name)
+                                        .accessibilityAddTraits(selectedThemeId == theme.id ? .isSelected : [])
+                                        .help(theme.name)
                                     }
                                 }
                             } else {
@@ -338,16 +360,17 @@ struct OptionsMenuSheet: View {
 
                     // Appearance mode picker
                     VStack(alignment: .leading, spacing: 8) {
-                        HStack {
+                        settingsRowLayout {
                             Text(LocalizationManager.appearance)
                                 .foregroundColor(colorScheme == .dark ? .white : .black)
-                            Spacer()
-                            Picker("", selection: $appearanceMode) {
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                            Picker(LocalizationManager.appearance, selection: $appearanceMode) {
                                 ForEach(AppearanceMode.allCases, id: \.self) { mode in
                                     Text(mode.localizedName).tag(mode)
                                 }
                             }
                             .pickerStyle(.menu)
+                            .labelsHidden()
                         }
                     }
                     .padding()
@@ -359,16 +382,17 @@ struct OptionsMenuSheet: View {
                     #if !os(tvOS)
                     // Text rotation picker (not available on tvOS)
                     VStack(alignment: .leading, spacing: 8) {
-                        HStack {
+                        settingsRowLayout {
                             Text(LocalizationManager.textRotation)
                                 .foregroundColor(colorScheme == .dark ? .white : .black)
-                            Spacer()
-                            Picker("", selection: $textRotation) {
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                            Picker(LocalizationManager.textRotation, selection: $textRotation) {
                                 ForEach(TextRotation.allCases, id: \.self) { rotation in
                                     Text(rotation.localizedName).tag(rotation)
                                 }
                             }
                             .pickerStyle(.menu)
+                            .labelsHidden()
                         }
                     }
                     .padding()
@@ -399,6 +423,7 @@ struct OptionsMenuSheet: View {
                                 .foregroundColor(colorScheme == .dark ? .white : .black)
                         }
                         Slider(value: $kerning, in: -10...30)
+                            .accessibilityLabel(LocalizationManager.letterSpacing)
                             .tint(.blue)
                     }
                     .padding()
@@ -409,16 +434,17 @@ struct OptionsMenuSheet: View {
 
                     // Max lines picker
                     VStack(alignment: .leading, spacing: 8) {
-                        HStack {
+                        settingsRowLayout {
                             Text(LocalizationManager.maxLines)
                                 .foregroundColor(colorScheme == .dark ? .white : .black)
-                            Spacer()
-                            Picker("", selection: $maxLines) {
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                            Picker(LocalizationManager.maxLines, selection: $maxLines) {
                                 ForEach(1...5, id: \.self) { lines in
                                     Text("\(lines)").tag(lines)
                                 }
                             }
                             .pickerStyle(.menu)
+                            .labelsHidden()
                         }
                     }
                     .padding()
@@ -428,79 +454,96 @@ struct OptionsMenuSheet: View {
                     )
                 }
                 
-                // Actions section
-                VStack(alignment: .leading, spacing: 12) {
-                    Text(LocalizationManager.actions)
-                        .font(.headline)
-                        .foregroundColor(colorScheme == .dark ? .white : .black)
-                    
-                    VStack(spacing: 8) {
-                        Button(action: onEdit) {
-                            HStack {
-                                Image(systemName: "pencil")
-                                Text(LocalizationManager.editText)
-                                Spacer()
-                            }
-                            .foregroundColor(colorScheme == .dark ? .white : .black)
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(
-                                RoundedRectangle(cornerRadius: 8)
-                                    .fill(backgroundColor)
-                            )
-                        }
-                        .buttonStyle(.plain)
-
-                        Button(action: onClear) {
-                            HStack {
-                                Image(systemName: "trash")
-                                Text(LocalizationManager.clearText)
-                                Spacer()
-                            }
-                            .foregroundColor(.red)
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(
-                                RoundedRectangle(cornerRadius: 8)
-                                    .fill(colorScheme == .dark ? Color.red.opacity(0.3) : Color.red.opacity(0.1))
-                            )
-                        }
-                        .buttonStyle(.plain)
-
-                        Button(action: onUndo) {
-                            HStack {
-                                Image(systemName: "arrow.uturn.backward")
-                                Text(LocalizationManager.undo)
-                                Spacer()
-                            }
-                            .foregroundColor(canUndo ? (colorScheme == .dark ? .white : .black) : .gray)
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(
-                                RoundedRectangle(cornerRadius: 8)
-                                    .fill(canUndo ? backgroundColor : (colorScheme == .dark ? Color.gray.opacity(0.1) : Color.gray.opacity(0.05)))
-                            )
-                        }
-                        .buttonStyle(.plain)
-                        .disabled(!canUndo)
-                    }
-                }
+                actionButtons
                 
                 }
+                .frame(maxWidth: 680)
                 .padding()
+                .frame(maxWidth: .infinity)
             }
             .navigationTitle(LocalizationManager.options)
-            #if os(iOS) || os(tvOS) || os(visionOS)
+            #if os(iOS) || os(visionOS)
             .navigationBarTitleDisplayMode(.inline)
             #endif
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button(LocalizationManager.close) {
-                        dismiss()
+                ToolbarItem(placement: .primaryAction) {
+                    NavigationLink {
+                        ControlsHelpView()
+                    } label: {
+                        Label("Help", systemImage: "questionmark.circle")
+                            .labelStyle(.iconOnly)
+                            .frame(minWidth: 44, minHeight: 44)
                     }
+                    .help("Help")
+                    .accessibilityIdentifier("SettingsHelpButton")
+                }
+                ToolbarItem(placement: .cancellationAction) {
+                    Button { dismiss() } label: {
+                        Label(LocalizationManager.close, systemImage: "xmark")
+                            .labelStyle(.iconOnly)
+                            .frame(minWidth: 44, minHeight: 44)
+                    }
+                    .help(LocalizationManager.close)
+                    .accessibilityIdentifier("CloseSettingsButton")
                 }
             }
             #endif
         }
     }
-} 
+}
+
+struct ControlsHelpView: View {
+    var body: some View {
+        List {
+            Section("Controls") {
+                helpRow(LocalizationManager.options, icon: "ellipsis", detail: "Open editing actions, Settings, and Help.")
+                helpRow(LocalizationManager.editText, icon: "pencil", detail: "Edit the message shown on the display.")
+                helpRow(LocalizationManager.done, icon: "checkmark", detail: "Finish editing and show your giant text.")
+                helpRow(LocalizationManager.undo, icon: "arrow.uturn.backward", detail: "Restore the previous text. Available after a change.")
+                helpRow(LocalizationManager.clearText, icon: "trash", detail: "Erase the message and start typing a new one.")
+                helpRow("Settings", icon: "slider.horizontal.3", detail: "Adjust how your text appears.")
+                helpRow("Help", icon: "questionmark.circle", detail: "Show this guide to the controls.")
+                helpRow(LocalizationManager.close, icon: "xmark", detail: "Close the current panel.")
+                helpRow(LocalizationManager.getStartedButton, icon: "arrow.right", detail: "Leave the welcome screen and start your message.")
+                #if os(visionOS)
+                helpRow("Open live display", icon: "rectangle.on.rectangle", detail: "Open another sign window that follows your message and styling.")
+                helpRow("Present text", icon: "textformat.size", detail: "Switch from the editor to the giant text display.")
+                #endif
+            }
+            #if os(iOS) || os(tvOS)
+            Section("Editor") {
+                helpRow(LocalizationManager.textAnimation, icon: "play.circle.fill", detail: "Change the text animation from the editor toolbar.")
+                helpRow(LocalizationManager.bold, icon: "bold", detail: "Turn bold text on or off.")
+                helpRow(LocalizationManager.italic, icon: "italic", detail: "Turn italic text on or off.")
+            }
+            #endif
+            Section(LocalizationManager.animation) {
+                helpRow(TextAnimation.none.localizedName, icon: TextAnimation.none.icon, detail: "Keep the text still.")
+                helpRow(TextAnimation.bloom.localizedName, icon: TextAnimation.bloom.icon, detail: "Pulse the size of the text.")
+                helpRow(TextAnimation.jitter.localizedName, icon: TextAnimation.jitter.icon, detail: "Shake the text.")
+                helpRow(TextAnimation.ripple.localizedName, icon: TextAnimation.ripple.icon, detail: "Move a wave through the letters.")
+            }
+            #if !os(tvOS) && !os(watchOS)
+            Section(LocalizationManager.themeSection) {
+                Text("Tap a color preview to apply that theme. A checkmark marks the selected theme.")
+            }
+            #endif
+        }
+        .navigationTitle("Help")
+        #if os(iOS) || os(visionOS)
+        .navigationBarTitleDisplayMode(.inline)
+        #endif
+    }
+
+    private func helpRow(_ title: LocalizedStringKey, icon: String, detail: LocalizedStringKey) -> some View {
+        Label {
+            VStack(alignment: .leading, spacing: 4) {
+                Text(title).font(.headline)
+                Text(detail).font(.body).foregroundStyle(.secondary)
+            }
+        } icon: {
+            Image(systemName: icon)
+        }
+        .accessibilityElement(children: .combine)
+    }
+}

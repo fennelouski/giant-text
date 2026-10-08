@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Gebruik de afstandsbediening om te bewerken en opties te openen";
 "feature_easy_editing_desc_other" = "Tik om te bewerken, tik met twee vingers voor opties";
 "get_started_button" = "Aan de slag";
+
+// MARK: - Controls Help
+"Help" = "Help";
+"Settings" = "Instellingen";
+"Controls" = "Bediening";
+"Editor" = "Editor";
+"Open editing actions, Settings, and Help." = "Open tekstacties, instellingen en hulp.";
+"Edit the message shown on the display." = "Bewerk het bericht op het scherm.";
+"Finish editing and show your giant text." = "Rond het bewerken af en toon je grote tekst.";
+"Restore the previous text. Available after a change." = "Herstel de vorige tekst. Beschikbaar na een wijziging.";
+"Erase the message and start typing a new one." = "Wis het bericht en typ een nieuw bericht.";
+"Adjust how your text appears." = "Pas de weergave van je tekst aan.";
+"Show this guide to the controls." = "Toon deze uitleg van de bediening.";
+"Close the current panel." = "Sluit het huidige paneel.";
+"Leave the welcome screen and start your message." = "Sluit het welkomstscherm en begin je bericht.";
+"Open live display" = "Open liveweergave";
+"Present text" = "Toon tekst";
+"Open another sign window that follows your message and styling." = "Open een extra tekstvenster met hetzelfde bericht en dezelfde stijl.";
+"Switch from the editor to the giant text display." = "Schakel van de editor naar de grote tekstweergave.";
+"Change the text animation from the editor toolbar." = "Wijzig de tekstanimatie via de werkbalk van de editor.";
+"Turn bold text on or off." = "Zet vetgedrukte tekst aan of uit.";
+"Turn italic text on or off." = "Zet cursieve tekst aan of uit.";
+"Keep the text still." = "Laat de tekst stilstaan.";
+"Pulse the size of the text." = "Laat de tekst groter en kleiner worden.";
+"Shake the text." = "Laat de tekst trillen.";
+"Move a wave through the letters." = "Laat een golf door de letters bewegen.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Tik op een kleurvoorbeeld om dat thema toe te passen. Een vinkje markeert het geselecteerde thema.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Tik op de pijl om je eerste bericht te schrijven. Het menu met drie puntjes bevat instellingen en hulp.";

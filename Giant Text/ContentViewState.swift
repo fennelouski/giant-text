@@ -90,6 +90,7 @@ class ContentViewState {
     }
 
     // MARK: - UI State
+    var showingHelp: Bool = false
     var showingOptionsMenu: Bool = false
     var showingMarqueeTooltip: Bool = false
     var showingWelcomeView: Bool = false

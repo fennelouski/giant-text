@@ -94,3 +94,31 @@
 "feature_easy_editing_desc_tvos" = "Use remote to edit and access options";
 "feature_easy_editing_desc_other" = "Tap to edit, two-finger tap for options";
 "get_started_button" = "Get Started";
+
+// MARK: - Controls Help
+"Help" = "Help";
+"Settings" = "Settings";
+"Controls" = "Controls";
+"Editor" = "Editor";
+"Open editing actions, Settings, and Help." = "Open editing actions, Settings, and Help.";
+"Edit the message shown on the display." = "Edit the message shown on the display.";
+"Finish editing and show your giant text." = "Finish editing and show your giant text.";
+"Restore the previous text. Available after a change." = "Restore the previous text. Available after a change.";
+"Erase the message and start typing a new one." = "Erase the message and start typing a new one.";
+"Adjust how your text appears." = "Adjust how your text appears.";
+"Show this guide to the controls." = "Show this guide to the controls.";
+"Close the current panel." = "Close the current panel.";
+"Leave the welcome screen and start your message." = "Leave the welcome screen and start your message.";
+"Open live display" = "Open live display";
+"Present text" = "Present text";
+"Open another sign window that follows your message and styling." = "Open another sign window that follows your message and styling.";
+"Switch from the editor to the giant text display." = "Switch from the editor to the giant text display.";
+"Change the text animation from the editor toolbar." = "Change the text animation from the editor toolbar.";
+"Turn bold text on or off." = "Turn bold text on or off.";
+"Turn italic text on or off." = "Turn italic text on or off.";
+"Keep the text still." = "Keep the text still.";
+"Pulse the size of the text." = "Pulse the size of the text.";
+"Shake the text." = "Shake the text.";
+"Move a wave through the letters." = "Move a wave through the letters.";
+"Tap a color preview to apply that theme. A checkmark marks the selected theme." = "Tap a color preview to apply that theme. A checkmark marks the selected theme.";
+"Tap the arrow to write your first message. The three-dot menu has Settings and Help." = "Tap the arrow to write your first message. The three-dot menu has Settings and Help.";
