@@ -134,6 +134,7 @@ class ContentViewActions {
     
     func handleEscapeKey() {
         // Close any open menus or stop editing
+        state.showingHelp = false
         state.showingOptionsMenu = false
         state.isEditing = false
     }

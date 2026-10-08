@@ -92,11 +92,14 @@ extension View {
                             }
                     )
                     .contextMenu {
-                        Button("Options") {
-                            state.showingOptionsMenu = true
+                        Button { state.showingOptionsMenu = true } label: {
+                            Label("Settings", systemImage: "slider.horizontal.3")
                         }
-                        Button("Edit Text") {
-                            state.isEditing = true
+                        Button { state.isEditing = true } label: {
+                            Label(LocalizationManager.editText, systemImage: "pencil")
+                        }
+                        Button { state.showingHelp = true } label: {
+                            Label("Help", systemImage: "questionmark.circle")
                         }
                     }
                     .allowsHitTesting(!state.showingWelcomeView && !state.isEditing)
@@ -105,7 +108,7 @@ extension View {
             .overlay(
                 Color.clear
             )
-            #else
+            #elseif !os(visionOS)
             .overlay(
                 TwoFingerTapView {
                     state.showingOptionsMenu = true

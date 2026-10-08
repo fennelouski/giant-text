@@ -34,15 +34,16 @@ final class Giant_TextUITests: XCTestCase {
         XCTAssertTrue(welcomeScreen.waitForExistence(timeout: 5), "Welcome screen should appear")
         
         // Test that we can tap the "Get Started" button
-        let getStartedButton = app.buttons["Get Started"]
+        let getStartedButton = app.buttons["GetStartedButton"]
         XCTAssertTrue(getStartedButton.exists, "Get Started button should exist")
         XCTAssertTrue(getStartedButton.isEnabled, "Get Started button should be enabled")
         
+        capture(app, name: "Welcome")
         // Test tapping the button
         getStartedButton.tap()
         
         // Verify the welcome screen disappears
-        XCTAssertFalse(welcomeScreen.exists, "Welcome screen should disappear after tapping Get Started")
+        XCTAssertTrue(welcomeScreen.waitForNonExistence(timeout: 5), "Welcome screen should disappear after tapping Get Started")
     }
     
     @MainActor
@@ -84,7 +85,7 @@ final class Giant_TextUITests: XCTestCase {
         screen.tap()
         
         // Verify the welcome screen disappears
-        XCTAssertFalse(welcomeScreen.exists, "Welcome screen should disappear after tapping outside")
+        XCTAssertTrue(welcomeScreen.waitForNonExistence(timeout: 5), "Welcome screen should disappear after tapping outside")
     }
     
     @MainActor
@@ -128,12 +129,75 @@ final class Giant_TextUITests: XCTestCase {
         XCTAssertFalse(keyboard.exists, "Keyboard should not be shown when welcome screen is displayed")
         
         // Test tapping the Get Started button
-        let getStartedButton = app.buttons["Get Started"]
+        let getStartedButton = app.buttons["GetStartedButton"]
         getStartedButton.tap()
         
-        // Verify welcome screen disappears and no keyboard appears
-        XCTAssertFalse(welcomeScreen.exists, "Welcome screen should disappear")
-        XCTAssertFalse(keyboard.exists, "Keyboard should still not be shown after dismissing welcome screen")
+        XCTAssertTrue(welcomeScreen.waitForNonExistence(timeout: 5), "Welcome screen should disappear")
+        XCTAssertTrue(keyboard.waitForExistence(timeout: 5), "Starting a message should open the editor")
+    }
+
+    @MainActor
+    func testOverflowHelpAndEditing() throws {
+        exerciseOverflowHelpAndEditing()
+    }
+
+    @MainActor
+    func testOverflowHelpWithLargeTextAndDarkAppearance() throws {
+        exerciseOverflowHelpAndEditing(arguments: ["-appearanceMode", "dark", "-UIPreferredContentSizeCategoryName", "UICTContentSizeCategoryAccessibilityXXXL"])
+    }
+
+    @MainActor
+    private func exerciseOverflowHelpAndEditing(arguments: [String] = []) {
+        let app = XCUIApplication()
+        app.launchArguments = ["--ss-text", "HELLO"] + arguments
+        app.launch()
+
+        let menu = app.buttons["OverflowMenu"]
+        XCTAssertTrue(menu.waitForExistence(timeout: 5))
+        XCTAssertFalse(menu.staticTexts["Options"].exists)
+        capture(app, name: "Display")
+        menu.tap()
+        app.buttons["HelpMenuItem"].tap()
+        XCTAssertTrue(app.staticTexts["Open editing actions, Settings, and Help."].waitForExistence(timeout: 5))
+        capture(app, name: "Help")
+        app.buttons["CloseHelpButton"].tap()
+
+        menu.tap()
+        app.buttons["Edit Text"].tap()
+        let keyboardTip = app.buttons["Continue"]
+        if keyboardTip.waitForExistence(timeout: 2) { keyboardTip.tap() }
+        let done = app.buttons["done_editing_accessibility"]
+        XCTAssertTrue(done.waitForExistence(timeout: 5))
+        XCTAssertEqual(done.label, "Done editing")
+        XCTAssertFalse(done.staticTexts["Done"].exists)
+        capture(app, name: "Editor")
+        app.buttons["text_animation"].tap()
+        XCTAssertTrue(app.buttons["Bloom"].waitForExistence(timeout: 5))
+        app.buttons["None"].tap()
+        done.tap()
+        XCTAssertFalse(app.keyboards.firstMatch.exists)
+
+        menu.tap()
+        app.buttons["Settings"].tap()
+        let help = app.buttons["SettingsHelpButton"]
+        XCTAssertTrue(help.waitForExistence(timeout: 5))
+        let animations = ["None", "Bloom", "Jitter", "Ripple"].map { app.buttons[$0] }
+        for index in animations.indices {
+            for other in animations.indices where other > index {
+                XCTAssertFalse(animations[index].frame.intersects(animations[other].frame), "Animation controls must not overlap")
+            }
+        }
+        capture(app, name: "Settings")
+        help.tap()
+        XCTAssertTrue(app.staticTexts["Open editing actions, Settings, and Help."].waitForExistence(timeout: 5))
+    }
+
+    @MainActor
+    private func capture(_ app: XCUIApplication, name: String) {
+        let attachment = XCTAttachment(screenshot: app.screenshot())
+        attachment.name = name
+        attachment.lifetime = .keepAlways
+        add(attachment)
     }
 
     @MainActor
@@ -160,7 +224,7 @@ final class Giant_TextUITests: XCTestCase {
         app.launch()
 
         // Dismiss welcome screen if it appears
-        let getStartedButton = app.buttons["Get Started"]
+        let getStartedButton = app.buttons["GetStartedButton"]
         if getStartedButton.waitForExistence(timeout: 2) {
             getStartedButton.tap()
         }
@@ -187,7 +251,7 @@ final class Giant_TextUITests: XCTestCase {
             sleep(1)
 
             // Tap "Done" button to exit editing mode
-            let doneButton = app.buttons["Done"]
+            let doneButton = app.buttons["done_editing_accessibility"]
             if doneButton.exists {
                 doneButton.tap()
             }
@@ -208,7 +272,7 @@ final class Giant_TextUITests: XCTestCase {
                 sleep(1)
 
                 // Select all and delete
-                let clearButton = app.buttons["Clear"]
+                let clearButton = app.buttons["clear_text_accessibility"]
                 if clearButton.exists {
                     clearButton.tap()
                 }

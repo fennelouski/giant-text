@@ -70,6 +70,12 @@ struct ReleaseChecks {
 
         state.kerning = -7
         check(ContentViewState().kerning == -7, "Negative letter spacing survives model recreation")
+        state.showingHelp = true
+        state.showingOptionsMenu = true
+        state.isEditing = true
+        actions.handleEscapeKey()
+        check(!state.showingHelp && !state.showingOptionsMenu && !state.isEditing,
+              "Escape dismisses Help, settings, and editing")
         if failures > 0 { exit(1) }
     }
 }

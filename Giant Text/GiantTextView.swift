@@ -115,6 +115,8 @@ struct GiantTextView: View {
                         isTextFieldFocused = false
                     } label: {
                         Label(LocalizationManager.done, systemImage: "checkmark")
+                            .labelStyle(.iconOnly)
+                            .frame(minWidth: 44, minHeight: 44)
                             .font(.headline)
                     }
                     .buttonStyle(.borderedProminent)

@@ -21,6 +21,13 @@ struct ContentView: View {
     
     @State private var state = ContentViewState()
     @State private var actions: ContentViewActions?
+    #if os(visionOS)
+    @Environment(\.openWindow) private var openWindow
+    #endif
+
+    init(state: ContentViewState = ContentViewState()) {
+        _state = State(initialValue: state)
+    }
 
     #if os(iOS) || os(visionOS)
     private var optionsDetents: Set<PresentationDetent> {
@@ -114,15 +121,13 @@ struct ContentView: View {
             .contentViewOverlayModifiers(state: state, actions: actions ?? ContentViewActions(state: state, modelContext: modelContext, documents: documents))
             .contentViewModifiers(state: state, actions: actions ?? ContentViewActions(state: state, modelContext: modelContext, documents: documents))
             .overlay(alignment: .topTrailing) {
+                #if !os(visionOS)
                 if !state.showingWelcomeView {
-                    Button {
-                        state.showingOptionsMenu = true
-                    } label: {
-                        Label(LocalizationManager.options, systemImage: "ellipsis.circle")
-                    }
+                    overflowMenu
                     .buttonStyle(.bordered)
                     .padding()
                 }
+                #endif
             }
         }
         .contentViewPlatformModifiers(state: state, actions: actions ?? ContentViewActions(state: state, modelContext: modelContext, documents: documents))
@@ -162,6 +167,53 @@ struct ContentView: View {
             #endif
         }
         .preferredColorScheme(state.appearanceMode.colorScheme)
+        .sheet(isPresented: $state.showingHelp) {
+            NavigationStack {
+                ControlsHelpView()
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button { state.showingHelp = false } label: {
+                                Label(LocalizationManager.close, systemImage: "xmark")
+                                    .labelStyle(.iconOnly)
+                                    .frame(minWidth: 44, minHeight: 44)
+                            }
+                            .accessibilityIdentifier("CloseHelpButton")
+                        }
+                    }
+            }
+            #if os(macOS)
+            .frame(minWidth: 360, idealWidth: 480, minHeight: 420)
+            #endif
+        }
+        #if os(visionOS)
+        .frame(minWidth: 640, minHeight: 420)
+        .ornament(attachmentAnchor: .scene(.bottom)) {
+            if !state.showingWelcomeView {
+                HStack(spacing: 20) {
+                    Button {
+                        openWindow(id: "live-sign", value: UUID())
+                    } label: {
+                        Label("Open live display", systemImage: "rectangle.on.rectangle")
+                            .labelStyle(.iconOnly)
+                            .frame(minWidth: 44, minHeight: 44)
+                    }
+                    .help("Open live display")
+                    Button {
+                        state.isEditing.toggle()
+                    } label: {
+                        Label(state.isEditing ? "Present text" : "Edit text", systemImage: state.isEditing ? "textformat.size" : "pencil")
+                            .labelStyle(.iconOnly)
+                            .frame(minWidth: 44, minHeight: 44)
+                    }
+                    .help(state.isEditing ? "Present text" : "Edit text")
+                    overflowMenu
+                }
+                .padding(.horizontal, 24)
+                .padding(.vertical, 16)
+                .glassBackgroundEffect(in: Capsule())
+            }
+        }
+        #endif
         .alert("Couldn't Save Text", isPresented: Binding(
             get: { state.persistenceError != nil },
             set: { if !$0 { state.persistenceError = nil } }
@@ -179,6 +231,35 @@ struct ContentView: View {
             applyScreenshotArgumentsIfNeeded()
             #endif
         }
+    }
+
+    private var overflowMenu: some View {
+        Menu {
+            Button { state.isEditing.toggle() } label: {
+                Label(state.isEditing ? LocalizationManager.done : LocalizationManager.editText, systemImage: state.isEditing ? "checkmark" : "pencil")
+            }
+            Button { actions?.handleUndo() } label: {
+                Label(LocalizationManager.undo, systemImage: "arrow.uturn.backward")
+            }
+            .disabled(state.currentHistoryIndex <= 0)
+            Button(role: .destructive) { actions?.handleClearText() } label: {
+                Label(LocalizationManager.clearText, systemImage: "trash")
+            }
+            Divider()
+            Button { state.showingOptionsMenu = true } label: {
+                Label("Settings", systemImage: "slider.horizontal.3")
+            }
+            Button { state.showingHelp = true } label: {
+                Label("Help", systemImage: "questionmark.circle")
+            }
+            .accessibilityIdentifier("HelpMenuItem")
+        } label: {
+            Label(LocalizationManager.options, systemImage: "ellipsis")
+                .labelStyle(.iconOnly)
+                .frame(minWidth: 44, minHeight: 44)
+        }
+        .help(LocalizationManager.options)
+        .accessibilityIdentifier("OverflowMenu")
     }
 
     #if DEBUG

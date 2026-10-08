@@ -10,6 +10,10 @@ import SwiftData
 
 @main
 struct Giant_TextApp: App {
+    #if os(visionOS)
+    @State private var visionState = ContentViewState()
+    #endif
+
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             TextDocument.self,
@@ -24,6 +28,33 @@ struct Giant_TextApp: App {
     }()
 
     var body: some Scene {
+        #if os(visionOS)
+        WindowGroup("Giant Text", id: "workspace", for: String.self) { _ in
+            ContentView(state: visionState)
+        } defaultValue: {
+            "main"
+        }
+        .modelContainer(sharedModelContainer)
+        .defaultSize(width: 1000, height: 680)
+        .windowResizability(.contentMinSize)
+
+        WindowGroup("Giant Text Display", id: "live-sign", for: UUID.self) { _ in
+            GiantVisionDisplay(state: visionState)
+        } defaultValue: {
+            UUID()
+        }
+        .modelContainer(sharedModelContainer)
+        .windowStyle(.plain)
+        .defaultSize(width: 1200, height: 500)
+        .windowResizability(.contentMinSize)
+        .defaultWindowPlacement { _, context in
+            if let workspace = context.windows.first(where: { $0.id == "workspace" }) {
+                WindowPlacement(.trailing(workspace))
+            } else {
+                WindowPlacement(nil)
+            }
+        }
+        #else
         WindowGroup {
             ContentView()
                 .onAppear {
@@ -44,6 +75,7 @@ struct Giant_TextApp: App {
         #if os(macOS)
         .windowStyle(.hiddenTitleBar)
         .windowResizability(.contentSize)
+        #endif
         #endif
     }
 }
