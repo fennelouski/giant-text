@@ -132,43 +132,43 @@ struct OptionsMenuSheet: View {
         NavigationStack {
 
             #if os(tvOS)
-            // Simplified menu for tvOS
             ScrollView {
-                VStack(spacing: 12) {
-                    // Animation picker
-                    Picker(LocalizationManager.animation, selection: $selectedAnimation) {
+                VStack(spacing: 32) {
+                    HStack(spacing: 16) {
+                        Text("Settings").font(.headline)
+                        Spacer()
+                        NavigationLink {
+                            ControlsHelpView()
+                        } label: {
+                            Image(systemName: "questionmark.circle")
+                                .font(.system(size: 30))
+                                .frame(width: 44, height: 44)
+                        }
+                        .accessibilityLabel(Text("Help"))
+                        .accessibilityIdentifier("SettingsHelpButton")
+                        Button { dismiss() } label: {
+                            Image(systemName: "xmark")
+                                .font(.system(size: 30))
+                                .frame(width: 44, height: 44)
+                        }
+                        .accessibilityLabel(Text(LocalizationManager.close))
+                        .accessibilityIdentifier("CloseSettingsButton")
+                    }
+                    HStack(spacing: 16) {
                         ForEach(TextAnimation.allCases, id: \.self) { animation in
-                            Text(animation.localizedName).tag(animation)
+                            Button { selectedAnimation = animation } label: {
+                                Image(systemName: animation.icon)
+                                    .font(.system(size: 30))
+                                    .frame(width: 44, height: 44)
+                            }
+                            .accessibilityLabel(Text(animation.localizedName))
+                            .tint(selectedAnimation == animation ? .blue : .primary)
+                            .accessibilityAddTraits(selectedAnimation == animation ? .isSelected : [])
                         }
                     }
-                    .pickerStyle(.menu)
-
                     actionButtons
                 }
-                .padding()
-            }
-            .navigationTitle(LocalizationManager.options)
-            .toolbar {
-                ToolbarItem(placement: .primaryAction) {
-                    NavigationLink {
-                        ControlsHelpView()
-                    } label: {
-                        Label("Help", systemImage: "questionmark.circle")
-                            .labelStyle(.iconOnly)
-                            .frame(minWidth: 44, minHeight: 44)
-                    }
-                    .help("Help")
-                    .accessibilityIdentifier("SettingsHelpButton")
-                }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button { dismiss() } label: {
-                        Label(LocalizationManager.close, systemImage: "xmark")
-                            .labelStyle(.iconOnly)
-                            .frame(minWidth: 44, minHeight: 44)
-                    }
-                    .help(LocalizationManager.close)
-                    .accessibilityIdentifier("CloseSettingsButton")
-                }
+                .padding(24)
             }
             #elseif os(watchOS)
             // Simplified menu for watchOS
